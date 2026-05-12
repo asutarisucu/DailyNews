@@ -1,0 +1,80 @@
+name: Discord Notification
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/latest/news_*.html'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Extract news metadata
+        id: meta
+        run: |
+          DATE=$(git diff --name-only HEAD~1 HEAD \
+            | grep -oP '(?<=docs/latest/news_)\d{4}-\d{2}-\d{2}(?=\.html)' \
+            | head -1)
+          echo "date=$DATE" >> $GITHUB_OUTPUT
+
+          STATS="docs/latest/stats_${DATE}.json"
+          if [ -f "$STATS" ]; then
+            echo "total=$(jq -r '.total'    $STATS)" >> $GITHUB_OUTPUT
+            echo "shopify=$(jq -r '.shopify' $STATS)" >> $GITHUB_OUTPUT
+            echo "ai=$(jq -r '.ai'          $STATS)" >> $GITHUB_OUTPUT
+            echo "security=$(jq -r '.security' $STATS)" >> $GITHUB_OUTPUT
+            echo "cloud=$(jq -r '.cloud'    $STATS)" >> $GITHUB_OUTPUT
+            echo "dev=$(jq -r '.dev'        $STATS)" >> $GITHUB_OUTPUT
+          else
+            echo "total=?" >> $GITHUB_OUTPUT
+            echo "shopify=?" >> $GITHUB_OUTPUT
+            echo "ai=?" >> $GITHUB_OUTPUT
+            echo "security=?" >> $GITHUB_OUTPUT
+            echo "cloud=?" >> $GITHUB_OUTPUT
+            echo "dev=?" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Send Discord notification
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DATE: ${{ steps.meta.outputs.date }}
+          TOTAL: ${{ steps.meta.outputs.total }}
+          SHOPIFY: ${{ steps.meta.outputs.shopify }}
+          AI: ${{ steps.meta.outputs.ai }}
+          SECURITY: ${{ steps.meta.outputs.security }}
+          CLOUD: ${{ steps.meta.outputs.cloud }}
+          DEV: ${{ steps.meta.outputs.dev }}
+        run: |
+          curl -fsSL -X POST "$DISCORD_WEBHOOK_URL" \
+            -H 'Content-Type: application/json' \
+            -d "$(jq -n \
+              --arg date     "$DATE" \
+              --arg total    "$TOTAL" \
+              --arg shopify  "$SHOPIFY" \
+              --arg ai       "$AI" \
+              --arg security "$SECURITY" \
+              --arg cloud    "$CLOUD" \
+              --arg dev      "$DEV" \
+              '{
+                username: "Daily IT News",
+                embeds: [{
+                  title: ("📰 " + $date + " のIT ニュースダイジェスト"),
+                  url: ("https://asutarisucu.github.io/DailyNews/latest/news_" + $date + ".html"),
+                  color: 7012095,
+                  description: ("本日のニュース **" + $total + "件** を公開しました。"),
+                  fields: [
+                    {name: "🛒 Shopify", value: ($shopify + "件"), inline: true},
+                    {name: "🤖 AI",      value: ($ai      + "件"), inline: true},
+                    {name: "🔒 Security",value: ($security+ "件"), inline: true},
+                    {name: "☁️ Cloud",   value: ($cloud   + "件"), inline: true},
+                    {name: "🛠️ Dev",    value: ($dev     + "件"), inline: true}
+                  ],
+                  footer: {text: "Daily IT News — 毎朝7時JST更新 | GitHub Actions"},
+                  timestamp: (now | todate)
+                }]
+              }')"

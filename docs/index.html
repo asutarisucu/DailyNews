@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily IT News — 毎朝届くIT最新情報</title>
+  <meta name="description" content="毎朝7時更新。Shopify開発者情報を優先した24時間ITニュースダイジェスト。">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .archive-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .archive-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.2s, transform 0.2s;
+      display: block;
+    }
+    .archive-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .archive-card .date {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+    .archive-card .count {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .empty-state {
+      text-align: center;
+      padding: 80px 24px;
+      color: var(--text-muted);
+    }
+    .empty-state .icon { font-size: 48px; margin-bottom: 16px; }
+    .empty-state h2 { font-size: 20px; color: var(--text); margin-bottom: 8px; }
+    .empty-state p { font-size: 14px; }
+    .latest-banner {
+      background: linear-gradient(135deg, var(--surface) 0%, rgba(108,99,255,0.08) 100%);
+      border: 1px solid rgba(108,99,255,0.3);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .latest-banner h2 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+    .latest-banner p { font-size: 14px; color: var(--text-muted); }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 20px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: opacity 0.2s;
+      white-space: nowrap;
+    }
+    .btn:hover { opacity: 0.85; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="badge badge-live">⚡ 毎朝7時更新</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>IT ニュースダイジェスト</h1>
+      <p class="date-label">Shopify 開発者情報を優先した <strong>24時間</strong> ITニュースまとめ</p>
+    </div>
+
+    <div id="latest-banner"></div>
+
+    <div class="section-label">バックナンバー</div>
+    <div id="archive-grid" class="archive-grid">
+      <div class="empty-state">
+        <div class="icon">🕐</div>
+        <h2>初回更新待ち</h2>
+        <p>明日の朝7時に最初のニュースが届きます。</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Daily IT News — Claude Code Scheduled Task により毎朝自動生成</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews" target="_blank">GitHub</a></p>
+  </footer>
+
+  <script>
+    // latest/ 配下の news_*.html を動的に列挙してアーカイブ一覧を構築
+    // GitHub Pages では JS でのディレクトリ列挙ができないため、
+    // scheduled task が index.html を都度更新する方式にしています。
+    // このファイルは初期テンプレートです。
+    const archives = [
+      // { date: "2026-05-12", count: 12, file: "latest/news_2026-05-12.html" }
+      // ↑ scheduled task によって追記されます
+    ];
+
+    const banner = document.getElementById('latest-banner');
+    const grid = document.getElementById('archive-grid');
+
+    if (archives.length > 0) {
+      const latest = archives[0];
+      banner.innerHTML = `
+        <div>
+          <h2>最新号 — ${latest.date}</h2>
+          <p>${latest.count} 件のニュース</p>
+        </div>
+        <a href="${latest.file}" class="btn">今日のニュースを読む →</a>
+      `;
+      grid.innerHTML = archives.map(a => `
+        <a href="${a.file}" class="archive-card">
+          <div class="date">${a.date}</div>
+          <div class="count">${a.count} 件</div>
+        </a>
+      `).join('');
+    }
+  </script>
+</body>
+</html>

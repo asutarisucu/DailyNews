@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-05-13</title>
+  <meta name="description" content="2026-05-13 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-05-13</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-05-13 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>18件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">🛒 Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">🤖 AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">🔒 Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">☁️ Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">🛠️ Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">📌 Other</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Storefront API: 購入者の所在地で購入不可の商品をカートに入れると警告を返すように（2026-07版～）</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 shopify.dev changelog</a>
+        </div>
+        <p>Storefront API のバージョン 2026-07 以降、購入者の所在地で販売不可の商品をカートに追加しようとすると警告（warning）が返されるようになります。これにより越境EC対応アプリはユーザーに対してより適切なエラーメッセージや代替案を提示できます。既存実装でカートのレスポンスを処理している箇所は <code>warnings</code> フィールドへの対応を事前に確認しておくことが推奨されます。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">GraphQL Admin API: Order オブジェクトに cartToken フィールドを追加 — 注文元カートの追跡が可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 shopify.dev changelog</a>
+        </div>
+        <p>GraphQL Admin API の <code>Order</code> オブジェクトに <code>cartToken</code> フィールドが追加されました。これにより、注文を生成したカートのトークンをクエリで直接取得できるようになり、カート放棄の追跡やアナリティクス連携が容易になります。Storefront API のカートと Admin API の注文を紐づける処理を実装しているアプリで特に有用です。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">ProductVariant が Publishable に対応 — チャネルごとに公開・非公開の細粒度制御が可能</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 shopify.dev changelog</a>
+        </div>
+        <p><code>ProductVariant</code> が <code>Publishable</code> インターフェースを実装し、バリアント単位でチャネルへの公開・非公開を制御できるようになりました。これまでは商品（Product）単位でしか公開チャネルを制御できませんでしたが、今回の変更でオンラインストア・POS・BtoB チャネルごとにバリアント単位での細粒度な販売設定が可能になります。マルチチャネル販売の柔軟性が大幅に向上します。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.engineering/latest" target="_blank" rel="noopener">Shopify Engineering Blog: 自然言語によるFlow生成 — エージェント的モデリングアプローチ</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.engineering/latest" class="source-link" target="_blank" rel="noopener">🔗 shopify.engineering</a>
+        </div>
+        <p>Shopify Engineering Blog に「Flow generation through natural language: An agentic modeling approach」が公開されました。自然言語の指示から Shopify Flow のワークフローを自動生成するアプローチについて、内部のエージェント型モデリング手法が詳細に解説されています。LLM を活用したノーコード自動化の設計に興味のある開発者必読の内容です。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cnbc.com/2026/05/12/google-races-put-gemini-at-center-of-android-before-apples-ai-reboot.html" target="_blank" rel="noopener">Google、AndroidをGeminiを中心とした「インテリジェンスOS」へ全面再構築 — Appleに先手</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cnbc.com/2026/05/12/google-races-put-gemini-at-center-of-android-before-apples-ai-reboot.html" class="source-link" target="_blank" rel="noopener">🔗 CNBC</a>
+      </div>
+      <p>GoogleのAndroid責任者が「我々はOSからインテリジェンスシステムへの移行期にある」と宣言し、AndroidをGemini AI中心に大規模再設計していることを明らかにしました。Appleが秋のAI刷新を控える中、Googleが先手を打ちAI統合モバイル体験の覇権争いを加速させています。開発者向けには Gemini API の Android ネイティブ連携強化が期待されます。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aiviewer.ai/guides/ai-workflow-shift-openai-anthropic-google-2026/" target="_blank" rel="noopener">Anthropic、自律型マネージドエージェントをリサーチプレビュー公開 — 法律・コーディング・金融分野向け</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aiviewer.ai/guides/ai-workflow-shift-openai-anthropic-google-2026/" class="source-link" target="_blank" rel="noopener">🔗 AIViewer.ai</a>
+      </div>
+      <p>Anthropicが自律型マネージドエージェントをリサーチプレビューとして提供開始しました。サブエージェントの協調管理やルーブリックベースの成果評価ツールにアクセスできるようになり、長時間稼働するワークフローを自動実行する能力が大幅に向上しています。コーディング・法律調査・金融分析など専門領域での活用が想定されています。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://llm-stats.com/ai-news" target="_blank" rel="noopener">OpenAI、AIエージェント向けリアルタイム音声・翻訳モデルをリリース</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://llm-stats.com/ai-news" class="source-link" target="_blank" rel="noopener">🔗 LLM Stats</a>
+      </div>
+      <p>OpenAIがAIエージェント向けにリアルタイム音声処理と多言語翻訳機能を持つ新モデルを発表しました。これにより音声ベースのエージェントアプリケーションが低レイテンシで動作可能となり、カスタマーサポートや多言語ビジネスコミュニケーションへの応用範囲が広がります。API経由でのアクセスが提供される予定です。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.claimsjournal.com/news/national/2026/05/05/337371.htm" target="_blank" rel="noopener">Microsoft・Google・xAI、米政府への最先端AIモデル早期アクセス提供に合意 — 安全性評価のため</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.claimsjournal.com/news/national/2026/05/05/337371.htm" class="source-link" target="_blank" rel="noopener">🔗 Claims Journal</a>
+      </div>
+      <p>Microsoft・Google・xAIの3社が、商務省AI標準・イノベーションセンター（CISA）に対してフロンティアAIモデルのリリース前早期アクセスを提供することに合意しました。政府機関が国家安全保障上のリスク評価とAI標準策定を行える体制を整えることが目的です。AI規制の具体化に向けた重要な産官連携として注目されます。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/05/cisa-adds-actively-exploited-linux-root.html" target="_blank" rel="noopener">【緊急】CVE-2026-31431: Linuxカーネルのローカル特権昇格（CVSS 7.8）— 一般ユーザーがroot奪取可能、5/15までに修正を</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/05/cisa-adds-actively-exploited-linux-root.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>CISAが CVE-2026-31431 をKEVカタログに追加しました。Linuxカーネルに存在するローカル特権昇格の脆弱性で、権限のない一般ユーザーがroot権限を取得できます（CVSS v3: 7.8）。既に野外での悪用が確認されており、連邦政府機関は2026年5月15日までにパッチ適用が義務付けられています。クラウドサーバーやコンテナホストでも早急な対応が必要です。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CVE-2026-42208: BerriAI LiteLLMにSQLインジェクション — プロキシのDBと管理する認証情報が漏洩のリスク</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA KEVカタログ</a>
+      </div>
+      <p>LLMプロキシとして広く利用される BerriAI LiteLLM にSQLインジェクション脆弱性（CVE-2026-42208）が発見されました。攻撃者はプロキシのデータベースからデータを読み取り・改ざんでき、LiteLLMが管理する各種APIキーなどの認証情報が危険にさらされます。対応期限は2026年5月11日で、LiteLLMを内部プロキシとして運用している組織は即時更新が必要です。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/05/12/top-tech-news-today-may-12-2026/" target="_blank" rel="noopener">npmサプライチェーン攻撃: Mistral・UiPath・TanStack関連パッケージが侵害 — 利用者は即時確認を</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/05/12/top-tech-news-today-may-12-2026/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>複数の人気npm パッケージへのサプライチェーン攻撃が報告されました。Mistral・UiPath・TanStackなどの著名な開発者ツールに関連するパッケージが侵害されており、悪意あるコードが依存関係を通じて広がった可能性があります。<code>npm audit</code> による依存関係の確認と、ロックファイルの整合性チェックを早急に実施してください。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up" target="_blank" rel="noopener">Google Cloud Next 2026: Cross-cloud Lakehouse でデータサイロを撤廃 — Iceberg REST Catalogで AWS/Azure データに透過アクセス</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up" target="_blank" rel="noopener" class="source-link">🔗 Google Cloud Blog</a>
+      </div>
+      <p>Google Cloud Next 2026で、クラウド横断データレイクハウス「Cross-cloud Lakehouse（旧BigLake）」が発表されました。Iceberg REST Catalogを基盤とし、AIエージェントが AWS・Azure・パートナーエコシステムのデータにシームレスにアクセスできます。合わせて発表された「Cross-cloud Caching」によりクロスクラウドデータの初回読み取り時にキャッシュが生成され、大幅なエグレスコスト削減が期待できます。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes" target="_blank" rel="noopener">Microsoft Defender for Cloud が Defender ポータルに統合 — AWS・GCPも含むマルチクラウド脅威管理を一元化</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Microsoft Learn</a>
+      </div>
+      <p>Microsoft Defender for Cloud が Microsoft Defender ポータルへの統合を完了し、クラウドセキュリティ態勢管理（CSPM）と脅威防御を一つの画面で管理できるようになりました。Azure・AWS・GCPにまたがるコンピュート・データベース・ストレージ・AI/MLリソースのポスチャアセスメントをネイティブにサポートし、セキュリティ担当者の運用コスト削減に寄与します。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://earezki.com/ai-news/2026-05-10-virtual-machines-across-aws-azure-gcp-weekly-benchmarks-for-may-03-may-09-2026/" target="_blank" rel="noopener">GCPのVMプロビジョニングレイテンシが5月に75%急上昇 — AWS/Azureとの比較ベンチマーク公開</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://earezki.com/ai-news/2026-05-10-virtual-machines-across-aws-azure-gcp-weekly-benchmarks-for-may-03-may-09-2026/" class="source-link" target="_blank" rel="noopener">🔗 Dev|Journal</a>
+      </div>
+      <p>5月3〜9日のAWS・Azure・GCPのVMプロビジョニング速度ベンチマーク結果が公開され、GCPのレイテンシが前週比75%増加したことが明らかになりました。AWSとAzureが相対的に安定していた中、GCPの急激な劣化はインフラ需要の急増またはバックエンドの問題を示唆します。大量プロビジョニングを行うインフラ自動化システムでは注意が必要です。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://deno.com/blog/v2.6" target="_blank" rel="noopener">Deno 2.6 リリース: npx互換の「dx」コマンド搭載、「deno audit」でサプライチェーン脆弱性を自動検出</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://deno.com/blog/v2.6" class="source-link" target="_blank" rel="noopener">🔗 Deno Blog</a>
+      </div>
+      <p>Deno 2.6がリリースされました。目玉機能は npm/JSR パッケージのバイナリを手軽に実行できる <code>dx</code>（npx 相当）と、JSR・npmパッケージの脆弱性をGitHub CVEデータベースと照合する <code>deno audit</code> コマンドです。また <code>--ignore-read</code>/<code>--ignore-env</code> フラグによる細粒度パーミッション制御、<code>tsgo</code> による高速型チェックも導入されました。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog" target="_blank" rel="noopener">Vercel: devコマンドがVERCEL_PROJECT_IDとVERCEL_ORG_IDを自動公開 — 本番環境との挙動を統一</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p><code>vercel dev</code> コマンドがリンクされた <code>.vercel/project.json</code> から <code>VERCEL_PROJECT_ID</code> と <code>VERCEL_ORG_ID</code> を自動的に環境変数として公開するようになりました。本番・プレビュー環境との挙動が統一され、環境ごとの設定差異によるデバッグコストが削減されます。また <code>vercel connex attach</code> コマンドも追加され、Vercelプロジェクトと Connex クライアントの接続が容易になりました。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cnbc.com/2026/05/12/qualcomm-chip-stocks-record-ai.html" target="_blank" rel="noopener">Qualcomm株が11%急落 — AI相場の最高値から半導体株全体が調整、Intel・Skyworksも大幅安</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cnbc.com/2026/05/12/qualcomm-chip-stocks-record-ai.html" class="source-link" target="_blank" rel="noopener">🔗 CNBC</a>
+      </div>
+      <p>Qualcommが11%超の急落となり、2020年以来最悪のセッションを記録しました。IntelとSkyworks Solutionsも5〜7%の大幅安となり、AI需要主導で最高値圏にあった半導体セクター全体が調整局面に入りました。米中テクノロジー緊張や中国製セルラーモジュール規制懸念が売りを加速させたとみられています。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://finance.yahoo.com/sectors/technology/articles/gigabyte-unveils-future-landing-computex-010000928.html" target="_blank" rel="noopener">COMPUTEX 2026: GIGABYTE が「Future Landing」を発表 — AIインフラのエンドツーエンド展開ポートフォリオ</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://finance.yahoo.com/sectors/technology/articles/gigabyte-unveils-future-landing-computex-010000928.html" class="source-link" target="_blank" rel="noopener">🔗 Yahoo Finance</a>
+      </div>
+      <p>COMPUTEX 2026でGIGABYTEが「Future Landing」をテーマにAIインフラのエンドツーエンドポートフォリオを公開しました。AIをいかに迅速・確実にスケールで展開・運用・維持するかという業界最重要課題への回答として、サーバー・ネットワーク機器から冷却ソリューションまで一体化したAIデータセンター向けラインナップを披露しています。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-05-13 07:00 JST 更新 | 全18件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-05-15</title>
+  <meta name="description" content="2026-05-15 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-05-15</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-05-15 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">14</div>
+          <div class="stat-label">Total</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">🛒 Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">🤖 AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">🔒 Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">☁️ Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">🛠️ Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">📌 Other</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/app-deployment-in-cicd-is-now-available-for-all-apps" target="_blank" rel="noopener">App deployment in CI/CD が全アプリに開放 — App Automation Token で安全な自動リリースが可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/app-deployment-in-cicd-is-now-available-for-all-apps" class="source-link" target="_blank" rel="noopener">🔗 shopify.dev/changelog</a>
+        </div>
+        <p>Dev Dashboard から発行できる「App Automation Token」により、全アプリで CI/CD パイプライン（GitHub Workflows 等）を使ったデプロイが利用可能になりました。トークンはアプリスコープで発行されるため、セキュリティが強化されています。従来の CLI トークンは有効期限まで引き続き使えますが、早期に移行が推奨されています。環境変数 <code>SHOPIFY_APP_AUTOMATION_TOKEN</code> をセットして <code>shopify app deploy</code> を実行するだけで自動化できます。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/the-shopify-cli-app-release-force-flag-is-deprecated-and-will-be-removed" target="_blank" rel="noopener">Shopify CLI: <code>--force</code> フラグが非推奨に — <code>--allow-updates</code> / <code>--allow-deletes</code> へ移行を</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/the-shopify-cli-app-release-force-flag-is-deprecated-and-will-be-removed" class="source-link" target="_blank" rel="noopener">🔗 shopify.dev/changelog</a>
+        </div>
+        <p><code>shopify app deploy</code> および <code>shopify app release</code> コマンドの <code>--force</code> フラグが非推奨となり、2026年5月中の Shopify CLI リリースで削除される予定です。代わりに <code>--allow-updates</code> と <code>--allow-deletes</code> を使うことで、意図しない削除を防ぎながら CI/CD を無人実行できます。CLI 3.89 以降で対応済みのため、自動化スクリプトの更新が必要です。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">ディスカウントをマーケット単位でターゲティング — 地域・B2B企業・店舗ロケーションごとに割引を制御</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 shopify.dev/changelog</a>
+        </div>
+        <p>特定のマーケットに絞ったディスカウントを作成できるようになりました。地域・B2B企業ロケーション・小売店舗ロケーションを条件にすることで、グローバル展開アプリでの価格戦略がより細かく設計できます。Admin API のディスカウント関連ミューテーションで <code>marketCriteria</code> フィールドが利用可能になっています。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.theregister.com/ai-ml/2026/05/14/anthropic-tosses-agents-into-the-api-billing-pool/5240748" target="_blank" rel="noopener">Anthropic、6月15日から Agent SDK 利用を専用クレジット制に分離 — Pro は月$20、Max 20x は月$200</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.theregister.com/ai-ml/2026/05/14/anthropic-tosses-agents-into-the-api-billing-pool/5240748" class="source-link" target="_blank" rel="noopener">🔗 The Register</a>
+      </div>
+      <p>2026年6月15日より、Agent SDK・<code>claude -p</code>・Claude Code GitHub Actions・サードパーティ製 Agent SDK アプリからの Claude 利用は、サブスクリプション枠とは別の「プログラマティック利用クレジット」から消費されます。月額クレジットはサブスクリプション料金とほぼ同額（Pro: $20、Max 5x: $100、Max 20x: $200）で、未使用分は翌月に繰り越せません。ターミナルでの Claude Code や Web チャットは引き続き通常のサブスクリプション枠内です。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener">Claude Code アップデート — フック・プラグインの強化、セッション管理、MCP 改善など多数</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://releasebot.io/updates/anthropic/claude-code" class="source-link" target="_blank" rel="noopener">🔗 Releasebot / Claude Code Changelog</a>
+      </div>
+      <p>Claude Code に大型アップデートが配信されました。フック JSON 出力に <code>terminalSequence</code> フィールドが追加され、デスクトップ通知・ウィンドウタイトル・ベルをターミナル外から発行できるようになりました。また <code>CLAUDE_CODE_PLUGIN_PREFER_HTTPS</code> 環境変数により SSH キー不要の GitHub プラグインクローンが可能になり、<code>claude agents --cwd &lt;path&gt;</code> でセッションをディレクトリ単位でスコープできます。バックグラウンド処理・MCP 連携・Windows 対応も改善されています。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techcrunch.com/2026/05/12/report-google-and-spacex-in-talks-to-put-data-centers-into-orbit/" target="_blank" rel="noopener">Google × SpaceX、軌道上 AI データセンター構想 "Project Suncatcher" — 2027年にプロト衛星打ち上げへ</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techcrunch.com/2026/05/12/report-google-and-spacex-in-talks-to-put-data-centers-into-orbit/" class="source-link" target="_blank" rel="noopener">🔗 TechCrunch</a>
+      </div>
+      <p>Google と SpaceX が軌道上 AI データセンターの共同開発で交渉中と報じられました。Google の "Project Suncatcher" は TPU 搭載衛星 81 機を半径1kmに展開するクラスターを目指し、2027年にプロトタイプ打ち上げを予定しています。SpaceX（xAI と合併済み、IPO 時価総額 $1.75兆 目標）は軌道上コンピュートが将来最も低コストなAI演算基盤になると主張しています。ただし現時点では地上データセンターの方が依然コスト優位です。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://venturebeat.com/technology/anthropic-finally-beat-openai-in-business-ai-adoption-but-3-big-threats-could-erase-its-lead" target="_blank" rel="noopener">Anthropic が米国企業 AI 採用で OpenAI を初めて逆転 — Ramp AI Index 5月号</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://venturebeat.com/technology/anthropic-finally-beat-openai-in-business-ai-adoption-but-3-big-threats-could-erase-its-lead" class="source-link" target="_blank" rel="noopener">🔗 VentureBeat</a>
+      </div>
+      <p>Ramp AI Index の5月版によると、Anthropic の米国企業採用率が4月に 3.8% 増加して 34.4% となり、OpenAI を上回り初の首位を獲得しました。Claude Code による自律型ソフトウェア開発と、脆弱性発見 AI モデル Mythos が法人需要を牽引しています。同社は $950 億の評価額で $300〜500 億規模の資金調達も交渉中と報じられています。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/05/palo-alto-pan-os-flaw-under-active.html" target="_blank" rel="noopener">【緊急】CVE-2026-0300: Palo Alto PAN-OS に認証不要 RCE（CVSS 9.3）— 野放しで悪用中、即時対応を</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/05/palo-alto-pan-os-flaw-under-active.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>Palo Alto Networks PAN-OS の User-ID 認証ポータル（Captive Portal）にバッファオーバーフローの脆弱性が発見され、未認証の攻撃者が root 権限で任意コードを実行できます（CVSS 9.3）。4月から実際の悪用が確認されており、5月13日よりパッチ提供が開始されました。PA-Series・VM-Series ファイアウォールが対象で、Cloud NGFW は非対象です。User-ID 認証ポータルを外部公開している環境は直ちにアクセス制限するか機能を無効化してください。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog/next-js-may-2026-security-release" target="_blank" rel="noopener">Next.js セキュリティリリース — 13件の CVE（DoS・認証バイパス・SSRF・キャッシュポイズニング・XSS）を修正</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog/next-js-may-2026-security-release" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Vercel が Next.js の大規模セキュリティアップデートを配信しました。13件の脆弱性を修正しており、React Server Components 経由の DoS（CVE-2026-23870）・App Router のセグメントプリフェッチ URL 認証バイパス・WebSocket 経由の SSRF・RSC キャッシュポイズニング・CSP nonce XSS などが含まれます。修正済みバージョンは Next.js 15.5.18 と 16.2.6 です。13.x・14.x にはバックポートの予定がないため、15.x 以上へのアップグレードが必須です。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA KEV 更新 — Ivanti EPMM 認証済み RCE と Microsoft Defender 特権昇格を追加</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA Known Exploited Vulnerabilities Catalog</a>
+      </div>
+      <p>CISA が既知悪用脆弱性カタログ（KEV）を更新し、Ivanti Endpoint Manager Mobile（EPMM）の不適切な入力検証（認証済みリモート管理者が RCE 可能）と Microsoft Defender の不十分なアクセス制御（ローカル特権昇格）を新たに追加しました。FCEB 機関は所定期限までの修正が義務付けられており、民間組織でも優先対応が推奨されます。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/about-aws/whats-new/2026/03/s3-vectors-expands-17-regions/" target="_blank" rel="noopener">Amazon S3 Vectors が17リージョンに追加展開 — ネイティブベクトル検索ストレージが広域で利用可能に</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/about-aws/whats-new/2026/03/s3-vectors-expands-17-regions/" class="source-link" target="_blank" rel="noopener">🔗 AWS What's New</a>
+      </div>
+      <p>ネイティブベクトルインデックスを内蔵した初のクラウドオブジェクトストレージ「Amazon S3 Vectors」が17の追加リージョンで利用可能になりました。1インデックスあたり最大20億ベクトル・バケットあたり最大10,000インデックスをサポートし、専用ベクトルDBと比較してコストを最大90%削減できます。RAG・AI エージェント・セマンティック検索の基盤として幅広く活用できます。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thenextweb.com/news/gitlab-layoffs-agentic-era-devops-ai" target="_blank" rel="noopener">GitLab がレイオフと大規模再編を発表 — 「エージェント時代」へのピボット、管理層削減と国別縮小</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thenextweb.com/news/gitlab-layoffs-agentic-era-devops-ai" class="source-link" target="_blank" rel="noopener">🔗 The Next Web</a>
+      </div>
+      <p>GitLab は「エージェント時代に向けた企業変革」として早期退職プログラムと組織再編を発表しました。展開国数を最大30%削減し、一部部門では管理層を最大3層削減して約60の小規模チームに再編します。CEO Bill Staples は「AI 最適化やコスト削減が目的ではなく、節約分の大部分を再投資する」と説明しましたが、株価は時間外で8%超下落しました。早期退職の申請期限は5月18日で、規模の詳細は6月2日の決算で開示予定です。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog" target="_blank" rel="noopener">Vercel AI SDK と Vercel CLI が更新 — 関数サイズ警告の改善、<code>vercel connex attach</code> コマンド追加</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Vercel CLI に新コマンド <code>vercel connex attach</code> が追加され、特定の環境に Connex クライアントをプロジェクトにアタッチできるようになりました。また関数サイズのログが改善され、制限に近づいた際の警告と依存関係込みのサイズ内訳が表示されます。Vercel AI SDK・Vercel Sandbox・Workflow SDK も同日更新されています。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.theregister.com/devops/2026/05/12/gitlab-promises-a-different-kind-of-layoff-as-biz-pivots-toward-ai/5238422" target="_blank" rel="noopener">Apple iOS 26.5 beta — RCS メッセージングに E2E 暗号化サポートを追加、iMessage との互換性向上へ</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://urbantechdaily.com/biggest-tech-news-stories-2026/" class="source-link" target="_blank" rel="noopener">🔗 Urban Tech Daily</a>
+      </div>
+      <p>Apple が iOS 26.5 ベータで対応キャリア経由の RCS メッセージングにエンドツーエンド暗号化のサポートを追加しました。キャリアのサポートが広がれば、iMessage とクロスプラットフォームテキストのプライバシーギャップが大幅に縮小します。Android ユーザーとのセキュアな通信が Apple エコシステム外でも実現する可能性があり、業界全体の RCS E2E 暗号化普及の契機として注目されています。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-05-15 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

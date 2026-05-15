@@ -20,30 +20,30 @@
   <main>
     <div class="hero">
       <h1>2026-05-15 のIT ニュース</h1>
-      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <p class="date-label">直近24時間の注目記事 <strong>22件</strong></p>
       <div class="stats-bar">
         <div class="stat">
-          <div class="stat-num">14</div>
+          <div class="stat-num">22</div>
           <div class="stat-label">Total</div>
         </div>
         <div class="stat">
-          <div class="stat-num">3</div>
+          <div class="stat-num">5</div>
           <div class="stat-label">🛒 Shopify</div>
         </div>
         <div class="stat">
-          <div class="stat-num">4</div>
+          <div class="stat-num">6</div>
           <div class="stat-label">🤖 AI</div>
         </div>
         <div class="stat">
-          <div class="stat-num">3</div>
+          <div class="stat-num">5</div>
           <div class="stat-label">🔒 Security</div>
         </div>
         <div class="stat">
-          <div class="stat-num">1</div>
+          <div class="stat-num">2</div>
           <div class="stat-label">☁️ Cloud</div>
         </div>
         <div class="stat">
-          <div class="stat-num">2</div>
+          <div class="stat-num">3</div>
           <div class="stat-label">🛠️ Dev</div>
         </div>
         <div class="stat">
@@ -56,6 +56,17 @@
     <!-- Shopifyセクション -->
     <div class="shopify-section">
       <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/the-winter-26-edition-is-here" target="_blank" rel="noopener">Winter '26 Edition — Storefront MCP・Dev Platform・HTTP Signatures など150件超のアップデート</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/the-winter-26-edition-is-here" class="source-link" target="_blank" rel="noopener">🔗 shopify.dev/changelog</a>
+        </div>
+        <p>Shopify が Winter '26 Edition として150件超の開発者向けアップデートを公開しました。Hydrogen ストアで Storefront MCP が利用可能になりカスタム AI エージェントをストアフロントに直接組み込めます。新設の Dev Platform でアプリ管理とデブストア作成が一元化され、HTTP Signatures によりクローラー・スクリプト等の自動ツールをブロックなしに認証できるようになっています。サンクスページ・カスタマーアカウントへの Announcement Bar Extensions も追加されました。</p>
+      </div>
 
       <div class="card shopify-card">
         <div class="card-header">
@@ -81,6 +92,17 @@
 
       <div class="card shopify-card">
         <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Admin API: Order オブジェクトに <code>cartToken</code> フィールド追加 — カート連携の追跡が容易に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 shopify.dev/changelog</a>
+        </div>
+        <p>GraphQL Admin API の Order オブジェクトに <code>cartToken</code> フィールドが追加され、注文の作成元となったカートトークンを取得できるようになりました。REST API で既に利用可能だった情報が GraphQL でも参照可能になった形です。アナリティクスやカスタムアトリビューションロジックを構築するアプリで、カートから注文への一貫した追跡が可能になります。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
           <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">ディスカウントをマーケット単位でターゲティング — 地域・B2B企業・店舗ロケーションごとに割引を制御</a></h2>
           <span class="badge badge-shopify">shopify</span>
         </div>
@@ -93,6 +115,28 @@
 
     <!-- AIセクション -->
     <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank" rel="noopener">Anthropic、Claude Opus 4.7 を正式リリース — 高度なコーディングと強化されたビジョン能力</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news/claude-opus-4-7" class="source-link" target="_blank" rel="noopener">🔗 Anthropic</a>
+      </div>
+      <p>Anthropic が Claude Opus 4.7 を正式公開しました。Opus 4.6 と比較して高難度ソフトウェアエンジニアリングタスクで顕著な改善が見られ、高解像度画像処理能力も向上しています。UI・スライド・ドキュメント生成の品質も向上し、プロフェッショナル用途での完成度が高まっています。API・Amazon Bedrock・Google Cloud Vertex AI・Microsoft Foundry で利用可能で、価格は Opus 4.6 と同じ（入力: $5/百万トークン、出力: $25/百万トークン）です。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news/google-broadcom-partnership-compute" target="_blank" rel="noopener">Anthropic が Google・Broadcom とコンピュート面でのパートナーシップを拡大</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news/google-broadcom-partnership-compute" class="source-link" target="_blank" rel="noopener">🔗 Anthropic</a>
+      </div>
+      <p>Anthropic が Google および Broadcom との戦略的パートナーシップを強化し、AI 学習・推論インフラのコンピュートリソース確保を拡大すると発表しました。同社の年率換算収益は $300 億を超え、急成長する需要に対応するためのインフラ投資を加速させています。このパートナーシップにより、次世代 Claude モデルの開発サイクルの短縮が期待されます。</p>
+    </div>
 
     <div class="card">
       <div class="card-header">
@@ -154,6 +198,28 @@
 
     <div class="card">
       <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/05/cisa-adds-cisco-sd-wan-cve-2026-20182.html" target="_blank" rel="noopener">【CVSS 10.0】CVE-2026-20182: Cisco Catalyst SD-WAN が CISA KEV に追加 — 完全認証バイパスを悪用中</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/05/cisa-adds-cisco-sd-wan-cve-2026-20182.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>CISA が Cisco Catalyst SD-WAN Controller の認証バイパス脆弱性（CVE-2026-20182, CVSS 10.0）を既知悪用脆弱性カタログ（KEV）に追加しました。悪用された場合、管理者権限でコントローラーへ不正アクセスが可能です。FCEB 機関は5月17日までに修正が義務付けられており、民間企業でも早急なパッチ適用が推奨されます。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.wiz.io/blog/mini-shai-hulud-strikes-again-tanstack-more-npm-packages-compromised" target="_blank" rel="noopener">npm サプライチェーン攻撃「Mini Shai-Hulud」— @tanstack を含む 42 パッケージが汚染、週間 DL 1,200 万超</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.wiz.io/blog/mini-shai-hulud-strikes-again-tanstack-more-npm-packages-compromised" class="source-link" target="_blank" rel="noopener">🔗 Wiz Blog</a>
+      </div>
+      <p>5月11日19:20〜19:26 UTC の約6分間に、@tanstack 名前空間の 42 パッケージ・84 アーティファクトに悪意あるコードが混入されました。週間ダウンロード数 1,200 万超の <code>@tanstack/react-router</code> も含まれており、被害は Mistral AI・UiPath などにも拡散しました。影響を受けたバージョンは既に取り下げられていますが、5月11日に @tanstack パッケージを更新した環境は依存関係のロックファイルと資格情報の確認が必要です。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
         <h2><a href="https://vercel.com/changelog/next-js-may-2026-security-release" target="_blank" rel="noopener">Next.js セキュリティリリース — 13件の CVE（DoS・認証バイパス・SSRF・キャッシュポイズニング・XSS）を修正</a></h2>
         <span class="badge badge-security">security</span>
       </div>
@@ -188,8 +254,30 @@
       <p>ネイティブベクトルインデックスを内蔵した初のクラウドオブジェクトストレージ「Amazon S3 Vectors」が17の追加リージョンで利用可能になりました。1インデックスあたり最大20億ベクトル・バケットあたり最大10,000インデックスをサポートし、専用ベクトルDBと比較してコストを最大90%削減できます。RAG・AI エージェント・セマンティック検索の基盤として幅広く活用できます。</p>
     </div>
 
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up" target="_blank" rel="noopener">Google Cloud Next 2026 まとめ — クロスクラウド Lakehouse・Cross-cloud Interconnect が正式発表</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Blog</a>
+      </div>
+      <p>Google Cloud が Next 2026 の主要発表をまとめました。クロスクラウド Lakehouse（旧 BigLake）は Iceberg REST Catalog を基盤に AWS・Azure のデータへシームレスにアクセスできます。Cross-cloud Interconnect では初回読み込み時にデータをキャッシュしてエグレスコストを大幅削減するクロスクラウドキャッシングも提供されます。Microsoft Defender for Cloud は Defender ポータルへ統合され、マルチクラウドのセキュリティ管理が一元化されました。</p>
+    </div>
+
     <!-- Devセクション -->
     <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/month/05-2026/" target="_blank" rel="noopener">GitHub、Enterprise Live Migrations をパブリックプレビューで公開 — モノレポも対応、ダウンタイム最小化</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/month/05-2026/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub が Enterprise Server から Enterprise Cloud（データレジデンシー対応）へのリポジトリ移行をほぼ無停止で行える Enterprise Live Migrations をパブリックプレビューで提供開始しました。大規模モノレポにも対応し、移行中も開発者は通常通り作業を継続できます。また Copilot Agent Tasks REST API もパブリックプレビューとなり、Copilot Business/Enterprise ユーザーはプログラムでエージェントタスクを開始できるようになりました。</p>
+    </div>
 
     <div class="card">
       <div class="card-header">
@@ -218,7 +306,7 @@
 
     <div class="card">
       <div class="card-header">
-        <h2><a href="https://www.theregister.com/devops/2026/05/12/gitlab-promises-a-different-kind-of-layoff-as-biz-pivots-toward-ai/5238422" target="_blank" rel="noopener">Apple iOS 26.5 beta — RCS メッセージングに E2E 暗号化サポートを追加、iMessage との互換性向上へ</a></h2>
+        <h2><a href="https://urbantechdaily.com/biggest-tech-news-stories-2026/" target="_blank" rel="noopener">Apple iOS 26.5 beta — RCS メッセージングに E2E 暗号化サポートを追加、iMessage との互換性向上へ</a></h2>
         <span class="badge badge-other">other</span>
       </div>
       <div class="card-meta">
@@ -232,7 +320,7 @@
     </div>
   </main>
   <footer>
-    <p>Daily IT News — 2026-05-15 07:00 JST 更新 | 全14件</p>
+    <p>Daily IT News — 2026-05-15 07:00 JST 更新 | 全22件</p>
     <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
   </footer>
 </body>

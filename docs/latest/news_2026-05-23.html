@@ -24,9 +24,9 @@
       <div class="stats-bar">
         <div class="stat"><div class="stat-num">4</div><div class="stat-label">Shopify</div></div>
         <div class="stat"><div class="stat-num">4</div><div class="stat-label">AI</div></div>
-        <div class="stat"><div class="stat-num">4</div><div class="stat-label">Security</div></div>
+        <div class="stat"><div class="stat-num">3</div><div class="stat-label">Security</div></div>
         <div class="stat"><div class="stat-num">2</div><div class="stat-label">Cloud</div></div>
-        <div class="stat"><div class="stat-num">2</div><div class="stat-label">Dev</div></div>
+        <div class="stat"><div class="stat-num">3</div><div class="stat-label">Dev</div></div>
         <div class="stat"><div class="stat-num">1</div><div class="stat-label">Other</div></div>
       </div>
     </div>
@@ -37,46 +37,46 @@
 
       <div class="card shopify-card">
         <div class="card-header">
-          <h2><a href="https://shopify.dev/changelog/next-generation-events-now-available-in-developer-preview" target="_blank" rel="noopener">Next Generation Events が Developer Preview に登場 — フィールドレベルの配信制御・トリガー情報付きで Product/Customer トピックが先行公開</a></h2>
-          <span class="badge badge-shopify">shopify</span>
-        </div>
-        <div class="card-meta">
-          <a href="https://shopify.dev/changelog/next-generation-events-now-available-in-developer-preview" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
-        </div>
-        <p>Shopify の次世代イベントシステムが Developer Preview として公開された。イベントが発火するタイミング・ペイロードの内容・各デリバリをトリガーした原因をフィールドレベルで細かく制御できる。現時点では Product トピックと Customer トピックが利用可能で、今後順次拡充される予定。既存の Webhook との互換性を保ちながら段階的に移行できる設計になっている。</p>
-      </div>
-
-      <div class="card shopify-card">
-        <div class="card-header">
-          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">App Automation Tokens が全アプリの CI/CD デプロイに対応 — CLI トークンを置き換える新しい Dev Dashboard 発行トークン</a></h2>
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Storefront API Cart — 購入者ロケーション外の商品に対し警告を出力、2026-07 API バージョンから有効</a></h2>
           <span class="badge badge-shopify">shopify</span>
         </div>
         <div class="card-meta">
           <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
         </div>
-        <p>Dev Dashboard から発行できる App Automation Tokens が全アプリの CI/CD デプロイで利用可能になった。これまで CLI トークンを使っていたパイプラインはこちらに移行することが推奨される。トークンはスコープを細かく設定でき、ローテーション・失効管理が Dev Dashboard 上で一元管理できる。自動デプロイの安全性と運用性が大幅に向上する。</p>
+        <p>Storefront API の Cart が、購入者の所在地で購入できない商品を含む場合に警告を返すようになる。この変更は API バージョン 2026-07 以降が対象で、マーケット別の販売制限をユーザーへ正しく伝えるために導入される。越境 EC や地域限定販売を行うアプリは Cart の warnings フィールドを確認してユーザーに適切なフィードバックを提供するよう実装を更新することが推奨される。</p>
       </div>
 
       <div class="card shopify-card">
         <div class="card-header">
-          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">ProductVariant が Publishable に — チャネルごとの公開・非公開をバリアント単位で細かく制御可能に</a></h2>
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Admin API GraphQL — Order オブジェクトに cartToken フィールドを追加、注文とカートの紐付けが容易に</a></h2>
           <span class="badge badge-shopify">shopify</span>
         </div>
         <div class="card-meta">
           <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
         </div>
-        <p>GraphQL Admin API で ProductVariant オブジェクトが Publishable インターフェースを実装し、販売チャネルごとにバリアントの公開・非公開を個別に制御できるようになった。バリアントはデフォルトで公開状態になっており、既存の商品データへの影響はない。B2B や特定マーケット向けに特定バリアントだけを隠す用途などで有用。</p>
+        <p>GraphQL Admin API の Order オブジェクトに cartToken フィールドが追加され、注文作成に使用されたカートのトークンを直接取得できるようになった。REST API では利用可能だったが GraphQL では未対応だったため多くのアプリが回避策を取っていた。カート放棄・再購入フロー・分析ツールなどを GraphQL で構築している開発者にとって利便性が大幅に向上する。</p>
       </div>
 
       <div class="card shopify-card">
         <div class="card-header">
-          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">マーケット別ディスカウント作成が可能に — 地域・B2B 会社ロケーション・小売ロケーション単位で割引適用を制限</a></h2>
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Storefront API のボット/エージェント向け Rate Limit 強化 — Web Bot Auth 取得で上限緩和が可能に</a></h2>
           <span class="badge badge-shopify">shopify</span>
         </div>
         <div class="card-meta">
           <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
         </div>
-        <p>特定のマーケットに対してのみ有効なディスカウントを作成できるようになった。購入者の地域・B2B 会社ロケーション・小売ロケーションに基づいてアクセス可能な割引を絞り込める。日本市場限定セールや特定 B2B 顧客への専用値引きなど、きめ細かいプロモーション管理が可能になる。Storefront API と Admin API の両方から操作できる。</p>
+        <p>Shopify が Storefront API および Shopify ホスト型オンラインストアへアクセスするボット・エージェントに対してより厳しい Rate Limit を適用し始めた。クローラーや価格監視ボットの過剰なリクエストからストアを保護するのが目的。より高いレート制限が必要なボット事業者は Web Bot Auth を取得することで上限緩和が受けられる。AI エージェントからのアクセスが増加する中での予防的な措置として導入された。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.engineering/latest" target="_blank" rel="noopener">Shopify Engineering Blog: Flow の自然言語生成 — エージェンティックなモデリングで業務自動化フローを設計</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.engineering/latest" class="source-link" target="_blank" rel="noopener">🔗 Shopify Engineering Blog</a>
+        </div>
+        <p>Shopify エンジニアリングブログが「Flow generation through natural language: An agentic modeling approach」を公開した。Shopify Flow の自動化ワークフローを自然言語プロンプトから AI が自動設計する取り組みを詳述している。LLM がユーザーの意図を解析し、条件分岐・アクション・トリガーを組み合わせた Flow グラフを構築する手法が紹介されており、複雑な業務ロジックを持つワークフローでも高精度な生成を実現している。</p>
       </div>
     </div>
 
@@ -85,46 +85,46 @@
 
     <div class="card">
       <div class="card-header">
-        <h2><a href="https://developers.googleblog.com/2026/05/gemini-35-flash-generally-available.html" target="_blank" rel="noopener">Gemini 3.5 Flash が GA — フラッグシップ並みの性能をフラッシュ系の速度で提供、価格は Gemini 3.1 Pro 比で最大 1/3</a></h2>
+        <h2><a href="https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html" target="_blank" rel="noopener">Gemini Spark — Google I/O 2026 で発表の個人 AI エージェント、接続アプリを横断して推論・実行、Google AI Ultra 向け beta 開始</a></h2>
         <span class="badge badge-ai">ai</span>
       </div>
       <div class="card-meta">
-        <a href="https://developers.googleblog.com/2026/05/gemini-35-flash-generally-available.html" class="source-link" target="_blank" rel="noopener">🔗 Google Developers Blog</a>
+        <a href="https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html" class="source-link" target="_blank" rel="noopener">🔗 CNBC</a>
       </div>
-      <p>Google の Gemini 3.5 Flash が Gemini API・Google AI Studio・Android Studio を通じて一般提供（GA）になった。コーディングおよびエージェントベンチマークで Gemini 3.1 Pro を上回る性能を示しつつ、価格は最大 1/3 程度に抑えられている。Google Antigravity 経由でも利用可能で、コスト効率を重視するエージェント系ワークロードに最適な選択肢となる。</p>
+      <p>Google が Google I/O 2026 で発表した Gemini Spark は Gemini アプリ内の汎用 AI エージェントで、接続されたアプリをまたいだ情報への推論とユーザーの代わりに行動する機能を持つ。「デジタルライフのナビゲーション」を目指すと Google は説明しており、信頼テスターと Google AI Ultra 加入者向けに来週から beta 提供開始。Chrome との深い統合により任意のウェブページで文脈に応じた要約・フォーム自動入力・リアルタイム翻訳が可能になる。</p>
     </div>
 
     <div class="card">
       <div class="card-header">
-        <h2><a href="https://www.anthropic.com/news/claude-for-small-business" target="_blank" rel="noopener">Anthropic、Claude for Small Business を発表 — QuickBooks・PayPal・HubSpot など主要ツールと連携した即使えるワークフロー群</a></h2>
+        <h2><a href="https://blog.google/innovation-and-ai/sundar-pichai-io-2026/" target="_blank" rel="noopener">Google Omni ワールドモデル — 物理環境をシミュレートし映像をプロンプトで編集、Google Flow・YouTube Shorts に統合</a></h2>
         <span class="badge badge-ai">ai</span>
       </div>
       <div class="card-meta">
-        <a href="https://www.anthropic.com/news/claude-for-small-business" target="_blank" rel="noopener" class="source-link">🔗 Anthropic News</a>
+        <a href="https://blog.google/innovation-and-ai/sundar-pichai-io-2026/" class="source-link" target="_blank" rel="noopener">🔗 Google Blog</a>
       </div>
-      <p>Anthropic が中小企業向けの Claude for Small Business を発表した。QuickBooks・PayPal・HubSpot・Canva・DocuSign・Google Workspace・Microsoft 365 などと連携し、給与計算・請求書発行・営業・マーケティング・月次締め業務のワークフローを即座に実行できる。API 知識不要で使えるよう設計されており、IT リソースが限られた中小企業でも AI を業務に取り込めるようにする。</p>
+      <p>Google が Google I/O 2026 でワールドモデル Omni を発表した。テキスト・画像・音声・動画を入力として物理環境の次の状態を予測・シミュレートする。ユーザーは映像に対して「キャラクターを追加して」「この動作を変えて」とプロンプトを送るだけで動画を編集できる。Google Flow・Gemini アプリ・YouTube Shorts に統合され、ロボティクス・ゲーム・クリエイティブ制作など幅広い応用が期待される。</p>
     </div>
 
     <div class="card">
       <div class="card-header">
-        <h2><a href="https://thenextweb.com/news/meta-layoffs-8000-ai-restructuring-may-2026" target="_blank" rel="noopener">Meta が 8,000 人削減・6,000 ポスト廃止 — AI に $1,250〜$1,450 億の設備投資を集中、Zuckerberg「成功は保証されない」</a></h2>
+        <h2><a href="https://openai.com/index/new-ways-to-buy-chatgpt-ads/" target="_blank" rel="noopener">OpenAI ChatGPT Ads Manager が US 全企業に開放 — CPC 入札対応・最低出稿費用なし、エージェンシー経由も可能</a></h2>
         <span class="badge badge-ai">ai</span>
       </div>
       <div class="card-meta">
-        <a href="https://thenextweb.com/news/meta-layoffs-8000-ai-restructuring-may-2026" class="source-link" target="_blank" rel="noopener">🔗 The Next Web</a>
+        <a href="https://openai.com/index/new-ways-to-buy-chatgpt-ads/" class="source-link" target="_blank" rel="noopener">🔗 OpenAI</a>
       </div>
-      <p>Meta は従業員の約 10% にあたる 8,000 人を解雇すると発表し、あわせて 6,000 件の採用予定ポストも廃止した。削減と並行して 7,000 人が AI 関連チームへ異動になる。2026 年の設備投資ガイダンスは $1,250〜$1,450 億に引き上げられ、前年比 2 倍超の AI インフラ投資を優先する方針を明確にした。</p>
+      <p>OpenAI が ChatGPT Ads Manager を米国の全企業向けに自社配信プラットフォームとして開放した。従来は最低 $50,000 の出稿が必要だったが撤廃され、CPC（クリック課金）入札も新たに選択できるようになった。Dentsu・Omnicom・Publicis・WPP などのエージェンシーや Adobe・Criteo・StackAdapt などのアドテク企業を通じても購入可能。OpenAI は 2026 年の広告収益目標として $25 億ドルを掲げており、ChatGPT の収益化に向けた重要な一歩となる。</p>
     </div>
 
     <div class="card">
       <div class="card-header">
-        <h2><a href="https://fortune.com/2026/05/20/nvidia-q1-earnings-forecast-dividend-stock-buybacks/" target="_blank" rel="noopener">Nvidia Q1 2026 決算 — 売上高 $816 億（前年比 +85%）でアナリスト予想を超過、Q2 ガイダンスは $910 億</a></h2>
+        <h2><a href="https://the-decoder.com/google-and-meta-race-to-build-personal-ai-agents-as-anthropic-and-openai-pull-further-ahead/" target="_blank" rel="noopener">Anthropic が自律型 Managed Agents の公開ベータを拡大 — サブエージェント調整・ルーブリック評価で長期ワークフローを自律実行</a></h2>
         <span class="badge badge-ai">ai</span>
       </div>
       <div class="card-meta">
-        <a href="https://fortune.com/2026/05/20/nvidia-q1-earnings-forecast-dividend-stock-buybacks/" class="source-link" target="_blank" rel="noopener">🔗 Fortune</a>
+        <a href="https://the-decoder.com/google-and-meta-race-to-build-personal-ai-agents-as-anthropic-and-openai-pull-further-ahead/" class="source-link" target="_blank" rel="noopener">🔗 The Decoder</a>
       </div>
-      <p>Nvidia が発表した 2026 年度 Q1（2〜4 月期）の売上高は $816 億ドルで、前年同期比 85% 増を記録しアナリスト予想（$789 億）を上回った。データセンター部門は約 $730 億で全体の約 9 割を占め、Blackwell GPU の需要が牽引した。Q2 ガイダンスは $910 億と市場予想を大幅に上回り、$800 億の自社株買い計画も同時発表された。</p>
+      <p>Anthropic がコーディング・財務・法務などの長期ワークフローを処理できる自律型 Managed Agents の公開ベータアクセスを拡大した。サブエージェントの調整と、ルーブリック（評価基準）ベースのアウトカム評価ツールが含まれており、複雑な多段階タスクを自律的にこなす能力を企業に提供する。OpenAI と並んでエージェント競争をリードする Anthropic が、エンタープライズ向け自動化の普及を加速させる。</p>
     </div>
 
     <!-- Securityセクション -->
@@ -132,46 +132,35 @@
 
     <div class="card">
       <div class="card-header">
-        <h2><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-may-2026-patch-tuesday-fixes-120-flaws-no-zero-days/" target="_blank" rel="noopener">Microsoft 5月 Patch Tuesday — 118 CVE を修正、CVE-2026-41089 Windows Netlogon RCE が CVSS 9.8 で最高危険度</a></h2>
+        <h2><a href="https://thehackernews.com/2026/05/cisa-adds-exploited-langflow-and-trend.html" target="_blank" rel="noopener">CISA KEV: Langflow CVE-2025-34291 (CVSS 9.4) — CORS/CSRF 複合欠陥で任意コード実行、イラン APT MuddyWater が悪用中</a></h2>
         <span class="badge badge-security">security</span>
       </div>
       <div class="card-meta">
-        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-may-2026-patch-tuesday-fixes-120-flaws-no-zero-days/" class="source-link" target="_blank" rel="noopener">🔗 BleepingComputer</a>
+        <a href="https://thehackernews.com/2026/05/cisa-adds-exploited-langflow-and-trend.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
       </div>
-      <p>Microsoft が 5 月の Patch Tuesday で 118 件の CVE を修正した。うち 16 件が Critical、102 件が Important と評価されている。最も深刻なのは Windows Netlogon の RCE 脆弱性 CVE-2026-41089（CVSS 9.8）で、ドメイン内認証プロセスを標的にリモートからコード実行が可能。また CVE-2026-41103 は Microsoft SSO Plugin for Jira/Confluence の認証バイパスで CVSS 9.1、Entra ID を迂回して偽 ID でログインされるリスクがある。今月はゼロデイの野外悪用は確認されていない。</p>
+      <p>CISA が 5 月 22 日に Langflow の CVE-2025-34291（CVSS 9.4）を Known Exploited Vulnerabilities カタログへ追加した。過度に許可された CORS 設定・CSRF 保護の欠如・コード実行エンドポイントの 3 要因が組み合わさる脆弱性。イラン国家支援 APT グループ MuddyWater が標的ネットワークへの初期アクセス手段として悪用していることが確認されており、Langflow を使用する組織は至急修正が必要。FCEB 機関の修正期限は 6 月 4 日。</p>
     </div>
 
     <div class="card">
       <div class="card-header">
-        <h2><a href="https://www.helpnetsecurity.com/2026/05/21/microsoft-defender-vulnerabilities-cve-2026-41091-cve-2026-45498/" target="_blank" rel="noopener">Microsoft Defender の 2 つのゼロデイが実攻撃で悪用中 — CVE-2026-41091（EoP）と CVE-2026-45498 が野外で確認</a></h2>
+        <h2><a href="https://securityaffairs.com/192529/hacking/u-s-cisa-adds-trend-micro-apex-one-and-langflow-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" rel="noopener">CISA KEV: Trend Micro Apex One CVE-2026-34926 — プリ認証ディレクトリトラバーサルでサーバーへ悪意コードを注入・エージェント展開</a></h2>
         <span class="badge badge-security">security</span>
       </div>
       <div class="card-meta">
-        <a href="https://www.helpnetsecurity.com/2026/05/21/microsoft-defender-vulnerabilities-cve-2026-41091-cve-2026-45498/" class="source-link" target="_blank" rel="noopener">🔗 Help Net Security</a>
+        <a href="https://securityaffairs.com/192529/hacking/u-s-cisa-adds-trend-micro-apex-one-and-langflow-to-its-known-exploited-vulnerabilities-catalog.html" class="source-link" target="_blank" rel="noopener">🔗 Security Affairs</a>
       </div>
-      <p>Microsoft は CVE-2026-41091 と CVE-2026-45498 という 2 件の Microsoft Defender 脆弱性が実際の攻撃に悪用されていることを認めた。CVE-2026-41091（CVSS 7.8）はローカルの低権限ユーザーが Defender の処理を悪用して SYSTEM 権限を取得できる EoP 脆弱性。5 月の Patch Tuesday で修正済みだが、パッチ未適用の端末は至急更新が必要。</p>
+      <p>CISA が Trend Micro Apex One のオンプレミス版に存在するディレクトリトラバーサル脆弱性 CVE-2026-34926（CVSS 6.7）を KEV カタログに追加した。認証前のローカル攻撃者がサーバー上のキーテーブルを改ざんし、接続エージェントへ悪意あるコードを配布できる。エンドポイント保護製品が攻撃の踏み台になるため影響範囲が広く、Apex One を運用している企業は直ちにパッチ適用が必要。</p>
     </div>
 
     <div class="card">
       <div class="card-header">
-        <h2><a href="https://thehackernews.com/2026/05/on-prem-microsoft-exchange-server-cve.html" target="_blank" rel="noopener">CVE-2026-42897 — オンプレミス Exchange Server が細工メールで RCE、野外での悪用を Microsoft が確認</a></h2>
+        <h2><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">Palo Alto Networks PAN-OS — User-ID Auth Portal の境界外書き込みで未認証 RCE (CVSS 9.8)、PA/VM シリーズに影響</a></h2>
         <span class="badge badge-security">security</span>
       </div>
       <div class="card-meta">
-        <a href="https://thehackernews.com/2026/05/on-prem-microsoft-exchange-server-cve.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+        <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA KEV Catalog</a>
       </div>
-      <p>Microsoft Exchange Server の Outlook Web Access（OWA）に影響する CVE-2026-42897 が野外で悪用されていることが確認された。攻撃者は細工したメールを送信するだけで OWA 経由の RCE を達成できる。Exchange Online（クラウド版）は影響を受けないが、オンプレミス環境を運用している組織は Microsoft が提供する緊急パッチを即時適用すること。</p>
-    </div>
-
-    <div class="card">
-      <div class="card-header">
-        <h2><a href="https://www.securityweek.com/socket-raises-60-million-at-1-billion-valuation/" target="_blank" rel="noopener">Socket がシリーズ C $6,000 万調達・評価額 $10 億に — npm サプライチェーン攻撃を AI で週 1,000 件超ブロック</a></h2>
-        <span class="badge badge-security">security</span>
-      </div>
-      <div class="card-meta">
-        <a href="https://www.securityweek.com/socket-raises-60-million-at-1-billion-valuation/" class="source-link" target="_blank" rel="noopener">🔗 SecurityWeek</a>
-      </div>
-      <p>OSS サプライチェーンセキュリティ企業 Socket が Thrive Capital 主導のシリーズ C ラウンドで $6,000 万（総調達額 $1.25 億）を調達し、ユニコーン評価額に到達した。npm レジストリと直接統合し、マルウェア・脆弱性・ライセンスリスクを含むパッケージを依存解決前に検出して週 1,000 件超の攻撃をブロックしている。AI 生成コードやエージェント型開発が攻撃面を拡大させる中、ソフトウェアサプライチェーン防御への需要が急増している。</p>
+      <p>Palo Alto Networks PAN-OS の User-ID 認証ポータルに存在する境界外書き込み脆弱性が CISA の KEV カタログに掲載された。未認証の攻撃者が PA シリーズおよび VM シリーズのファイアウォール上で root 権限によるリモートコード実行を達成できる（CVSS 9.8）。ネットワーク境界防御のコアデバイスが対象であるため優先度が高く、Palo Alto が提供するパッチを速やかに適用する必要がある。</p>
     </div>
 
     <!-- Cloudセクション -->
@@ -179,24 +168,24 @@
 
     <div class="card">
       <div class="card-header">
-        <h2><a href="https://mwpro.co.uk/blog/2026/05/21/gcp-release-notes-may-21-2026/" target="_blank" rel="noopener">GCP Compute Engine — Hyperdisk Balanced HA の最大スループットが 2,400 MiB/s に倍増、GA として提供開始</a></h2>
+        <h2><a href="https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up" target="_blank" rel="noopener">Google Cloud Cross-cloud Lakehouse (旧 BigLake) — Iceberg REST Catalog で AWS/Azure/パートナーデータをサイロなく統合</a></h2>
         <span class="badge badge-cloud">cloud</span>
       </div>
       <div class="card-meta">
-        <a href="https://mwpro.co.uk/blog/2026/05/21/gcp-release-notes-may-21-2026/" class="source-link" target="_blank" rel="noopener">🔗 GCP Release Notes (Modern Workspace Pro)</a>
+        <a href="https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Blog</a>
       </div>
-      <p>Google Cloud の Compute Engine で Hyperdisk Balanced High Availability ディスクの最大スループットが従来の 1,200 MiB/s から 2,400 MiB/s へ 2 倍に引き上げられ、GA として一般提供が開始された。高可用性構成を維持したままディスク I/O ボトルネックを解消できるため、大規模データベースや分析ワークロードに特に恩恵が大きい。</p>
+      <p>Google Cloud が BigLake を発展させた Cross-cloud Lakehouse を発表した。Iceberg REST Catalog を通じて AWS・Azure・パートナー環境のデータへボーダーレスにアクセスできるレイクハウスを提供する。最初の読み込み時にクロスクラウドデータをキャッシュし、以降のクエリはエグレス費用なしで高速実行できる。AI エージェントがマルチクラウド環境のデータを自律的に活用できるよう設計されており、データサイロ解消の新アーキテクチャを提示する。</p>
     </div>
 
     <div class="card">
       <div class="card-header">
-        <h2><a href="https://cloud.google.com/blog/topics/databases/oracle-database-google-cloud-goldengate-generally-available" target="_blank" rel="noopener">Oracle Database@Google Cloud — OCI GoldenGate との統合が GA に、異種システム間のリアルタイムデータレプリケーションが可能に</a></h2>
+        <h2><a href="https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up" target="_blank" rel="noopener">GCP Data Agent Kit — MCP ツール・スキル・プラグインを統合した自律型データワークスペース構築スイート</a></h2>
         <span class="badge badge-cloud">cloud</span>
       </div>
       <div class="card-meta">
-        <a href="https://cloud.google.com/blog/topics/databases/oracle-database-google-cloud-goldengate-generally-available" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Blog</a>
+        <a href="https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Blog</a>
       </div>
-      <p>Oracle Database@Google Cloud が Oracle Cloud Infrastructure GoldenGate との統合を GA で提供開始した。GoldenGate デプロイメントと接続を Google Cloud コンソールから作成でき、異種システム間のデータレプリケーションとリアルタイム変換が可能になる。オンプレミスの Oracle 環境から Google Cloud への段階的移行や、クロスクラウドのデータパイプライン構築が容易になる。</p>
+      <p>Google Cloud が Data Agent Kit を発表した。MCP ツール・スキル・プラグインを一体化したポータブルなスイートで、自律型データワークスペースの構築に使用できる。付属の Data Science Agent は BigQuery ノートブック上でデータのロード・クリーニング・可視化の複雑な計画を自動実行する。複数の AI エージェントを連携させたデータパイプラインの構築が、インフラの詳細を意識せずに実現できるようになる。</p>
     </div>
 
     <!-- Devセクション -->
@@ -204,24 +193,35 @@
 
     <div class="card">
       <div class="card-header">
-        <h2><a href="https://deno.com/blog/v2.6" target="_blank" rel="noopener">Deno 2.6 リリース — dx コマンド（npx の後継）・tsgo による高速型検査・deno audit・細粒度パーミッションを追加</a></h2>
+        <h2><a href="https://vercel.com/changelog/next-js-may-2026-security-release" target="_blank" rel="noopener">Next.js 15.5.18/16.2.6 セキュリティリリース — 13 CVE を修正（SSRF・ミドルウェアバイパス・XSS など）、自己ホストは今すぐ更新を</a></h2>
         <span class="badge badge-dev">dev</span>
       </div>
       <div class="card-meta">
-        <a href="https://deno.com/blog/v2.6" class="source-link" target="_blank" rel="noopener">🔗 Deno Blog</a>
+        <a href="https://vercel.com/changelog/next-js-may-2026-security-release" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
       </div>
-      <p>Deno 2.6 がリリースされた。目玉は npx の代替として設計された dx コマンドで、パッケージバイナリをインストール不要で実行できる。TypeScript 型検査には Go 製の新エンジン tsgo を採用し従来比で大幅に高速化。新サブコマンド deno audit で JSR・npm パッケージの CVE を GitHub の脆弱性 DB と照合できる。また依存パッケージの最低経過日数を設定して新規公開の悪意あるパッケージを自動排除する機能も追加された。</p>
+      <p>Vercel が Next.js の協調セキュリティリリースを実施し、DoS・ミドルウェア/プロキシバイパス・SSRF・キャッシュポイズニング・XSS にわたる 13 件の CVE を修正した。CVE-2026-44578 は未認証の攻撃者がサーバー内部の任意ホストへ HTTP GET を送れる SSRF、CVE-2026-44575 は App Router で .rsc URL を使い認可チェックを完全に回避できる問題。完全な対策はパッチ適用のみで、15.5.18 および 16.2.6 に今すぐアップグレードが必要。Vercel ホスト型は自動適用済み。</p>
     </div>
 
     <div class="card">
       <div class="card-header">
-        <h2><a href="https://www.anthropic.com/news/stainless-acquisition" target="_blank" rel="noopener">Anthropic が Stainless を買収 — OpenAPI 仕様から多言語 SDK を自動生成するツールがAnthropicの開発者エコシステムへ統合</a></h2>
+        <h2><a href="https://github.blog/changelog/" target="_blank" rel="noopener">npm staged publishing が GA — npm CLI 11.15.0 でインストールソース制御を追加、サプライチェーン攻撃への防御を強化</a></h2>
         <span class="badge badge-dev">dev</span>
       </div>
       <div class="card-meta">
-        <a href="https://www.anthropic.com/news/stainless-acquisition" class="source-link" target="_blank" rel="noopener">🔗 Anthropic News</a>
+        <a href="https://github.blog/changelog/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
       </div>
-      <p>Anthropic が OpenAPI 仕様から Python・TypeScript・Go・Java・Ruby など多言語向け SDK を自動生成するツールベンダー Stainless を買収した。Stainless は Anthropic 自身の公式 SDK 生成にも使われており、開発者エコシステムの品質と一貫性を強化する狙い。今後、Claude API ユーザー向けの SDK ツーリングや MCP クライアント生成にも展開されると見られる。</p>
+      <p>GitHub が npm のサプライチェーンセキュリティ更新を実施し、staged publishing（段階的公開）が一般提供（GA）になった。npm CLI 11.15.0 では新たなインストールソース制御として、ファイル・リモート・ディレクトリ経由インストールに対する allow フラグが追加された。悪意ある新規公開パッケージや改ざん済みパッケージのインストールを組織ポリシーで制御できるようになり、CI/CD 環境でのリスクを低減できる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog" target="_blank" rel="noopener">Vercel Flat Rate CDN — Pro チーム向けに従量課金から定額制 CDN への移行を limited beta として提供開始</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Vercel が Pro チーム向けに使用量ベースの CDN 料金を固定月額に置き換える Flat Rate CDN を limited beta として開始した。トラフィックの増減にかかわらず予測可能なコストで CDN を利用できるため、スパイクのある EC やメディアサイト運営者にとってコスト管理が容易になる。また Vercel AI Gateway に Gemini 3.5 Flash が追加され、エージェント型ワークロードのモデル選択肢が広がった。</p>
     </div>
 
     <!-- Otherセクション -->
@@ -229,13 +229,13 @@
 
     <div class="card">
       <div class="card-header">
-        <h2><a href="https://techstartups.com/2026/05/21/ai-security-startup-socket-hits-1b-valuation-after-60m-raise-to-stop-software-supply-chain-attacks/" target="_blank" rel="noopener">SpaceX が S-1 を SEC に機密申請 — ティッカー「SPCX」で 2025 年売上高 $187 億（+33%）、史上最大 IPO になる可能性</a></h2>
+        <h2><a href="https://techdg.in/latest-ai-updates-may-2026-global-ai-news-trends/" target="_blank" rel="noopener">OpenAI・Anthropic が工学サービス/コンサルティング企業の買収を検討 — AI エージェント展開加速に向け投資ビークルを新設</a></h2>
         <span class="badge badge-other">other</span>
       </div>
       <div class="card-meta">
-        <a href="https://techstartups.com/2026/05/20/spacex-s1-filing-ipo/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+        <a href="https://techdg.in/latest-ai-updates-may-2026-global-ai-news-trends/" class="source-link" target="_blank" rel="noopener">🔗 Tech Insight</a>
       </div>
-      <p>SpaceX が 5 月 20 日に S-1 登録書類を SEC に機密申請し、IPO に向けた公式手続きに入った。ティッカーシンボルは「SPCX」が予定されており、2025 年売上高は $187 億ドルで前年比 33% 増。Goldman Sachs と Morgan Stanley が主幹事を務め、評価額は $1 兆超が見込まれており、史上最大の IPO になる可能性がある。Starlink 収益の急拡大が評価を支えている。</p>
+      <p>OpenAI と Anthropic がそれぞれ新設した投資ビークルを通じて、工学サービスやコンサルティング企業の買収を探索していると報じられた。OpenAI の「Deployment Company」は約 $40 億を調達中とされ、エンタープライズ向け AI エージェント展開の専門知識と顧客基盤の獲得を狙う。AI モデルの性能競争が一段落し、導入・運用フェーズでの差別化が次の競争軸になりつつあることを示している。</p>
     </div>
 
     <div style="margin-top:40px;">

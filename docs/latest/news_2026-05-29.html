@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-05-29</title>
+  <meta name="description" content="2026-05-29 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-05-29</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-05-29 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/shopify-cli-40-semver-auto-updates-removing-deprecated-flags-and-commands" target="_blank" rel="noopener">Shopify CLI 4.0 リリース — SemVer 移行・自動アップデート・非推奨フラグの完全削除</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/shopify-cli-40-semver-auto-updates-removing-deprecated-flags-and-commands" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify CLI がメジャーバージョン 4.0 に更新され、バージョニングをロマンティック方式から Semantic Versioning（MAJOR.MINOR.PATCH）に変更。インストール時に使用したパッケージマネージャーで自動アップグレードが行われるようになり、CI 環境・ローカルインストール・メジャーバージョンアップ時はスキップされる。また <code>--force</code> フラグが完全に削除され、代わりに <code>--allow-updates</code> と <code>--allow-deletes</code> フラグでデプロイ操作の粒度を細かく制御できるようになった。自動アップグレードを無効にするには <code>shopify config autoupgrade off</code> を実行する。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/new-field-carttoken-added-to-the-order-graphql-admin-api" target="_blank" rel="noopener">GraphQL Admin API の Order オブジェクトに cartToken フィールドを追加（API 2026-07）</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/new-field-carttoken-added-to-the-order-graphql-admin-api" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>GraphQL Admin API バージョン 2026-07 から、Order オブジェクトに <code>cartToken</code> フィールドが追加された。これにより GraphQL でも REST Admin API の <code>cart_token</code> フィールドと同等の情報を取得でき、注文を作成したカートとの紐づけが容易になる。Headless コマースやカスタム注文管理フローで、カートから注文への追跡をシンプルに実装できる。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/discounts-graphql-admin-api-feature-update" target="_blank" rel="noopener">Admin API 2026-07: マーケット別ディスカウント適用条件の制御が可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/discounts-graphql-admin-api-feature-update" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>GraphQL Admin API 2026-07 で、特定のマーケットにのみ適用可能なディスカウントを作成できるようになった。地域・B2B 企業ロケーション・小売ロケーションを基準に、どのバイヤーがディスカウントにアクセスできるかを細かく制御可能。国際展開や B2B 価格戦略において、マーケット固有のプロモーション施策をより柔軟に実装できる。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://decrypt.co/369383/anthropic-claude-mythos-ai-model-nearing-release-cybersecurity-alarms" target="_blank" rel="noopener">Anthropic、Claude Mythos の一般公開を「数週間以内」と表明 — サイバーセキュリティ懸念の中で段階的展開へ</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://decrypt.co/369383/anthropic-claude-mythos-ai-model-nearing-release-cybersecurity-alarms" class="source-link" target="_blank" rel="noopener">🔗 Decrypt</a>
+      </div>
+      <p>Anthropic は Mythos クラスモデルを「数週間以内に全顧客に提供できると見込んでいる」と発表した。Claude Mythos は自律的に脆弱性を発見し複雑なサイバー攻撃を完遂できるとして研究者から懸念が示されており、厳しく制限されたロールアウトが続いていた。Anthropic は現在も必要なセーフガードの開発を進めており、すべての顧客が同レベルのアクセスを受けるかどうかについては明言していない。Project Glasswing の一環として Claude Security パブリックベータおよびサイバー検証ツールも同時に展開中。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://openai.com/index/openai-launches-the-deployment-company/" target="_blank" rel="noopener">OpenAI、$40億規模の AI コンサルティング子会社「OpenAI Deployment Company」設立 — TPG ら 19 社が参画</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://openai.com/index/openai-launches-the-deployment-company/" class="source-link" target="_blank" rel="noopener">🔗 OpenAI</a>
+      </div>
+      <p>OpenAI は大企業向けのフロンティア AI 導入を専門とする多数株主保有の子会社「OpenAI Deployment Company（DeployCo）」を設立した。初期投資額は 40 億ドル超・$100 億のプリマネー評価額で、TPG を筆頭に Advent・Bain Capital・Brookfield など 19 社が参画。ロンドンの応用 AI 企業 Tomoro を即座に買収し、約 150 名の Forward Deployed Engineers を確保した。McKinsey・Bain & Company・Capgemini ら大手コンサルも投資パートナーとして名を連ねており、$3,750 億規模の企業 AI 導入市場を狙う。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-encyclical-magnifica-humanitas-ai.html" target="_blank" rel="noopener">ローマ教皇レオ14世、初回回勅「Magnifica Humanitas」で強力な AI 規制を要求 — 「AI の武装解除」と「人間中心の設計」を訴え</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-encyclical-magnifica-humanitas-ai.html" class="source-link" target="_blank" rel="noopener">🔗 Vatican News</a>
+      </div>
+      <p>教皇レオ14世は5月25日、42,300語に及ぶ初回回勅「Magnifica Humanitas（壮大なる人間性）」を発表し、AI の強力な規制を訴えた。「人間の生死に関わる決断を機械に委ねることは許されない」と断言し、経済的・軍事的競争から AI を「武装解除」することを求めた。産業革命に関するレオ13世の「Rerum Novarum」（1891年）の135周年に合わせて発表されており、AI をめぐる道徳的・哲学的議論に宗教的権威が加わった形となる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news/anthropic-kpmg" target="_blank" rel="noopener">KPMG と Anthropic がグローバル戦略提携 — 276,000名の全社員に Claude を展開、Digital Gateway に統合</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news/anthropic-kpmg" class="source-link" target="_blank" rel="noopener">🔗 Anthropic</a>
+      </div>
+      <p>KPMG は Anthropic との戦略的グローバル提携を発表し、276,000名超の全社員が Claude にアクセスできるようになった。まず Tax &amp; Legal 部門から展開を開始し、9月までに Microsoft Azure 上の全社プラットフォーム Digital Gateway への完全統合を予定。従来数週間かかっていた規制コンプライアンスエージェントの構築が数分で可能になったと税務部門が報告している。Anthropic は KPMG を PE（プライベートエクイティ）分野の優先パートナーとして位置づけ、新製品の共同開発も予定している。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/05/on-prem-microsoft-exchange-server-cve.html" target="_blank" rel="noopener">Microsoft Exchange Server CVE-2026-42897 — CISA 連邦機関パッチ適用期限が本日5月29日に到来、OWA 経由で細工メールが XSS を誘発</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/05/on-prem-microsoft-exchange-server-cve.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>オンプレミス版 Exchange Server に影響する CVE-2026-42897（CVSS 8.1）が野生で悪用中であり、CISA が5月15日に KEV カタログへ追加、連邦機関への適用期限が本日5月29日となっている。攻撃者が細工した電子メールを送り付け、受信者が Outlook Web Access（OWA）で開くと任意の JavaScript が実行されるクロスサイトスクリプティング脆弱性。Exchange Server 2016・2019・Subscription Edition が対象で、Exchange Online は非影響。EM Service を有効にしている場合は自動緩和措置が配信されているが、OWA の印刷カレンダーやインライン画像に既知の問題あり。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://sharkstriker.com/blog/may-2026-data-breaches/" target="_blank" rel="noopener">2026年5月の主要データ侵害まとめ — cPanel ゼロデイがグアム政府サイトを攻撃、Canvas 漏洩で大学 9,000 機関に影響</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://sharkstriker.com/blog/may-2026-data-breaches/" class="source-link" target="_blank" rel="noopener">🔗 SharkStriker</a>
+      </div>
+      <p>SharkStriker が公開した5月の侵害事例まとめによると、cPanel のゼロデイ脆弱性を悪用した攻撃者がグアム政府の複数 Web サイトを侵害し、一部行政サービスが停止した。またシンガポール国立大学をはじめ世界 9,000 以上の教育機関が関与する Canvas プラットフォームの大規模データ侵害も継続中。Chanhassen Dinner Theatres はサイバー攻撃でシステムが停止し公演キャンセルを余儀なくされた。医療・教育・公共インフラへの攻撃が増加傾向にあり、侵害規模と被害範囲が拡大している。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.esecurityplanet.com/weekly-roundup/supply-chain-attacks-ai-security-and-major-breaches-define-this-week-in-cybersecurity-in-may-2026/" target="_blank" rel="noopener">2026年5月のサイバーセキュリティ週次レポート — サプライチェーン攻撃・AI セキュリティ・大規模侵害の3大トレンド</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.esecurityplanet.com/weekly-roundup/supply-chain-attacks-ai-security-and-major-breaches-define-this-week-in-cybersecurity-in-may-2026/" class="source-link" target="_blank" rel="noopener">🔗 eSecurity Planet</a>
+      </div>
+      <p>eSecurity Planet の週次分析によると、今週はソフトウェアサプライチェーン攻撃・AI 生成コードに起因するセキュリティリスク・大規模データ侵害の3つがトレンドを形成した。AI ツールが生成するコードの脆弱性問題から、サイバーセキュリティ専門家の採用が急加速していることも報告されている。また CreativeAI で生成したコンテンツを悪用したフィッシング・ソーシャルエンジニアリング攻撃の高度化も観測されており、防御側も AI ツールを活用した対策強化が急務となっている。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up" target="_blank" rel="noopener">Google Cloud Cross-cloud Lakehouse が GA — AWS・Azure データへのクロスクラウドキャッシングでエグレス費用を大幅削減</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Blog</a>
+      </div>
+      <p>Google Cloud は Cross-cloud Lakehouse を一般提供（GA）とし、AWS・Azure 上のデータへの初回読み取り時にクロスクラウドデータをキャッシュする機能を提供。後続クエリのエグレス費用を大幅に削減しつつ、AI エージェントがクラウドを横断してデータにシームレスにアクセスできる環境を実現する。さらにパートナーエコシステムを含む広範なデータソースのサイロを解消し、マルチクラウド環境での統一的なデータ分析基盤を構築できる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-whats-next-with-aws-2026-amazon-quick-openai-partnership-and-more-may-4-2026/" target="_blank" rel="noopener">AWS が「Amazon Quick」と OpenAI パートナーシップを拡大 — GPT-5.5・Codex・Managed Agents を Amazon Bedrock で限定プレビュー</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-whats-next-with-aws-2026-amazon-quick-openai-partnership-and-more-may-4-2026/" class="source-link" target="_blank" rel="noopener">🔗 AWS News Blog</a>
+      </div>
+      <p>AWS は「What's Next with AWS 2026」イベントで、AI ワーク向けアシスタント「Amazon Quick」のデスクトップアプリと拡張インテグレーションを発表。また OpenAI との提携拡大により、GPT-5.5・Codex・Managed Agents を Amazon Bedrock 上で限定プレビューとして提供開始した。AWS は Amazon Connect を供給チェーン・採用・顧客体験・医療向けの4つのエージェント型 AI ソリューションへと拡張し、エンタープライズ向け AI インフラの一元化を加速している。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-05-26-target-copilot-models-to-organizations-with-model-rules/" target="_blank" rel="noopener">GitHub Copilot が組織ごとのモデルルール設定をパブリックプレビューで公開 — エンタープライズで AI モデルの細粒度制御が可能に</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-05-26-target-copilot-models-to-organizations-with-model-rules/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub Copilot Enterprise の管理者は、組織ごとに利用可能な AI モデルを個別指定できる「Targeted Model Rules」がパブリックプレビューに移行した。従来はエンタープライズ全体に単一のモデル設定しか適用できなかったが、組織単位で異なるモデルを割り当てることが可能になる。開発チームのニーズやコンプライアンス要件に応じて AI モデルを柔軟に管理でき、大規模組織での Copilot ガバナンス強化に貢献する。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techcommunity.microsoft.com/blog/copilot-studio-blog/computer-using-agents-in-microsoft-copilot-studio-are-now-generally-available/4519427" target="_blank" rel="noopener">Microsoft Copilot Studio のコンピューター使用エージェントが GA — API 不要で任意アプリを操作、OpenAI CUA と Claude Sonnet 4.5 をサポート</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techcommunity.microsoft.com/blog/copilot-studio-blog/computer-using-agents-in-microsoft-copilot-studio-are-now-generally-available/4519427" class="source-link" target="_blank" rel="noopener">🔗 Microsoft Tech Community</a>
+      </div>
+      <p>Microsoft Copilot Studio のコンピューター使用エージェント（CUA）が5月13日に全商用 Power Platform 環境で一般提供（GA）となった。API を必要とせず、ブラウザ・画面・キーボードを使って人間と同様に任意のアプリを操作でき、ビジョンと推論でライブ UI を解析してタスクを実行する。OpenAI CUA と Claude Sonnet 4.5 の両モデルをサポートし、Azure Key Vault によるクレデンシャル保管・Microsoft Purview による監査ログ・ヒューマンインザループレビューも構成可能。マルチステップ Workflow への組み込みもプレビューで提供開始された。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-05-29 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

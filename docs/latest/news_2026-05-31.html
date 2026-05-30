@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-05-31</title>
+  <meta name="description" content="2026-05-31 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-05-31</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-05-31 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Dev</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/ship-and-pickup-in-one-order-feature-preview" target="_blank" rel="noopener">1注文でシップ＆ピックアップを同時サポート — フィーチャープレビュー公開、配送と店舗受け取りの混在フルフィルメントが可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/ship-and-pickup-in-one-order-feature-preview" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify Plus / Enterprise ストアで、シップと店舗ピックアップを1回の注文に混在させられる機能がフィーチャープレビューとして公開された。API に破壊的スキーマ変更はないが、Order が複数の fulfillmentOrder を持てるようになり、各 fulfillmentOrder が異なる delivery_method（SHIPPING または PICK_UP）を保持できる。配送・フルフィルメント情報の読み取り・計算・表示を行うアプリは動作への影響が生じる可能性があるため、Plus プランのデベロッパーストアでフィーチャープレビューを有効化し、早急なテストが推奨される。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/more-admin-intents-now-support-settings" target="_blank" rel="noopener">管理画面 Settings インテント 7種を追加 — 通知・決済キャプチャ・ギフトカード・配送プロファイル・事業者詳細に API 1回で直接遷移</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/more-admin-intents-now-support-settings" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>3月に導入した Settings インテントが7種類拡張された。通知・決済キャプチャ・ギフトカード・配送プロファイル・事業者詳細の各設定画面に対応し、アプリから API を1回呼び出すだけで Shopify 管理画面の該当 Settings ページがコンテキストオーバーレイとして開き、対象フィールドへ自動スクロールされる。マーチャントに複雑な操作を強いることなく必要な設定へ誘導するワークフローの実装が容易になった。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/checkout-and-accounts-configuration-api-for-unified-branding-across-checkout-customer-accounts-and-sign-in" target="_blank" rel="noopener">Checkout And Accounts Configuration API 提供開始 — Checkout Profile API と Checkout Branding API を統合廃止、チェックアウト〜サインインのブランディングを一元管理</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/checkout-and-accounts-configuration-api-for-unified-branding-across-checkout-customer-accounts-and-sign-in" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>API バージョン 2026-04 から、Checkout Profile API と Checkout Branding API が廃止され、新しい Checkout And Accounts Configuration API に統合された（Shopify Plus 限定）。designTokens とコンポーネントでブランディングを一度設定すれば、チェックアウト・カスタマーアカウント・サインイン全ページへ一貫したスタイルが自動適用される。表面固有のロゴ・カラー・セクションスタイルの上書きも可能。Checkout Branding API を使用しているアプリは移行対応が必要。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.marktechpost.com/2026/05/17/vercel-labs-introduces-zero-a-systems-programming-language-designed-so-ai-agents-can-read-repair-and-ship-native-programs/" target="_blank" rel="noopener">Vercel Labs が Zero プログラミング言語を発表 — AIエージェントがコードを読み・修復・デプロイできる初のシステム言語、コンパイラが JSON 出力</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.marktechpost.com/2026/05/17/vercel-labs-introduces-zero-a-systems-programming-language-designed-so-ai-agents-can-read-repair-and-ship-native-programs/" class="source-link" target="_blank" rel="noopener">🔗 MarkTechPost</a>
+      </div>
+      <p>Vercel Labs が「Zero」と命名したシステムプログラミング言語を発表した（5月17日）。コンパイラが JSON を出力するため、AIエージェントが人間による翻訳を介さずに任意の状態からコードを直接読み取り・修復・ネイティブプログラムとしてデプロイできるよう設計されている。エージェントコーディングループにおける「人間-AI 変換ギャップ」を解消し、AIがネイティブバイナリレベルのプログラムを自律的に扱えることを目指す。AI ファーストな次世代ツールチェーンを見据えた先行的な取り組み。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.com/features/copilot/whats-new" target="_blank" rel="noopener">GitHub Copilot Memory を強化 — リポジトリ単位のオフスイッチ・/memory コマンド追加、管理者がリポジトリファクトの保存・参照を完全無効化可能に</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.com/features/copilot/whats-new" class="source-link" target="_blank" rel="noopener">🔗 GitHub Copilot What's New</a>
+      </div>
+      <p>GitHub Copilot の Memory 機能が強化された（5月20日）。リポジトリ管理者はリポジトリの Copilot 機能コントロールから Memory を無効化でき、以後そのリポジトリのファクトは保存も参照もされなくなる。Copilot CLI に新しい /memory コマンドが追加され、個人・リポジトリ単位のファクト管理が可能に。個別メモリの削除操作も改善された。プライバシー管理とコンプライアンス要件に対応した強化措置。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/introducing-the-next-generation-of-amazon-opensearch-serverless-for-building-your-agentic-ai-applications/" target="_blank" rel="noopener">Amazon OpenSearch Serverless 次世代版 GA — エージェントAI向けにゼロから再構築、最大60%コスト削減・20倍高速スケーリング・Claude Code / Cursor / Codex とのネイティブ統合</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/introducing-the-next-generation-of-amazon-opensearch-serverless-for-building-your-agentic-ai-applications/" class="source-link" target="_blank" rel="noopener">🔗 AWS News Blog</a>
+      </div>
+      <p>Amazon OpenSearch Serverless の次世代版が5月28日に一般提供（GA）となった。AIエージェントのワークロードに特化してアーキテクチャを全面刷新し、コンピュートとストレージを完全分離。ゼロからの即時スケーリングと従来比最大20倍高速な容量拡張、最大60%のコスト削減を実現する。Vercel・Kiro などの AI 開発プラットフォームとネイティブ統合し、OpenSearch Agent Skills を通じて Claude Code・Cursor・Codex などのコーディングプラットフォームへ検索・ベクトルバックエンドを直接接続できる。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.verizon.com/business/resources/reports/dbir/" target="_blank" rel="noopener">Verizon DBIR 2026 — 脆弱性悪用が資格情報窃取を抜いて19年来初のトップ侵入経路に、サードパーティ侵害が前年比60%増の48%へ急増</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.verizon.com/business/resources/reports/dbir/" class="source-link" target="_blank" rel="noopener">🔗 Verizon DBIR 2026</a>
+      </div>
+      <p>Verizon の2026年データ侵害調査レポート（DBIR）が発表された。ソフトウェア脆弱性の悪用が侵入経路の31%（前年20%から上昇）を占め、レポート19年の歴史で初めて資格情報窃取をトップから引き下ろした。ランサムウェアは侵害の48%に登場し、サードパーティ経由の侵害は前年比60%増の48%に拡大。CVE 修復の中央値は43日（前年32日）に悪化し、CISA KEV カタログ内の重大 CVE を完全修復した組織は38%から26%に減少した。Shadow AI の利用が前年比3倍の45%に上昇したことも報告されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/05/attackers-use-llm-agent-for-post.html" target="_blank" rel="noopener">LLMエージェントが自律的に侵害を拡大する攻撃を初観測 — Marimo CVE-2026-39987 RCE 悪用後、AWS クレデンシャル窃取〜内部DB流出まで約1時間で完遂</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/05/attackers-use-llm-agent-for-post.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>Sysdig が、Marimo ノートブックの事前認証 RCE 脆弱性 CVE-2026-39987（Marimo 0.20.4以前）を悪用後に LLMエージェントを使い自律的に侵害を拡大する攻撃を初観測した（5月10日）。エージェントは AWS IMDS・Secrets Manager からクレデンシャルを抽出し、SSH キーで内部バスチョンを4経路で経由して PostgreSQL データベースのスキーマと全データを約2分で窃取。HEREDOC でコンテキストウィンドウを管理しながら出力をまとめる LLMエージェント特有の痕跡を確認した。Marimo 0.23.0 以降で修正済みのため早急なアップデートと全クレデンシャルのローテーションが必要。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/05/pan-os-globalprotect-authentication.html" target="_blank" rel="noopener">PAN-OS CVE-2026-0257（GlobalProtect 認証バイパス）が積極悪用中 — CISA が KEV 追加、Rapid7 が5月17日以降2波の攻撃キャンペーンを観測</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/05/pan-os-globalprotect-authentication.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>Palo Alto Networks PAN-OS の GlobalProtect に存在する認証バイパス脆弱性 CVE-2026-0257（CVSS 7.8）が野生で積極的に悪用されており、CISA が5月29日に KEV カタログへ追加した。「認証オーバーライド」機能のセッションクッキーが HTTPS サービスと同一証明書を共有する場合にのみ発現し、攻撃者は正規エンドポイントを偽装して未認証で VPN 接続を確立できる。Rapid7 は5月17日の第1波（Vultr 経由）と5月21日の第2波（Dromatics Systems 経由）を確認しており、一部の被害者では VPN IP アドレスが付与され内部ネットワークへの直接アクセスが可能になった。5月13日公開の修正パッチへの早急な適用が必要。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/05/27/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA KEV 5月27日更新 — LiteSpeed cPanel 特権昇格・BerriAI LiteLLM SQL インジェクション・Daemon Tools マルウェアの3件を追加</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/05/27/cisa-adds-three-known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA が5月27日に Known Exploited Vulnerabilities（KEV）カタログへ3件の脆弱性を追加した。LiteSpeed cPanel プラグインの特権昇格（任意の cPanel ユーザーがルート権限でスクリプトを実行可能）、BerriAI LiteLLM の SQL インジェクション（プロキシDB からの認証なしデータ読み取り・改ざん）、Daemon Tools Lite の埋め込みマルウェアコードが対象。連邦機関には期限内の修復が義務付けられており、民間組織にも迅速な対応が推奨される。特に LiteLLM は LLM プロキシとして広く使用されているため影響範囲が大きい。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes" target="_blank" rel="noopener">Microsoft Defender for Cloud が AWS RDS サポートを6月1日に GA — マルチクラウド環境の DB セキュリティ監視を統合管理、課金も同日開始</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Microsoft Defender for Cloud リリースノート</a>
+      </div>
+      <p>Microsoft Defender for Open-Source Relational Databases が2026年6月1日より AWS RDS インスタンスに対して一般提供（GA）となり、同日から課金も開始する。これにより Azure 以外のクラウド環境の RDS インスタンスに対しても脅威検出・アラート・セキュリティ推奨事項が提供される。マルチクラウド戦略を採用する組織が Microsoft Defender for Cloud の一元管理ダッシュボードで AWS の DB リソースもカバーできるようになる。対象は PostgreSQL・MySQL・MariaDB などのオープンソース RDB。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog/experimental-native-binaries-for-vercel-cli" target="_blank" rel="noopener">Vercel CLI に Node.js 不要のネイティブバイナリが実験的提供開始 — コード署名済み・macOS Keychain 連携、CI/コンテナ環境でのセットアップを大幅簡略化</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog/experimental-native-binaries-for-vercel-cli" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Vercel CLI（5月27日）に、Node.js ランタイム不要で動作するネイティブバイナリがオプトインの実験的機能として追加された。バイナリはコード署名済みで OS が Vercel の正規バイナリを検証でき、macOS ではシステム Keychain にスコープされた認証情報を保存するため他のプロセスからアクセスできない。macOS・Linux・Windows（x64/arm64）に対応し、<code>pnpm i -g @vercel/vc-native -f</code> でオプトイン可能。Node.js の管理が不要な軽量コンテナ・CI ジョブ・マネージド開発ワークスペースでのメリットが大きい。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.microsoft.com/en-us/security/blog/2026/05/29/33-malicious-npm-packages-abuse-dependency-confusion-profile-developer-environments/" target="_blank" rel="noopener">悪意ある npm パッケージ 33件が Dependency Confusion で開発者環境をプロファイリング — 9組織スコープを偽装し C2 から難読化ペイロードを取得</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.microsoft.com/en-us/security/blog/2026/05/29/33-malicious-npm-packages-abuse-dependency-confusion-profile-developer-environments/" class="source-link" target="_blank" rel="noopener">🔗 Microsoft Security Blog</a>
+      </div>
+      <p>Microsoft Security が5月29日、Dependency Confusion 手法を悪用した33件の悪意ある npm パッケージを公開した。3つのメンテナーエイリアスで2回に分けて公開（5月28-29日）され、9つの組織スコープの内部パッケージを偽装。package.json に GitHub Enterprise・Jira・ドキュメントポータルの社内 URL を記載して正規パッケージに見せかけ、インストール後に難読化された postinstall スクリプトが C2 サーバーからペイロードをダウンロード・実行する。5月28日以降に該当バージョンをインストールした環境はクレデンシャルの全ローテーションが必要。<code>npm install --ignore-scripts</code> の使用が緊急推奨される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cybersecuritynews.com/pnpm-11-turns-on-minimum-release-age/" target="_blank" rel="noopener">pnpm 11 が Minimum Release Age をデフォルト有効化 — npm サプライチェーン攻撃への対策として新規パッケージの即時インストールを72時間ブロック</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cybersecuritynews.com/pnpm-11-turns-on-minimum-release-age/" class="source-link" target="_blank" rel="noopener">🔗 CyberSecurity News</a>
+      </div>
+      <p>pnpm 11 が「Minimum Release Age」（最低リリース経過時間）機能をデフォルトで有効化した。新規公開されたパッケージバージョンは公開から一定時間（デフォルト72時間）が経過するまでインストールできなくなる。これにより、TanStack や Mistral AI などで相次いだ npm サプライチェーン攻撃のように直後に悪意ある内容に置き換えられたバージョンへの即時感染を抑止できる。攻撃者が汚染バージョンを即時インストールさせる時間的余裕を奪うことで、セキュリティチームやパッケージメンテナーが検知・対応する猶予を生み出す。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-05-31 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

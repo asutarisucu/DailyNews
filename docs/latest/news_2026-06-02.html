@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-06-02</title>
+  <meta name="description" content="2026-06-02 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-06-02</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-06-02 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>13件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Dev</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/publish-and-unpublish-product-variants-independently-from-product" target="_blank" rel="noopener">製品バリアントを製品とは独立して公開/非公開に — API 2026-07 で Publishable インターフェースをバリアントに拡張、チャネル・カタログ単位の細粒度制御が可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/publish-and-unpublish-product-variants-independently-from-product" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>API バージョン 2026-07 より、ProductVariant が Publishable インターフェースを実装し、製品を削除・複製・ストアフロントコードで非表示にすることなく、チャネルやカタログ単位でバリアントを個別に公開/非公開に切り替えられるようになった。バリアントはデフォルトで公開状態（オプトアウト型）で、製品レベルの公開設定が引き続き優先されるため既存アプリへの破壊的変更はない。事前公開したくないバリアントを <code>variant.published: false</code> で作成できるほか、特定チャネルへの露出を細かくコントロールできる。B2B カタログや限定販売戦略の実装が大幅に簡素化される。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/expiring-offline-access-tokens-required-for-all-public-apps-as-of-january-1-2027" target="_blank" rel="noopener">全パブリックアプリへの Expiring Offline Access Token が2027年1月1日に義務化 — 4月1日からの新規アプリ要件を既存アプリ全体に拡大</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/expiring-offline-access-tokens-required-for-all-public-apps-as-of-january-1-2027" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>2026年4月1日以降に作成された新規パブリックアプリに適用されていた Expiring Offline Access Token（有効期限付きオフラインアクセストークン）の要件が、2027年1月1日より既存の全パブリックアプリに拡大されることが正式に発表された。セキュリティ強化を目的とした措置で、Admin API への呼び出しに旧来の無期限トークンを使い続けているアプリは、期限までにトークン更新ロジックの実装が必要。Shopify は対応手順とガイドを開発者ドキュメントで提供しており、猶予期間は残り約7か月。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/remove-deprecated-errorcode-and-errormessage-fields-from-subscriptionbillingattempt" target="_blank" rel="noopener">SubscriptionBillingAttempt の errorCode・errorMessage フィールドが API 2026-04 から非表示に — processingError.code / processingError.message への移行が必要</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/remove-deprecated-errorcode-and-errormessage-fields-from-subscriptionbillingattempt" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>SubscriptionBillingAttempt オブジェクトの <code>errorCode</code> および <code>errorMessage</code> フィールドが、API バージョン 2026-04 から非表示（hidden）となった。両フィールドは 2025-01 で <code>processingError</code> が導入された際に非推奨（deprecated）となっており、今回の変更で実質的に削除された形になる。定期課金アプリはクエリを <code>processingError.code</code> および <code>processingError.message</code> を使用するよう更新する必要がある。2026-04 以降のバージョンで旧フィールドを参照しているアプリはエラーハンドリングが機能しなくなる。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/" target="_blank" rel="noopener">Anthropic が SEC へ秘密裏に S-1 申請 — 評価額 $965B・ARR $47B超で今秋IPOを準備、Claude開発会社としては初の公開企業へ</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/" class="source-link" target="_blank" rel="noopener">🔗 TechCrunch</a>
+      </div>
+      <p>Anthropic は6月1日、SEC（米証券取引委員会）に機密 S-1 草案（IPO 目論見書）を提出したことを発表した。直近の シリーズH で $650億を調達し評価額は $965B に達しており、年間収益ランレートは $47B超と前年末比約80倍の急成長を続けている。株式数・価格はまだ未設定で、公開市場での上場は今秋を見込む。競合の OpenAI も同様の IPO 準備を進めており、AI 企業の「上場レース」が本格化している。秘密申請により財務詳細は非公開のまま、IPO 評価額はさらに兆ドル規模に達する可能性も示唆されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.analyticsinsight.net/news/openai-hires-finance-leaders-ahead-of-q4-2026-ipo-eyes-lead-over-anthropic" target="_blank" rel="noopener">OpenAI が財務幹部を増強し Q4 2026 上場に向けた準備を加速 — 秘密 S-1 提出済み・ARR $250億・Goldman Sachs/Morgan Stanley が主幹事</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.analyticsinsight.net/news/openai-hires-finance-leaders-ahead-of-q4-2026-ipo-eyes-lead-over-anthropic" class="source-link" target="_blank" rel="noopener">🔗 Analytics Insight</a>
+      </div>
+      <p>OpenAI は最高会計責任者（CAO）の Ajmere Dale と企業財務責任者の Cynthia Gaylor を採用し、IPO 準備組織を強化した。5月22日に SEC へ秘密 S-1 を提出済みで、ゴールドマン・サックスおよびモルガン・スタンレーが主幹事を務める。ARR（年間収益ランレート）は $250億に達しており、Q4 2026（早ければ9月）の上場を目指す。Anthropic の IPO 申請と重なる形で、どちらが先に公開企業となるかの競争が激化。ただし Q1 2026 時点で OpenAI は収益 $1 に対して $1.22 の損失を計上しており、収益性の確立が上場後の最大課題となる見込み。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://platform.claude.com/docs/en/about-claude/model-deprecations" target="_blank" rel="noopener">【期限まで2週間】Claude Sonnet 4・Opus 4 が6月15日に廃止 — claude-sonnet-4-6・claude-opus-4-8 への API 移行が必要</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://platform.claude.com/docs/en/about-claude/model-deprecations" class="source-link" target="_blank" rel="noopener">🔗 Anthropic Platform Docs</a>
+      </div>
+      <p>Anthropic の Claude Sonnet 4（<code>claude-sonnet-4-20250514</code>）および Claude Opus 4（<code>claude-opus-4-20250514</code>）が2026年6月15日をもって廃止（Retired）となる。後継は claude-sonnet-4-6（Sonnet 4.6）および claude-opus-4-8（Opus 4.8）で、API を直接指定しているアプリは廃止日までにモデル ID を更新しなければリクエストが失敗する。SDK 経由でエイリアスを使用している場合は自動移行されるが、コードベースに旧モデル ID をハードコードしている箇所は必ず確認が必要。本番環境への影響を避けるため、残り2週間での移行作業を推奨する。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.helpnetsecurity.com/2026/05/21/microsoft-defender-vulnerabilities-cve-2026-41091-cve-2026-45498/" target="_blank" rel="noopener">【明日期限】Microsoft Defender 脆弱性 CVE-2026-41091/CVE-2026-45498 が野生で悪用中 — CISA KEV に追加、連邦機関は6月3日までにパッチ適用必須</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.helpnetsecurity.com/2026/05/21/microsoft-defender-vulnerabilities-cve-2026-41091-cve-2026-45498/" class="source-link" target="_blank" rel="noopener">🔗 Help Net Security</a>
+      </div>
+      <p>Microsoft Defender（Malware Protection Engine）に2件の脆弱性が発見されており、両方とも野生での積極的な悪用が確認されている。CVE-2026-41091（CVSS 7.8）は Malware Protection Engine がリンクを解決する際の処理ミスを悪用した特権昇格脆弱性で、SYSTEM 権限が取得可能。CVE-2026-45498（CVSS 4.0）は Defender をサービス不能（DoS）状態にする脆弱性。CISA が両件を KEV カタログに追加し、連邦民間行政機関（FCEB）への修正期限は明日6月3日。修正済み Malware Protection Engine v1.1.26040.8 は Windows Update 経由で自動配布されているが、エアギャップ環境や更新が遅延している場合は手動適用が必要。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/05/cisa-adds-actively-exploited-linux-root.html" target="_blank" rel="noopener">CVE-2026-31431「Copy Fail」— Linux kernel の特権昇格脆弱性が CISA KEV に追加、2017年以降のほぼ全ディストリビューションに影響</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/05/cisa-adds-actively-exploited-linux-root.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>Linux カーネルの暗号サブシステムに存在するローカル特権昇格脆弱性 CVE-2026-31431（CVSS 7.8、通称「Copy Fail」）が CISA の Known Exploited Vulnerabilities カタログに追加された。未特権のローカルユーザーが 732 バイトの Python ベースのエクスプロイトでカーネルのページキャッシュを破壊し、ほぼ100%の成功率でルート権限を取得できる。Ubuntu・RHEL・Amazon Linux を含む2017年以降のほぼ全メジャーディストリビューションが影響を受ける。Go・Rust 版の実装も OSS リポジトリで確認されており、攻撃の高度化が懸念される。Linux カーネル 6.18.22・6.19.12・7.0 以降で修正済み。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/05/ivanti-epmm-cve-2026-6973-rce-under.html" target="_blank" rel="noopener">Ivanti EPMM CVE-2026-6973（CVSS 7.2）が限定的な野生悪用で CISA KEV に追加 — 認証済み管理者権限でリモートコード実行が可能</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/05/ivanti-epmm-cve-2026-6973-rce-under.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>Ivanti Endpoint Manager Mobile（EPMM）のバージョン 12.8.0.0 以前に存在する不適切な入力検証の脆弱性 CVE-2026-6973 が、CISA の KEV カタログに追加された。攻撃に成功するには管理者権限の認証が必要だが、認証済み攻撃者はリモートでコードを実行でき、MDM サーバーへの完全な制御を奪われる可能性がある。Ivanti は「ごく限られた顧客への悪用を認識している」と発表。修正版は 12.6.1.1・12.7.0.1・12.8.0.1 で提供済みで、クラウド版の Ivanti Neurons for MDM は非影響。オンプレミス EPMM を運用している組織は即時アップグレードが必要。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/about-aws/whats-new/2026/05/aws-announces-AWS-interconnect-multicloud-oci-preview/" target="_blank" rel="noopener">AWS Interconnect が Oracle Cloud Infrastructure (OCI) とのマルチクラウド接続をプレビュー開始 — Google Cloud に続く第2のクラウドとの完全管理型プライベート接続</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/about-aws/whats-new/2026/05/aws-announces-AWS-interconnect-multicloud-oci-preview/" class="source-link" target="_blank" rel="noopener">🔗 AWS What's New</a>
+      </div>
+      <p>AWS は5月15日より、AWS Interconnect multicloud の Oracle Cloud Infrastructure（OCI）対応をパブリックプレビューとして開始した。Google Cloud との GA（4月14日）に続く第2のクラウドパートナーへの拡張で、OCI FastConnect と AWS Direct Connect を組み合わせた完全管理型のプライベートクロスクラウド接続を提供する。BGP ルーティング・暗号化・冗長性・ネットワーク分離はすべてマネージドで、ユーザー側での複雑な物理接続設定が不要。現在は us-east-1（N.バージニア）リージョンで利用可能で、将来的に GA 予定。Azure との接続も2026年中に提供される見込み。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/" target="_blank" rel="noopener">GitHub Copilot 課金・プランが6月1日から更新 — Copilot コードレビューが Actions 分を消費開始、ユーザー予算制御が一般提供（GA）</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>6月1日から GitHub Copilot の課金モデルに複数の変更が加わった。Copilot コードレビュー機能が GitHub Actions の実行時間（minutes）を消費するようになり、デフォルトランナーは組織管理者が全リポジトリ横断で一括設定可能になった。ユーザーレベルの予算制御機能がオーガニゼーション・エンタープライズ向けに GA となり、管理者はユーザーごとの AI クレジット上限設定・上限接近時のメール通知を構成できる。さらに Copilot 利用状況 API に AI 採用コホート分析が追加され、コードファーストからエージェントファースト・マルチエージェントへの移行状況を段階別に追跡できるようになった。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-6-0/" target="_blank" rel="noopener">TypeScript 6.0 安定版リリース — 最後の JavaScript ベース実装、ES5 ターゲット廃止・AMD/UMD 削除、TypeScript 7 (Go 移植) への布石</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-6-0/" class="source-link" target="_blank" rel="noopener">🔗 TypeScript Blog</a>
+      </div>
+      <p>TypeScript 6.0 の安定版がリリースされた。TypeScript コンパイラが JavaScript で実装された最後のメジャーバージョンで、次の TypeScript 7 は Go 言語での全面書き直しとなる。主な破壊的変更として、ES5 ターゲット・AMD・UMD モジュールシステム・<code>baseUrl</code> 設定・<code>outFile</code> バンドリングが廃止された。また <code>import defer</code> のサポートが追加されたほか、型検査のパフォーマンスも改善。TypeScript 7 (Go 版) では並列処理と高速なネイティブバイナリによりコンパイル速度の大幅向上が見込まれており、TypeScript 6.0 への移行は TS7 に向けた準備段階として位置付けられる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog" target="_blank" rel="noopener">Vercel デプロイリスト UI を刷新 — ブランチ・コミット単位でステータス別グループ表示に、CI/CD の状態把握が大幅に容易に</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Vercel のデプロイリスト画面が刷新され、より高密度なレイアウトでブランチおよびコミット単位のデプロイをステータス別にグループ表示するようになった。従来の時系列リストより各ブランチの最新状態やデプロイ成否が一目で確認でき、複数環境・複数ブランチを並列で管理している場合の視認性が向上した。CI/CD パイプラインの状況把握やデバッグ効率化に寄与する変更で、デプロイ数が多いモノレポや大規模プロジェクトで特に恩恵が大きい。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-06-02 07:00 JST 更新 | 全13件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

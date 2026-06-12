@@ -20,7 +20,7 @@
   <main>
     <div class="hero">
       <h1>2026-06-12 のIT ニュース</h1>
-      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <p class="date-label">直近24時間の注目記事 <strong>18件</strong></p>
       <div class="stats-bar">
         <div class="stat">
           <div class="stat-num">1</div>
@@ -39,11 +39,11 @@
           <div class="stat-label">Cloud</div>
         </div>
         <div class="stat">
-          <div class="stat-num">3</div>
+          <div class="stat-num">5</div>
           <div class="stat-label">Dev</div>
         </div>
         <div class="stat">
-          <div class="stat-num">1</div>
+          <div class="stat-num">3</div>
           <div class="stat-label">Other</div>
         </div>
       </div>
@@ -209,6 +209,28 @@
       <p>GitHub は npm v12（7月リリース予定）の3つの破壊的変更を発表した。①<code>npm install</code> 時に依存パッケージの preinstall/install/postinstall スクリプトを明示的な許可なしに実行しない、②Git 依存（直接・推移的）を <code>--allow-git</code> なしで解決しない、③リモート URL 依存（https tarball 等）を <code>--allow-remote</code> なしで解決しない。Red Hat npm スコープ侵害や Phantom Gyp 攻撃など最近のサプライチェーン攻撃への対策として設計されており、現行 npm 11.16.0 以降で警告として表示されているため早めの確認が推奨される。</p>
     </div>
 
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">Claude Code 2026-06-12 更新 — wheelScrollAccelerationEnabled 設定追加・Fable 5 モデルピッカー修正・Bedrock GovCloud 対応</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://code.claude.com/docs/en/changelog" class="source-link" target="_blank" rel="noopener">🔗 Claude Code Changelog</a>
+      </div>
+      <p>Claude Code が本日付けで更新され、フルスクリーンモードでのマウスホイールスクロール加速を無効化できる <code>wheelScrollAccelerationEnabled</code> 設定が追加された。合わせて Fable 5 モデルのモデルピッカー表示に関するバグと、AWS Bedrock GovCloud リージョンでの接続問題が修正されている。また新設の <code>ultracode</code> 設定はエフォートレベルを xhigh に固定し、複雑なタスクでのワークフロー自動選択を可能にする機能として先行リリースされている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://docs.deno.com/deploy/migration_guide/" target="_blank" rel="noopener">Deno Deploy Classic（dash.deno.com）2026年7月20日シャットダウン — 新プラットフォーム console.deno.com への移行が必須に</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://docs.deno.com/deploy/migration_guide/" class="source-link" target="_blank" rel="noopener">🔗 Deno Deploy Docs</a>
+      </div>
+      <p>Deno Deploy Classic（dash.deno.com）および Subhosting v1 API が2026年7月20日に完全停止する。既存の Deploy Classic プロジェクトは全て新しい Deno Deploy（console.deno.com）へ移行が必要で、新規プロジェクトの Classic への追加はすでに受け付けていない。合わせて <code>deployctl</code> CLI もサンセットとなり、今後は <code>deno deploy</code> サブコマンドを使用する必要がある。移行ガイドが公式ドキュメントに整備されているため、期限前に早めの対応を推奨。</p>
+    </div>
+
     <!-- Otherセクション -->
     <div class="section-label">📌 その他</div>
 
@@ -223,12 +245,34 @@
       <p>SpaceX が6月11日、$135 の固定価格で 5 億 5,556 万株を売り出す IPO を完了し、本日 Nasdaq に上場する。調達額 $750 億・評価額 $1.77 兆は Alibaba の 2019 年 IPO（$354 億）を大幅に上回り、史上最大規模の株式公開となる。従来のロードショー後の価格帯設定方式を採らず、テイク・イット・オア・リーブ・イット形式の固定価格を採用した点も異例。リテール投資家向けに約 30%（約 $225 億相当）が割り当てられる。AI・クラウド主導の大型 IPO が続く中、宇宙インフラ企業の規模感を示す象徴的なニュースとなった。</p>
     </div>
 
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.usnews.com/news/politics/articles/2026-06-11/americans-wary-of-ai-driven-data-center-boom-reuters-ipsos-poll-shows" target="_blank" rel="noopener">Reuters/Ipsos 調査: 米国人の64%が AI データセンター急速建設に反対 — 14州でモラトリアム法案、11月中間選挙でも争点化</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.usnews.com/news/politics/articles/2026-06-11/americans-wary-of-ai-driven-data-center-boom-reuters-ipsos-poll-shows" class="source-link" target="_blank" rel="noopener">🔗 U.S. News &amp; World Report</a>
+      </div>
+      <p>Reuters/Ipsos が6月11日に発表した4,531人対象の調査で、AI 主導のデータセンター急速建設を「概ね良いこと」と回答したのはわずか33%にとどまり、自分の地域に建設されることに賛成するのは14%のみだった。民主党の3分の2・共和党の半数が地元への建設に反対しており、超党派の懸念が示されている。14州がデータセンターの新設モラトリアムを検討または可決しており、11月3日の中間選挙でも争点となる見通し。AI ブームに対するハイパースケーラーとコミュニティの摩擦が顕在化している。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thequantuminsider.com/2026/06/11/jij-and-orca-computing-report-on-path-to-commercial-quantum-advantage-in-energy-optimization/" target="_blank" rel="noopener">JIJ × ORCA Computing × bp — 光子量子コンピュータで電力系統最適化の商用量子優位性への道筋を実証</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thequantuminsider.com/2026/06/11/jij-and-orca-computing-report-on-path-to-commercial-quantum-advantage-in-energy-optimization/" class="source-link" target="_blank" rel="noopener">🔗 The Quantum Insider</a>
+      </div>
+      <p>JIJ・ORCA Computing・bp・NQCC の4者が6月11日、Unit Commitment 問題（電力系統の発電機スケジューリング）に対する量子古典ハイブリッドワークフローの検証結果を発表した。ORCA の PT-2 フォトニック量子プロセッサを使い、JIJ の MILP ハイブリッド分解法で大規模グリッドを量子回路に変換することで、従来の古典的最適化手法を将来上回る可能性を示している。ORCA の次世代 PT-3 システム（2026年半ば商用化、48→128クモード）が利用可能になれば更なる規模拡大が期待される。</p>
+    </div>
+
     <div style="margin-top:40px;">
       <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
     </div>
   </main>
   <footer>
-    <p>Daily IT News — 2026-06-12 07:00 JST 更新 | 全14件</p>
+    <p>Daily IT News — 2026-06-12 07:00 JST 更新 | 全18件</p>
     <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
   </footer>
 </body>

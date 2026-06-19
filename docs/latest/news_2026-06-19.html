@@ -20,9 +20,9 @@
   <main>
     <div class="hero">
       <h1>2026-06-19 のIT ニュース</h1>
-      <p class="date-label">直近24時間の注目記事 <strong>13件</strong></p>
+      <p class="date-label">直近24時間の注目記事 <strong>15件</strong></p>
       <div class="stats-bar">
-        <div class="stat"><div class="stat-num">3</div><div class="stat-label">Shopify</div></div>
+        <div class="stat"><div class="stat-num">5</div><div class="stat-label">Shopify</div></div>
         <div class="stat"><div class="stat-num">3</div><div class="stat-label">AI</div></div>
         <div class="stat"><div class="stat-num">2</div><div class="stat-label">Security</div></div>
         <div class="stat"><div class="stat-num">2</div><div class="stat-label">Cloud</div></div>
@@ -66,6 +66,28 @@
           <a href="https://changelog.shopify.com/posts/the-spring-26-edition-is-live" class="source-link" target="_blank" rel="noopener">🔗 Shopify Changelog</a>
         </div>
         <p>Spring '26 Editionの発表とともに、Built for Shopifyステータスの新要件が明示された。2026年12月1日以降、バイヤーの認証にCustomer Account APIを使用していないアプリはBuilt for Shopifyステータスを失う。さらに2027年1月1日からはすべての公開アプリがAdmin API呼び出しに有効期限付きオフラインアクセストークンを使用することが必須となる。現時点でレガシー認証フローを使用しているアプリは12月の期限に向けた移行計画の策定を急ぐ必要がある。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/flow-action-extensions-now-support-relative-paths-for-endpoint-urls" target="_blank" rel="noopener">Shopify Flow アクション拡張: エンドポイントURLに相対パスが使用可能に — 開発トンネルURLへの自動解決でローカル開発・デプロイが簡略化</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/flow-action-extensions-now-support-relative-paths-for-endpoint-urls" class="source-link" target="_blank" rel="noopener">🔗 shopify.dev Changelog</a>
+        </div>
+        <p>Shopify Flow アクション拡張のエンドポイントURL（runtime_url・validation_url・config_page_url・config_page_preview_url）で相対パスが使えるようになった。絶対URLの代わりに相対パスを指定すると、shopify app dev 実行中は開発トンネルURL、本番では application_url を基準に自動解決される。これにより環境ごとに絶対URLを書き分ける必要がなくなり、ステージング・本番・ローカル全環境でのビルドとデプロイ管理が大幅に簡略化される。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Admin GraphQL API 2026-07: 配送プロファイルに coversAllItems フィールド追加 — アプリが全バリアント一括適用プロファイルを作成・更新可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 shopify.dev Changelog</a>
+        </div>
+        <p>Admin GraphQL API 2026-07のShipping Delivery Profileに新フィールド coversAllItems が追加される。アプリが所有する配送プロファイルに対してのみ有効で、このフィールドを true に設定するとストア内のすべての配送可能バリアントへ一括でレートを適用できる。プロファイルの作成（DeliveryProfileCreate）と更新（DeliveryProfileUpdate）の両ミューテーションでサポートされており、省略時は作成では false、更新では既存値が維持される。マーチャント管理プロファイルや非配送プロファイルには適用されない。</p>
       </div>
     </div>
 
@@ -199,7 +221,7 @@
     </div>
   </main>
   <footer>
-    <p>Daily IT News — 2026-06-19 07:00 JST 更新 | 全13件</p>
+    <p>Daily IT News — 2026-06-19 更新 | 全15件</p>
     <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
   </footer>
 </body>

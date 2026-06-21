@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-06-22</title>
+  <meta name="description" content="2026-06-22 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-06-22</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-06-22 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>13件</strong></p>
+      <div class="stats-bar">
+        <div class="stat"><div class="stat-num">3</div><div class="stat-label">Shopify</div></div>
+        <div class="stat"><div class="stat-num">3</div><div class="stat-label">AI</div></div>
+        <div class="stat"><div class="stat-num">3</div><div class="stat-label">Security</div></div>
+        <div class="stat"><div class="stat-num">2</div><div class="stat-label">Cloud</div></div>
+        <div class="stat"><div class="stat-num">2</div><div class="stat-label">Dev</div></div>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Shopify API 2026-07: GraphQL Admin に channel markets・inventory transfer metafields・LineItem.weight が追加 — マルチマーケット対応と重量取得がシンプルに</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify GraphQL Admin API の次バージョン 2026-07 に、販売チャネルごとにマーケットを作成・管理できる channel markets が追加された。在庫転送にメタフィールドを直接定義・設定できるようになり、別途 metafieldsSet 呼び出し不要でカスタムデータを一括管理できる。LineItem.weight フィールドも公開 API に追加され、REST API の grams フィールドを変換することなく Weight オブジェクトとして取得可能。Storefront API 2026-07 ではカート割引アロケーションの bug fix を含む破壊的変更も予定されており、ヘッドレス構築の更新が必要。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/standard-storefront-events-and-actions" target="_blank" rel="noopener">Shopify Standard Storefront Events and Actions: テーマとアプリ・AIエージェント間の標準通信レイヤーが正式リリース</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/standard-storefront-events-and-actions" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Liquid ストアフロントに標準の通信レイヤーが追加され、テーマが shopify:product:view・shopify:cart:lines-update などの DOM イベントを発行し、アプリやエージェントが JavaScript でサブスクライブして追加の API 呼び出しなしでペイロードを受け取れるようになった。Shopify.actions.update などのアクションが全 Liquid ストアフロントで利用可能になり、アプリやエージェントがテーマの動作をトリガーできる。テーマ開発者はアクションをオーバーライドしてページリロードなしの UI 更新を実装できる。この標準化により、テーマ間での一貫したアプリ・エージェント連携が可能になり、Shopify のエージェント対応ストアフロント戦略の中核となる。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/hydrogen-developer-preview" target="_blank" rel="noopener">Shopify AI Toolkit が正式GA + Hydrogen 次世代版 developer preview: Cursor・Claude Code から Shopify リソースに直接アクセス可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/hydrogen-developer-preview" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify AI Toolkit が正式 GA となり、Cursor・Claude Code・Codex・VS Code など主要エディタから Shopify のリファレンスガイド・ライブストアデータ・管理ツールにトークン効率よくアクセスできるようになった。同時に Hydrogen の次世代版が developer preview として公開され、コアコマースロジックが React Router から切り離され Next.js・SvelteKit・Astro・SolidStart・Nuxt など任意の JavaScript フレームワークで使えるフレームワーク非依存アーキテクチャに刷新。React バインディングが先行リリースされ、エージェント向けのスキャフォールドスキルもバンドルされる。本番利用には安定版リリースを待つことが推奨されており、まず評価・検証フェーズとして位置づけられる。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener">Claude Fable 5: 本日6月22日よりPro/Max/Team/Enterprise プランの無料提供終了 — 以降は使用クレジットが必要</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" class="source-link" target="_blank" rel="noopener">🔗 Anthropic</a>
+      </div>
+      <p>Anthropic が6月9日にリリースした Mythos クラスの最新モデル Claude Fable 5 は、6月22日（本日）を境に Pro・Max・Team・Enterprise プランでの定額提供が終了し、以降は使用クレジットが必要となる。Fable 5 は $10 / $50 per million tokens（入力/出力）で Mythos Preview の半額以下、バッチ処理は $5 / $25 で利用可能。Amazon Bedrock・Vertex AI・Microsoft Foundry・GitHub Copilot でも引き続き利用できる。なお Anthropic は一時的なアクセス停止に対して謝罪しており、容量拡張を急いでいると説明している。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://releasebot.io/updates/openai" target="_blank" rel="noopener">OpenAI GPT-5.6 が ChatGPT Plus / API のデフォルトモデルへ昇格 — Codex が Chrome DevTools Protocol に対応しデバッグ力を大幅強化</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://releasebot.io/updates/openai" class="source-link" target="_blank" rel="noopener">🔗 OpenAI / Releasebot</a>
+      </div>
+      <p>OpenAI は GPT-5.6 を ChatGPT Plus のデフォルトモデルとして展開し、API でも新デフォルトとなった。長時間の agentic ワークロードや Codex Computer Use タスクでの多時間タスク完了率が大幅に改善されている。開発者向けの大きな追加として、Codex の in-app ブラウザに Chrome DevTools Protocol（CDP）アクセスが付与され、JavaScript プロファイリング・コンソール出力・ネットワークトラフィック監視・DOM 状態の確認・ライブブラウザ問題の診断が可能になった。また ChatGPT にはメモリサマリーの編集機能・アクティブセッション管理・/init コマンドによる AGENTS.md スキャフォールド生成も追加された。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/" target="_blank" rel="noopener">Google、Gemini CLI を6月18日に廃止し Antigravity CLI（agy）へ完全移行 — Go製で高速化、Managed Agents も public preview に</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/" class="source-link" target="_blank" rel="noopener">🔗 Google Developers Blog</a>
+      </div>
+      <p>Google は6月18日をもって Gemini CLI（gemini コマンド）と Gemini Code Assist IDE 拡張機能を廃止し、新ツール Antigravity CLI（agy コマンド）への移行を完了させた。新 CLI は Go で全面再実装されており、ランタイム依存なしで高速に動作する。有償ライセンス（Gemini Code Assist Standard/Enterprise）ユーザーは引き続き Gemini CLI を使用可能。同時に Gemini API で Managed Agents（Antigravity Agent）が public preview に移行し、セキュアな Linux サンドボックス環境でコード実行・ファイル管理・Web ブラウズを自律的に行えるステートフル・エージェントが展開できるようになった。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://threat-modeling.com/microsoft-june-2026-patch-tuesday-critical-cves/" target="_blank" rel="noopener">CVE-2026-45657: Windows Kernel ワーム可能RCE (CVSS 9.8) — 2026年6月 Patch Tuesday 最重要案件、認証不要でネットワーク経由から悪用可能</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://threat-modeling.com/microsoft-june-2026-patch-tuesday-critical-cves/" class="source-link" target="_blank" rel="noopener">🔗 Threat-Modeling.com</a>
+      </div>
+      <p>2026年6月 Patch Tuesday（208 CVE、うち37件が Critical）の中で最も深刻な CVE-2026-45657 は、Windows Kernel の use-after-free に起因する CVSS 9.8 のワーム可能 RCE 脆弱性。認証不要・ユーザー操作不要でネットワーク経由から攻撃可能で、特別細工された TCP/IP パケットを送信するだけで SYSTEM 権限でのコード実行が可能。影響範囲は Windows 11（23H2〜26H1）および Windows Server 2022/2025 で、各 KB パッチの早急な適用が求められる。同 Patch Tuesday には HTTP.sys の RCE（CVE-2026-47291、CVSS 9.8）も含まれており、IIS・Windows Server 環境でも即時対応が必要。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/06/critical-check-point-vpn-flaw-exploited.html" target="_blank" rel="noopener">CVE-2026-50751: Check Point VPN IKEv1 認証バイパス (CVSS 9.3) — Qilin ランサムウェアが野放しで悪用中、IKEv1 の即時無効化を推奨</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/06/critical-check-point-vpn-flaw-exploited.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>Check Point Remote Access VPN・Mobile Access・Spark Firewall 製品に影響する CVE-2026-50751（CVSS 9.3）は、廃止済み IKEv1 鍵交換プロトコルの証明書バリデーション欠陥を突いて、有効なパスワードなしで VPN セッションを確立できる認証バイパスの脆弱性。5月7日から野放しでの悪用が観測されており、Qilin ランサムウェアアフィリエイトによるポストコンプロマイズ侵害も確認済み。IKEv1 の無効化・IKEv2 への移行・マシン証明書認証の強制・IPS 保護の最新化が推奨される対策。数十の組織が標的にされており、未対応環境は直ちに対応を。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://source.android.com/docs/security/bulletin/2026/2026-06-01" target="_blank" rel="noopener">Android 2026年6月セキュリティ情報: Framework コンポーネントに特権昇格・RCE 脆弱性 — OTA アップデートの即時適用を</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://source.android.com/docs/security/bulletin/2026/2026-06-01" class="source-link" target="_blank" rel="noopener">🔗 Android Open Source Project</a>
+      </div>
+      <p>Google が Android 2026年6月セキュリティ情報を公開。最も深刻なのは Framework コンポーネントの脆弱性で、追加の実行権限や特別な権限なしにリモートから特権昇格・コード実行が可能。ユーザー操作も不要なため、悪意あるアプリや攻撃者から標的端末を直接掌握できるリスクがある。また CISA KEV カタログには CVE-2022-0492（Linux Kernel 不正認証）および CVE-2025-48595（Android Framework 整数オーバーフロー）が追加されており、企業端末管理者は6月の OTA 展開を優先すべき状況。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes" target="_blank" rel="noopener">Microsoft Defender for Open-Source Relational Databases が AWS RDS で正式GA — 6月1日より課金開始、マルチクラウドDB保護を一元管理</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Microsoft Defender for Cloud</a>
+      </div>
+      <p>Microsoft Defender for Cloud において、PostgreSQL・MySQL・MariaDB 向けの脅威検知・異常アクセス検出サービスが AWS RDS インスタンスに対して正式 GA となり、6月1日より課金が開始された（請求は7月の Azure 請求書に反映）。Azure と AWS 両方のデータベース資産を Defender for Cloud の一元ダッシュボードで監視・アラート管理できるようになり、マルチクラウド環境のセキュリティポスチャー向上に直結する。マルチクラウド戦略を採用する企業は対象リソースとコストを事前に確認しておく必要がある。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://docs.cloud.google.com/release-notes" target="_blank" rel="noopener">Google Cloud Location Finder が正式GA — AWS・Azure・OCI・GCP の全リージョン情報を API で検索・比較可能に</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://docs.cloud.google.com/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Release Notes</a>
+      </div>
+      <p>Google Cloud Location Finder が正式 GA（一般提供）となり、Google Cloud・AWS・Azure・OCI の最新パブリックリージョン・ゾーン情報を一元的に照会できるようになった。プロバイダ・地理的近傍性・データ主権（territory）・カーボンフットプリントに基づいたリージョン選択をプログラマティックに実現できる API が提供される。マルチクラウド戦略の設計、データレジデンシー要件の充足、CO2 排出最小化を目指した配置最適化ユースケースでの活用が期待される。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/" target="_blank" rel="noopener">npm v12 破壊的変更予告: インストールスクリプトが7月よりデフォルト無効化 — CI/CD パイプラインの事前対応が必要</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>npm v12（7月リリース予定）では allowScripts がデフォルト off となり、依存パッケージの preinstall・install・postinstall スクリプトが明示許可なしでは実行されなくなる。--allow-git もデフォルト none に変更されて Git 依存関係の解決が制限され、--allow-remote も none となりリモート URL からの依存関係解決が不可になる。node-gyp ネイティブビルドも影響を受けるため、npm approve-scripts コマンドで許可リストを整備して package.json にコミットしておく必要がある。v11.16.0 以降では今すぐ警告付きで動作確認が可能で、サプライチェーン攻撃の代表的な手口「Phantom Gyp」への直接的な対策となる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://releasebot.io/updates/vercel/next-js" target="_blank" rel="noopener">Next.js 16.2 バックポートリリース — Turbopack・cache tag エンコード・Server Actions・middleware の修正で安定性向上</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://releasebot.io/updates/vercel/next-js" class="source-link" target="_blank" rel="noopener">🔗 Next.js / Releasebot</a>
+      </div>
+      <p>Vercel は Next.js 16.2 バックポートリリースを公開し、バグ修正と安定性向上を中心とした更新を提供した。主な修正内容は Turbopack の挙動改善、cache tag エンコードのバグ修正、Server Actions と middleware のバグ解消、hydration とルーター修正、FormData ハンドリングの改善が含まれる。新機能追加は行われておらず、既存の 16.x 系統を本番運用しているチームへの早期アップデートが推奨される。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-06-22 07:00 JST 更新 | 全13件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

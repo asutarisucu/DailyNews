@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-06-28</title>
+  <meta name="description" content="2026-06-28 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-06-28</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-06-28 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <span class="stat-item stat-shopify">Shopify 3件</span>
+        <span class="stat-item stat-ai">AI 3件</span>
+        <span class="stat-item stat-security">セキュリティ 2件</span>
+        <span class="stat-item stat-cloud">クラウド 2件</span>
+        <span class="stat-item stat-dev">開発ツール 1件</span>
+        <span class="stat-item stat-other">その他 3件</span>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/shopify-scripts-will-be-deprecated-on-june-30-2026" target="_blank" rel="noopener">【最終警告・残り2日】Shopify Scripts が 2026年6月30日に完全廃止 — 深夜を過ぎた瞬間にカスタムロジックが静かに停止</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/shopify-scripts-will-be-deprecated-on-june-30-2026" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>6月30日（2日後）の深夜をもって全Shopify Scriptsが完全停止する。4月15日以降すでに編集・公開が不可能になっており、6月30日終了後は未移行のカスタム割引・配送・支払いロジックがエラーメッセージなく静かに無効化される。移行先はShopify Functions（WebAssemblyモジュール）またはパブリックApp。Shopifyはこのデッドラインを二度と延長しないと明言しており、今日・明日中の移行完了確認が最後の機会。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/storefront-mcp-cart-tools-are-being-deprecated-in-favour-of-ucp-cart-mcp" target="_blank" rel="noopener">Storefront MCP カートツールが UCP Cart MCP に移行 — get_cart/update_cart は 2026年8月31日廃止・PUT 全量更新セマンティクスに変更</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/storefront-mcp-cart-tools-are-being-deprecated-in-favour-of-ucp-cart-mcp" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>6月24日付でStorefront MCP（https://{shop}.myshopify.com/api/mcp）のget_cart・update_cartが廃止予告された。代替は UCP準拠の Cart MCP（https://{shop-domain}/api/ucp/mcp）で、create_cart / get_cart / update_cart / cancel_cartが利用可能。重要な変更点として、update_cartはPUTセマンティクスを採用しており、差分ではなく毎回 line_items 配列を全量送信する必要がある。移行期限は2026年8月31日で、Spring '26 EditionのUCP（Universal Commerce Protocol）戦略への移行の一環。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/carrier-services-will-no-longer-be-automatically-added-to-the-default-shipping-profile" target="_blank" rel="noopener">Admin API 2026-10 破壊的変更: キャリアサービスがデフォルト配送プロフィールへ自動追加されなくなる — 配送レートアプリ要注意</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/carrier-services-will-no-longer-be-automatically-added-to-the-default-shipping-profile" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Admin API 2026-10 以降、GraphQL・REST経由でキャリアサービスを作成してもレートがデフォルト（General）配送プロフィールへ自動追加されなくなる。配送レートアプリを構築している開発者は、API 2026-10 移行後に明示的にプロフィールへのレート追加ロジックを実装する必要がある。既存のCI/CDパイプラインやアプリのセットアップフローを今から見直しておくことが推奨される。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techcrunch.com/2026/06/26/its-not-about-anthropic-vs-openai-anymore/" target="_blank" rel="noopener">「OpenAI vs Anthropic」の時代の終わり — 米政府承認制でGPT-5.6 Sol・Mythos 5 が「認可顧客限定」リリースへ</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techcrunch.com/2026/06/26/its-not-about-anthropic-vs-openai-anymore/" class="source-link" target="_blank" rel="noopener">🔗 TechCrunch</a>
+      </div>
+      <p>6月26日、米政府はトランプ大統領令に基づき最先端AIモデルの公開前に最大30日間のセキュリティ審査を実施する枠組みを確立。AnthropicのMythos 5は政府認可組織向けに再承認され、OpenAIのGPT-5.6 Solも政府が個別承認したパートナー限定でプレビュー公開された。TechCrunchは「もはやOpenAI vs Anthropicの競争ではない。両社は同じ政府管理問題に直面している」と指摘し、AI業界のガバナンスが"マネージドリリース"モデルへ移行しつつあると報じた。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud" target="_blank" rel="noopener">Claude Opus 4.8 が Google Gemini Enterprise Agent Platform で利用可能に — 複雑な多段階エンタープライズワークフローに対応</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Blog</a>
+      </div>
+      <p>AnthropicのClaude Opus 4.8がGoogle Gemini Enterprise Agent Platformで提供開始。複雑なマルチステップ企業ワークフローの処理と高度なエージェント型コーディングに強みを持つOpus 4.8により、Vertex AI上でのAIエージェントアプリケーション構築の選択肢が拡大した。GoogleとAnthropicの連携強化が引き続き進んでおり、エンタープライズ向けのマルチモデル戦略が明確になってきている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://docs.cloud.google.com/release-notes" target="_blank" rel="noopener">Gemini 3.1 Pro が Vertex AI・Google AI Studio でプレビュー公開 — Gemini CLI・Android Studio からも利用可能に</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://docs.cloud.google.com/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Release Notes</a>
+      </div>
+      <p>Google DeepMindのGemini 3.1 ProがVertex AI・Gemini Enterpriseでプレビュー提供開始。Gemini API経由でGoogle AI Studio・Android Studio・Google Antigravity・Gemini CLIからも直接アクセス可能。前世代からの性能向上と、開発者向けツール全体へのシームレスな統合が特徴で、すぐに試用可能な状態で公開されている。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bleepingcomputer.com/news/security/cisa-sets-urgent-deadline-to-fix-cisco-flaw-exploited-in-attacks/" target="_blank" rel="noopener">【対応期限：本日 6/28】CISA KEV 追加: Cisco Unified CM に SSRF 脆弱性（CVE-2026-20230）— ファイル書き込みから root 権限昇格に悪用</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bleepingcomputer.com/news/security/cisa-sets-urgent-deadline-to-fix-cisco-flaw-exploited-in-attacks/" class="source-link" target="_blank" rel="noopener">🔗 BleepingComputer</a>
+      </div>
+      <p>CISAがCisco Unified Communications Manager（Unified CM）およびUnified CM SMEのSSRF脆弱性（CVE-2026-20230）をKEVカタログに追加し、対応期限を本日（6月28日）に設定した。未認証の遠隔攻撃者がOSに任意のファイルを書き込み、後からそのファイルを利用してroot権限へ昇格することが可能。Cisco Unified CM環境を運用している組織は今日中にパッチ適用を完了させること。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">PTC Windchill / FlexPLM に未認証RCE 脆弱性（CVE-2026-12569）— 製造業PLMシステムへの任意コード実行リスク</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA — Known Exploited Vulnerabilities Catalog</a>
+      </div>
+      <p>PTC WindchillおよびFlexPLMに不適切な入力検証の脆弱性（CVE-2026-12569）が確認され、CISAのKEVカタログに追加された。未認証の遠隔攻撃者が悪意あるネットワークリクエストを送信するだけで任意コードが実行可能。製造業・製品設計で広く使われるPLMシステムが攻撃対象となっており、ベンダーが提供するパッチの即時適用が強く推奨される。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://docs.cloud.google.com/release-notes" target="_blank" rel="noopener">Google Cloud Location Finder が GA — AWS・Azure・GCP・OCIのリージョン情報をAPIで炭素フットプリント指定フィルタリング</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://docs.cloud.google.com/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Release Notes</a>
+      </div>
+      <p>Google Cloud Location Finderが一般提供（GA）開始。パブリックリージョン・ゾーン・Google Distributed Cloud Connectedロケーションをプロバイダ・近接地域・対象テリトリー・炭素フットプリントでフィルタリングしてAPIから検索・取得可能になった。Google Cloud・AWS・Azure・OCIをまたいだマルチクラウドのデプロイ先選定を自動化・最適化するユースケースに対応する。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud" target="_blank" rel="noopener">Google Cloud Cross-Cloud Lakehouse（旧BigLake）が GA — Iceberg REST Catalog でAWS/AzureデータへのAIエージェントアクセスを実現</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Blog</a>
+      </div>
+      <p>BigLakeの後継となる「Cross-Cloud Lakehouse」が一般提供開始。Iceberg REST Catalogにより、AWS・Azureおよびパートナーエコシステムのデータサイロを横断したボーダーレスなデータ統合が可能に。AIエージェントがクラウドをまたいでシームレスにデータへアクセスできるようになり、マルチクラウドデータ基盤の構築コストと複雑性が大幅に低下する。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.developersdigest.tech/blog/deno-desktop-native-apps-2026" target="_blank" rel="noopener">Deno 2.9 リリース: deno desktop（実験的）— TypeScript / Next.js からクロスプラットフォームネイティブアプリをElectron不要でビルド</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.developersdigest.tech/blog/deno-desktop-native-apps-2026" class="source-link" target="_blank" rel="noopener">🔗 Developers Digest</a>
+      </div>
+      <p>Deno 2.9が6月25日にリリースされ、deno desktopコマンド（実験的）を搭載。単一のTypeScriptファイルからNext.js・Astro・Deno Fresh・TanStack Start・Vite SSRまで対応し、コード・Denoランタイム・レンダリングエンジンをバンドルした自己完結型ネイティブバイナリを生成する。CEF（Chromium Embedded Framework）の代わりにシステムのネイティブWebViewを使用するためElectronより大幅に軽量で、macOS（.app/.dmg）・Windows（.exe/.msi）・Linux（.AppImage/.deb/.rpm）向けインストーラーを出力できる。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/06/26/top-tech-news-today-june-26-2026/" target="_blank" rel="noopener">Airwallex が$3.2億調達・評価額$110億に（前回比38%増）— グローバルFinTech×AI展開を加速</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/06/26/top-tech-news-today-june-26-2026/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>国際送金・法人向けFinTech大手のAirwallexが$3.2億の資金調達を完了し、企業評価額が前回比38%増の$110億に到達。今回の資金でグローバル展開を加速させるとともに、決済・資金管理・財務オペレーションにわたるAI機能の深化を目指す。FinTech×AI分野への大型資金流入が続いており、エンタープライズ向け金融インフラの再構築が加速している。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://imfounder.com/science-tech/explosive-tech-news-june-2026-ai-lawsuits-ipos-cyberattacks/" target="_blank" rel="noopener">Samsung グループ、韓国に10年で1000兆ウォン（約$6480億）投資計画を発表 — AI需要対応の半導体工場建設も含む</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://imfounder.com/science-tech/explosive-tech-news-june-2026-ai-lawsuits-ipos-cyberattacks/" class="source-link" target="_blank" rel="noopener">🔗 IMFounder — Tech News June 2026</a>
+      </div>
+      <p>Samsungグループが向こう10年間に韓国国内へ総額1000兆ウォン（約$6480億）を投資する大規模計画を発表予定と報じられた。AI需要の爆発的拡大に対応した半導体工場（チップファブ）への巨額投資を含む。SK HynixのNasdaq上場計画（約$290億規模）と合わせて、韓国半導体産業のグローバル競争力強化への動きが急加速している。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/06/26/top-tech-news-today-june-26-2026/" target="_blank" rel="noopener">Onsemi が Synaptics を全株式交換・約$70億で買収合意 — エッジAI・コネクテッドデバイス・車載・ロボティクス分野を強化</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/06/26/top-tech-news-today-june-26-2026/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>半導体メーカーのOnsemiがヒューマンインターフェース・AIソリューション大手Synapticsを全株式交換・総額約$70億の条件で買収することに合意した。この買収によりOnsemiはエッジAI・コネクテッドデバイス・ロボティクス・車載システム・産業機器ハードウェアへの展開力を大幅に強化する。AI半導体エコシステムの再編と企業間の能力集約が一段と加速している。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-06-28 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

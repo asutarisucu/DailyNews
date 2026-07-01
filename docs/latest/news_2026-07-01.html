@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-07-01</title>
+  <meta name="description" content="2026-07-01 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-07-01</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-07-01 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>13件</strong></p>
+      <div class="stats-bar">
+        <span class="stat-item stat-shopify">Shopify 4件</span>
+        <span class="stat-item stat-ai">AI 4件</span>
+        <span class="stat-item stat-security">セキュリティ 1件</span>
+        <span class="stat-item stat-cloud">クラウド 1件</span>
+        <span class="stat-item stat-dev">開発ツール 2件</span>
+        <span class="stat-item stat-other">その他 1件</span>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://changelog.shopify.com/posts/shopify-scripts-deprecation" target="_blank" rel="noopener">【本日廃止完了】Shopify Scripts が2026年6月30日をもって全停止 — 未移行ストアはカスタムロジックが無効化、今すぐ Shopify Functions への移行を</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://changelog.shopify.com/posts/shopify-scripts-deprecation" class="source-link" target="_blank" rel="noopener">🔗 Shopify Changelog</a>
+        </div>
+        <p>2026年6月30日付で Shopify Scripts が完全廃止となった。カスタム割引・配送・支払いロジックを Ruby Scripts で実装していたすべてのストアで、スクリプトが本日時点で停止済みとなる。Shopify はこの期限を過去3度延長してきたが今回は最終確定で、猶予期間や巻き戻しオプションは存在しない。Shopify Functions または公開 App への移行がまだ完了していない場合は、直ちに対応が必要。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/order-attribution-definitions-are-available-in-order-channel-filters" target="_blank" rel="noopener">Admin API 2026-07: オーダーアトリビューション定義が新設 — マーケットプレイス・地域・アカウント・サーフェス単位で受注元を詳細トラッキング可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/order-attribution-definitions-are-available-in-order-channel-filters" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>API version 2026-07 より、セールスチャネル App がオーダーアトリビューション定義を使用して注文のソースを詳細に特定できるようになった。マーケットプレイス・地域・アカウント・サーフェスといった粒度での受注元トラッキングが可能で、orderCreate ミューテーションやカートパーマリンクでアトリビューション定義ハンドルを渡し、Order.attribution で解決済み詳細を読み取れる。チャネル横断での受注分析精度が大幅に向上する。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Admin API 2026-07: 在庫転送でメタフィールドを直接定義・設定可能に — metafieldsSet の別呼び出しが不要に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Admin GraphQL API 2026-07 では、在庫転送（Inventory Transfer）の作成・更新時にメタフィールドをインラインで定義・設定できるようになった。これまで別途必要だった metafieldsSet 呼び出しが不要になり、カスタムデータと在庫オペレーションを一つのミューテーションで完結できる。API コール数の削減と App ロジックの簡素化に直結する改善。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Admin API 2026-07: カスタム App 向け App Home ランディングページが利用可能に — Preact ベースの admin.app.home.render 拡張で独自ダッシュボードを実装</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>API version 2026-07 より、カスタム App を対象に App Home ランディングページが利用可能になった。Preact ベースの管理 UI 拡張機能 admin.app.home.render を使って、App 起動時に表示される独自ダッシュボードやウェルカム画面を実装できる。なお同バージョンでは metaobject 定義の PRIVATE・PUBLIC_READ 列挙値が削除される破壊的変更もあるため、該当コードの更新確認も必要。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank" rel="noopener">Anthropic、Claude Fable 5 を本日7月1日より全世界で再提供開始 — 米国輸出規制解除を受け19日間の停止から復活、強化されたセーフガード搭載</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news/redeploying-fable-5" class="source-link" target="_blank" rel="noopener">🔗 Anthropic Newsroom</a>
+      </div>
+      <p>Anthropic が Claude Fable 5（および Mythos 5）を本日2026年7月1日より Claude Platform・Claude.ai・Claude Code・Claude Cowork の全ユーザーへ再提供開始した。6月12日に米政府が輸出規制を適用したため外国人ユーザーへのリアルタイム国籍確認が困難として全ユーザーへのアクセスを停止していたが、6月30日付で規制が解除。サイバーセキュリティ・生物/化学・蒸留関連の要求は自動的に Claude Opus 4.8 で処理される安全機構を搭載。Pro/Max/Team 等のプランでは7月7日まで週次利用上限の50%まで無料で利用可能、以降は Usage Credits 制に移行する。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/" target="_blank" rel="noopener">OpenAI & Broadcom、初のカスタム AI チップ「Jalapeño」を発表 — わずか9ヶ月で開発した LLM 推論特化 ASIC、2026年末に展開開始</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/" class="source-link" target="_blank" rel="noopener">🔗 TechCrunch</a>
+      </div>
+      <p>OpenAI と Broadcom が共同開発した初のカスタム AI チップ「Jalapeño」を発表。LLM 推論に特化したリティクルサイズ ASIC で、ソフトウェア・ハードウェアの共同設計と OpenAI モデルを活用した設計加速により業界最速となる9ヶ月でテープアウトを達成。現状最先端比で大幅に優れたパフォーマンス/ワット比を実現し、ChatGPT などの推論コスト削減を目指す。2026年末までに初期展開開始予定で、複数世代にわたるコンピュートプラットフォームを共同構築するロードマップが設定されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/06/24/qualcomm-acquires-ai-startup-modular-in-4-billion-deal-to-challenge-nvidias-cuda-dominance/" target="_blank" rel="noopener">Qualcomm が AI スタートアップ Modular を約39億ドルで買収 — NVIDIA CUDA の独占支配に対抗するハードウェア非依存 AI ソフトウェアスタックを獲得</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/06/24/qualcomm-acquires-ai-startup-modular-in-4-billion-deal-to-challenge-nvidias-cuda-dominance/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>Qualcomm が6月24日、AI インフラ企業 Modular（Mojo 言語・MAX グラフコンパイラ/推論エンジンの開発元）を約39億ドルの全株式交換で買収する契約を締結した。Modular の MAX プラットフォームは NVIDIA・AMD・Intel・Arm など異種ハードウェア上で AI モデルをコード改修不要で実行できる。CUDA に依存しないフルスタック AI ソフトウェアを獲得することでデータセンター分野における NVIDIA の優位性に本格的に挑戦する構え。従業員約150名と Mojo 言語コミュニティも取り込む。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techcrunch.com/2026/06/22/spacex-inks-compute-deal-with-reflection-ai-an-open-source-ai-lab/" target="_blank" rel="noopener">SpaceX、Nvidia 支援の Reflection AI と63億ドルの GPU 計算契約を締結 — 本日7月1日より月額1.5億ドルで Colossus 2 の NVIDIA GB300 チップにアクセス</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techcrunch.com/2026/06/22/spacex-inks-compute-deal-with-reflection-ai-an-open-source-ai-lab/" class="source-link" target="_blank" rel="noopener">🔗 TechCrunch</a>
+      </div>
+      <p>SpaceX がオープンソース AI スタートアップ Reflection AI（Nvidia から8億ドルの出資を受け、評価額250億ドル）と最大63億ドルの計算リソース契約を締結。本日2026年7月1日より月額1.5億ドルを支払い、メンフィスの Colossus 2 データセンターにある NVIDIA GB300 チップ等の高性能 GPU へアクセスできる。SpaceX はすでに Anthropic・Google・Cursor との計算契約も締結しており、Colossus を商業コンピューティングプラットフォームとして本格稼働させている。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/06/25/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA KEV 更新: PTC Windchill CVE-2026-12569 & Cisco UCM CVE-2026-20230 を追加 — 6月25日付で2件の積極的悪用を確認</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/06/25/cisa-adds-two-known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA が6月25日付で Known Exploited Vulnerabilities（KEV）カタログに2件を追加。CVE-2026-12569 は PTC Windchill および FlexPLM の不正入力検証（Improper Input Validation）脆弱性、CVE-2026-20230 は Cisco Unified Communications Manager の Server-Side Request Forgery（SSRF）脆弱性で、いずれも積極的な悪用が実際に確認されている。連邦民間行政機関（FCEB）は Binding Operational Directive 26-04 に基づく優先修復が義務付けられており、民間組織にも早急なパッチ適用が推奨される。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud" target="_blank" rel="noopener">Google Cloud、Cloud Location Finder を GA リリース — AWS・Azure・GCP・OCI 全プロバイダーの地域情報を炭素排出量込みでプログラム的に検索可能に</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Blog</a>
+      </div>
+      <p>Google Cloud が Cloud Location Finder を一般提供（GA）開始。Google Cloud・AWS・Azure・OCI を含む主要クラウドプロバイダーの全パブリックリージョンに関する最新データを提供し、プロバイダー・近接性・テリトリー・カーボンフットプリントなどの条件でプログラムからリージョンを検索・比較できる。マルチクラウド構成のコンプライアンス要件対応や、環境負荷も考慮した最適リージョン選定を自動化したい組織に有用な機能。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/" target="_blank" rel="noopener">npm v12 が7月リリース予定 — allowScripts・allowGit・allowRemote がデフォルト無効化、CI/CD パイプラインの事前確認が必須</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>npm v12 が7月リリース予定で、サプライチェーンセキュリティを抜本的に強化する3つの破壊的変更が導入される。①allowScripts がデフォルト OFF（preinstall・install・postinstall スクリプトが実行ブロック）、②--allow-git がデフォルト none（Git 依存関係の解決が明示的許可制に）、③--allow-remote がデフォルト none（リモート URL 依存関係の解決が明示的許可制に）。npm 11.16.0 以降で事前警告が表示されるため、npm approve-scripts コマンドで許可スクリプトを確認し package.json を更新しておくことを推奨。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://docs.deno.com/deploy/classic/" target="_blank" rel="noopener">Deno Deploy Classic が7月20日にサービス終了 — dash.deno.com から console.deno.com の新プラットフォームへの移行が必須、残り約20日</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://docs.deno.com/deploy/classic/" class="source-link" target="_blank" rel="noopener">🔗 Deno Docs</a>
+      </div>
+      <p>Deno Deploy Classic（dash.deno.com）が2026年7月20日をもってシャットダウンされる。Subhosting v1 API も同日廃止。既存プロジェクトは新プラットフォーム（console.deno.com）へ自動移行されないため、手動での再デプロイが必要。新規ユーザー・組織の Deploy Classic へのオンボーディングはすでに停止されており、移行ガイドは公式ドキュメントに公開されている。残り約20日のため早急な対応が求められる。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic、AI ジェイルブレーク深刻度の業界横断スコアリング体制を提案 — Amazon・Microsoft・Google など主要各社と共同でセキュリティ基準を策定へ</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news" class="source-link" target="_blank" rel="noopener">🔗 Anthropic Newsroom</a>
+      </div>
+      <p>Anthropic が Amazon・Microsoft・Google などの主要 AI プロバイダーと連携し、AI モデルへのジェイルブレーク攻撃の深刻度を標準的にスコアリングする業界横断フレームワークの策定を提案した。各社が個別に判断していたセーフガードバイパスの評価を共通尺度で行い、インシデント対応と情報共有を効率化する狙い。AI の安全性に関する業界全体の協調体制構築に向けた動きとして注目される。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-07-01 07:00 JST 更新 | 全13件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

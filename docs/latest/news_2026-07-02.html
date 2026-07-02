@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-07-02</title>
+  <meta name="description" content="2026-07-02 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-07-02</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-07-02 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <span class="stat-item stat-shopify">Shopify 4件</span>
+        <span class="stat-item stat-ai">AI 4件</span>
+        <span class="stat-item stat-security">セキュリティ 2件</span>
+        <span class="stat-item stat-cloud">クラウド 1件</span>
+        <span class="stat-item stat-dev">開発ツール 2件</span>
+        <span class="stat-item stat-other">その他 1件</span>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://changelog.shopify.com/posts/shopify-scripts-deprecation" target="_blank" rel="noopener">Shopify Scripts が6月30日に廃止完了 — 未移行ストアのカスタムロジックが停止、事後確認が急務</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://changelog.shopify.com/posts/shopify-scripts-deprecation" class="source-link" target="_blank" rel="noopener">🔗 Shopify Changelog</a>
+        </div>
+        <p>2026年6月30日をもってShopify Scriptsの実行が完全停止した。カスタム割引・配送・支払いロジックをScriptsに依存していたストアでは、当該ロジックがサイレントに無効化されている。エラーメッセージや警告は表示されないため、未対応のストアはチェックアウト動作の即時確認と、Shopify Functions または公開Appへの移行完了が引き続き必要。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/market-driven-delivery-profiles-admin-api" target="_blank" rel="noopener">API 2026-07: Market-Driven Shipping Admin API サポート開始 — マーケットごとに配送戦略を直接設定可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/market-driven-delivery-profiles-admin-api" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>API 2026-07より、GraphQL Admin APIがマーケット主導の配送設定（Market-Driven Shipping）に対応。Marketオブジェクトのdeliveryフィールドを通じて、マーケットごとに配送設定を直接読み書きできる。別途配送プロファイルリソースを作成せずに市場ごとの配送戦略を柔軟に管理でき、越境EC対応アプリの開発が大幅に簡素化される。本番ロールアウトは2026年10月1日開始予定。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/merchant-owned-delivery-profile-apis-are-deprecated-for-market-driven-shipping" target="_blank" rel="noopener">Merchant-owned Delivery Profile APIが非推奨化 — Market-Driven Shipping 移行に伴い旧フィールドが無効化</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/merchant-owned-delivery-profile-apis-are-deprecated-for-market-driven-shipping" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Market-Driven Shippingの導入に伴い、マーチャント所有の配送プロファイルに関するレガシーAPIフィールドとミューテーションが非推奨化された。ストアがMarket-Driven Shippingに移行すると、旧来のDeliveryProfileフィールドはショップのライブ設定を反映しなくなる。配送プロファイルAPIを利用しているアプリは2027年7月1日までに新しい市場ベースのAPIへの移行計画が必要。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/shop-minis-may-june-2026-update" target="_blank" rel="noopener">Shop Minis SDK 5月・6月アップデート — タイプ付き商品バリアントインテントフック追加でカート操作が強化</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/shop-minis-may-june-2026-update" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shop Minis React SDKの5月・6月合算アップデートが公開。バリアント選択・カートへの追加・エクスプレスチェックアウトへの誘導を扱うタイプ付き商品バリアントインテントフックが追加された。型安全なAPIで購買フローのカスタマイズが容易になり、Shop Minisアプリ開発者はより堅牢なUI実装が可能になる。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank" rel="noopener">Anthropic Claude Fable 5 がグローバル再開（7月1日）— 米輸出規制19日間の停止解除、新サイバーセキュリティ分類システム搭載</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news/redeploying-fable-5" class="source-link" target="_blank" rel="noopener">🔗 Anthropic</a>
+      </div>
+      <p>米国が6月30日にFable 5への輸出規制を解除し、Anthropicは7月1日からClaude Platform・Claude.ai・Claude Code・Claude Coworkでグローバルアクセスを復元。6月12日の緊急停止から19日間にわたる中断が終了した。再デプロイにあたり、サイバーセキュリティ関連タスクをより精確に検出・ブロックする新しいアンソロピック製分類システムを搭載。Pro・Max・Team・Enterprise向けに7月7日まで週間使用量の最大50%でFable 5を利用可能。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.it-connect.tech/claude-fable-5-returns-worldwide-as-anthropic-launches-sonnet-5/" target="_blank" rel="noopener">Claude Sonnet 5 リリース — Sonnetクラス史上最高性能、アジェンティックコーディング63.2%でFree・Proのデフォルトモデルに</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.it-connect.tech/claude-fable-5-returns-worldwide-as-anthropic-launches-sonnet-5/" class="source-link" target="_blank" rel="noopener">🔗 IT-Connect Tech</a>
+      </div>
+      <p>Anthropicが7月1日にClaude Sonnet 5を正式リリース。アジェンティックコーディングベンチマークで63.2%（前世代Sonnet 4.6の58.1%から向上）を達成し、Opus 4.8に迫る性能をSonnetクラスで実現。入力トークン単価は$2/Mで8月31日まで導入価格が適用される。コンテキストウィンドウは100万トークンに拡大。Claude Free・Proプランのデフォルトモデルとして切り替わっており、既存ユーザーには自動的に提供される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-1-2026" target="_blank" rel="noopener">カリフォルニア州が全州機関にAnthropicのClaudeを導入 — 米国史上最大規模の州政府AI展開、50%割引・無償トレーニング付き</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-1-2026" class="source-link" target="_blank" rel="noopener">🔗 Build Fast With AI</a>
+      </div>
+      <p>カリフォルニア州知事ギャビン・ニューサムが、全州機関および参加を希望するすべての市・郡にAnthropicのClaudeを50%割引で提供するパートナーシップを発表。米国の州政府としては史上最大規模のAI展開となる。無償の職員向けAIトレーニング、Anthropicエンジニアによる技術支援、ワークフロー設計コンサルティングも含まれる包括的な契約内容。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cloud.google.com/vertex-ai/docs/release-notes" target="_blank" rel="noopener">Google Gemini 3.1 Flash-Lite / Flash Image がパブリックプレビュー — 低レイテンシ・高コスト効率の最新マルチモーダルモデル</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cloud.google.com/vertex-ai/docs/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud — Vertex AI Release Notes</a>
+      </div>
+      <p>Google CloudがVertex AIでGemini 3.1 Flash-LiteおよびGemini 3.1 Flash Imageをパブリックプレビューとして公開。Flash-Liteは高ボリューム・コスト重視のユースケース向けに最低レイテンシを実現するAnthropicの最もコスト効率の高いGeminiモデル。Flash Imageは改善された価格・レイテンシで高品質な画像生成が可能。Google AI Studio・Android Studio・Gemini CLIからもAPIアクセス可能。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" target="_blank" rel="noopener">【対応期限: 7/4】CISA KEV追加: Microsoft SharePoint CVE-2026-45659 — 認証済みユーザーがネットワーク経由でRCE実行可能</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>CISAがMicrosoft SharePoint ServerのRCE脆弱性CVE-2026-45659（CVSS 8.8）をKEVカタログに追加。信頼されていないデータのデシリアライゼーションに起因し、サイトメンバー以上の権限を持つ認証済み攻撃者がネットワーク経由でコードを実行可能。SharePoint Server Subscription Edition・2019・2016の3バージョンが対象。Microsoftは5月に修正済みだが、FCEB機関向けの対応期限は7月4日。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.malwarebytes.com/blog/ai/2026/07/bioshocking-when-gaming-ai-agents-is-no-longer-a-game" target="_blank" rel="noopener">AIエージェントへの「BioShocking」ジェイルブレーク手法 — ゲームAIの制限を悪用した新型プロンプトインジェクション攻撃</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.malwarebytes.com/blog/ai/2026/07/bioshocking-when-gaming-ai-agents-is-no-longer-a-game" class="source-link" target="_blank" rel="noopener">🔗 Malwarebytes Labs</a>
+      </div>
+      <p>Malwarebytesが新たなAIエージェント攻撃手法「BioShocking」を詳述。ゲームAIシステムの仮想世界ルールセットを悪用し、通常は防御されているプロンプトインジェクション制限を迂回するアプローチ。ゲームと現実の境界線が曖昧なAIエージェント環境では、ゲームシナリオを装った命令が本番システムに影響を及ぼす可能性がある。アジェンティックAIを本番展開している企業にとって新たなセキュリティリスクとして認識が必要。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cloud.google.com/blog/products/compute/googles-cloud-location-finder-unifies-multi-cloud-location-data" target="_blank" rel="noopener">Google Cloud Location Finder が GA — AWS・Azure・GCP・OCIの全リージョン情報をAPIで横断検索、カーボンフットプリント絞り込みにも対応</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cloud.google.com/blog/products/compute/googles-cloud-location-finder-unifies-multi-cloud-location-data" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Blog</a>
+      </div>
+      <p>Google CloudがCloud Location FinderをGA（一般提供）開始。AWS・Azure・GCP・OCIのパブリックリージョン・ゾーン・Google Distributed Cloud Connectedロケーションの最新情報を単一APIで取得可能。プロバイダー・近接性・テリトリー・カーボンフットプリントによる絞り込みに対応しており、マルチクラウド戦略における性能・コンプライアンス・持続可能性の最適化に活用できる。無料で利用可能。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-07-01-copilot-vision-is-generally-available/" target="_blank" rel="noopener">GitHub Copilot Vision が全プランで GA — 画像・PDFをチャットに添付してコードと一緒に推論が可能に</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-07-01-copilot-vision-is-generally-available/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>7月1日付でGitHub Copilot VisionがGA。画像やPDFをチャットプロンプトに直接添付することで、Copilotがコードと視覚情報を統合して推論できる機能が全サブスクライバーに提供開始。Free・Pro・Pro+・Business・EnterpriseすべてのCopilotプランで利用可能。UIデザインのスクリーンショットからコードを生成したり、図表を参照した実装など、ビジュアル情報を組み合わせた開発ワークフローが実現する。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.theunwindai.com/p/vercel-releases-the-npm-of-agent-skills" target="_blank" rel="noopener">Vercel が「エージェントスキルのnpm」となるCLIをリリース — Claude Code・GitHub Copilot・VS Codeに対応</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.theunwindai.com/p/vercel-releases-the-npm-of-agent-skills" class="source-link" target="_blank" rel="noopener">🔗 The Unwind AI</a>
+      </div>
+      <p>VercelがAIエージェントにスキルを追加するnpm的なCLIツールをリリース。GitHubリポジトリからスキルを取得し、~/.claude/skills または .github/skills にインストールする仕組み。Claude Code・GitHub Copilot・VS Code・Agent Skills仕様に対応する任意のツールで利用可能。React/Next.jsベストプラクティス（40+ルール）・Webデザイン監査（100+アクセシビリティチェック）・Vercel自動デプロイなど本番検証済みのスキルセットを提供。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.techspot.com/news/112926-south-korea-betting-880-billion-next-ai-race.html" target="_blank" rel="noopener">韓国 Samsung・SK Hynix が880兆ウォン（約880億ドル）規模の半導体・AIデータセンター投資計画を発表 — 次のAI覇権はハードウェアで決まる</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.techspot.com/news/112926-south-korea-betting-880-billion-next-ai-race.html" class="source-link" target="_blank" rel="noopener">🔗 TechSpot</a>
+      </div>
+      <p>韓国政府がSamsung ElectronicsおよびSK Hynixを中心とした企業と連携し、向こう10年間で880兆ウォン（約$8,800億）を半導体・ロボット・AIに投資する国家計画を発表。Samsungとサプライヤーが800兆ウォンを出資し国内に新たな半導体製造拠点を2か所建設。SK Group・GSグループ・Naverは550兆ウォンを投じ2029年までに8.4GWのAIデータセンター容量を構築する計画。次世代メモリとAIインフラの主導権を握るための国家的な大規模投資。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-07-02 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

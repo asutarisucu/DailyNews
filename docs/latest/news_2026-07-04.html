@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-07-04</title>
+  <meta name="description" content="2026-07-04 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-07-04</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-07-04 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <span class="stat-item stat-shopify">Shopify 3件</span>
+        <span class="stat-item stat-ai">AI 4件</span>
+        <span class="stat-item stat-security">セキュリティ 2件</span>
+        <span class="stat-item stat-cloud">クラウド 2件</span>
+        <span class="stat-item stat-dev">開発ツール 2件</span>
+        <span class="stat-item stat-other">その他 1件</span>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/shopify-scripts-will-be-deprecated-on-june-30-2026" target="_blank" rel="noopener">Shopify Scripts が6/30に完全廃止完了 — 移行未完ストアでチェックアウトロジックが消滅、Shopify Functions移行の事後対応を急ぐ</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/shopify-scripts-will-be-deprecated-on-june-30-2026" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>2026年6月30日をもってShopify Scriptsが完全廃止され、すべてのスクリプトが実行停止となった。移行が間に合わなかったストアでは、カスタム割引・配送ルール・B2B決済フィルタリングのロジックがShopifyのデフォルト動作に戻り、チェックアウト体験に影響が出ている。現時点でスクリプトの修正・再公開は不可のため、Shopify FunctionsまたはパブリックAppへの移行を最優先で完了させる必要がある。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Admin GraphQL 2026-07: 配送プロファイルに coversAllItems フィールド追加・在庫移転での Metafield 直接定義が可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Admin GraphQL API 2026-07で、アプリが所有する配送料プロファイルに coversAllItems フィールドが追加され、承認されたアプリが製品ごとの設定なしにすべての配送可能アイテムへ送料を適用できるようになった。また、在庫移転（inventory transfers）でのMetafield定義・設定が直接可能となり、別途 metafieldSet 呼び出しが不要になった。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Admin GraphQL 2026-07: Shopify Plus 限定で Draft Order Deposits をサポート — チェックアウト前に前払い金額を設定・Customer Account API で顧客が確認可能</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Admin GraphQL API 2026-07にてShopify Plus限定のDraft Order Deposits機能が追加。アプリがAdmin GraphQL経由で前払い金額を設定し、Customer Account APIを通じて顧客がチェックアウト前に入金詳細を確認できるようになった。B2B・カスタム注文フローでの部分前払い処理がより柔軟に実装できる。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank" rel="noopener">Anthropic Claude Fable 5 が7/1に全世界再開 — 輸出規制解除後、サイバーセキュリティタスクをブロックする新分類器を追加して再デプロイ</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news/redeploying-fable-5" class="source-link" target="_blank" rel="noopener">🔗 Anthropic Newsroom</a>
+      </div>
+      <p>6月12日からの米政府輸出規制により全ユーザーへのアクセスを一時停止していたClaude Fable 5とMythos 5が、6月30日の規制解除を受けて7月1日より全世界で再開された。Amazonが報告した脆弱性に対応する新しいサイバーセキュリティタスクブロック用分類器を追加（99%以上のブロック率）しており、Pro/Max/Team/一部Enterprise向けには7月7日まで週間使用量の最大50%で利用可能。その後はUsage Credits方式に移行する。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener">OpenAI GPT-5.6 Sol / Terra / Luna シリーズ プレビュー開始 — 限定20社から公開予定、Sol は $5/$30 per M tokens でフロンティア推論を実現</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://openai.com/index/previewing-gpt-5-6-sol/" class="source-link" target="_blank" rel="noopener">🔗 OpenAI</a>
+      </div>
+      <p>OpenAIがGPT-5.6シリーズとして Sol（フロンティア推論・長期エージェント作業向け）、Terra（日常タスク向け、GPT-5.5相当の性能を2分の1のコストで）、Luna（最速・最安値）の3モデルを発表。Sol は $5/M input・$30/M output のAPIで提供予定。現在は米政府との協議のもと約20社に限定プレビュー中で、数週間以内に一般公開予定。7月にはCerebras経由で毎秒最大750トークンの高速推論も利用可能になる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cnbc.com/2026/07/02/microsoft-commits-2point5-billion-6000-employees-ai-implementation-unit.html" target="_blank" rel="noopener">Microsoft、$25億・6,000人エンジニアを顧客現場に派遣する「Frontier Company」を設立 — London Stock Exchange・Unilever・Novo Nordisk が先行導入</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cnbc.com/2026/07/02/microsoft-commits-2point5-billion-6000-employees-ai-implementation-unit.html" class="source-link" target="_blank" rel="noopener">🔗 CNBC</a>
+      </div>
+      <p>MicrosoftがAIの販売から「AI実装の直接担当」へシフトする新事業部門「Microsoft Frontier Company」を7月2日に発表。25億ドルを投資し6,000人の業界・技術エンジニアを顧客組織内に埋め込んで測定可能なビジネス成果に紐付くAIシステムを共同開発する。この動きはAWSの10億ドル規模のForward Deployed Engineeringよりわずか2日後の発表であり、企業向けAI実装合戦が激化している。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aitoolsrecap.com/Blog/ai-news-july-3-2026" target="_blank" rel="noopener">Anthropic が収益でOpenAIを抜く — 年収$470億目標・2029年に黒字化見通しを公表、OpenAIより1年前倒し</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aitoolsrecap.com/Blog/ai-news-july-3-2026" class="source-link" target="_blank" rel="noopener">🔗 AI Tools Recap</a>
+      </div>
+      <p>Anthropicが自己申告ベースの収益でOpenAIを上回り、年収$470億の目標とともに2029年の黒字化見通しを公表した（OpenAIは2030年を黒字化目標としている）。AI業界トップ2社の構図が激変しており、Claude Fable 5の全世界再開とOpenAI GPT-5.6の限定プレビューが重なる中、エンタープライズ市場での競争がさらに加速している。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" target="_blank" rel="noopener">【本日期限】CVE-2026-45659: SharePoint Server RCE (CVSS 8.8) — CISA KEV追加・連邦機関の対応期限は本日2026年7月4日</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>SharePoint ServerのRCE脆弱性CVE-2026-45659（CVSS 8.8）がCISAのKnown Exploited Vulnerabilities（KEV）カタログに追加された。信頼できないデータのデシリアライズに起因するリモートコード実行の欠陥で、実際の悪用が確認済み。米国連邦機関の対応期限は本日（2026年7月4日）であり、SharePointを運用するすべての組織で即時パッチ適用が必要。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">SimpleHelp OIDC認証バイパス脆弱性 — 未署名JWTを検証せず受け入れ、リモートで完全認証迂回が可能 (CRITICAL / 7月1日 KEV追加)</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA — Known Exploited Vulnerabilities Catalog</a>
+      </div>
+      <p>SimpleHelp（リモートサポートツール）にOIDC認証フローの重大な脆弱性が発見され、7月1日にCISA KEVへ追加された（CRITICAL評価）。ログイン時に提出されたIDトークンの暗号署名を検証せずに受け入れるため、未認証のリモート攻撃者が偽造トークンを送信するだけで完全に認証されたテクニシャンセッションを取得できる。SimpleHelp環境を運用している組織は即時パッチ対応が必要。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-aws-summit-in-new-york-2026/" target="_blank" rel="noopener">AWS Summit DC 2026: 「AWS Secret Cloud for Industry」発表 — Northrop Grummanが第一号、国防請負業者が機密ワークロードをAWS上で初めて実行可能に</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-aws-summit-in-new-york-2026/" class="source-link" target="_blank" rel="noopener">🔗 AWS News Blog</a>
+      </div>
+      <p>AWSがAWS Summit Washington, D.C. 2026において「AWS Secret Cloud for Industry」を発表。国防請負業者が機密ワークロードを独自の隔離環境としてAWSインフラ上で実行できる初のサービスで、Northrop Grummanが最初のパートナーとなった。また$10億規模のIC Accelerated Modernization Framework（ICAMF）も発表し、米国インテリジェンス機関のAWSへのワークロード移行を2030年10月まで支援するクレジットを提供する。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/" target="_blank" rel="noopener">AWS Forward Deployed Engineering ($10億) 発表 — エンジニアを顧客現場に埋め込み AIソリューションを共同開発、Microsoft Frontier Companyより2日先行</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/" class="source-link" target="_blank" rel="noopener">🔗 AWS News Blog</a>
+      </div>
+      <p>AWSが10億ドルを投資してエンジニアを顧客組織内に直接派遣し、AIソリューションを共同開発・運用する「AWS Forward Deployed Engineering（FDE）」を発表。顧客に売るのではなく「ともに構築する」モデルへの転換を宣言した。Microsoft Frontier Companyより2日先行した発表であり、OpenAIやAnthropicも同様の取り組みを5月から進めており、エンタープライズAI実装の主戦場となっている。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://devops.com/npm-v12-is-coming-in-july-heres-what-developers-need-to-do-now/" target="_blank" rel="noopener">npm v12 正式リリース (7月) — インストールスクリプト・Git依存・URL依存をデフォルトブロック、CI/CDパイプラインの即時対応が必須</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://devops.com/npm-v12-is-coming-in-july-heres-what-developers-need-to-do-now/" class="source-link" target="_blank" rel="noopener">🔗 DevOps.com</a>
+      </div>
+      <p>npm v12が7月に正式リリースされ、npm史上初の破壊的セキュリティ変更として preinstall/install/postinstall スクリプト・Git依存関係・リモートURL依存関係のデフォルトブロックが適用された。2025年のサプライチェーン攻撃最悪の年（Miasmaワームで89パッケージが侵害）を受けた対応で、明示的な承認なしに実行される。既存のCI/CDパイプラインを即刻 npm 11.16.0 の警告でオーディットし、依存関係の許可リストを整備しなければ本番ビルドが壊れる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.com/features/copilot/whats-new" target="_blank" rel="noopener">GitHub Copilot CLI が GitHub Actions で組み込み GITHUB_TOKEN に対応 — PAT の作成・保管が不要に、kimi-k2.7-code モデルもサポート</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.com/features/copilot/whats-new" class="source-link" target="_blank" rel="noopener">🔗 GitHub Copilot — What's New</a>
+      </div>
+      <p>GitHub Copilot CLIがGitHub Actions内でビルトインの GITHUB_TOKEN を使用して実行できるようになり、個人アクセストークン（PAT）の作成・保管が不要になった。またCopilot CLIがkimi-k2.7-codeモデル（2026年7月1日対応）をサポートし、CLIのコード提案行数がUsage Metricsに集計されるようになった。エンタープライズ向けにはAIクレジットプールのコストセンター別上限設定もREST API経由で利用可能になっている。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-4-2026" target="_blank" rel="noopener">Grok 4.5 SpaceX・Teslaでプライベートベータ開始 — 同日、中国製1.6兆パラメータモデルがMITライセンスでOSS公開</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-4-2026" class="source-link" target="_blank" rel="noopener">🔗 Build Fast With AI</a>
+      </div>
+      <p>米国独立記念日（7月4日）、AI業界は休むことなくxAIのGrok 4.5がSpaceXとTeslaでのプライベートベータを開始したと報じられた。同日、国産チップのみで訓練した1.6兆パラメータの中国製モデルがMITライセンスでオープンソース公開された。AnthropicはシンガポールのダミーカンパニーやVPN経由での中国企業のClaude利用を防ぐ抜け穴対策を強化しており、AI技術のアクセス規制を巡る国際的な緊張が続いている。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-07-04 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

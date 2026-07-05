@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-07-05</title>
+  <meta name="description" content="2026-07-05 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-07-05</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-07-05 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>15件</strong></p>
+      <div class="stats-bar">
+        <span class="stat-item stat-shopify">Shopify 4件</span>
+        <span class="stat-item stat-ai">AI 4件</span>
+        <span class="stat-item stat-security">セキュリティ 1件</span>
+        <span class="stat-item stat-cloud">クラウド 2件</span>
+        <span class="stat-item stat-dev">開発ツール 2件</span>
+        <span class="stat-item stat-other">その他 2件</span>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/market-driven-delivery-profiles-admin-api" target="_blank" rel="noopener">Admin API 2026-07: Market-driven shipping が GraphQL Admin API に対応 — 10月1日より全マーチャントへ段階展開、アプリの配送プロファイルAPI対応が必須</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/market-driven-delivery-profiles-admin-api" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>2026-07 APIバージョンより、GraphQL Admin APIがマーケット単位の配送設定に対応。マーケットごとに異なる配送戦略を別途配送プロファイルリソースを作成することなく設定可能になった。フィーチャープレビューは本日より利用可能で、開発ストアで既存インテグレーションと料金ロジックの検証が推奨される。マーチャントへのロールアウトは2026年10月1日から開始し、2027年7月1日に全マーチャントへ展開完了予定。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/merchant-owned-delivery-profile-apis-are-deprecated-for-market-driven-shipping" target="_blank" rel="noopener">マーチャント所有の配送プロファイルAPI が Market-driven shipping 移行により非推奨に — 既存アプリは2026-07対応が必要</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/merchant-owned-delivery-profile-apis-are-deprecated-for-market-driven-shipping" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Market-driven shippingの導入に伴い、既存のマーチャント所有配送プロファイルAPIが非推奨となった。ショップがMarket-driven shippingを使用している場合、Admin GraphQL APIのレガシー配送プロファイルフィールドおよびミューテーションは「ライブ」な配送設定を反映しなくなる。書き込み操作はエラーなく成功するがマーチャントの実際の配送設定は更新されないという危険な挙動があるため、配送APIを利用するアプリはフィーチャープレビュー期間中に必ず更新が必要。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/discount-application-information-now-available-for-draft-orders-on-the-customer-account-api" target="_blank" rel="noopener">Customer Account API 2026-07: ドラフトオーダーに割引適用情報フィールドを追加 — discountApplications と discountAllocations が新規提供</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/discount-application-information-now-available-for-draft-orders-on-the-customer-account-api" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>GraphQL Customer Account API 2026-07より、ドラフトオーダーに割引情報が公開された。DraftOrderに`discountApplications`フィールド、DraftOrderLineItemに`discountAllocations`フィールドが追加され、カスタマーアカウント画面でドラフトオーダーの割引詳細を表示するアプリが構築しやすくなった。B2B向けドラフトオーダー管理UIの充実に貢献する変更。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/market-driven-shipping-now-available-in-feature-preview" target="_blank" rel="noopener">Market-driven shipping フィーチャープレビュー開始 — Markets 内で配送と販売地域を一元管理、マーチャント向けチェックアウト体験を改善</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/market-driven-shipping-now-available-in-feature-preview" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify Markets 内で配送オプションを管理できるMarket-driven shippingのフィーチャープレビューが開始。販売地域（Markets）と配送設定を同じ場所で管理できるようになり、チェックアウト時の料金表示の一貫性が向上する。開発者はフィーチャープレビュー用の開発ストアを作成して検証できる。Markets APIでの`MarketRegionSubdivision`による国内サブリージョン（州・県レベル）の配送設定もAPI 2026-07で対応した。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank" rel="noopener">Claude Fable 5、7月1日にグローバル再展開 — 米政府が輸出管理を解除、7月7日以降はUsage Credits移行でPro/Max/Teamは週50%制限</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news/redeploying-fable-5" class="source-link" target="_blank" rel="noopener">🔗 Anthropic Newsroom</a>
+      </div>
+      <p>米国商務省が2026年6月12日に発動していたClaude Fable 5・Mythos 5への輸出管理措置を解除、Anthropicは6月30日にその通知を受け7月1日にグローバル再展開を開始した。再展開には新たなサイバーセキュリティタスクをブロックするクラシファイアが追加されており、一部コーディング系ルーティンタスクには若干の影響がある。7月7日以降、Pro・Max・Team・一部Enterpriseプランでは週間利用上限の50%分が含まれ、それ以上はUsage Creditsが必要になる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener">OpenAI、GPT-5.6 Sol/Terra/Luna を限定プレビュー公開 — Cerebrasで最大750 tokens/sec、コーディング・生物・サイバーセキュリティで最高水準</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://openai.com/index/previewing-gpt-5-6-sol/" class="source-link" target="_blank" rel="noopener">🔗 OpenAI</a>
+      </div>
+      <p>OpenAIがGPT-5.6ファミリー（Sol：フラッグシップ、Terra：バランス型、Luna：高速・低コスト）を約20組織に限定公開した。Solは新たな「max reasoning effort」でより深く推論し、「ultra mode」でサブエージェントを活用した複雑な作業を加速する。Terminal-Bench 2.1のコーディングワークフローで最高水準を達成し、Cerebrasとの協力で最大750 tokens/secを実現。一般公開は「数週間以内」を予定。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aitoolsrecap.com/Blog/ai-news-july-3-2026" target="_blank" rel="noopener">Anthropic が OpenAI を売上見通しで上回る — $47B目標・2029年黒字化を宣言、Claude Enterprise 強化版管理コントロールも7月3日に公開</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aitoolsrecap.com/Blog/ai-news-july-3-2026" class="source-link" target="_blank" rel="noopener">🔗 AIToolsRecap</a>
+      </div>
+      <p>Anthropicが自社の年間収益換算目標を$47Bと発表し、OpenAIの$25B〜$33B見通しを上回った。黒字化は2029年と予告（OpenAIより1年早い）。あわせて7月3日にはClaude Enterprise向けの強化版管理コントロールをリリース。豊富な利用分析、モデルレベルの権限設定、支出アラート機能が追加され、大企業でのClaude展開管理が大幅に向上した。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://fortune.com/2026/07/02/sam-altman-new-world-order-ai-openai-google-anthropic/" target="_blank" rel="noopener">White House、AI自発的リリース標準を策定中 — OpenAI・Google・Anthropicと協議、7月7日頃に発表予定、IPO前のOpenAIは政府へ5%株式提供も提案</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://fortune.com/2026/07/02/sam-altman-new-world-order-ai-openai-google-anthropic/" class="source-link" target="_blank" rel="noopener">🔗 Fortune</a>
+      </div>
+      <p>ホワイトハウスがOpenAI・Google・Anthropicとフロンティアモデルの自発的リリース標準策定の最終協議を行っており、7月7日頃に発表が見込まれる。標準はベンチマーク・リリースタイムライン・国内外アクセスルールを含む。OpenAIは9月IPOに向けた政府との関係構築の一環として、政府に5%株式を提供する案を提示しており、他社への同様の要求も含む提案が業界の反発を招いている。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" target="_blank" rel="noopener">SharePoint Server CVE-2026-45659 がCISA KEVに追加 — デシリアライゼーションRCE、FCEBの対応期限は7/4、パッチは5月Patch Tuesdayで提供済み</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>Microsoft SharePoint ServerにUntrusted Dataのデシリアライゼーションによるリモートコード実行脆弱性（CVE-2026-45659）が発見され、CISAのKnown Exploited Vulnerabilities（KEV）カタログに追加された。5月のPatch Tuesdayでパッチは提供されていたが、その存在がMicrosoftから開示されておらず、CISAが積極的な悪用を確認して追加した形。FCEB（連邦民間行政機関）の適用期限は7月4日（すでに経過）。自社環境でSharePointを利用している組織は即座にパッチ適用を確認すること。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-4-2026" target="_blank" rel="noopener">Microsoft、「Frontier Company」を発足 — $25億投資・6,000名エンジニアで大企業に専任チームを派遣しAIシステムを共同設計・最適化</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-4-2026" class="source-link" target="_blank" rel="noopener">🔗 Build Fast with AI</a>
+      </div>
+      <p>Microsoftが新事業部門「Microsoft Frontier Company」の設立を発表。$25億の投資と約6,000名のエンジニアを擁し、エンタープライズクライアントに専門家を直接派遣してAIシステムの共同設計・展開・最適化を行う体制を構築する。既存のクラウドサービス提供とは異なり、ハンズオンの実装支援まで踏み込む新しいビジネスモデルで、AI導入の複雑さを企業から切り離すことを目指す。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up" target="_blank" rel="noopener">Google Cloud、Data Agent Kit & Cross-cloud Lakehouse を発表 — Iceberg REST CatalogでAWSとAzureのデータも含めたマルチクラウドのデータアクセスを統合</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Blog</a>
+      </div>
+      <p>Google CloudがData Agent Kitを発表。AIエージェントがデータのロード・クリーニング・可視化を含む複雑な計画を実行するData Science Agentと、Dataformパイプラインを自律的に構築するData Engineering Agentをラインアップ。またCross-cloud Lakehouse（旧BigLake）はIceberg REST CatalogによりAWS・Azure・各種パートナーのデータへのボーダーレスアクセスを提供し、AIエージェントが複数クラウドをまたいでシームレスにデータを扱えるようにする。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/label/copilot/" target="_blank" rel="noopener">GitHub Copilot: AI Credit Pools for Cost Centers & GitHub Actions統合でPAT不要に — GITHUB_TOKEN だけで Copilot CLI が実行可能に</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/label/copilot/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHubがCopilot向けに2つの重要なアップデートを提供。①「AI Credit Pools for Cost Centers」により、企業がコストセンターごとに月間Copilot AIクレジット上限を設定可能になった（REST API対応済み、UI管理は近日公開）。②GitHub ActionsでCopilot CLIがビルトインのGITHUB_TOKENで直接実行できるようになり、長期間有効なPATを作成・管理・保存するリスクと運用コストを排除できる。また新モデルkimi-k2.7-codeのサポートも追加された。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.com/denoland/deno/releases" target="_blank" rel="noopener">Deno 2.10.0 リリース & Deno Deploy Classic が7月20日終了 — npm trust-policy 改善・ランタイムデスクトップ強化、新プラットフォーム console.deno.com へ移行必須</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.com/denoland/deno/releases" class="source-link" target="_blank" rel="noopener">🔗 Deno Releases — GitHub</a>
+      </div>
+      <p>Deno 2.10.0が2026年7月1日にリリース。npmのtrust-policy-excludeのケースインセンシティブマッチング、ランタイムデスクトップ機能の改善などが含まれる。またDeno Deploy Classic（dash.deno.com）が2026年7月20日に終了することが発表された。新規プロジェクトは現在から console.deno.com に移行が必要で、既存プロジェクトを持つユーザーも期限前に移行手続きを完了することが推奨される。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-4-2026" target="_blank" rel="noopener">xAI、Grok 4.5 をリリース — 1.5兆パラメータ（Grok 4.4比50%増）、SpaceXが$600億で買収したCursorのコーディングデータを訓練に活用</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-4-2026" class="source-link" target="_blank" rel="noopener">🔗 Build Fast with AI</a>
+      </div>
+      <p>xAIがGrok 4.5をリリース。パラメータ数は前バージョンGrok 4.4（2026年5月後半出荷）比50%増となる1.5兆規模。SpaceXが2026年6月に$600億で買収したCursor（旧Anysphere）のIDEセッションデータを訓練に組み込み、コーディングと技術的推論の精度を強化した。次世代モデルGrok 5は6〜10兆パラメータを目標としており、公開議論の中では最大規模のモデルアーキテクチャとなる予定。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/07/03/top-tech-news-today-july-3-2026/" target="_blank" rel="noopener">NVIDIA、GPU を Revenue-sharing モデルで提供開始 — 初期費用なしでAIスタートアップがGPUキャパシティへアクセス可能に</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/07/03/top-tech-news-today-july-3-2026/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>NVIDIAがAIクラウドプロバイダーを対象に、GPUを収益分配（revenue-sharing）およびクレジットサポート構造で提供する新モデルを展開中。これまで全額前払いが必要だったGPUアクセスを初期費用なしで可能にし、資本力の少ないAIスタートアップでもNVIDIA対応のキャパシティを確保しやすくする。GPU確保競争が続く中、NVIDIAが需要側の障壁を下げることでエコシステム全体の拡大を狙う戦略的な動き。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-07-05 07:00 JST 更新 | 全15件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

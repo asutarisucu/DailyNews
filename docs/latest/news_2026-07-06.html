@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-07-06</title>
+  <meta name="description" content="2026-07-06 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-07-06</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-07-06 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <span class="stat-item stat-shopify">Shopify 4件</span>
+        <span class="stat-item stat-ai">AI 3件</span>
+        <span class="stat-item stat-security">セキュリティ 2件</span>
+        <span class="stat-item stat-cloud">クラウド 2件</span>
+        <span class="stat-item stat-dev">開発ツール 2件</span>
+        <span class="stat-item stat-other">その他 1件</span>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/shop-minis-may-june-2026-update" target="_blank" rel="noopener">Shop Minis May-June 2026 Update — 型付きバリアントIntentフック追加・CLI submit時ビルド検証が自動実行に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/shop-minis-may-june-2026-update" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shop Minis SDKが型付きプロダクトバリアントIntentフックを追加。カートへのバリアント追加や高速チェックアウト遷移を制御できるほか、ネイティブのShopバリアントセレクターシートをMini WebView上にオーバーレイ表示できる。CLIはsubmit実行時に依存関係・ESLint・TypeScript・ビルド出力・マニフェストの一括検証を自動実行するようになり、公開前の品質確認が強化された。許可依存関係リストにtw-animate-cssなどの新パッケージも追加されている。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/sidekick-app-extensions-available-today" target="_blank" rel="noopener">Shopify Sidekick App Extensions が全開発者に開放 — アプリデータをAIアシスタントで検索・操作可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/sidekick-app-extensions-available-today" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>ShopifyのAIアシスタント「Sidekick」のApp Extensionsが全アプリ開発者に開放された。App Data Extensionによりアプリのコンテンツ（商品データ・分析情報など）をSidekickの検索対象に統合でき、マーチャントが「メール件名でベストパフォーマンスなのは？」などの自然言語で問い合わせできるようになる。Action ExtensionはSidekickからアプリ内ワークフローを直接トリガーする機能を提供し、AIと連携した新しいアプリ体験の構築が可能になる。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Shopify Bulk Operations が最大4倍高速化 — API 2026-01以降で5並列実行にも対応</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>ShopifyのGraphQL Admin APIにおけるBulk Operationsのパフォーマンスが最大4倍に向上し、大規模データセットのエクスポート時間が大幅短縮された。さらにAPI 2026-01以降では1ショップあたり最大5件のバルククエリを並列実行できるようになり、複数の大規模データセットを同時処理することが可能となった。ETLパイプラインや商品・注文データの一括エクスポートを行うアプリ開発者にとって大きな改善となる。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/merchant-owned-delivery-profile-apis-are-deprecated-for-market-driven-shipping" target="_blank" rel="noopener">Merchant-owned Delivery Profile APIs 非推奨化 — Market-driven Shipping の新 Admin API への移行が必要</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/merchant-owned-delivery-profile-apis-are-deprecated-for-market-driven-shipping" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>ShopifyがMarket-driven Shippingへの完全移行に伴い、Merchant-owned Delivery Profile APIを非推奨とした。新しいAdmin GraphQL API 2026-07では市場別配送料金の設定が可能で、複数の料金タイプ・条件・リアルタイムキャリア料金取得をサポートする。配送プロファイルを管理するアプリや独自の配送ロジックを持つストアは、新しいMarket-driven Shipping APIへの移行対応が必要となる。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://claude.com/blog/giving-admins-more-visibility-and-control-over-claude-usage-and-spend" target="_blank" rel="noopener">Anthropic、Claude Enterprise の管理コントロールを大幅強化 — モデル別権限・支出アラート・Analytics API を追加</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://claude.com/blog/giving-admins-more-visibility-and-control-over-claude-usage-and-spend" class="source-link" target="_blank" rel="noopener">🔗 Claude by Anthropic</a>
+      </div>
+      <p>AnthropicがClaude Enterpriseにグループ・ユーザー別リアルタイム分析ダッシュボード、モデル別権限設定（チャット・Cowork・Claude Codeのデフォルトモデルと利用可能モデルを職種別に制御）、支出アラート（75%・90%通知）を追加した。管理者が自然言語で「今月クローデ使用量が2倍になったチームはどこか？」などを問い合わせ可能なAI分析機能も搭載。Analytics APIにより、DatadogやCloudZeroなど既存コスト管理ツールへのClaude利用データ統合も実現した。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://fortune.com/2026/07/02/sam-altman-new-world-order-ai-openai-google-anthropic/" target="_blank" rel="noopener">OpenAI、米政府に約5%の株式移転を提案 — Alaska Permanent Fund 型の政府投資ビークルを想定、9月 IPO 前の戦略的布石</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://fortune.com/2026/07/02/sam-altman-new-world-order-ai-openai-google-anthropic/" class="source-link" target="_blank" rel="noopener">🔗 Fortune</a>
+      </div>
+      <p>OpenAI CEOのSam AltmanがAlaska Permanent Fundを模した米政府リンクのビークルに約5%の株式を移転する提案を行ったと報じられた。政府に経済的利害を持たせることで規制・政策リスクを軽減し、2026年9月予定のIPOへの道筋を整える狙いがある。一方でAnthropicはOpenAIを上回る収益を達成しており、2026年前半でOpenAI・Anthropic合計が全世界スタートアップVCの43%にあたる$2,170億を調達している。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-3-2026" target="_blank" rel="noopener">ホワイトハウス、OpenAI・Google・Anthropic と任意 AI リリース基準を策定中 — ベンチマーク・リリーススケジュール・アクセスルールを規定</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-3-2026" class="source-link" target="_blank" rel="noopener">🔗 Build Fast With AI</a>
+      </div>
+      <p>ホワイトハウスがOpenAI・Google・Anthropicを含む主要AI企業と、フロンティアモデル向け任意AIリリース基準の策定を進めている。基準にはモデル評価ベンチマーク・リリーススケジュール・国内外アクセスルールが含まれ、来週中にも発表が見込まれる。強制力を持たない任意基準ではあるが、主要3社が参加しているため事実上の業界標準になる可能性が高く、開発者・企業双方がモデル展開方針への影響を注視している。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" target="_blank" rel="noopener">【CISA KEV 追加】CVE-2026-45659 Microsoft SharePoint RCE — 低権限ユーザーによるコード実行・ランサムウェア展開が確認</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>CISAがMicrosoft SharePoint ServerのRCE脆弱性CVE-2026-45659（CVSS 8.8）をKnown Exploited Vulnerabilitiesカタログに追加した。Siteメンバー相当の低権限認証ユーザーがネットワーク越しに任意コードを実行でき、ランサムウェア展開・横断的移動・特権昇格への悪用が実際に確認されている。SharePoint Server Subscription Edition・2019・Enterprise Server 2016が対象で、FCEBエージェンシーの期限は7月4日（既過）。オンプレミスSharePoint環境は直ちにMay 2026パッチの適用が必要。SharePoint Onlineは影響なし。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/" target="_blank" rel="noopener">npm v12、7月リリース — インストールスクリプト・Git 依存をデフォルト無効化でサプライチェーン攻撃対策を抜本強化</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHubがnpm v12で、preinstall・install・postinstallスクリプトとGit依存関係・リモートURL依存をデフォルト無効化する破壊的変更を7月に提供する。2026年6月に@redhat-cloud-servicesの57パッケージを侵害した「Miasmaワーム」などのサプライチェーン攻撃への対応策で、実行には`npm approve-scripts`による明示的な許可が必要になる。CI/CDパイプラインでnpm installを使用しているすべてのチームは、npm 11.16.0の警告を確認して依存関係の許可リストを今すぐ整備する必要がある。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/" target="_blank" rel="noopener">Microsoft、$2.5B 投資・6,000 人規模の「Microsoft Frontier Company」設立 — エンタープライズへの AI エンジニア常駐モデルを本格展開</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/" class="source-link" target="_blank" rel="noopener">🔗 TechCrunch</a>
+      </div>
+      <p>Microsoftが$2.5Bの投資と約6,000人のエンジニア・専門家からなる新事業体「Microsoft Frontier Company」を設立。顧客企業にMicrosoftのAIエンジニアを直接常駐させ、AI導入・最適化を共同設計する「フォワードデプロイドエンジニアリング」モデルを採用する。Amazonが同時期に$1B規模の類似組織を設立しており、OpenAI・Anthropicも5月に同様の取り組みを開始。エンタープライズAIの直接展開支援が業界の標準戦略になりつつある。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cnbc.com/2026/07/02/nvidia-plans-to-offer-start-up-customers-access-to-revenue-sharing-deals.html" target="_blank" rel="noopener">NVIDIA、AI Cloud 向け収益分配型 GPU 調達モデルを発表 — 前払い不要・アイドル時バックストップ保証で最大 21 万基を提供</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cnbc.com/2026/07/02/nvidia-plans-to-offer-start-up-customers-access-to-revenue-sharing-deals.html" class="source-link" target="_blank" rel="noopener">🔗 CNBC</a>
+      </div>
+      <p>NVIDIAが7月1日、AI Cloudプロバイダーに前払い不要でGPUアクセスを提供する収益分配モデルを発表した。将来の収益に対してGPUクレジットを今すぐ引き出せる仕組みで、アイドル時はNVIDIAが未使用キャパシティを補填するバックストップ保証付き。初期パートナーはSharon AI（豪州・GB300 GPU約4万基）とFirmus Technologies（インドネシア・最大17万基）で合計約21万基を展開予定。純粋なハードウェアベンダーからAIクラウド収益の直接分配受益者へのビジネスモデル転換となる。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.theunwindai.com/p/vercel-releases-the-npm-of-agent-skills" target="_blank" rel="noopener">Vercel、「エージェントスキルの npm」をリリース — パッケージ管理感覚で AI エージェントにスキルを追加・共有</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.theunwindai.com/p/vercel-releases-the-npm-of-agent-skills" class="source-link" target="_blank" rel="noopener">🔗 The Unwind AI</a>
+      </div>
+      <p>VercelがAIエージェント向けのスキル管理ツールをリリース。開発者がnpmでパッケージをプロジェクトに追加するのと同じ感覚で、AIエージェントにスキルをインストール・パブリッシュ・共有できる仕組みを提供する。CLI経由でスキルのライフサイクル管理が可能で、エージェントベースのアプリ開発エコシステムの標準化を目指している。Anthropic等のモデルと組み合わせたエージェント開発ワークフローの効率化が期待される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog" target="_blank" rel="noopener">Vercel CLI に agent-runs・vcr コマンドを追加 — Agent Runs のフルトレース可視化と Container Registry 管理が CLI から可能に</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Vercel CLIにAgent Runs可視化用の`vercel agent-runs`コマンドとVercel Container Registry管理用の`vercel vcr`コマンドが追加された。`agent-runs`コマンドはプロジェクトのAgent Runs一覧・メタデータ確認・フルトレース表示・チーム全体の活動状況確認をサポートし、AIエージェントのデバッグと監視を強化する。`vercel vcr`はコンテナイメージのリポジトリ・ライフサイクル管理をCLIから直接実行できる機能を提供する。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://news.un.org/en/story/2026/07/1167848" target="_blank" rel="noopener">国連 AI Governance Dialogue、7月6日ジュネーブで開幕 — 加盟国が AI の国際管理枠組みを議論</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://news.un.org/en/story/2026/07/1167848" class="source-link" target="_blank" rel="noopener">🔗 UN News</a>
+      </div>
+      <p>7月6日、国連加盟国がジュネーブで「UN Global Dialogue on AI Governance」を開幕した。AIのリスク管理・アクセスの公平性・標準化に向けた国際的アプローチを多国間で議論する。OpenAI・Anthropic・Googleなど主要AI企業の動向と米政府の政策が各国の姿勢に直接影響を与えるなか、国際ガバナンス枠組みの整備は急務となっており、今後の規制動向・標準化に携わる開発者・企業が注目している。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-07-06 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-07-07</title>
+  <meta name="description" content="2026-07-07 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-07-07</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-07-07 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>16件</strong></p>
+      <div class="stats-bar">
+        <span class="stat-item stat-shopify">Shopify 4件</span>
+        <span class="stat-item stat-ai">AI 4件</span>
+        <span class="stat-item stat-security">セキュリティ 2件</span>
+        <span class="stat-item stat-cloud">クラウド 2件</span>
+        <span class="stat-item stat-dev">開発ツール 2件</span>
+        <span class="stat-item stat-other">その他 2件</span>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed" target="_blank" rel="noopener">【API 2026-10 破壊的変更】Customer Account API から lastIncompleteCheckout と Checkout タイプが削除 — Storefront API カートフローへの移行が必要</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>API バージョン 2026-10 にて、Customer Account API の Customer.lastIncompleteCheckout フィールドおよび Checkout 型が完全に削除される。これらはすでに deprecated として null を返していた。バイヤーのカート・チェックアウト状態を取得している場合は Storefront API のカートフローへの移行が必須。また、Built for Shopify ステータスを維持するには 2026年12月1日までに Customer Account API での認証実装が要件となる。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/market-driven-delivery-profiles-admin-api" target="_blank" rel="noopener">Market-driven shipping Admin API が 2026-07 で提供開始 — マーチャント所有配送プロファイル API は非推奨へ</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/market-driven-delivery-profiles-admin-api" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify Admin GraphQL API 2026-07 より、マーケット単位で配送設定を行う Market-driven Shipping API が利用可能になった。複数の料金タイプ・条件・リアルタイムキャリア取得をサポートし、別途配送プロファイルリソースを作成せずに市場ごとの配送戦略を設定できる。既存のマーチャント所有配送プロファイル API (DeliveryProfile) は非推奨となるため、market-driven shipping を使用するショップはAPIの移行が必要。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Admin API 2026-07: 下書き注文へのデポジット（部分支払い）設定が可能に — Shopify Plus 限定、Customer Account API で購入者に詳細表示</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>2026-07 API で追加された Draft Order Deposits 機能により、アプリが Admin GraphQL を通じて下書き注文に対して部分支払い（デポジット）を設定できるようになった。顧客は Customer Account API 経由でデポジット詳細を確認可能。この機能は Shopify Plus プランのみ利用できる。法人向け・高額商品の受注フローを構築するアプリ開発者に有用な新機能。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">WhatsApp マーケティング同意 API が新設 — customerWhatsAppMarketingConsentUpdate で顧客の WhatsApp 同意を読み取り・更新</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify Admin GraphQL API に customerWhatsAppMarketingConsentUpdate ミューテーションと CustomerPhoneNumber の consent フィールドが追加された。顧客のデフォルト電話番号に紐づく WhatsApp マーケティング同意の読み取りと更新が可能になる。WhatsApp を活用したマーケティングオートメーションや顧客コミュニケーションを構築するアプリ開発者向けの機能強化。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank" rel="noopener">Anthropic、Claude Sonnet 5 を正式リリース — 1M トークンコンテキスト・最高水準のエージェント性能、8月末まで $2/$10 per MTok の紹介価格</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news/claude-sonnet-5" class="source-link" target="_blank" rel="noopener">🔗 Anthropic</a>
+      </div>
+      <p>Anthropic が Claude Sonnet 5（6月30日リリース）を発表。これまでで最もエージェント特化型の Sonnet モデルで、推論・ツール使用・コーディング・知識業務で Sonnet 4.6 から大幅に向上した。ネイティブ 1M トークンコンテキストウィンドウと 128k 最大出力トークンをサポート。新トークナイザーにより同一テキストでも Sonnet 4.6 比で約30%多いトークン数になる点に注意。全プランでデフォルトモデルとなり、Amazon Bedrock でも同週から利用可能。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank" rel="noopener">Anthropic、Claude Fable 5 を 7月1日から世界展開 — 米輸出規制解除を受けてグローバルユーザー向けに再公開</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news/redeploying-fable-5" class="source-link" target="_blank" rel="noopener">🔗 Anthropic</a>
+      </div>
+      <p>6月12日にトランプ政権の輸出規制命令を受けてグローバル向けアクセスを停止していた Claude Fable 5 が、7月1日より Claude Platform・Claude.ai・Claude Code・Claude Cowork の全ユーザー向けに再展開された。輸出規制は解除されたものの、サイバーセキュリティ・生物兵器分野の高リスク領域への応答を遮断する新しい安全策が実装されている。Anthropic の年率収益は $470 億に達し、OpenAI を初めて上回った。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://venturebeat.com/technology/tencents-apache-licensed-hy3-takes-on-glm-5-2-at-half-the-size-and-wins-everywhere-except-coding" target="_blank" rel="noopener">Tencent、295B パラメータのオープン MoE モデル「Hy3」を Apache 2.0 で公開 — GLM-5.2 を半分のサイズで上回り、幻覚率を 12.5% から 5.4% に削減</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://venturebeat.com/technology/tencents-apache-licensed-hy3-takes-on-glm-5-2-at-half-the-size-and-wins-everywhere-except-coding" class="source-link" target="_blank" rel="noopener">🔗 VentureBeat</a>
+      </div>
+      <p>Tencent が7月6日に Hy3（Hunyuan 3）を正式リリース。総パラメータ 295B の Mixture-of-Experts（MoE）モデルで、各タスクでは 21B パラメータのみ起動するため推論コストを大幅削減。256K コンテキストウィンドウを持ち、内部50製品チームからのフィードバックを経て幻覚率を 12.5% → 5.4%、常識エラーを 25.4% → 12.7% に改善。Apache 2.0 ライセンスで Hugging Face・ModelScope から商用利用も含めて自由に利用可能。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/" target="_blank" rel="noopener">OpenAI、GPT-5.6 の一般公開を延期 — 米政府の要請でセキュリティ審査が先行、7月末の広範リリースを視野に</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/" class="source-link" target="_blank" rel="noopener">🔗 TechCrunch</a>
+      </div>
+      <p>トランプ政権がフロンティア AI モデルへの早期アクセスと追加的監視を要求したため、OpenAI は GPT-5.6（Sol / Terra / Luna の3モデル構成）の広範公開を延期。米国政府が国内 AI 企業に対してリリース前に規制アクセスを要求するのは史上初。OpenAI は「短期的な措置」と表明しつつ、政府との間でサイバーセキュリティに関する大統領令枠組みと「将来のモデルリリースのための再現可能なプロセス」の策定を進めている。7月31日の公開に向けた手続きが進行中。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" target="_blank" rel="noopener">【緊急】Microsoft SharePoint RCE（CVE-2026-45659）が CISA KEV に追加 — Storm-2603 が Warlock ランサムウェアを展開、認証済みユーザーが悪用可能</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>CISAが7月1日に SharePoint Server の信頼できないデータのデシリアライゼーション脆弱性 CVE-2026-45659（CVSS 8.8）を KEV カタログに追加し、連邦政府機関に7月4日までのパッチ適用を命令。Site Member 以上の権限を持つ認証済み攻撃者がリモートコード実行を引き起こせる。脅威アクター Storm-2603 が Warlock ランサムウェアの展開に活用していることが確認されている。SharePoint Online（Microsoft 365 クラウド版）は影響を受けないが、オンプレミス版（2016/2019/Subscription Edition）は5月のパッチを即時適用すること。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-7-2026" target="_blank" rel="noopener">JADEPUFFER — 人間なし・完全自律で動作する世界初の AI ランサムウェアが確認、600 種のペイロードを自動生成して攻撃</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-7-2026" class="source-link" target="_blank" rel="noopener">🔗 Build Fast with AI</a>
+      </div>
+      <p>「JADEPUFFER」と命名された AI ランサムウェアが、人間のオペレーターを介さずに完全自律で 600 種のペイロードを生成・展開したことが報告された。キーボード操作不要で攻撃サイクルを完結させる初の事例として注目されており、従来型の人手を介したランサムウェア攻撃とは質的に異なる新たな脅威の登場を示す。AI によるサイバー攻撃の自律化が現実のものとなった段階として、セキュリティ研究者の間で大きな警戒感が高まっている。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-sonnet-5-on-aws-amazon-workspaces-for-ai-agents-aws-service-availability-updates-and-more-july-6-2026/" target="_blank" rel="noopener">Amazon WorkSpaces for AI Agents が GA — AIエージェントがデスクトップアプリを安全操作、MCP ツール転送・リアルタイムセッション制御を搭載</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-sonnet-5-on-aws-amazon-workspaces-for-ai-agents-aws-service-availability-updates-and-more-july-6-2026/" class="source-link" target="_blank" rel="noopener">🔗 AWS News Blog</a>
+      </div>
+      <p>Amazon WorkSpaces for AI Agents が7月1日に一般提供（GA）開始。AIエージェントがアプリ改修や専用インテグレーション不要でデスクトップアプリを安全に操作できる。新たに MCP ツール転送（computer use ツール不要で精度・速度・コストを改善）、オペレーターによるリアルタイムセッション制御・アクセス取り消し、Active Directory 連携ドメイン参加フリートをサポート。IAM 認証と CloudTrail / CloudWatch による完全な監査証跡を提供し、追加費用なしで主要リージョンで利用可能。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-sonnet-5-on-aws-amazon-workspaces-for-ai-agents-aws-service-availability-updates-and-more-july-6-2026/" target="_blank" rel="noopener">Claude Sonnet 5 が Amazon Bedrock で利用可能に — Shopify、Booking.com が本番環境に採用、AWS 週次まとめ（7月6日）</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-sonnet-5-on-aws-amazon-workspaces-for-ai-agents-aws-service-availability-updates-and-more-july-6-2026/" class="source-link" target="_blank" rel="noopener">🔗 AWS News Blog</a>
+      </div>
+      <p>Claude Sonnet 5 が Amazon Bedrock 経由で利用可能になったことを AWS が7月6日の週次まとめで報告。Shopify がオンライン・店舗全チャネルの接客体験向上に、Booking.com がカスタマーサービス改善にそれぞれ Bedrock 上の Claude Sonnet 5 を本番展開。1M トークンコンテキストと高精度なツール使用・コーディング能力が大規模サービスでの採用を後押しした形となった。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://docs.deno.com/deploy/migration_guide/" target="_blank" rel="noopener">Deno Deploy Classic が 7月20日に廃止 — dash.deno.com の全プロジェクトを console.deno.com へ手動移行が必須、残り 13 日</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://docs.deno.com/deploy/migration_guide/" class="source-link" target="_blank" rel="noopener">🔗 Deno Docs — Migration Guide</a>
+      </div>
+      <p>Deno Deploy Classic（dash.deno.com）および Subhosting v1 API が2026年7月20日（残り13日）にシャットダウンされる。新プラットフォーム（console.deno.com）へのプロジェクト自動移行はなく、新組織の作成・アプリの再デプロイが必要。GitHub 連携または CLI 経由でデプロイ可能。新規ユーザーのオンボーディングはすでに停止済み。公式移行ガイドに詳細な手順が記載されており、期限前の完了が強く推奨される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Shopify Bulk Queries が最大4倍高速化 — 大規模データセットのエクスポート処理時間を大幅短縮</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+      </div>
+      <p>Shopify の Bulk Operations（バルククエリ）が最大4倍の速度向上を実現。大規模データセットのエクスポートにかかる処理時間が大幅に短縮され、数百万件規模の商品・注文・顧客データを一括取得する際のパフォーマンスが向上した。API の呼び出し方法に変更はなく、既存の bulkOperationRunQuery 実装がそのまま恩恵を受ける。データ移行・レポート生成・分析パイプラインの構築コストの削減が期待される。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://sherwood.news/tech/anthropics-revenue-continues-to-surge-shooting-past-openai/" target="_blank" rel="noopener">Anthropic の売上高が OpenAI を初めて上回る — 年率 $470 億に到達、ビジネス向けサブスクリプションでも首位に</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://sherwood.news/tech/anthropics-revenue-continues-to-surge-shooting-past-openai/" class="source-link" target="_blank" rel="noopener">🔗 Sherwood News</a>
+      </div>
+      <p>Anthropic の年率換算収益が $470 億に達し、$330 億を目標とする OpenAI を初めて上回った。Ramp のデータではビジネス向けサブスクリプション件数でも5月時点で Anthropic が OpenAI を逆転。ChatGPT の月次訪問数が生成 AI 市場全体の過半数を初めて下回ったことも同時期に報告されており、AI アシスタント市場の勢力図が大きく塗り替わりつつある。Anthropic は2029年の黒字化を見込む（OpenAI より1年前倒し）。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/07/07/top-tech-news-today-july-7-2026/" target="_blank" rel="noopener">インド、モディ首相が CG Semi OSAT 施設の商業稼働を宣言 — インド半導体ミッション下での第3施設、NVIDIA がインド AI インフラに $500 億投資を表明</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/07/07/top-tech-news-today-july-7-2026/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>ナレンドラ・モディ首相がグジャラート州サナンドにある CG Semi（CG Power・Renesas 等の合弁）の OSAT（外注半導体組立・テスト）施設の商業稼働開始を宣言。インド半導体ミッションの下で稼働する第3施設となる。同日、NVIDIA が Blackwell アーキテクチャのデータセンター・AIファクトリー・スタートアップ支援を含むインド AI インフラへの $500 億投資計画を発表しており、インドの半導体・AI エコシステム形成が加速している。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-07-07 07:00 JST 更新 | 全16件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

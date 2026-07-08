@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-07-08</title>
+  <meta name="description" content="2026-07-08 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-07-08</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-07-08 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <span class="stat-item stat-shopify">Shopify 4件</span>
+        <span class="stat-item stat-ai">AI 3件</span>
+        <span class="stat-item stat-security">セキュリティ 2件</span>
+        <span class="stat-item stat-cloud">クラウド 2件</span>
+        <span class="stat-item stat-dev">開発ツール 1件</span>
+        <span class="stat-item stat-other">その他 2件</span>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/shop-user-metafields-now-readable-in-functions" target="_blank" rel="noopener">Shopify Functions 2026-07: チェックアウト中に Shop User メタフィールドが読み取り可能に — バイヤー固有の割引・体験カスタマイズへ対応</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>API 2026-07 より、Shopify Functions でのチェックアウト処理中に Shop User メタフィールドが読み取れるようになった。購入者固有のデータにアクセスできるため、会員ランク別の割引ロジックや個別化されたチェックアウト体験のカスタマイズが Functions で直接実装可能になる。従来は外部 API 連携が必要だったユースケースに対応できる。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/market-driven-delivery-profiles-admin-api" target="_blank" rel="noopener">Shopify Admin API 2026-07: マーケット単位での配送設定 API が GA — チャネル・地域別送料戦略をプロファイル不要で構成可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/market-driven-delivery-profiles-admin-api" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>2026-07 API バージョンより、GraphQL Admin API がマーケット単位での配送設定に対応し GA となった。従来の配送プロファイルリソースを作成せずに、マーケットごとに送料戦略を直接設定できる。異なる地域・チャネルへ独立した配送ロジックを適用するアプリ開発が大幅にシンプルになる。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/merchant-owned-delivery-profile-apis-are-deprecated-for-market-driven-shipping" target="_blank" rel="noopener">マーチャント所有の配送プロファイル API が非推奨化 — マーケット駆動配送への移行が必要、既存アプリは影響確認を</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/merchant-owned-delivery-profile-apis-are-deprecated-for-market-driven-shipping" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>マーチャント所有の旧来配送プロファイル設定が、マーケット駆動配送（Market-Driven Shipping）への移行に伴い非推奨となった。配送設定はマーケットリソースに紐付けて管理する新モデルへの移行が求められる。既存の配送プロファイル API を使用しているアプリは対応スケジュールの確認と移行計画の策定が必要。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed" target="_blank" rel="noopener">Customer Account API 2026-10 破壊的変更: Customer.lastIncompleteCheckout と Checkout 型が削除 — 今から移行準備を</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Customer Account API の 2026-10 バージョンで、Customer.lastIncompleteCheckout フィールドと Checkout 型が完全削除される。カート放棄フロー・未完了チェックアウト復元などで Checkout 型を参照しているアプリは、Cart API への移行が必須となる。2026-10 リリースは 2026年10月予定のため、Q3 中の対応が強く推奨される。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://claude.com/blog/giving-admins-more-visibility-and-control-over-claude-usage-and-spend" target="_blank" rel="noopener">Anthropic、Claude Enterprise の管理者機能を大幅強化 — モデルレベルの利用制御・使用量分析・支出アラートを追加</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://claude.com/blog/giving-admins-more-visibility-and-control-over-claude-usage-and-spend" class="source-link" target="_blank" rel="noopener">🔗 Anthropic — Claude Blog</a>
+      </div>
+      <p>Anthropic が Claude Enterprise 向けに管理者コントロールの大幅強化を発表した。新機能として、モデル別デフォルトとエンタイトルメント設定（会話開始モデルのロール別指定）、グループ・ユーザー単位のコスト可視化ダッシュボード、支出制限の 75%・90% での自動アラート、そして管理 API 経由の自動化制御が追加された。企業内の AI コスト管理と適正利用ガバナンスが大幅に向上する。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cnbc.com/2026/07/07/chinese-ai-models-costs-us-openai-anthropic.html" target="_blank" rel="noopener">中国製 AI モデルが米企業の週次トークン利用の 30% 超に到達 — DeepSeek・Z.ai が OpenAI/Anthropic 比 60〜90% 安</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cnbc.com/2026/07/07/chinese-ai-models-costs-us-openai-anthropic.html" class="source-link" target="_blank" rel="noopener">🔗 CNBC</a>
+      </div>
+      <p>OpenRouter のデータによると、米国企業が中国製 AI モデルを利用するトークン比率が 2026年2月8日以降、毎週 30% を超え、最大 46% に達した（前年平均 11%）。DeepSeek や Z.ai の GLM 5.2 などは、コスト重視のタスクルーティングで OpenAI・Anthropic と比較して 60〜90% 安価。Microsoft Azure・AWS・Google Cloud も中国モデルをプラットフォーム上に展開しており、採用障壁が低い。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aitoolsrecap.com/Blog/ai-news-july-3-2026" target="_blank" rel="noopener">OpenAI、政府への 5% 株式付与を提案 — 9月 IPO 前に自発的 AI リリース基準への関与を強化、ホワイトハウスとの調整続く</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aitoolsrecap.com/Blog/ai-news-july-3-2026" class="source-link" target="_blank" rel="noopener">🔗 AI Tools Recap</a>
+      </div>
+      <p>OpenAI が 9月予定の IPO に向け、フロンティアモデル標準への自発的関与の一環として米政府に 5% の株式付与を提案した。政府に経済的利害を持たせることで規制リスクを低減する戦略。ホワイトハウスは OpenAI・Google・Anthropic と AI リリース基準に関する任意協力体制の策定を進めており、近日発表の見通しとなっている。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" target="_blank" rel="noopener">CVE-2026-45659: Microsoft SharePoint Server の RCE 脆弱性が CISA KEV に追加 — ランサムウェアによる悪用が進行中、即時パッチ適用を</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>CISA が CVE-2026-45659（Microsoft SharePoint Server の非信頼データのデシリアライゼーションによる RCE）を KEV カタログに追加した。CVSS スコア 8.8 で、Site Member 権限以上の認証済み攻撃者が特別な事前知識なしに悪用可能。金銭目的の脅威アクターやランサムウェアグループによる悪用が実際に確認されており、修正パッチは 2026年5月に提供済み。SharePoint 環境は未適用の場合、今すぐパッチを適用すること。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">【対応期限: 7/10】CISA KEV 追加: JoomShaper SP Page Builder に未認証ファイルアップロードによる PHP 実行の脆弱性</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA — Known Exploited Vulnerabilities Catalog</a>
+      </div>
+      <p>CISA が JoomShaper の Joomla 拡張 SP Page Builder に含まれる危険なファイルタイプの無制限アップロード脆弱性を KEV に追加した。未認証ユーザーが任意ファイルをアップロードでき、最終的に PHP コードの実行が可能になる。対応期限は 2026年7月10日。Joomla サイトで SP Page Builder を使用している場合は本日中の対応が必須。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://docs.cloud.google.com/release-notes" target="_blank" rel="noopener">Google Cloud Apigee が 7/6 にアップデート — ParsePayload ポリシーが Proxy Editor で利用可能に、構造化ペイロードの論理操作抽出を実行時に実現</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://docs.cloud.google.com/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Release Notes</a>
+      </div>
+      <p>2026年7月6日に Google Cloud Apigee の UI が更新され、Proxy Editor で新しい ParsePayload ポリシーが利用可能になった。構造化ペイロード（JSON/XML など）から論理操作を実行時に抽出できる機能で、API プロキシの開発・テストが簡素化される。同日、Apigee の管理コンソール UI も刷新され、プロキシのオーサリング体験が向上した。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.ciodive.com/news/aws-google-link-cloud-products/806705/" target="_blank" rel="noopener">AWS・Google Cloud・Azure が 3 社マルチクラウドネットワーキング連携へ — Azure が 2026 年中にプレビュー参加予定</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.ciodive.com/news/aws-google-link-cloud-products/806705/" class="source-link" target="_blank" rel="noopener">🔗 CIO Dive</a>
+      </div>
+      <p>AWS と Google Cloud がプレビュー中のセキュアマルチクラウドネットワーキング製品に Microsoft Azure が 2026 年中に参加する見通しとなった。3 大クラウドプロバイダーが初めて直接連携し、クロスクラウドのデータ転送・ネットワーキングコストの削減と速度向上を実現する。エンタープライズ企業のマルチクラウド戦略に大きな影響を与えるインフラ協調の動き。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://nextjs.org/blog/next-16" target="_blank" rel="noopener">Next.js 16.3 リリース — Turbopack 永続ビルドキャッシュ・Rust React Compiler・Instant Navigations・AI エージェント向けツール群を追加</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://nextjs.org/blog/next-16" class="source-link" target="_blank" rel="noopener">🔗 Next.js Blog</a>
+      </div>
+      <p>Next.js 16.3 が公開され、Turbopack に Memory Eviction（長時間開発セッション中のコンパイラメモリ解放）・Persistent Build Cache（継続ビルドの高速化）・Rust 製 React Compiler が追加された。UI 面では Instant Navigations（ストリーム/キャッシュ/ブロック制御）と Partial Prefetching（クリック時即時描画）を実装。さらに AGENTS.md によるバージョン対応ドキュメント束、First-party Skills、Agent Browser with React 内省機能など AI エージェント開発支援ツールも同梱された。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-6-2026" target="_blank" rel="noopener">国連・ITU が「AI for Good グローバルコミッション」を設立 — 7月8日ジュネーブで初会合、テック企業 CEO と各国首脳が共同ガバナンス体制を構築</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-6-2026" class="source-link" target="_blank" rel="noopener">🔗 Build Fast with AI</a>
+      </div>
+      <p>国連（UN）と国際電気通信連合（ITU）が、テックリーダーと各国首脳を一堂に集める「AI for Good グローバルコミッション」を発足させた。初会合は 2026年7月8日にジュネーブで開催される。各国政府とテクノロジー業界が共同で AI ガバナンスの枠組みを策定する初の常設フォーラムであり、将来の国際 AI 規制の礎となる可能性がある。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/07/07/top-tech-news-today-july-7-2026/" target="_blank" rel="noopener">Microsoft Xbox がスタジオ大規模リストラへ — Asha Sharma CEO が過剰管理層と Game Pass 低成長を理由に挙げ、積極的スタジオ買収戦略を転換</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/07/07/top-tech-news-today-july-7-2026/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>Microsoft Xbox の CEO Asha Sharma が、肥大化した管理レイヤーと Game Pass の成長不振を主要因として大規模なゲーム部門リストラを断行すると発表した。近年 Activision Blizzard など多数のスタジオを買収してきた積極策を転換し、組織のスリム化へ舵を切る。Microsoft のゲーム事業は AI 投資などとのリソース競合もあり、事業構造の見直しが加速している。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-07-08 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

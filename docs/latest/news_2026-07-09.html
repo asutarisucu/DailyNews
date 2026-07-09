@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-07-09</title>
+  <meta name="description" content="2026-07-09 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-07-09</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-07-09 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>15件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/market-driven-delivery-profiles-admin-api" target="_blank" rel="noopener">Admin GraphQL API 2026-07: Market-driven Shipping が正式対応 — 市場ごとに配送戦略を直接設定可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/market-driven-delivery-profiles-admin-api" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Admin GraphQL API バージョン 2026-07 より、別途配送プロファイルリソースを作成することなく、市場（Market）に直接配送設定を行う「Market-driven Shipping」が利用可能になった。また、アプリ所有の配送プロファイルに新フィールド coversAllItems が追加され、認可されたアプリがすべての発送可能商品に配送レートを適用する際、商品ごとの個別割り当てが不要になった。国際展開を行うマーチャントにとって柔軟な配送ロジック構築が容易になる。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/new-collection-model-and-apis-now-available" target="_blank" rel="noopener">Shopify 新コレクションモデル (2026-07) GA — sources フィールドで複数ソース・バリアントレベルのメンバーシップに対応</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/new-collection-model-and-apis-now-available" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>数年ぶりの大規模刷新となる新コレクション API が 2026-07 で一般提供（GA）になった。新しい Collection.sources フィールドは、商品を型付きの包含条件とマニュアル選択で返す1つ以上のソースをサポートし、除外条件も指定可能。複数プロダクトグループソース・アプリ所有のシェア可能ソース・バリアントレベルのコレクションメンバーシップなど、これまで不可能だったコレクション構成が実現できるようになった。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/pos-ui-extensions-2026-07-uses-per-unit-fixed-amount-line-item-discounts" target="_blank" rel="noopener">【破壊的変更】POS UI Extensions 2026-07: 固定割引は per-unit（単価ベース）表記が必須化</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/pos-ui-extensions-2026-07-uses-per-unit-fixed-amount-line-item-discounts" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>POS UI Extensions API バージョン 2026-07 より、固定額のライン割引（fixed-amount line item discount）は per-unit（単価ベース）での表記が必須になった。以前のバージョンまで行われていた自動変換処理は廃止される。POS向けアプリで固定割引を扱っている開発者は、計算ロジックを単価ベースに更新する必要がある。同バージョンへのアップグレード前に動作確認を推奨。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Shopify Bulk Queries が最大4倍高速化 / Sidekick App Extensions が全開発者に解放 / WhatsApp Marketing Consent API 追加</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify の直近アップデートがまとめて公開された。大規模データセット書き出しに使う Bulk Queries のパフォーマンスが最大4倍向上。Sidekick（Shopify の AI アシスタント）向け App Extensions がすべての開発者に開放され、AI アシスタント機能の拡張が可能になった。また、customerWhatsAppMarketingConsentUpdate ミューテーションと CustomerPhoneNumber の consent フィールドが追加され、顧客の WhatsApp マーケティング同意を API から管理できるようになった。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener">【本日公開】OpenAI GPT-5.6 Sol / Terra / Luna が一般公開 — Cerebras wafer-scale で最大750 tokens/sec</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://openai.com/index/previewing-gpt-5-6-sol/" class="source-link" target="_blank" rel="noopener">🔗 OpenAI</a>
+      </div>
+      <p>OpenAI は本日（7月9日）、GPT-5.6 シリーズの3モデルを全ユーザー向けに一般公開した。旗艦の Sol は複雑な推論・エージェント向け（$12.5/M入力・$75/M出力）、バランス型の Terra は GPT-5.5 相当の性能を半額で提供（$2.5/M入力・$15/M出力）、最軽量の Luna は高速・低コスト（$1/M入力・$6/M出力）。Sol の Fast Mode では Cerebras 社の wafer-scale ハードウェアを採用し、現行 GPU 比約15倍の 750 tokens/sec を実現。米国商務省の承認を経て全ユーザーへのロールアウトが開始された。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank" rel="noopener">Anthropic、Claude Fable 5 を7月1日に再展開 — 新サイバーセキュリティ分類器が悪用の99%超をブロック</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news/redeploying-fable-5" class="source-link" target="_blank" rel="noopener">🔗 Anthropic</a>
+      </div>
+      <p>6月12日に米政府の輸出管理規制を受けて停止されていた Claude Fable 5 が、規制解除後の7月1日にグローバルで再展開された。Amazon研究者が発見したセキュリティバイパス手法を標的とした新しいサイバーセキュリティ安全分類器をトレーニング・展開し、報告されたエクスプロイトを99%超の確率でブロックする。ブロックされたリクエストは拒否ではなく Claude Opus 4.8 にルーティングされる仕組み。Claude.ai・Claude Code・Claude Cowork で利用可能になった。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-sonnet-5-on-aws-amazon-workspaces-for-ai-agents-aws-service-availability-updates-and-more-july-6-2026/" target="_blank" rel="noopener">Anthropic が $190 億のデータセンター契約締結 / Claude Sonnet 5 が AWS・Azure Foundry で一般提供開始</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-sonnet-5-on-aws-amazon-workspaces-for-ai-agents-aws-service-availability-updates-and-more-july-6-2026/" class="source-link" target="_blank" rel="noopener">🔗 AWS Blog — Weekly Roundup (July 6)</a>
+      </div>
+      <p>Anthropic が長期データセンター確保契約として総額$190億規模の契約を締結したと報じられた。同時に、6月30日にリリースされた Claude Sonnet 5（エージェントコーディング・ツール使用・推論に特化）が AWS および Microsoft Azure Foundry の両プラットフォームで一般提供（GA）を開始。Azure Foundry 版では Azure 認証・課金・ガバナンス・US データゾーンが利用可能で、フルセットの API 機能が必要な場合は Anthropic ホスト版を選択できる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-9-2026" target="_blank" rel="noopener">【本日公開】xAI Grok 4.5 が SuperGrok ユーザー向けに正式公開 / OpenAI が米政府に5%株式提案（時価$4,260億）</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-9-2026" class="source-link" target="_blank" rel="noopener">🔗 Build Fast with AI — AI News Today July 9</a>
+      </div>
+      <p>xAI の Grok 4.5 が本日（7月9日）、SuperGrok Heavy サブスクライバー・X Premium+ ユーザー・xAI API 向けに正式公開された。また、Sam Altman 率いる OpenAI が米政府に5%のエクイティ（現在の$852億評価額で約$426億相当）を提供する提案を行い、同様の株式提供を他の主要 AI ラボにも求めたことが明らかになった。Anthropic のポストマネー評価額が OpenAI を初めて上回り、$965億に達したことも今週の大きなトピックとなった。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" target="_blank" rel="noopener">CVE-2026-45659 Microsoft SharePoint RCE — CISA KEV 追加、認証ユーザーによるコード実行が実際に悪用中</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>CISA が7月1日付で CVE-2026-45659（Microsoft SharePoint Server のデシリアライゼーション RCE、CVSS 8.8）を KEV カタログに追加。Siteメンバー権限以上の認証ユーザーがネットワーク経由で任意コードを実行できる。Microsoft は5月にパッチを公開済みだが、連邦機関の修復期限は7月4日に設定された。6週間の猶予で悪用に至る典型的な「n-day」攻撃パターンであり、SharePoint Server Subscription Edition・2019・2016 を保有する組織は即時パッチ適用が必須。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/07/01/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank" rel="noopener">CISA BOD 26-04 発行: FCEB機関にリスクベースの脆弱性優先修復を義務化 — KEVカタログ遵守が法的要件に</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/07/01/cisa-adds-one-known-exploited-vulnerability-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA が Binding Operational Directive（BOD）26-04「リスクに基づくセキュリティアップデートの優先化」を発行した。連邦市民行政機関（FCEB）に対し、KEV カタログに掲載された CVE を優先的に迅速修復することを義務付けるもので、KEV カタログの法的拘束力が強化された。2026年のランサムウェア攻撃者は VPN アプライアンス・エッジセキュリティ機器・リモート管理ツール・ID プラットフォームに対する KEV を重点的に悪用しており、早期パッチ適用の重要性が改めて強調されている。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-aws-summit-in-new-york-2026/" target="_blank" rel="noopener">AWS Summit NY 2026 発表まとめ: EC2 G7 (NVIDIA Blackwell) GA / Bedrock AgentCore Web Search / AWS Context 予告</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-aws-summit-in-new-york-2026/" class="source-link" target="_blank" rel="noopener">🔗 AWS News Blog</a>
+      </div>
+      <p>AWS Summit New York 2026 の主要発表が公開された。EC2 G7 インスタンスは NVIDIA RTX PRO 4500 Blackwell Server Edition GPU を搭載し、G6 比で AI 推論4.6倍・グラフィックス2.1倍の性能向上を実現。Amazon Bedrock AgentCore に Web Search 機能を追加し、エージェントがゼロデータ転送でリアルタイムの Web 知識を参照可能に。さらに既存データを知識グラフに自動マッピングし、エージェントが実行時に参照できる新サービス「AWS Context」をゲートプレビューで予告した。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud" target="_blank" rel="noopener">Google Cloud: Apigee ParsePayload Policy GA (7/6) — ペイロードベースのルーティング・クォータ管理、Cross-Cloud Lakehouse も一般提供へ</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Blog</a>
+      </div>
+      <p>7月6日、Google Cloud は Apigee に新しい ParsePayload ポリシーを一般提供。リクエストペイロードの構造化データからロジック操作をランタイムで抽出し、派生したペイロード操作に基づいて API Product のルーティング・収益化・認可・クォータ制限を適用できる。同日、API Horizon Munich イベントで Apigee ロードマップ・エージェント管理・MCP（Model Context Protocol）の最新情報を公開。Apache Iceberg 準拠の Cross-Cloud Lakehouse も GA に向けた展開が進んでいる。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/blog/vercel-acquires-better-auth" target="_blank" rel="noopener">Vercel が Better Auth を買収 (7/7) — Agent Auth プロトコルを Vercel Connect に統合、OSSはMIT継続</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/blog/vercel-acquires-better-auth" class="source-link" target="_blank" rel="noopener">🔗 Vercel Blog</a>
+      </div>
+      <p>Vercel が7月7日、週間 npm ダウンロード数470万超・850名以上のコントリビューターを持つ OSS TypeScript 認証ライブラリ「Better Auth」の開発元を買収した。創業者 Bereket Engida（エチオピア出身）とチームが Vercel に合流し、Agent Auth プロトコル（エージェントのアイデンティティ検証・アクセス制限施行）を Vercel Connect（AI エージェントとサードパーティツール接続プラットフォーム）および新エージェントビルドフレームワーク「eve」に統合する。ライブラリ自体は MIT ライセンスのまま OSSを継続。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://deno.com/blog/v2.3" target="_blank" rel="noopener">Deno 2.3 リリース — deno compile が FFI・Node ネイティブアドオン対応、ローカル npm パッケージのサポート</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://deno.com/blog/v2.3" class="source-link" target="_blank" rel="noopener">🔗 Deno Blog</a>
+      </div>
+      <p>Deno 2.3 が正式リリース。deno compile が FFI（Foreign Function Interface）と Node ネイティブアドオン（.node ファイル）をサポートし、バイナリにネイティブライブラリを同梱できるようになった。ローカルの npm パッケージを直接参照できる機能も追加。TypeScript 5.8・V8 13.5 へのアップグレードにより新言語機能とパフォーマンスが向上し、大規模 monorepo での npm 依存関係解決の重複処理を削減。OpenTelemetry の基本イベント記録・スパンコンテキスト伝播・node:http 自動計装も追加された。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/07/08/top-tech-news-today-july-8-2026/" target="_blank" rel="noopener">Jeff Bezos の Blue Origin が初の外部資金調達 — $130B 評価額で $100 億調達、Bezos 自身も $20 億出資</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/07/08/top-tech-news-today-july-8-2026/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>Jeff Bezos の宇宙企業 Blue Origin が創業以来初となる外部資金調達として$100億を調達すると発表した。プレマネー評価額は$1,300億で、Coatue が$40億を拠出してリードインベスターになると報じられており、Bezos 自身も$20億を追加出資する。AI インフラ需要の拡大を背景に、宇宙・クラウドコンピューティングの両分野での競争が激化しており、同社の New Glenn ロケットを活用した衛星通信事業にも大きな期待が寄せられている。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-07-09 07:00 JST 更新 | 全15件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

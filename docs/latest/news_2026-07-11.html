@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-07-11</title>
+  <meta name="description" content="2026-07-11 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-07-11</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-07-11 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>15件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/whatsapp-marketing-consent-now-available" target="_blank" rel="noopener">Admin API 2026-07: WhatsAppマーケティング同意管理がAdmin APIとCustomer Account APIで利用可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/whatsapp-marketing-consent-now-available" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>2026-07 APIバージョンより、Admin APIでcustomerWhatsAppMarketingConsentUpdateミューテーションを使い、顧客のデフォルト電話番号に紐づくWhatsAppマーケティング同意状態を読み取り・更新できるようになった。CustomerPhoneNumberオブジェクトのwhatsAppMarketingConsentフィールドで同意値を取得可能。WhatsApp経由のコマースチャネル拡張を検討している開発者は今すぐ対応を検討したい。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/draft-order-deposit-fields-now-available-in-the-admin-and-customer-account-graphql-apis" target="_blank" rel="noopener">Admin API 2026-07: ドラフトオーダーへの頭金設定がGraphQL Admin APIとCustomer Account APIで利用可能（Shopify Plus限定）</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/draft-order-deposit-fields-now-available-in-the-admin-and-customer-account-graphql-apis" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>2026-07 APIより、DraftOrderInput.depositを使ってドラフトオーダー作成・更新時に頭金（デポジット）を設定できるようになった。チェックアウト時に一部支払い、残額を後払い（due-on-fulfillmentなど）とする分割払いフローをAppで実装可能。Customer Account APIはドラフトオーダーの頭金情報を読み取り専用で公開。Shopify Plus限定の機能。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Admin API 2026-07: アプリ所有の配送プロファイルにcoversAllItemsフィールド追加 — 全商品への配送レート一括適用が可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>GraphQL Admin API 2026-07にて、アプリ所有の配送デリバリープロファイルに新フィールドcoversAllItemsが追加された。認可されたAppがこのフィールドをtrueに設定すると、商品ごとの個別割り当てなしに全配送可能商品にレートを適用できる。複雑な配送設定を持つ大規模ストアのロジック簡略化に有効な機能強化。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Shopify バルククエリが最大4倍高速化 — 大規模データセットのエクスポート時間を大幅短縮</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopifyのバルククエリ（Bulk Operations）のパフォーマンスが大幅に改善され、大規模データセットのエクスポート速度が従来比最大4倍になった。数十万件規模の商品・注文・顧客データを一括取得するAppは自動的に恩恵を受ける。追加設定は不要で、既存のbulkOperationRunQueryを使った実装がそのまま高速化される。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://claude.com/blog/giving-admins-more-visibility-and-control-over-claude-usage-and-spend" target="_blank" rel="noopener">Anthropic、Claude Enterpriseに管理者向け高度コントロールを追加 — 支出アラート・モデル権限設定・Analytics APIが登場</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://claude.com/blog/giving-admins-more-visibility-and-control-over-claude-usage-and-spend" class="source-link" target="_blank" rel="noopener">🔗 Anthropic — Claude Blog</a>
+      </div>
+      <p>Anthropicが2026年7月3日、Claude Enterpriseの管理者向け機能を大幅強化。グループ・ユーザー別コスト可視化ダッシュボード、組織の支出上限75%・90%到達時のアラート通知、ロール別モデル権限設定（どのClaudeモデルを使えるか管理）を追加。また使用量・コストデータをDatadogやCloudZeroへ連携できるAnalytics APIも提供開始。エージェントAIの費用が青天井になりがちな問題への直接的な解決策として注目を集めている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://llm-stats.com/llm-updates" target="_blank" rel="noopener">OpenAI、GPT-5.6をプレビュー公開 — Sol（フラッグシップ）・Terra（バランス）・Luna（高速低コスト）の3モデル体制で政府承認パートナーに限定提供</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://llm-stats.com/llm-updates" class="source-link" target="_blank" rel="noopener">🔗 LLM Stats — AI Updates</a>
+      </div>
+      <p>OpenAIが6月26日にGPT-5.6ファミリーをプレビュー。フラッグシップのSol、バランス型のTerra、高速・低コストのLunaという3モデル体制。現時点では政府認定の約20パートナー組織限定の提供。SolはCerebras wafer-scaleハードウェア上で毎秒750トークンの推論速度（現行GPU比約15倍）を目指すとも発表。2026年9月のIPO前に競合との差別化を急ぐ動きが鮮明になっている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aitoolsrecap.com/Blog/ai-news-july-3-2026" target="_blank" rel="noopener">ホワイトハウス、OpenAI・Google・Anthropicと自発的AIリリース基準を策定中 — フロンティアモデルの事前審査プロセスを正式化へ</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aitoolsrecap.com/Blog/ai-news-july-3-2026" class="source-link" target="_blank" rel="noopener">🔗 AI Tools Recap</a>
+      </div>
+      <p>ホワイトハウスがOpenAI・Google・Anthropicと「自発的AIリリース基準」の策定に向けた交渉を進めており、翌週の発表を目指していると報じられた。OpenAIとAnthropicがすでに実施しているフロンティアモデルのリリース前審査プロセスを共通フレームワークとして正式化する内容。OpenAIはこの取り組みを2026年9月のIPO計画への自発的関与の一環と位置づけている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aitoolsrecap.com/Blog/ai-news-july-3-2026" target="_blank" rel="noopener">AnthropicがOpenAIの売上を逆転 — 2029年の黒字化はOpenAIより1年早い2028年を射程に、ARR $47Bへの道筋</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://fortune.com/2026/07/02/sam-altman-new-world-order-ai-openai-google-anthropic/" class="source-link" target="_blank" rel="noopener">🔗 Fortune</a>
+      </div>
+      <p>最新の自己報告売上データによると、AnthropicがOpenAIを逆転し業界首位に。AnthropicはARR $47Bへのペースで推移しており、2028年の黒字化を射程に入れる（OpenAIの計画は2029年）。Claude Enterpriseの法人普及やClaude Codeの開発者採用が急成長を牽引。AIモデル競争の焦点が「より大きなモデル」から「低コスト・高速・使いやすいシステム」にシフトしている構造変化も背景にある。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" target="_blank" rel="noopener">【緊急】CVE-2026-45659: Microsoft SharePoint Server でRCEが野放し状態 — CISA KEV追加、連邦機関は7月4日までにパッチ適用必須</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>MicrosoftがCVSSスコア8.8の高深刻度脆弱性CVE-2026-45659をSharePoint Server Subscription Edition / 2019 / Enterprise Server 2016に確認。信頼できないデータのデシリアライズによるRCEで、認証済みユーザー（Siteメンバー権限以上）が管理者権限なしにリモートコード実行可能。CISAが7月1日にKEVカタログへ追加し、連邦機関に7月4日までの修正を命令。2026年5月のセキュリティアップデートで修正済みのため、未適用システムは即時パッチを。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-prioritize-patching-langflow-auth-bypass-flaw/" target="_blank" rel="noopener">CVE-2026-55255: Langflow の認証バイパス（IDOR）が悪用中 — LLMプロバイダーのAPIキー・AWSキー窃取が目的、CISA KEV追加（7月7日）</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-prioritize-patching-langflow-auth-bypass-flaw/" class="source-link" target="_blank" rel="noopener">🔗 Bleeping Computer</a>
+      </div>
+      <p>AIワークフロー構築ツールLangflowのIDOR脆弱性CVE-2026-55255が実際に悪用されており、攻撃者が/api/v1/responsesエンドポイントで他ユーザーのフローに不正アクセス可能。Sysdig脅威調査チームは6月25日の悪用観測時、攻撃目的がLLMプロバイダーAPIキー・AWSキーの窃取とドロッパー投下であることを確認。Langflow 1.9.1で修正済み。CISAが7月7日にKEVカタログへ追加し、連邦機関に優先パッチ適用を命令した。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes" target="_blank" rel="noopener">Microsoft Defender for Cloud: AWS RDS上のOSSデータベース（PostgreSQL・MySQL・MariaDB）の脅威検出がGA — 7月請求分から課金対象</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Microsoft Learn — Defender for Cloud Release Notes</a>
+      </div>
+      <p>Microsoft Defender for Open-Source Relational Databasesが2026年6月1日よりAWS RDSインスタンスのGA対応を開始し、2026年7月請求分から課金対象となった。Aurora PostgreSQL・Aurora MySQL・PostgreSQL・MySQL・MariaDBなどAWS上のOSSデータベースの脅威検出・異常行動検知をDefender for Cloudから統合管理可能。AWSとAzureをまたぐハイブリッド・マルチクラウド環境のセキュリティ管理を一元化できる点が評価されている。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/blog/introducing-eve" target="_blank" rel="noopener">Vercel、AIエージェントフレームワーク「eve」をオープンソース公開 — ファイルシステムファーストのTypeScriptフレームワーク、Slack・Discord・Teamsに対応</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/blog/introducing-eve" class="source-link" target="_blank" rel="noopener">🔗 Vercel Blog</a>
+      </div>
+      <p>Vercelがエージェント構築フレームワーク「eve」をnpmパッケージとしてパブリックプレビュー公開（6月17日〜）。Markdownでインストラクション・スキルを定義し、TypeScriptでツールを実装するファイルシステムファースト設計。Workflow SDKによる耐障害性（クラッシュ・デプロイ後も再開可能）、エージェントごとのサンドボックスコンピューティング、Slack・Discord・Teams・Webへのマルチチャネル対応を標準搭載。VercelはeveをNext.jsのエージェント版と位置づけている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.windowscentral.com/microsoft/windows-11/windows-11s-july-2026-update-is-packed-with-new-features-and-these-are-the-top-ones" target="_blank" rel="noopener">Windows 11 7月14日アップデート: 13の新機能を搭載 — ポイントインタイムリストア・スクリーンティント・無期限更新延期など</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.windowscentral.com/microsoft/windows-11/windows-11s-july-2026-update-is-packed-with-new-features-and-these-are-the-top-ones" class="source-link" target="_blank" rel="noopener">🔗 Windows Central</a>
+      </div>
+      <p>Microsoftが7月14日にWindows 11の大型アップデートをリリース予定（13の新機能）。注目はVSSを活用した自動スナップショット機能「ポイントインタイムリストア」（Home/Pro向け、200GB以上のストレージ必要）、視覚的な色覚サポートのアクセシビリティ機能「スクリーンティント」、Windows Updateを無期限延期できる新コントロール。さらにFile Explorer高速化、プリンターをデフォルトでIPPプロトコル経由でインストールするよう変更など実用的な改善も含まれる。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/07/07/top-tech-news-today-july-7-2026/" target="_blank" rel="noopener">SK Hynix、Nasdaq上場初日に13%上昇 — 会長が「需要は膨大」とCNBCでコメント、AI半導体需要の底堅さを改めて証明</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/07/07/top-tech-news-today-july-7-2026/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>韓国の半導体大手SK HynixがNasdaqに上場し、初日に13%上昇する好スタートを記録。上場規模は$290億規模とされ、AI・HBMメモリ需要の旺盛さを背景に投資家の注目を集めた。会長はCNBCインタビューで「AIインフラへの需要は膨大で、生産能力が需要に追いついていない状況が続いている」とコメント。一方でMicronも米国内投資拡大を発表し、株価が5%上昇している。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cnbc.com/technology/" target="_blank" rel="noopener">Apple、OpenAIを営業秘密盗用で提訴 —「あらゆるレベルで計画的に実行された」と主張、AI覇権争いが法廷へ</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cnbc.com/technology/" class="source-link" target="_blank" rel="noopener">🔗 CNBC Technology</a>
+      </div>
+      <p>Appleが営業秘密の不正取得を主張してOpenAIを提訴。「スキームは組織のあらゆるレベルで実行された」とAppleは強調しており、元Apple従業員がOpenAIへ移籍する際に機密情報を持ち出したとの疑惑が核心とされる。OpenAIは請求を強く否定。AI人材獲得競争が激化する中、技術・人材の囲い込みをめぐる法的紛争がビッグテック間で表面化しており、業界全体に緊張をもたらしている。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-07-11 07:00 JST 更新 | 全15件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

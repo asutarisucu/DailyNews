@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-07-13</title>
+  <meta name="description" content="2026-07-13 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-07-13</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-07-13 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>15件</strong></p>
+      <div class="stats-bar">
+        <span class="stat-item stat-shopify">Shopify 5件</span>
+        <span class="stat-item stat-ai">AI 3件</span>
+        <span class="stat-item stat-security">セキュリティ 1件</span>
+        <span class="stat-item stat-cloud">クラウド 2件</span>
+        <span class="stat-item stat-dev">開発ツール 2件</span>
+        <span class="stat-item stat-other">その他 2件</span>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/app-pricing-more-plans-no-charge-plan-testing-and-negative-and-fractional-app-events" target="_blank" rel="noopener">App Pricing 大幅更新 — 公開プランが最大8個・プライベートが15個に拡大、無料テスト機能追加・App Events 負値/小数値対応</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/app-pricing-more-plans-no-charge-plan-testing-and-negative-and-fractional-app-events" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>2026年7月9日付でShopify App Pricingが大幅強化。公開プランは従来の4個から8個へ、プライベートプランは10個から15個へ上限を拡大。新たにno-charge plan testing機能を追加し、App審査中も実費を発生させずにプランを選択・テスト可能に。さらにApp Events APIが負値（クレジット・調整用）と小数値（1.5など）を受け付けるようになり、より柔軟な従量課金設計が実現した。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/shopify-flow-action-runtime-urls-now-update-automatically" target="_blank" rel="noopener">Shopify Flow: アクション実行ごとに runtime_URL を自動解決 — 既存ワークフローの再アクティベートが不要に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/shopify-flow-action-runtime-urls-now-update-automatically" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>2026年7月7日より、Shopify Flowがアクションの実行ごとに runtime_url を動的に解決するよう変更。アプリのデプロイでURLが変更されても、マーチャントがワークフローを再保存・再アクティベートする必要がなくなった。shopify app dev による開発環境でも自動反映される。従来の「URLはワークフロー作成時に固定」という挙動に依存している場合は注意が必要。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/shopify-flow-changes-to-action-extensions-result-in-fewer-breaking-changes" target="_blank" rel="noopener">Shopify Flow: Action extensions のフィールドミスマッチをサーバー側で制御可能に — ブレイキングチェンジが大幅減少</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/shopify-flow-changes-to-action-extensions-result-in-fewer-breaking-changes" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify Flowのアクション設定フィールドを変更した際のブレイキングチェンジを、サーバー側コードで制御できるようになった。フィールドのミスマッチが発生しても、以前はワークフローが検証失敗で停止していたが、新仕様ではアプリ側でフォールバックを定義すればワークフローは実行継続される。大規模なFlow連携アプリのスキーマ変更がより安全に行えるようになる。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/market-driven-delivery-profiles-admin-api" target="_blank" rel="noopener">Admin API 2026-07: Market-driven 配送設定に対応 — 市場ごとに専用配送プロファイルを作らず直接設定可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/market-driven-delivery-profiles-admin-api" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Admin API 2026-07 の GraphQL で、市場（Market）に対して配送設定を直接行えるようになった。これまで市場別の配送戦略には別途配送プロファイルを作成する必要があったが、新APIではマーケットに紐付けた形で設定できる。国際展開する複数市場を持つストアの配送管理が大幅に簡素化される。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed" target="_blank" rel="noopener">Customer Account API 2026-10: lastIncompleteCheckout・Checkout タイプが削除予定 — 今すぐ Cart API への移行を</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Customer Account APIのバージョン2026-10で、Customer.lastIncompleteCheckout フィールドと Checkout 関連タイプが削除される。これらは Cart API に置き換えられており、未移行のアプリは2026-10リリース（2026年10月）以降に動作しなくなる。Cart API への移行とテストを計画的に進めることが推奨される。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank" rel="noopener">Anthropic Claude Fable 5 が全世界提供開始 — Claude Sonnet 5 が Pro/Team/Enterprise のデフォルトモデルに昇格、1M トークンコンテキスト標準化</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news/redeploying-fable-5" class="source-link" target="_blank" rel="noopener">🔗 Anthropic</a>
+      </div>
+      <p>輸出規制の解除を受け、Claude Fable 5 が7月1日よりClaude.ai・Claude Platform・Claude Code・Claude Cowork 上でグローバル提供を開始。あわせて Claude Sonnet 5 が Pro・Team Standard・Enterprise の全サブスクリプションのデフォルトモデルになり、ネイティブ 1M トークンコンテキストが標準搭載された。入力 $2 / 出力 $10 per MTok の導入価格は2026年8月31日まで適用。Claude Code ではオートモードが Bedrock・Vertex AI・Foundry でデフォルト有効になった。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://finance.biggo.com/news/6f0c6bb2-795f-4c57-9d09-6db691d7638a" target="_blank" rel="noopener">Google Gemini 3.5 Pro が 7月17日 GA 予定 — 完全アーキテクチャ再設計・2M トークンコンテキスト・DeepThink 推論層を搭載</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://finance.biggo.com/news/6f0c6bb2-795f-4c57-9d09-6db691d7638a" class="source-link" target="_blank" rel="noopener">🔗 BigGo Finance</a>
+      </div>
+      <p>Google DeepMind が Gemini 2.5 Pro のアーキテクチャを全面破棄し新規プレトレーニングを行った Gemini 3.5 Pro を7月17日に GA 予定。AI Studio ホワイトリストプレビューが7月8〜12日に段階開放され、Vertex AI エンタープライズ向けは7月15日頃、Gemini Advanced サブスクライバーへの一般提供は7月22〜28日を見込む。2M トークンコンテキスト・DeepThink 推論層・自律ワークフロー機能が主な強化点で、GPT-5.6・Fable 5 との競合を強く意識した設計となっている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-13-2026" target="_blank" rel="noopener">Google・Microsoft・Salesforce・Snowflake・ServiceNow がエンタープライズ AI バックエンド共通プロトコルで合意 — Anthropic・OpenAI に対抗</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-13-2026" class="source-link" target="_blank" rel="noopener">🔗 Build Fast With AI</a>
+      </div>
+      <p>大手 5 社が、エンタープライズ AI エージェントのバックエンドとなる共通プロトコルの採用を合意。ChatGPT Work や Claude Enterprise を通じてエンタープライズ基盤を構築する Anthropic・OpenAI 連合に対抗する狙い。各社既存の SaaS・クラウドプラットフォームを API 標準で相互接続し、特定 AI ベンダーへのロックインを避けながら AI エージェントを統合導入できる体制を目指す。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/07/10/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">【対応期限: 本日 7/13】CISA KEV 追加 — Joomla 拡張 iCagenda(CVE-2026-48939) と Balbooa Forms(CVE-2026-56291) が CVSS 10.0 のゼロデイ RCE で実攻撃に悪用</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/07/10/cisa-adds-two-known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA が7月10日付で Joomla 向け拡張 2 件の既知悪用脆弱性をカタログに追加。CVE-2026-48939（iCagenda）はイベント投稿フォームから任意 PHP ファイルをアップロードして RCE を実行する欠陥で、6月15日からゼロデイとして自動攻撃が継続中。CVE-2026-56291（Balbooa Forms）は匿名ユーザーがログインも CSRF トークンも不要でファイルアップロードでき、7月8日に顧客への実攻撃で発見された。両脆弱性の CVSS スコアは最大値 10.0 で、連邦政府機関の対応期限は本日（7月13日）。修正版は iCagenda 4.0.8/3.9.15・Balbooa Forms 2.4.1 で公開済み。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud" target="_blank" rel="noopener">Google Cloud Run の Service Health が GA — リードネスプローブでインスタンスレベルのヘルスチェックとクロスリージョン自動フェイルオーバーを実現</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Blog</a>
+      </div>
+      <p>Google Cloud Run の Service Health 機能が正式 GA。リードネスプローブによるインスタンスレベルの細粒度ヘルスチェックが可能になり、異常インスタンスを自動排除できる。グローバル外部 Application Load Balancer またはクロスリージョン内部 ALB と組み合わせることで、リージョン障害時のトラフィック自動切り替えが実現。マルチリージョン構成の Cloud Run アプリケーションの可用性強化に直結する。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://azurecharts.com/updates?monthback=0" target="_blank" rel="noopener">Azure HorizonDB がパブリックプレビュー — PostgreSQL 互換・クラウドスケール AI アプリ向けフルマネージド DB を Microsoft Build で発表</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://azurecharts.com/updates?monthback=0" class="source-link" target="_blank" rel="noopener">🔗 Azure Charts</a>
+      </div>
+      <p>Microsoft が Microsoft Build にて Azure HorizonDB のパブリックプレビューを発表。クラウドスケールの AI アプリケーション向けに設計された完全マネージドの PostgreSQL 互換データベースで、AI ワークロードの急増するデータ需要に対応した新アーキテクチャを採用。既存の PostgreSQL アプリをコード変更なしで移行しつつ、より高いスケーラビリティを実現できる点が訴求点。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/blog/vercel-acquires-better-auth" target="_blank" rel="noopener">Vercel が Better Auth（週 470 万 npm DL）を買収 — AIエージェントにスコープ付き失効可能なIDを付与する「Agent Auth」を推進</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/blog/vercel-acquires-better-auth" class="source-link" target="_blank" rel="noopener">🔗 Vercel Blog</a>
+      </div>
+      <p>Vercel が7月7日、OSS の TypeScript 認証ライブラリ「Better Auth」の買収を発表。週470万 npm ダウンロード・850人以上のコントリビューターを持つ同ライブラリは MIT ライセンスを維持したまま開発継続。注目されるのが「Agent Auth」機能で、AIエージェントごとに固有のIDとスコープ付き・失効可能なパーミッションを発行し、ユーザーのフルアクセスをエージェントに継承させない安全なエージェント認証を実現する。Bereket Engida氏らのコアチームはそのままVercelへ移籍。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-13-2026" target="_blank" rel="noopener">x402 オープン決済標準が登場 — AI エージェントが Web コンテンツ・API・データセットに自律的に支払い可能、Cloudflare が Monetization Gateway のウェイトリストを開始</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-13-2026" class="source-link" target="_blank" rel="noopener">🔗 Build Fast With AI</a>
+      </div>
+      <p>AI エージェントが Web 上のコンテンツ・API・データセットにプログラム的に支払いを行えるオープン決済標準「x402」が公開。ユーザー介入なしでエージェントが必要なリソースへの支払いを自律実行できる仕組みで、エージェントコマースの基盤プロトコルとして注目される。Cloudflare が x402 ベースの「Monetization Gateway」のウェイトリスト受付を開始しており、コンテンツ・API 提供者はエージェント向け収益化を今から準備できる。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-13-2026" target="_blank" rel="noopener">OpenAI がエンタープライズ AI 構築専業の Northslope を買収 — 顧客組織に常駐エンジニアを派遣する「フォワードデプロイ」戦略を加速</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-13-2026" class="source-link" target="_blank" rel="noopener">🔗 Build Fast With AI</a>
+      </div>
+      <p>OpenAI の展開専門子会社が Northslope を買収。Northslope は顧客組織内に AI エンジニアを常駐（フォワードデプロイ）させ、AI システムの構築を直接支援する企業。今回の買収で ChatGPT Work を中心に構築してきたエンタープライズ部門に実地エンジニアリング能力が加わり、大企業への AI 導入を技術的に支援する体制が強化された。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-13-2026" target="_blank" rel="noopener">Apple が OpenAI を営業秘密漏洩で提訴（7月11日）— Elon Musk と Sam Altman の公開論争に発展し業界最大の法廷闘争へ</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-13-2026" class="source-link" target="_blank" rel="noopener">🔗 Build Fast With AI</a>
+      </div>
+      <p>Apple が7月11日、OpenAI に対して営業秘密漏洩を理由とする訴訟を提起。訴状の提出を契機に Elon Musk と Sam Altman が X（旧Twitter）上で公開論争を繰り広げ、AI業界で最も注目を集める法廷闘争に発展。両社は過去に Apple Intelligence をめぐる協力関係にあっただけに、業界へのインパクトが大きく、今後の AI パートナーシップのあり方に影響を与える可能性がある。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-07-13 07:00 JST 更新 | 全15件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-07-14</title>
+  <meta name="description" content="2026-07-14 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-07-14</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-07-14 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <span class="stat-item stat-shopify">Shopify 4件</span>
+        <span class="stat-item stat-ai">AI 3件</span>
+        <span class="stat-item stat-security">セキュリティ 2件</span>
+        <span class="stat-item stat-cloud">クラウド 2件</span>
+        <span class="stat-item stat-dev">開発ツール 2件</span>
+        <span class="stat-item stat-other">その他 1件</span>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/app-pricing-more-plans-no-charge-plan-testing-and-negative-and-fractional-app-events" target="_blank" rel="noopener">App Pricing 拡張: 公開プラン上限が8件・プライベートプラン15件に増加、App Review 中の無課金テストも解禁</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/app-pricing-more-plans-no-charge-plan-testing-and-negative-and-fractional-app-events" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify App の料金プラン上限が引き上げられ、公開プランは最大 8 件（従来 4 件）、プライベートプランは最大 15 件（従来 10 件）まで作成可能になった。また App Review 期間中にレビュアーが実際のプランを選択してテストできるようになり、専用テストプランの作成が不要に。開発ストアでは自分のアプリをインストールして任意のプランを無料でサブスクライブできる。アプリ収益モデルを多様化したい開発者にとって大きなアップデート。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/shopify-flow-action-runtime-urls-now-update-automatically" target="_blank" rel="noopener">Shopify Flow: Action runtime URL が自動更新 — アプリ再デプロイ後もワークフローの手動更新が不要に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/shopify-flow-action-runtime-urls-now-update-automatically" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify Flow が Action のランタイム URL を毎回の実行時に解決するようになり、アプリを再デプロイして URL が変更されても既存のワークフローが次回実行時に自動的に新しい URL を使用するようになった。これまではアプリ側の URL 変更ごとにマーチャントがワークフローを手動で更新する必要があったが、この手間が解消される。さらにアクションのフィールドに破壊的変更があった場合もバリデーション失敗なく実行を継続し、サーバー側でスキーマ差異を柔軟に処理できるようになった。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Admin API 2026-07: Draft Order Deposits が GraphQL で設定可能に — Shopify Plus 限定で頭金・分割払いフローを実装</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Admin GraphQL API 2026-07 で Draft Order に頭金（Deposit）を設定できる新 API が追加された。Shopify Plus 限定機能で、アプリが Admin GraphQL 経由で部分支払いを設定し、顧客は Customer Account API 経由で頭金の詳細を確認できる。カスタム注文ワークフローで前払い金・手付金・分割払いを実装したい Shopify Plus マーチャント向けソリューションが構築しやすくなる。同時に Shopify の一括クエリが最大 4 倍高速化し、大量データのエクスポートが大幅に改善された。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/market-driven-delivery-profiles-admin-api" target="_blank" rel="noopener">Admin API 2026-07: Market-driven shipping 対応 — マーケット単位で配送設定を直接管理、複数プロファイル不要に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/market-driven-delivery-profiles-admin-api" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>GraphQL Admin API 2026-07 より、マーケットに直接配送設定を行えるようになった。従来は市場ごとに異なる配送戦略を実装するために複数の配送プロファイルリソースを作成する必要があったが、マーケットに紐づけることで管理が一元化される。地域別送料・配送オプションの出し分けを構築するアプリ開発が大幅に簡素化され、グローバルコマース対応のアプリ開発コストが削減できる。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thursdai.news/releases/2026-07" target="_blank" rel="noopener">OpenAI GPT-5.6 リリース: Sol（Ultra サブエージェントモード）/ Terra / Luna の 3 モデル体制、Jalapeño 独自推論チップも発表</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thursdai.news/releases/2026-07" class="source-link" target="_blank" rel="noopener">🔗 ThursdAI — July 2026 AI Releases</a>
+      </div>
+      <p>OpenAI が GPT-5.6 を公開し、Sol・Terra・Luna の 3 ティア構成を導入。Sol はフラッグシップで Ultra サブエージェントモードと Max reasoning-effort 設定を搭載、Terra は GPT-5.5 同等品質を半額で提供、Luna は高速応答向け。また GPT-Live-1 / GPT-Live-1 mini として音声対話モデルも刷新し、話しながらリッスンして割り込みやツール呼び出しを毎秒判断する機能を実装。さらに独自開発の Jalapeño 推論チップの存在も明らかにした。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://finance.yahoo.com/technology/ai/articles/meta-takes-aim-google-openai-185601327.html" target="_blank" rel="noopener">Meta Muse Spark 1.1 発表: 1M トークンコンテキスト・初の有料開発者 API（$20 無料クレジット付き）・コンピューター使用対応</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://finance.yahoo.com/technology/ai/articles/meta-takes-aim-google-openai-185601327.html" class="source-link" target="_blank" rel="noopener">🔗 Yahoo Finance</a>
+      </div>
+      <p>Meta がエージェント型 AI モデル Muse Spark 1.1 を発表。100 万トークンのコンテキストウィンドウを持ち、エージェント評価で GPT-5.5 や Opus 4.8 に匹敵するパフォーマンスを示すとされる。Meta として初となる有料開発者 API を導入し、$20 の無料クレジットが付与される。デスクトップ・ブラウザ・モバイルにまたがるコンピューター使用機能も搭載。内部では Watermelon というコードネームの訓練中モデルが現在の最先端モデルに匹敵する性能を示しているとも報告された。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.chinapulse.com/data-news/2026/07/14/top-tech-news-today-july-14-2026-amazon-cloudflare-google-ibm-nvidia-samsung-xai-more" target="_blank" rel="noopener">ニューヨーク州が新規ハイパースケールデータセンターを一時停止 — 米国初の AI インフラ規制措置が具体化</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.chinapulse.com/data-news/2026/07/14/top-tech-news-today-july-14-2026-amazon-cloudflare-google-ibm-nvidia-samsung-xai-more" class="source-link" target="_blank" rel="noopener">🔗 ChinaPulse — Top Tech News July 14, 2026</a>
+      </div>
+      <p>ニューヨーク州が新規ハイパースケールデータセンターの設置を一時停止し、米国の州として初めて AI インフラ急拡大への具体的な規制措置を実施した。電力網への負荷・水資源消費・地域への環境影響が主な理由とされる。並行して欧州・日本が半導体生産への公的資金注入を拡大し、NVIDIA はアジア向け先端チップの承認バイヤーリストを絞り込むなど、AI インフラをめぐる地政学的緊張が高まっている。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" target="_blank" rel="noopener">【即時対応】Microsoft SharePoint Server RCE CVE-2026-45659 が CISA KEV に追加 — 認証済みユーザーが特権なしで RCE 可能、連邦機関は3日以内にパッチ必須</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>Microsoft SharePoint Server の信頼されていないデータのデシリアライズに起因するリモートコード実行脆弱性 CVE-2026-45659（CVSS 8.8）が CISA の既知悪用脆弱性カタログ（KEV）に追加された。サイトメンバー権限以上を持つ認証済みユーザーが管理者権限なしにサーバー上で任意コードを実行できる。Microsoft は 5 月のパッチリリース時に「悪用の可能性は低い」と評価していたが、ランサムウェアグループなどによる実際の攻撃が確認され KEV 追加に至った。SharePoint Server Subscription Edition・2019・Enterprise 2016 を対象に即時パッチ適用が必要。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html" target="_blank" rel="noopener">CISA が Langflow 認証バイパス・Joomla・Adobe の脆弱性 4 件を KEV に追加 — CVE-2026-55255 は AI ワークフロー基盤を直撃</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>CISA が今週、Langflow の認証バイパス脆弱性（CVE-2026-55255）、JoomShaper SP Page Builder のファイルアップロード脆弱性（CVE-2026-48908）、Joomlack Page Builder の不適切アクセス制御（CVE-2026-56290）を含む計 4 件を KEV カタログに追加した。特に CVE-2026-55255 は AI エージェントのオーケストレーション基盤として広く使われている Langflow に影響し、認証を回避して内部 API にアクセスされるリスクがある。AI ワークフロー構築に Langflow を使用している組織は直ちにアップデートを確認すること。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up" target="_blank" rel="noopener">Google Cloud Cross-cloud Lakehouse GA: Iceberg REST Catalog で AWS・Azure データを境界なく横断分析、エージェントからも直接アクセス可能に</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Blog</a>
+      </div>
+      <p>Google Cloud が Cross-cloud Lakehouse（旧称 BigLake）を正式 GA とし、Iceberg REST Catalog を通じて AWS・Azure 上のデータをデータサイロなく横断的に分析できる環境を提供開始した。AI エージェントが広大なパートナーエコシステムのデータにシームレスにアクセスできるのが特徴で、マルチクラウドのデータ統合を簡素化する。また Google Cloud Service Health もGAとなり、リードネスプローブを活用したクロスリージョン自動フェイルオーバーが設定 2 クリックで構成できるようになった。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://azurecharts.com/updates?monthback=0" target="_blank" rel="noopener">Azure HorizonDB パブリックプレビュー開始 — PostgreSQL 互換の AI スケール対応フルマネージド DB、Microsoft Build で披露</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://azurecharts.com/updates?monthback=0" class="source-link" target="_blank" rel="noopener">🔗 Azure Charts — July 2026 Updates</a>
+      </div>
+      <p>Microsoft が Azure HorizonDB のパブリックプレビューを開始した。PostgreSQL 互換のフルマネージドデータベースで、クラウドスケールの AI アプリケーション向けに設計されている。Microsoft Build にて発表され、高いスケーラビリティと AI ワークロードへの最適化を特徴とする。既存の PostgreSQL ツールやドライバーとの互換性を保ちながら、AI アプリケーションのニーズに応えるパフォーマンスを提供する。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://deno.com/blog/v2.6" target="_blank" rel="noopener">Deno 2.6 リリース: npx 相当の dx コマンド追加・deno audit で CVE チェック・deno approve-scripts でサプライチェーン安全管理</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://deno.com/blog/v2.6" class="source-link" target="_blank" rel="noopener">🔗 Deno Blog</a>
+      </div>
+      <p>Deno 2.6 が公開され、npm・JSR パッケージのバイナリをワンコマンドで実行できる dx ツールが追加された（npm の npx に相当）。また deno audit サブコマンドが新設され、GitHub CVE データベースを参照して JSR・npm 依存関係のセキュリティ脆弱性を検出できる。従来の deno install --allow-scripts フラグは deno approve-scripts コマンドに置き換えられ、ライフサイクルスクリプトを実行するパッケージをより細かく制御できるようになった。サプライチェーンセキュリティを強化しつつ開発体験を向上させるリリース。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.windowscentral.com/microsoft/windows-11/windows-11s-july-2026-update-is-packed-with-new-features-and-these-are-the-top-ones" target="_blank" rel="noopener">Windows 11 Patch Tuesday 2026-07（KB5101650）: Point-in-time Restore 搭載・571 件のパッチ・更新を最大 35 日一時停止可能に</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.windowscentral.com/microsoft/windows-11/windows-11s-july-2026-update-is-packed-with-new-features-and-these-are-the-top-ones" class="source-link" target="_blank" rel="noopener">🔗 Windows Central</a>
+      </div>
+      <p>Microsoft が Windows 11 の 2026 年 7 月 Patch Tuesday アップデート（KB5101650）をリリースした。目玉機能は Point-in-time Restore で、72 時間以内の自動作成済み復元ポイントへの全システムロールバックが可能になる（Home・Pro エディションでデフォルト有効、200GB 以上のストレージが必要）。Windows Update にカレンダー UI が追加され、更新を最大 35 日間任意の日まで一時停止できるようになった。あわせて 571 件の脆弱性パッチ、大規模な Bluetooth 修正、File Explorer の高速化、Secure Boot 証明書ロールアウトを含む。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.ciodive.com/news/aws-google-link-cloud-products/806705/" target="_blank" rel="noopener">AWS と Google Cloud が連携強化 — マルチクラウドデプロイを簡素化する共同イニシアティブを発表</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.ciodive.com/news/aws-google-link-cloud-products/806705/" class="source-link" target="_blank" rel="noopener">🔗 CIO Dive</a>
+      </div>
+      <p>AWS と Google Cloud が両社プラットフォームにまたがるマルチクラウド展開を容易にする共同イニシアティブを発表した。ライバル同士の異例の協力体制で、企業がどちらのクラウドを主軸にしていても相互のサービスをよりスムーズに利用できる環境を目指す。二社のクラウドマーケットシェアを合計するとクラウドインフラ市場の過半数を占めており、この提携は企業のベンダーロックイン解消と移行コスト削減に大きな影響を与えるとみられる。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-07-14 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

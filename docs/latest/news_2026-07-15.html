@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-07-15</title>
+  <meta name="description" content="2026-07-15 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-07-15</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-07-15 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>16件</strong></p>
+      <div class="stats-bar">
+        <span class="stat-item stat-shopify">Shopify 4件</span>
+        <span class="stat-item stat-ai">AI 3件</span>
+        <span class="stat-item stat-security">セキュリティ 3件</span>
+        <span class="stat-item stat-cloud">クラウド 2件</span>
+        <span class="stat-item stat-dev">開発ツール 2件</span>
+        <span class="stat-item stat-other">その他 2件</span>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/pos-ui-extensions-2026-07-uses-per-unit-fixed-amount-line-item-discounts" target="_blank" rel="noopener">【破壊的変更】POS UI Extensions 2026-07 — 固定金額割引が「商品ライン合計」から「1ユニットあたり」の解釈に変更</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/pos-ui-extensions-2026-07-uses-per-unit-fixed-amount-line-item-discounts" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>APIバージョン2026-04以前では固定金額割引をライン合計として渡すとPOSが自動的にユニット単価に変換していたが、2026-07からはその変換が廃止。渡した値がそのまま各ユニットに適用される。例えば「5.00」を数量2のラインに渡すと合計$10割引になる。2026-07に移行するアプリは割引計算ロジックの更新が必須。パーセント割引は影響なし。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/shopify-flow-action-runtime-urls-now-update-automatically" target="_blank" rel="noopener">Shopify Flow — Action のランタイムURLを自動更新、ローカル開発でトンネル（相対パス）利用が可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/shopify-flow-action-runtime-urls-now-update-automatically" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify Flowがアクションの実行時URLを毎回動的に解決するように変更された。URLが変わったときやアプリを再デプロイした際、既存のワークフローが自動的に新しいURLを使用するようになる。また相対パスのサポートにより、ローカル開発中にトンネルURLをより手軽に使えるようになった。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/app-pricing-more-plans-no-charge-plan-testing-and-negative-and-fractional-app-events" target="_blank" rel="noopener">Shopify App Pricing 強化 — パブリックプラン最大8件・無料テスト・App Events に負の値と小数対応</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/app-pricing-more-plans-no-charge-plan-testing-and-negative-and-fractional-app-events" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>アプリごとのパブリックプラン上限が4件から8件、プライベートプランが10件から15件に拡大。アプリレビュー中や開発ストアでの自社インストール時に実課金なしでどのプランも選択可能なテスト機能を追加。App Events APIが負の値（調整・クレジット）と小数値を受け入れるようになり、より柔軟な従量課金設計が実現できる。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed" target="_blank" rel="noopener">Customer Account API 2026-10 で lastIncompleteCheckout・Checkout 型が削除 — 今から移行準備を</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Customer Account APIのバージョン2026-10より、Customer.lastIncompleteCheckoutフィールドとCheckout型が削除される。現在これらを使用しているアプリはCartオブジェクトや代替フィールドへの移行が必要。APIバージョン2026-07以前のアプリは影響を受けないが、将来のバージョンアップを見据えて早めの対応を推奨。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thursdai.news/releases/2026-07" target="_blank" rel="noopener">OpenAI、GPT-5.6 を正式公開 — Sol（$5/1M tok）・Terra・Luna の3ラインアップ、Ultra Subagent モードを搭載</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thursdai.news/releases/2026-07" class="source-link" target="_blank" rel="noopener">🔗 ThursdAI — AI Releases July 2026</a>
+      </div>
+      <p>OpenAIがGPT-5.6ファミリーを一般公開。フラッグシップのSolはUltra Subagentモード・Max推論設定を備え入力$5/出力$30（1Mトークン）、TerraはGPT-5.5相当の品質を半額で提供、Lunaは高速応答向け。Sol・Terraはいずれも高度な推論・コーディング・科学的タスクを想定し、商務省レビューを経てカスタマーへ順次展開されたのち全体公開となった。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aiweekly.co/ai-news-today/anthropic-news" target="_blank" rel="noopener">Anthropic、Claude Fable 5 が7/1に復帰 — 「25の活性概念」を特定した意識研究的解釈可能性の成果も公開</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aiweekly.co/ai-news-today/anthropic-news" class="source-link" target="_blank" rel="noopener">🔗 AI Weekly — Anthropic News</a>
+      </div>
+      <p>19日間の停止期間を経てClaude Fable 5が7月1日に復帰し、複雑な推論・戦略タスク向けOpusラインの上位に位置づけられた。またAnthropicはヤコビアン法による解釈可能性研究で多段階推論を担う約25の活性概念からなる「内部部分空間」を発見。この部分空間を除去すると多段推論が崩壊し、評価認識シグナルの除去が blackmail eval の成功率に劇的な変化をもたらした。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.aiapps.com/blog/july-ai-mega-update-major-breakthroughs-launches/" target="_blank" rel="noopener">Meta、Muse Spark 1.1 をリリース — 1M トークンコンテキスト、初の有料 API が $20 無料クレジット付きでパブリックプレビュー</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.aiapps.com/blog/july-ai-mega-update-major-breakthroughs-launches/" class="source-link" target="_blank" rel="noopener">🔗 AIApps — July AI Mega-Update</a>
+      </div>
+      <p>Mark ZuckerbergがMuse Spark 1.1を発表。100万トークンのコンテキストウィンドウを持つエージェント向けモデルで、GPT-5.5・Opus 4.8と競合するエージェント評価結果を示す。Metaとして初の有料開発者APIが$20無料クレジット付きパブリックプレビューとして米国向けにリリース。デスクトップ・ブラウザ・モバイルにわたるコンピュータ使用と並列サブエージェント委任をサポート。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/" target="_blank" rel="noopener">【緊急】Microsoft 7月 Patch Tuesday — 過去最大570件の脆弱性を修正、ゼロデイ3件（AD FS・SharePoint・BitLocker）</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/" class="source-link" target="_blank" rel="noopener">🔗 BleepingComputer</a>
+      </div>
+      <p>MicrosoftのPatch Tuesday 2026年7月版は過去最大570件（先月比約3倍）の脆弱性を修正。うち59件がCritical。実際に攻撃に悪用されているのはCVE-2026-56155（Active Directory Federation Services 権限昇格）とCVE-2026-56164（SharePoint Server 権限昇格・リモートから低複雑度で攻撃可能）の2件。CVE-2026-50661（BitLocker セキュリティバイパス）は未悪用だが公開済み。増大するパッチ件数はAIによる脆弱性発見強化が背景にある。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/07/14/cisa-adds-four-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA KEV 7/14 追加 — SonicWall SMA1000（SSRF・コードインジェクション）・SharePoint・AD FS の4件を登録</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/07/14/cisa-adds-four-known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA — Known Exploited Vulnerabilities</a>
+      </div>
+      <p>CISAが2026年7月14日付でKEVカタログに4件を追加。CVE-2026-15409（SonicWall SMA1000 SSRF）・CVE-2026-15410（SonicWall SMA1000 コードインジェクション）・CVE-2026-56155（Microsoft AD Federation Services 権限昇格）・CVE-2026-56164（Microsoft SharePoint Server 認証欠如）が対象。政府機関への対応期限が設定されており、エッジデバイスとIdP環境の早急なパッチ適用が必須。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/07/14/top-tech-news-today-july-14-2026-amazon-cloudflare-google-ibm-nvidia-samsung-xai-more/" target="_blank" rel="noopener">Cloudflare Precursor — AIエージェント vs 人間を行動パターンで識別するクライアントサイド Bot バリデーション</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/07/14/top-tech-news-today-july-14-2026-amazon-cloudflare-google-ibm-nvidia-samsung-xai-more/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups — Top Tech News July 14, 2026</a>
+      </div>
+      <p>Cloudflareがクライアントサイド行動検証システム「Precursor」を発表。動的に注入されたJavaScriptがマウスの動き・スクロール・タイピングリズム・フォーカス変化・ページ可視性などのシグナルをリアルタイムで収集し、持続的な人間の行動とAIエージェントや自動化トラフィックを区別する。セッション全体を監視することで、従来のCAPTCHAでは検出困難なAIドリブンな自動アクセスに対応する。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/amazon-ec2-c9g-and-c9gd-instances-powered-by-aws-graviton5-processors-are-now-available/" target="_blank" rel="noopener">AWS、Graviton5搭載 EC2 C9g / C9gd インスタンスを GA — 前世代比25%高性能、DDR5 8800MT/s・Nitro Isolation Engine 搭載</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/amazon-ec2-c9g-and-c9gd-instances-powered-by-aws-graviton5-processors-are-now-available/" class="source-link" target="_blank" rel="noopener">🔗 AWS Blog</a>
+      </div>
+      <p>AWSがAWS Graviton5プロセッサ搭載のコンピュート最適化インスタンス「C9g」「C9gd」を一般提供開始。C8g比で最大25%高い処理性能、DDR5 8800MT/sメモリ、5倍のL3キャッシュ、3倍のパケット処理性能を実現。C9gdはローカルNVMe SSDを内蔵しHPCやMLキャッシュに最適。Rust製のNitro Isolation EngineによるVM間分離を採用した初のコンピュート最適化インスタンスでもある。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-sonnet-5-on-aws-amazon-workspaces-for-ai-agents-aws-service-availability-updates-and-more-july-6-2026/" target="_blank" rel="noopener">AWS CloudFormation Express モード — デプロイ確認が数秒で完了、AIエージェントや高速反復開発のワークフローを加速</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-sonnet-5-on-aws-amazon-workspaces-for-ai-agents-aws-service-availability-updates-and-more-july-6-2026/" class="source-link" target="_blank" rel="noopener">🔗 AWS Blog — Weekly Roundup</a>
+      </div>
+      <p>AWSがCloudFormation Express Modeを全商用リージョンで追加料金なしに提供開始。従来のデプロイ完了通知が数秒で受け取れるようになり、AIエージェントや開発者の高速イテレーションワークフローを大幅に改善する。インフラのコード化（IaC）とCI/CDパイプラインへの組み込みで活用が広がることが期待される。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog" target="_blank" rel="noopener">Vercel CLI に AI Gateway 統合 — Claude Code・Codex が Vercel AI Gateway 経由で即時セットアップ可能に</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Vercel CLIに ai-gateway coding-agents サブコマンドが追加。Claude Code向けはgatewayのベースURLと認証情報を~/.claude/settings.jsonに自動書き込み、Codex向けはVercelモデルプロバイダーを~/.codex/config.tomlに記録しシェルのrcファイル経由でAPIキーをエクスポートする。既存APIキーからのAI Gatewayセットアップも簡略化されており、AI Gatewayの採用障壁が大幅に下がった。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.com/vercel/next.js/releases" target="_blank" rel="noopener">Next.js、セキュリティパッチポリシーを正式化 — 7月20日に最初のセキュリティリリース、事前通知を伴う定例化へ</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.com/vercel/next.js/releases" class="source-link" target="_blank" rel="noopener">🔗 Next.js GitHub Releases</a>
+      </div>
+      <p>VercelがNext.jsのセキュリティアップデートリリース手順を正式化。今後はセキュリティパッチを定期的にリリースし事前通知を行うポリシーを採用する。最初の新方針によるセキュリティリリースは2026年7月20日に予定されており、フロントエンドエコシステム全体のセキュリティガバナンス向上への取り組みとして注目される。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/07/14/top-tech-news-today-july-14-2026-amazon-cloudflare-google-ibm-nvidia-samsung-xai-more/" target="_blank" rel="noopener">New York 州、超大型データセンターの新設を一時停止 — AI インフラ急増に伴う電力・環境負荷を規制、米国初の州レベル措置</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/07/14/top-tech-news-today-july-14-2026-amazon-cloudflare-google-ibm-nvidia-samsung-xai-more/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups — Top Tech News July 14, 2026</a>
+      </div>
+      <p>New York州がハイパースケールデータセンターの新規建設を一時停止することを発表。AIインフラへの需要急増が電力グリッドと環境に与える影響への懸念が背景にある米国初の州レベル規制措置。一方でテネシー州のxAI Colossus 2データセンターは連邦クリーンエア許可なく天然ガスタービン59基を設置していた問題が同日明らかになり、AI関連インフラの環境問題が一斉に浮上した。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-14-2026" target="_blank" rel="noopener">OpenAI が米政府に5%の株式提供を提案 — 評価額 $8,520 億ベースで約 $426 億相当、AI 政策との連携を強化</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-14-2026" class="source-link" target="_blank" rel="noopener">🔗 Build Fast With AI — July 14, 2026</a>
+      </div>
+      <p>OpenAIが米国政府に対して同社株式の5%（評価額$8,520億ベースで約$426億相当）を提供することを提案していると報じられた。AI産業政策との連携強化や政府との関係改善が狙いとみられる。TSMCがAI需要によって過去最高の四半期売上を記録するなど、AIが米国経済・政策の中心課題となっていることを示している。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-07-15 07:00 JST 更新 | 全16件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

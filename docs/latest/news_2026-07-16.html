@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-07-16</title>
+  <meta name="description" content="2026-07-16 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-07-16</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-07-16 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>15件</strong></p>
+      <div class="stats-bar">
+        <span class="stat-item stat-shopify">Shopify 5件</span>
+        <span class="stat-item stat-ai">AI 3件</span>
+        <span class="stat-item stat-security">セキュリティ 2件</span>
+        <span class="stat-item stat-cloud">クラウド 1件</span>
+        <span class="stat-item stat-dev">開発ツール 3件</span>
+        <span class="stat-item stat-other">その他 1件</span>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/app-pricing-more-plans-no-charge-plan-testing-and-negative-and-fractional-app-events" target="_blank" rel="noopener">App Pricing 強化: 公開プラン最大8件・テスト用無料プラン・App Eventsの負数/小数対応が追加</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/app-pricing-more-plans-no-charge-plan-testing-and-negative-and-fractional-app-events" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>2026年7月9日付の変更で、公開プランの上限が4件から8件に、プライベートプランは10件から15件に増加。App ReviewerがすべてのプランをNo-Chargeで選択できるようになり、開発ストアでの無償テストも可能に。さらにApp Events APIで負の値（利用量クレジット）や小数点以下の値（1.5など）が受け付けられるようになった。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/shopify-flow-action-runtime-urls-now-update-automatically" target="_blank" rel="noopener">Shopify Flow: アクションのランタイムURLが自動更新に — App再デプロイ後も既存ワークフローが自動的に新URLを参照</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/shopify-flow-action-runtime-urls-now-update-automatically" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>2026年7月7日より、Shopify FlowがアクションのランタイムURLを実行ごとに解決するよう変更。URLが変更されてAppを再デプロイした際、マーチャントがワークフローを再編集・再保存しなくても既存ワークフローが自動的に新しいURLを使用する。デプロイ運用の手間が大幅に削減される。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/shopify-flow-changes-to-action-extensions-result-in-fewer-breaking-changes" target="_blank" rel="noopener">Shopify Flow: アクション拡張の変更仕様が緩和 — フィールド不一致でも古いバージョンのワークフローが継続実行</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/shopify-flow-changes-to-action-extensions-result-in-fewer-breaking-changes" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>2026年7月7日の変更で、アクション拡張の古いバージョンを使用するワークフローが、フィールド不一致があっても検証失敗で止まらず引き続き実行されるようになった。これにより、Appデベロッパーが拡張のフィールド構成を変更した際にマーチャントのワークフローが意図せず壊れるケースが大幅に減少する。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/deprecating-the-usebuyerjourneyintercept-api-on-checkout-ui-extensions" target="_blank" rel="noopener">2026-07より useBuyerJourneyIntercept API が非推奨に — カート・チェックアウト検証FunctionまたはDiscountFunctionへ移行を</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/deprecating-the-usebuyerjourneyintercept-api-on-checkout-ui-extensions" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>APIバージョン2026-07より、チェックアウトUI拡張の useBuyerJourneyIntercept フックと依存する block_progress 機能が非推奨に。既存拡張は現行以前のAPIバージョンで引き続き動作するが、将来バージョンで削除予定。マーチャントのビジネスルール実施にはサーバーサイドで動作するCart and Checkout Validation Functionへ、ディスカウントコード拒否ロジックはDiscount Function APIへの移行が推奨される。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/market-driven-delivery-profiles-admin-api" target="_blank" rel="noopener">Admin API 2026-07: マーケット別配送設定が追加 — チャネルごとに独立した配送プロファイル不要で市場別配送戦略が構成可能</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/market-driven-delivery-profiles-admin-api" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>APIバージョン2026-07より、GraphQL Admin APIがマーケット主導の配送設定をサポート。市場ごとに異なる配送戦略を、配送プロファイルリソースを別途作成せずにマーケットに直接設定できるようになった。国際展開するマーチャントの配送ロジック管理が大幅に簡素化される。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener">OpenAI、GPT-5.6ファミリーをリリース — Sol（フラッグシップ）・Terra（バランス）・Luna（高速低価格）の3モデル体制、1Mトークンコンテキスト対応</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://openai.com/index/previewing-gpt-5-6-sol/" class="source-link" target="_blank" rel="noopener">🔗 OpenAI</a>
+      </div>
+      <p>2026年7月9日、OpenAIがGPT-5.6シリーズをリリース。最上位のSol（$5/$30 per 1M tokens）、バランス型のTerra（$2.50/$15）、高速・低コストのLuna（$1/$6）の3モデル構成。すべて100万トークンのコンテキストウィンドウと12.8万トークンの最大出力を持ち、知識カットオフは2026年2月。Cerebras上でSolは最大750トークン/秒の推論速度を実現する。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank" rel="noopener">Anthropic、Claude Sonnet 5をリリース — Opus 4.8に迫る性能をより低価格で提供、エージェント用途に最適化された設計</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news/claude-sonnet-5" class="source-link" target="_blank" rel="noopener">🔗 Anthropic</a>
+      </div>
+      <p>2026年6月30日リリースのClaude Sonnet 5は、ブラウザ・ターミナルなどのツール使用と自律実行を前提に設計されたエージェント特化モデル。8月31日までの導入価格は入力$2/出力$10（per 1M tokens）、その後は$3/$15に移行。FreeおよびProプランのデフォルトモデルとして採用され、100万トークンのコンテキストと最大12.8万トークンの出力をサポートし、Adaptive Thinkingがデフォルトで有効。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aiweekly.co/ai-news-today/anthropic-news" target="_blank" rel="noopener">Anthropic、$65B Series Hで企業価値$9,650億に到達しIPO申請を準備 — OpenAIを収益で上回り、Samsung製カスタムAIチップ開発も進行中</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aiweekly.co/ai-news-today/anthropic-news" class="source-link" target="_blank" rel="noopener">🔗 AI Weekly</a>
+      </div>
+      <p>AnthropicがSeries Hで$650億を調達し、企業価値が$9,650億に到達。収益面でもOpenAIを上回るポジションを確立し、早ければ2026年10月のIPOに向けてS-1を準備中。さらにSamsungとClaude向けカスタムAIチップの共同開発交渉を進めており、推論コスト削減と処理速度向上を目指す。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html" target="_blank" rel="noopener">CISA KEV追加: Adobe ColdFusion・Joomla・Langflowの4件が悪用確認済みリストに — 対応期限7月10日（連邦機関）</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>CISAが7月7日にKEVカタログへ4件の脆弱性を追加。CVE-2026-48282（Adobe ColdFusion、CVSS 10.0）はパストラバーサルによる任意コード実行、CVE-2026-56290（Joomla Page Builder、CVSS 10.0）は未認証ファイルアップロードによるRCE、CVE-2026-55255（Langflow、CVSS 6.1）は認証済み攻撃者による他ユーザーフロー実行。連邦文民機関は7月10日までのパッチ適用が義務付けられた。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">【対応期限7/18】Oracle E-Business Suite に権限管理の欠陥 — 未認証の攻撃者がHTTP経由でOracle Paymentsを侵害可能（7月15日警告）</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA — Known Exploited Vulnerabilities Catalog</a>
+      </div>
+      <p>2026年7月15日、CISAがOracle E-Business Suiteの権限管理の不備をKEVカタログに追加。未認証の攻撃者がネットワーク経由のHTTPアクセスでOracle Paymentsコンポーネントを侵害できる重大な脆弱性で、対応期限は2026年7月18日（わずか3日後）。Oracle E-Business Suite環境を運用中の組織は即時のパッチ適用が求められる。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://azurecharts.com/updates" target="_blank" rel="noopener">Azure 7月更新: GitHub CopilotにKimi K2.7を追加・Azure FoundryでClaude Sonnet 5が利用可能に — ストレージのCRC64-NVMEデータ整合性機能も提供開始</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://azurecharts.com/updates" class="source-link" target="_blank" rel="noopener">🔗 Azure Charts — Latest Azure Updates</a>
+      </div>
+      <p>Microsoftが7月のAzure更新を展開。Azure AI Foundryでオープンモデル「Kimi K2.7」がGitHub Copilotの開発者ツールに統合され、低コスト選択肢が拡充。Azure FoundryではAnthropic Claude Sonnet 5のホスティングも開始。さらにAzure StorageにCRC64-NVME方式のクライアントサイドデータ整合性チェックが追加され、エンドツーエンドのデータ保証が強化された。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://nextjs.org/blog/next-security-release-program" target="_blank" rel="noopener">Next.js、7月20日に重大セキュリティリリースを予告 — DoS・SSRF・XSS・Middlewareバイパスを含む高深刻度4件・中深刻度5件のCVEを修正予定</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://nextjs.org/blog/next-security-release-program" target="_blank" rel="noopener">🔗 Next.js Blog</a>
+      </div>
+      <p>Vercelが2026年7月20日にNext.js 16.2および15.5のセキュリティリリースを予告。修正対象は高深刻度4件・中深刻度5件の計9件のCVEで、Server ComponentsのDoS・App RouterのMiddleware/Proxyバイパス・WebSocket SSRF・i18nルーティングのバイパス・キャッシュポイズニングなどを含む。Next.jsアプリを本番運用している場合は7月20日のパッチ適用を計画に組み込む必要がある。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog" target="_blank" rel="noopener">Vercel CLI: AI Gateway連携コマンドを追加 — `vercel integration add` でAgent Skillsが自動インストール、Claude CodeをAI Gatewayに接続可能</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Vercel CLIにai-gateway coding-agentsセットアップコマンドが追加され、既存のAPIキーからClaude CodeをVercel AI Gatewayに接続できるようになった。コマンド実行で~/.claude/settings.jsonにゲートウェイURLと認証情報が自動設定される。またvercel integration addコマンドがマーケットプレイス製品で宣言されたAgent Skillsを自動インストールするようになり、インタラクティブな確認プロンプトが不要に。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog" target="_blank" rel="noopener">Vercel CLIのセキュリティ強化: vercel initでシンボリックリンク・ハードリンクを展開しないよう変更、tar-fsを1.16.5にアップグレード</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Vercel CLIがファイルシステムのトラスト境界を強化。vercel initがダウンロードするサンプルアーカイブからシンボリックリンクとハードリンクエントリを展開しないよう変更され、悪意あるアーカイブによるパストラバーサル攻撃を防止。依存ライブラリtar-fsも1.16.5に更新し、アーカイブ展開時のセキュリティリスクを低減した。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.techtimes.com/articles/320593/20260715/epic-google-jointly-withdraw-play-store-settlement-rival-android-app-stores-open-july-22.htm" target="_blank" rel="noopener">Google/Epic、和解を取り下げ — 7月22日よりPlay Store内でサードパーティAppストアのダウンロードが可能に、手数料30%廃止も進行</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.techtimes.com/articles/320593/20260715/epic-google-jointly-withdraw-play-store-settlement-rival-android-app-stores-open-july-22.htm" class="source-link" target="_blank" rel="noopener">🔗 TechTimes</a>
+      </div>
+      <p>2026年7月15日、GoogleとEpicが代替和解案を共同撤回し、2024年の裁判所命令による差止命令に従うことを確認。7月22日からGoogle Play Store内でサードパーティAppストア（Epicストアなど）を直接ダウンロード可能になる。あわせてGoogleはアプリ内課金の代替決済オプション受け入れおよび手数料引き下げを英国・EU・米国で実施予定で、モバイルアプリ配信の競争環境が大きく変わる。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-07-16 07:00 JST 更新 | 全15件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

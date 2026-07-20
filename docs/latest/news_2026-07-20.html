@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-07-20</title>
+  <meta name="description" content="2026-07-20 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-07-20</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-07-20 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>16件</strong></p>
+      <div class="stats-bar">
+        <span class="stat"><span class="stat-num">4</span><div class="stat-label">Shopify</div></span>
+        <span class="stat"><span class="stat-num">3</span><div class="stat-label">AI</div></span>
+        <span class="stat"><span class="stat-num">3</span><div class="stat-label">Security</div></span>
+        <span class="stat"><span class="stat-num">2</span><div class="stat-label">Cloud</div></span>
+        <span class="stat"><span class="stat-num">2</span><div class="stat-label">Dev</div></span>
+        <span class="stat"><span class="stat-num">2</span><div class="stat-label">Other</div></span>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/hydrogen-developer-preview-update" target="_blank" rel="noopener">Hydrogen Developer Preview 7月9日更新 — Storefront APIキャッシュ・WebMCPツール・Customer Account API・型付きルートが一括追加</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/hydrogen-developer-preview-update" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>7月9日のHydrogen Developer Previewアップデートで、カタログデータ（商品・コレクション・ページ）をエッジでキャッシュするStorefront API Cachingが追加。WebMCPツールによりAIエージェントがストアフロントのカタログ検索やカート操作をブラウザ内で行えるようになった。ログイン済みユーザー向けのCustomer Account APIサポート（注文履歴・プロフィール）と、型付きルート・リダイレクトも同時投入。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/pos-ui-extensions-2026-07-uses-per-unit-fixed-amount-line-item-discounts" target="_blank" rel="noopener">POS UI Extensions 2026-07: 固定額割引が「単価ベース」に変更 — 2026-04以前のアプリは割引計算結果が変わる可能性</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/pos-ui-extensions-2026-07-uses-per-unit-fixed-amount-line-item-discounts" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>API バージョン 2026-07 より、POS UI Extensionsの固定額ラインアイテム割引は「数量合計」ではなく「単価」として扱われる仕様に変更された。旧バージョン（2026-04以前）では自動変換が行われていたが、2026-07以降はその変換が廃止される。POSで割引ロジックを実装しているアプリは金額計算の確認と対応が必要。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/shopify-flow-action-runtime-urls-now-update-automatically" target="_blank" rel="noopener">Shopify Flow: Action実行時URLがアプリ再デプロイ時に自動更新 — ワークフローの手動再保存が不要に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/shopify-flow-action-runtime-urls-now-update-automatically" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify FlowのActionでランタイムURLが変更されアプリが再デプロイされると、既存のワークフローが自動的に新しいURLに切り替わるようになった。これまではマーチャントがワークフローを手動で編集・再保存しなければ更新URLが反映されなかったが、その手間が完全に解消される。Flow連携アプリを開発・運用しているチームには嬉しい改善。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/pos-extensions-now-supports-a-background-extension-target" target="_blank" rel="noopener">POS Extensions: バックグラウンド拡張ターゲット（pos.app.ready.data）追加 — UIを表示せずセッション全体でPOSイベントを監視可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/pos-extensions-now-supports-a-background-extension-target" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>POS Extensionsに新しいバックグラウンド拡張ターゲット「pos.app.ready.data」が追加された。このターゲットはPOSセッション全体を通じて起動し続け、UIを一切レンダリングすることなくPOSイベントのオブザーブやバックグラウンドロジックの実行が可能になる。在庫チェック・ポイント計算・分析イベント送信などをUIレスで実装できるユースケースが広がった。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank" rel="noopener">Anthropic、Claude Sonnet 5 をリリース — 最もエージェント能力の高いSonnetモデル、1Mコンテキスト・$2/Mトークン（8月末まで）</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news/claude-sonnet-5" class="source-link" target="_blank" rel="noopener">🔗 Anthropic</a>
+      </div>
+      <p>AnthropicがClaude Sonnet 5を6月30日にリリース。100万トークンのコンテキストウィンドウと12.8万トークンの最大出力を持ち、ブラウザ・ターミナルなどのツールを使って自律的に動作できる「最もエージェント能力の高いSonnetモデル」と位置付けられる。導入価格は入力$2/Mトークン・出力$10/Mトークン（2026年8月31日まで）。新トークナイザーを採用しており、同じ入力が旧モデル比で1.0〜1.35倍のトークン数になる点に注意が必要。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thursdai.news/releases/2026-07" target="_blank" rel="noopener">OpenAI、GPT-5.6（Luna/Terra/Sol）の3サイズを展開 — 1Mコンテキスト・2026年2月知識カットオフ・$1〜$5/Mトークン</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thursdai.news/releases/2026-07" class="source-link" target="_blank" rel="noopener">🔗 ThursdAI</a>
+      </div>
+      <p>OpenAIが新しいフラッグシップモデルファミリーGPT-5.6をLuna・Terra・Solの3サイズで展開。全サイズで100万トークンのコンテキストウィンドウをサポートし、知識カットオフは2026年2月。入力トークン価格はLunaが$1/M、Solが$5/Mと用途に応じてコストを最適化できる。7月にはAnthropicのSonnet 5・xAIのGrok 4.5とほぼ同時期のリリースとなり、フロンティアモデルの競争が一段と激化している。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/" target="_blank" rel="noopener">Databricks、評価額$1,880億で戦略的資金調達を発表 — Coatue主導で約$30億、2月の$1,340億から5ヶ月で大幅上昇</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/" class="source-link" target="_blank" rel="noopener">🔗 TechCrunch</a>
+      </div>
+      <p>DatabricksがCoatue主導の戦略的ラウンドで評価額$1,880億での資金調達を発表（7月17日）。わずか5ヶ月前の2月に$1,340億（シリーズL、$50億調達）だった評価額が約40%上昇。今回の資金は Unity AI Gateway・Genie・Lakebase を中心とするAI戦略の加速に充てられる予定。AIデータインフラ層のプラットフォームが巨額資本を集め続けていることを示す指標として注目される。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/07/16/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">【対応期限: 7/19】CISA KEV追加: Fortinet FortiSandbox RCE 2件（CVE-2026-25089 CVSS 9.8・CVE-2026-39808 CVSS 9.1）＋ Microsoft SharePoint（CVE-2026-58644 CVSS 9.8）</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/07/16/cisa-adds-three-known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISAが7月16日付でKEVカタログに3件を追加。Fortinet FortiSandboxのCVE-2026-25089（CVSS 9.8）はFortiSandbox Cloud・PaaS環境も含む未認証OSコマンドインジェクション、CVE-2026-39808（CVSS 9.1）は同様のコマンドインジェクション。Microsoft SharePointのCVE-2026-58644（CVSS 9.8）はデシリアライゼーションによるオンプレミスSharePoint Serverへの不正アクセスを可能にする。連邦機関の対応期限は7月19日（既に経過）。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" target="_blank" rel="noopener">Microsoft SharePoint RCE（CVE-2026-45659 CVSS 8.8）がCISA KEVに追加 — 認証済みSiteメンバー権限でリモートコード実行、ランサムウェアグループが悪用</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>Microsoftが「悪用可能性は低い」と評価していたSharePoint ServerのRCE脆弱性CVE-2026-45659（CVSS 8.8）がCISAによりKEVカタログに追加された。認証済みの攻撃者がSiteメンバー以上の権限でデシリアライゼーション経由のリモートコード実行が可能。金銭目的の高度な脅威アクターとランサムウェアグループによる実攻撃が確認されており、SharePoint Server 2016/2019/Subscription Editionを運用する組織は5月のパッチを至急適用すること。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/07/14/cisa-adds-four-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA KEV追加（7/14）: SonicWall SMA1000 SSRF・コードインジェクション、Microsoft AD FS・SharePoint — 4件を一括追加</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/07/14/cisa-adds-four-known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>7月14日にCISAが4件をKEVカタログへ追加。SonicWall SMA1000アプライアンスのCVE-2026-15409（SSRF）とCVE-2026-15410（コードインジェクション）、Microsoft AD FSのCVE-2026-56155（アクセス制御不備）、Microsoft SharePoint ServerのCVE-2026-56164（認証欠如による重大機能アクセス）が対象。SonicWall VPN・Microsoft IDおよびコラボレーション環境の管理者は直ちにパッチ状況を確認のこと。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/amazon-ec2-c9g-and-c9gd-instances-powered-by-aws-graviton5-processors-are-now-available/" target="_blank" rel="noopener">AWS、EC2 C9g/C9gd インスタンス（Graviton5）をGA — 旧世代比25%高性能・5倍大容量キャッシュ・DDR5 8800MT/s・Nitro Isolation Engine搭載</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/amazon-ec2-c9g-and-c9gd-instances-powered-by-aws-graviton5-processors-are-now-available/" class="source-link" target="_blank" rel="noopener">🔗 AWS Blog</a>
+      </div>
+      <p>AWSがGraviton5プロセッサ搭載のコンピュート最適化インスタンス C9g/C9gd を一般提供（GA）開始（7月2日）。C8g比で最大25%の性能向上、5倍のL3キャッシュ、クラウド最速クラスのDDR5 8800MT/sメモリを実現。エージェントAIワークロード（並行環境・CPU集約型推論）を主要ターゲットに据えている。また仮想マシン分離の数学的証明を提供するNitro Isolation Engineをコンピュート最適化インスタンスとして初めて搭載。米国・欧州の主要リージョンから順次展開。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://azure.microsoft.com/en-us/updates/" target="_blank" rel="noopener">Azure HorizonDB パブリックプレビュー — PostgreSQL互換・クラウドスケールAIアプリ向けフルマネージドDB</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://azure.microsoft.com/en-us/updates/" class="source-link" target="_blank" rel="noopener">🔗 Azure Updates</a>
+      </div>
+      <p>MicrosoftがAzure HorizonDBのパブリックプレビューを発表。PostgreSQL互換のフルマネージドデータベースで、クラウドスケールのAIアプリケーション向けに特化して設計されている。ライセンスコストなしで利用可能で、AIネイティブなアプリ開発に最適化されたパフォーマンスを提供。同時期に発表されたAzure Databricks Genieのテナントレベルからユーザーレベルまでのコスト細粒管理機能との組み合わせで、AIコスト管理の強化も進んでいる。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://nextjs.org/blog/next-security-release-program" target="_blank" rel="noopener">Next.js、月次セキュリティリリースプログラムを正式開始 — 初回パッチ（7/21）で高危険度4件・中危険度5件のCVEを修正</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://nextjs.org/blog/next-security-release-program" class="source-link" target="_blank" rel="noopener">🔗 Next.js Blog</a>
+      </div>
+      <p>Vercelがオープンソースフレームワーク Next.js の月次セキュリティリリースプログラムを正式に開始。第1回パッチ（Next.js 16.2および15.5向け）は7月21日に公開予定で、高危険度4件（Middleware/Proxyバイパス・DoSによる接続枯渇を含む）と中危険度5件の計9件のCVEを修正する。今後は毎月定期的なパッチリリースと事前の公開予告を実施、緊急ケース用の迅速対応レーンも維持する。Next.jsを利用しているプロジェクトは翌日のリリースへの早期更新を推奨。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://deno.com/blog" target="_blank" rel="noopener">Deno 2.9 リリース — deno desktop でWebテクノロジーからネイティブデスクトップアプリを構築、npm/pnpm/yarn/Bunからの移行支援も追加</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://deno.com/blog" class="source-link" target="_blank" rel="noopener">🔗 Deno Blog</a>
+      </div>
+      <p>Deno 2.9（7月8日リリース）が `deno desktop` コマンドを導入し、Webテクノロジーからネイティブデスクトップアプリをビルドできるようになった。npm・pnpm・yarn・Bunからのファーストクラス移行サポートも追加され、既存プロジェクトのDenoへの移行が大幅に簡略化。その他にCSSモジュールのインポート、スナップショットテスト・パラメータ化テスト、`deno compile --bundle`の出力サイズ削減、Node.js 26の互換性対応なども含まれる。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.chinapulse.com/data-news/2026/07/20/top-tech-news-today-july-20-2026-alibaba-bezos-blackstone-google-moonshot-ai-nvidia-samsung-more/" target="_blank" rel="noopener">Etched、トランスフォーマー特化AIチップで最大$200億の評価額にて資金調達交渉中 — Sequoiaも$100億規模の別ラウンドをリード</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.chinapulse.com/data-news/2026/07/20/top-tech-news-today-july-20-2026-alibaba-bezos-blackstone-google-moonshot-ai-nvidia-samsung-more/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups / ChinaPulse</a>
+      </div>
+      <p>トランスフォーマーモデル専用シリコンを開発するスタートアップ Etched が、最大$200億の評価額での資金調達を複数の投資家と交渉中と報じられた（7月20日）。またSequoia Capitalが主導する約$100億規模の別ラウンドも並行して進行しているとみられる。NVIDIAのGPUとは異なるアーキテクチャでAI推論専用チップ市場を狙う動きが加速しており、AI半導体スタートアップへの資金流入が続いている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.marketingprofs.com/opinions/2026/55247/ai-update-july-10-2026-ai-news-and-views-from-the-past-week" target="_blank" rel="noopener">ホワイトハウス、OpenAI・Google・Anthropicとフロンティアモデルの自発的標準について最終交渉 — ベンチマーク・テスト期限・アクセスルールを策定へ</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.marketingprofs.com/opinions/2026/55247/ai-update-july-10-2026-ai-news-and-views-from-the-past-week" class="source-link" target="_blank" rel="noopener">🔗 MarketingProfs — AI Update</a>
+      </div>
+      <p>Financial Timesが報じたところによると、米ホワイトハウスがOpenAI・Google・Anthropicとフロンティア AI モデルリリースの自発的標準を最終調整中で、近日中に発表される見込み。フレームワークにはベンチマーク指標・テストスケジュール・高度モデルへのアクセスルールが盛り込まれる予定。AI安全性と産業競争力の両立を目指す政策として注目されており、義務的規制ではなく自発的枠組みで業界合意を形成する姿勢を示している。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-07-20 07:00 JST 更新 | 全16件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

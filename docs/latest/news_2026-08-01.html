@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-08-01</title>
+  <meta name="description" content="2026-08-01 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-08-01</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-08-01 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <span class="stat-item stat-shopify">Shopify 4件</span>
+        <span class="stat-item stat-ai">AI 3件</span>
+        <span class="stat-item stat-security">セキュリティ 2件</span>
+        <span class="stat-item stat-cloud">クラウド 2件</span>
+        <span class="stat-item stat-dev">開発ツール 2件</span>
+        <span class="stat-item stat-other">その他 1件</span>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Shopify アナリティクスにチャートアノテーション機能追加 — アプリがリリースやキャンペーンのマイルストーンをレポートデータと紐付け可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopifyがアナリティクスチャートにアノテーション機能を追加。アプリがローンチ・キャンペーン・マイルストーンを売上などのレポートデータと直接紐付けられるようになった。マーチャントはアプリの施策がビジネス指標に与えた影響をビジュアルで把握できるようになり、アプリ開発者にとってはストア管理画面での価値訴求力が向上する。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Liquid July '26 Developer Preview リリース — テンプレート内にページ構造を直接記述できる新方式でテーマ開発を簡素化</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Liquid July '26 Developer Previewが公開。これまで複数ファイルに分散していたページ構造をLiquidテンプレート1ファイルに集約して記述・編集できる新方式を導入。テーマ開発者はセクション・ブロック間を行き来する手間が減り、ページ全体のロジックを1か所で見通せるようになる。Preview版として現在アーリーアクセス受付中。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Admin GraphQL API 2026-10: メタフィールドフィルタリングが厳格化 — 未設定フィールドでのフィルタは無視でなくエラーを返すよう変更</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>APIバージョン2026-10より、GraphQL Admin APIでフィルタリング設定がされていないメタフィールドに対してフィルタクエリを実行すると、これまでの「無視して続行」ではなくエラーを返す仕様に変更される。既存クエリが暗黙的に誤った結果を返していた可能性があるため、2026-10への移行前にメタフィールドのフィルタリング設定を確認・修正することが必要。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Shopify カード決済エンドポイントに mTLS クライアント証明書が必須化 — カード会員データを保存するアプリは要対応</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopifyが card-deposit エンドポイントへのリクエストに対し、Shopify発行のmTLS（相互TLS）クライアント証明書を必須化。カード会員データを保存・処理するアプリが対象で、証明書を取得・設定していないアプリはエンドポイントへのアクセスが拒否される。PCI DSS準拠強化の一環として実施されるため、該当アプリは速やかに証明書のプロビジョニング手順を確認すること。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.axios.com/2026/07/24/anthropic-releases-new-model-opus-5" target="_blank" rel="noopener">Anthropic、Claude Opus 5 を正式リリース — Fable 5 に迫る性能を半額で提供、コンテキスト1Mトークン・128K出力対応</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.axios.com/2026/07/24/anthropic-releases-new-model-opus-5" class="source-link" target="_blank" rel="noopener">🔗 Axios</a>
+      </div>
+      <p>Anthropicが2026年7月24日にClaude Opus 5を正式リリース。CursorBench 3.2でFable 5比0.5%差の性能をFable 5の半額($5/$25 per Mトークン)で提供。OSWorld 2.0ではFable 5を超えつつFable 5比3分の1のコストを実現。コンテキスト1Mトークン・最大128K出力トークンに対応し、会話中のツール変更（ベータ）・安全フォールバック（ベータ）・ビジュアル出力生成などの新機能も搭載。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.axios.com/2026/07/09/ai-openai-gpt-release" target="_blank" rel="noopener">OpenAI、GPT-5.6（Sol / Terra / Luna）と ChatGPT Work エージェントを一般公開 — Luna は従来比80%コスト削減</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.axios.com/2026/07/09/ai-openai-gpt-release" class="source-link" target="_blank" rel="noopener">🔗 Axios</a>
+      </div>
+      <p>OpenAIが7月9日にGPT-5.6を3段階（Sol・Terra・Luna）で一般公開。LunaはAPIで$0.20/$1.20 per Mトークンと従来比80%安、Terraは$2/$12 per Mトークン（20%削減）。同時に「仕事全体を実行する」エージェントChatGPT Workもリリース。GPT-Live-1を搭載した新Voice Experienceもロールアウト開始し、音声・テキスト・画像を一つの会話内で処理できるようになった。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.techtimes.com/articles/321917/20260728/openai-anthropic-are-writing-threshold-their-rivals-must-clear-launch.htm" target="_blank" rel="noopener">OpenAI と Anthropic がフロンティアモデルのリリース審査基準を起草 — 競合他社が従うべき「閾値」の設定権を事実上掌握</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.techtimes.com/articles/321917/20260728/openai-anthropic-are-writing-threshold-their-rivals-must-clear-launch.htm" class="source-link" target="_blank" rel="noopener">🔗 TechTimes</a>
+      </div>
+      <p>OpenAIとAnthropicが、フロンティアモデルのリリース前に満たすべき安全基準（閾値）の草案を共同で起草中と報道。2026年6月発令の大統領令EO14409に基づき、NSAやCISAを通じた政府審査プロセスの60日以内設立が義務付けられており、両社が事実上その基準設計を先導している状況。AI開発競争の主要プレイヤーが「ゲートキーパー」の役割を握るとして業界内で論争を呼んでいる。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html" target="_blank" rel="noopener">Microsoft SharePoint CVE-2026-50522（CVSS 9.8）: PoC公開後に実環境での攻撃が急増 — オンプレミス環境は即時パッチ適用を</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>Microsoft SharePoint Serverのデシリアライズ脆弱性CVE-2026-50522（CVSS 9.8）に対し、公開されたPoCエクスプロイトを悪用した実環境攻撃が急増。未認証の攻撃者がネットワーク経由でコード実行・マシンキー窃取・持続的アクセスを確立できる。CISAのKEVカタログには今月だけでSharePoint脆弱性3件が追加（CVE-2026-56164・CVE-2026-58644・CVE-2026-50522）されており、オンプレミスSharePoint環境の即時パッチ適用が急務。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA KEV更新（7月30日）: 直近7日間で3件の悪用確認済みCVEを追加 — 7月20日週のVulnerability Bulletin（SB26-208）も公開</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA — Known Exploited Vulnerabilities Catalog</a>
+      </div>
+      <p>CISAが7月30日時点で直近7日間に3件のCVEをKnown Exploited Vulnerabilities（KEV）カタログへ追加。週次脆弱性速報SB26-208（7月20日週）も合わせて公開されており、多数のベンダー製品に跨る高深刻度脆弱性が記載されている。KEVに追加された脆弱性は連邦政府機関に対して対応期限内のパッチ適用が義務付けられており、民間企業にも早急な対応が推奨される。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-sonnet-5-on-aws-amazon-workspaces-for-ai-agents-aws-service-availability-updates-and-more-july-6-2026/" target="_blank" rel="noopener">AWS EC2 G7 インスタンスが NVIDIA RTX PRO 4500 Blackwell GPU を搭載 — G6 比で AI 推論 4.6 倍・グラフィックス 2.1 倍の性能向上</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-sonnet-5-on-aws-amazon-workspaces-for-ai-agents-aws-service-availability-updates-and-more-july-6-2026/" class="source-link" target="_blank" rel="noopener">🔗 AWS Blog</a>
+      </div>
+      <p>AWSがEC2 G7インスタンスにNVIDIA RTX PRO 4500 Blackwell Server Edition GPUを搭載し、G6インスタンス比でAI推論4.6倍・グラフィックス2.1倍の性能を実現。AWSは主要クラウドプロバイダーとして初のBlackwellアーキテクチャGPU対応。AI推論ワークロードの費用対効果が大幅に向上し、大規模な推論処理を行う企業にとって移行検討の価値が高い。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-evs-vcf9/" target="_blank" rel="noopener">Amazon EVS、VMware Cloud Foundation 9.0 および 9.1 をサポート — オンプレミスVMware環境のAWS移行・管理が最新版VCFで可能に</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-evs-vcf9/" class="source-link" target="_blank" rel="noopener">🔗 AWS What's New</a>
+      </div>
+      <p>Amazon Elastic VMware Service（EVS）がVMware Cloud Foundation（VCF）9.0および最新の9.1をサポート開始。EVS上でVCF 9.xのインストール・運用・管理を完全にコントロールできるようになり、VMwareの最新仮想化スタックをAWSクラウド上で活用可能になった。BroadcomによるVMware買収後の製品戦略変更を受けてAWS移行を検討している企業に向けた対応と見られる。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/07/npm-12-disables-install-scripts-by.html" target="_blank" rel="noopener">npm 12 正式リリース: インストールスクリプトをデフォルト無効化 — サプライチェーン攻撃対策として16年ぶりの抜本的セキュリティ改革</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/07/npm-12-disables-install-scripts-by.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>npm 12がリリースされ、preinstall・install・postinstallなどのインストール時スクリプトがデフォルトで無効化された。実行するには `npm approve-scripts` による明示的な許可が必要。Git依存関係・リモートURLからの依存関係取得もデフォルト禁止（opt-in化）。北朝鮮によるAxios・Mastra AIへのサプライチェーン攻撃が引き金となった変更で、Yarn・pnpm・Bunと同様のセキュリティモデルに統一される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-07-31-restricting-npm-bypass-2fa-granular-access-tokens/" target="_blank" rel="noopener">npm GAT の 2FA バイパス機能を7月31日より制限 — 流出トークンによるアカウント乗っ取り・悪意パッケージ公開リスクを遮断</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-07-31-restricting-npm-bypass-2fa-granular-access-tokens/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>2026年7月31日より、2FAバイパス設定のnpmグラニュラーアクセストークン（GAT）がセンシティブな操作（トークン作成・削除、パスワード/メール変更、パッケージアクセス変更、Org/チーム管理）を実行できなくなった。直接公開もステージング後の人的2FA承認が必要に変更。流出したトークン1つでアカウント乗っ取りが可能だった最大のクレデンシャル攻撃面を閉鎖する変更で、CI/CDパイプラインの見直しが必要な場合あり。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://michaelparekh.substack.com/p/ai-weekly-summary-rtz-1004" target="_blank" rel="noopener">OpenAI・Anthropic・Google・Metaなど1,100人超のAI従業員が連名でAI開発ペース抑制を米政府に要請する公開書簡を発表</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://michaelparekh.substack.com/p/ai-weekly-summary-rtz-1004" class="source-link" target="_blank" rel="noopener">🔗 AI Weekly Summary (Substack)</a>
+      </div>
+      <p>OpenAI・Anthropic・Google・Metaを含む約12社のAI企業に在籍する従業員1,100人超が、AI開発の意図的なペース抑制を求める公開書簡に連署。「AIが人々が理解・制御できる速度を超えて進歩する現実のリスクがある」と警告し、国際的な調整メカニズムの創設を米政府に求めている。Anthropicが自己報告ベースで$470億超の収益ペースでOpenAIを上回るなか、業界内部からの異議として注目を集めている。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-08-01 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

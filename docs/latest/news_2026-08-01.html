@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-08-01</title>
+  <meta name="description" content="2026-08-01 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-08-01</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-08-01 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>13件</strong></p>
+      <div class="stats-bar">
+        <span class="stat-item stat-shopify">Shopify 2件</span>
+        <span class="stat-item stat-ai">AI 3件</span>
+        <span class="stat-item stat-security">セキュリティ 2件</span>
+        <span class="stat-item stat-cloud">クラウド 2件</span>
+        <span class="stat-item stat-dev">開発ツール 3件</span>
+        <span class="stat-item stat-other">その他 1件</span>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-july-30" target="_blank" rel="noopener">Hydrogen 開発者プレビュー更新（7月30日）— Vue.js バインディング追加・Suspense カートリード・GraphQL TypeScript ツーリング</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-july-30" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify Hydrogen 開発者プレビューが7月30日に更新。React と同じ Hydrogen API を Vue で利用できる Vue.js バインディングを新たに追加し、フレームワーク非依存の進化を継続。Suspense を使ったカートの遅延レンダリング（Suspense cart reads）でページシェルを高速・キャッシュ可能に維持できるようになった。GraphQL TypeScript ツーリングも同梱され、Shopify 両 API に対するクエリ補完と型チェックが利用可能に。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/updating-an-orders-shipping-address-returns-accurate-financial-data" target="_blank" rel="noopener">Shopify Admin API: 注文の配送先変更時に税額が自動再計算に — API バージョン 2026-10 以降の orderUpdate GraphQL Mutation で対応</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/updating-an-orders-shipping-address-returns-accurate-financial-data" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>未出荷注文の配送先住所を `orderUpdate` GraphQL Mutation で変更すると、新しい宛先に合わせて税額が自動再計算されるようになった（API バージョン 2026-10 以降）。従来は住所のみ更新されて税行が古い宛先のままとなり、注文合計が実際の配送先と乖離していた。2026-07 以前のバージョンは従来の挙動を維持するため既存連携への影響はないが、2026-10 移行後は動作変化に注意。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.techtimes.com/articles/321497/20260724/voluntary-paper-mandatory-practice-white-house-ai-review-hits-august-1-deadline.htm" target="_blank" rel="noopener">【本日期限】米ホワイトハウスのフロンティアAIモデル事前審査フレームワーク — EO 14409 の 60日期限が8月1日に到来、OpenAI・Anthropic・Google が合意へ</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.techtimes.com/articles/321497/20260724/voluntary-paper-mandatory-practice-white-house-ai-review-hits-august-1-deadline.htm" class="source-link" target="_blank" rel="noopener">🔗 TechTimes</a>
+      </div>
+      <p>6月2日署名の大統領令（EO 14409）が定めた60日の期限が本日8月1日に到来。OpenAI・Anthropic・Google と米政府が、フロンティアモデルのリリース前に連邦機関が30日間の国家安全保障審査を行う自発的フレームワークへの合意を本日発表予定。評価ベンチマークは機密扱いで Meta は枠組みに含まれていない。両社に対して6〜7月に行われた事前通知なしの輸出規制介入の再発防止が目的。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.trendingtopics.eu/anthropic-turns-fable-5-into-a-premium-feature-openai-spreads-gpt-5-6-wider/" target="_blank" rel="noopener">Anthropic、Claude Fable 5 を Pro ユーザー向け有料機能へ格上げ — 7月20日からリクエスト毎課金に、OpenAI は GPT-5.6 を全プランへ展開拡大</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.trendingtopics.eu/anthropic-turns-fable-5-into-a-premium-feature-openai-spreads-gpt-5-6-wider/" class="source-link" target="_blank" rel="noopener">🔗 Trending Topics</a>
+      </div>
+      <p>7月19日まで全有料ユーザーに週次使用量の50%分を無料提供していたプロモーションが終了。7月20日以降、Claude Fable 5 は Pro ユーザーもリクエスト毎の追加課金制に移行し、事実上の上位プラン専用機能に。一方、OpenAI は米商務省による追加テスト・ヒアリング完了を受け、GPT-5.6 をほぼ全プランで展開拡大する方針で、Anthropic との料金・可用性戦略の方向性が鮮明に対比された。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-july-27-2026/" target="_blank" rel="noopener">Claude Opus 5、Amazon Bedrock でゼロデータ保持（ZDR）デフォルト有効で GA — 高規制業種向けに最高品質の推論を提供</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-july-27-2026/" class="source-link" target="_blank" rel="noopener">🔗 AWS News Blog</a>
+      </div>
+      <p>Anthropic の Claude Opus 5 が Amazon Bedrock で一般提供（GA）開始。ゼロデータ保持（ZDR）をデフォルトで有効にした状態で提供され、リクエスト内容が AWS サーバーに保存されないことを保証しながらトップクラスの推論性能を利用できる。金融・医療・法律など厳格なデータガバナンス要件を持つ業界での Bedrock 上 AI 活用が加速する見込み。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bleepingcomputer.com/news/security/cisco-warns-of-fmc-static-credential-flaw-exploited-in-zero-day-attacks/" target="_blank" rel="noopener">【本日対応必須】Cisco FMC CVE-2026-20316 — ハードコード静的認証情報のゼロデイ悪用が進行中、CISA KEV 掲載・FCEB 機関の修正期限は本日8月1日</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bleepingcomputer.com/news/security/cisco-warns-of-fmc-static-credential-flaw-exploited-in-zero-day-attacks/" class="source-link" target="_blank" rel="noopener">🔗 BleepingComputer</a>
+      </div>
+      <p>Cisco Secure Firewall Management Center (FMC) の Web インターフェースにハードコードされた静的認証情報を用いてリモートから認証なしで低権限ログインが可能な脆弱性（CVE-2026-20316、CVSS 5.3）がゼロデイ悪用中。CISA が7月29日付で KEV カタログへ追加し、連邦行政機関に本日8月1日までの適用を指示。ワークアラウンドなし、FMC 7.0/7.2/7.4/7.6/7.7/10.0 のホットフィックスを即時適用のこと。他 FMC 脆弱性との権限昇格チェーン攻撃も確認されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-07-31-restricting-npm-bypass-2fa-granular-access-tokens/" target="_blank" rel="noopener">npm 2FA バイパス型 Granular Access Token の機能制限が7月31日施行 — CI/CD での直接 Publish は8月以降不可、2027年1月に完全廃止</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-07-31-restricting-npm-bypass-2fa-granular-access-tokens/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>7月31日から、2FA バイパスを設定した npm Granular Access Token (GAT) ではトークンの作成・削除、パスワード/メール/2FA 設定変更、パッケージメンテナー管理など機密操作が不可になった。8月以降は直接 publish も制限（ステージング後に人間の2FA承認が必要）、2027年1月には直接 publish 権限が完全撤廃される。CI/CD パイプラインでこれらのトークンを使用している場合は OIDC Trusted Publishing への移行が必須。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-july-27-2026/" target="_blank" rel="noopener">AWS Lambda 永続的実行 SDK（.NET）GA ＋ S3 自己管理コードストレージ正式提供 — 長時間ワークフローとコードストレージ上限の両問題を解消</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-july-27-2026/" class="source-link" target="_blank" rel="noopener">🔗 AWS News Blog</a>
+      </div>
+      <p>AWS Lambda の Durable Execution SDK .NET 版が GA となり、C# で途中再開可能な長時間ワークフローを Lambda 上で構築できるようになった（最大1年間の実行停止と再開をサポート）。また自己管理コードストレージ機能も提供開始。Lambda がコードを中間コピーせず自社 S3 バケットを直参照できるようになり、従来のコードストレージ上限が撤廃され、関数のアクティベーション時間の短縮にも寄与する。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/release-notes.html" target="_blank" rel="noopener">Amazon Bedrock AgentCore Gateway Web Search Tool v1.2.0 — ドメインフィルタリングが最大100件に拡張、エージェントの検索範囲を精密制御</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/release-notes.html" class="source-link" target="_blank" rel="noopener">🔗 Amazon Bedrock AgentCore Release Notes</a>
+      </div>
+      <p>Amazon Bedrock AgentCore Gateway の Web Search Tool コネクタが v1.2.0 にアップデート。ドメインインクルードリストの設定が可能になり、エージェントのウェブ検索を特定ドメインのみに限定できる。インクルード・ブロック両リストともに最大100ドメインをサポート。エンタープライズ環境でのエージェント動作の予測可能性とセキュリティが向上する。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/07/npm-12-disables-install-scripts-by.html" target="_blank" rel="noopener">npm 12 正式リリース — インストールスクリプトをデフォルト無効化、16年越しのサプライチェーン攻撃の温床を遮断</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/07/npm-12-disables-install-scripts-by.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>npm v12 が7月にリリース。`npm install` 実行時にすべての `preinstall`/`install`/`postinstall` スクリプトをデフォルトで無効化する最大のセキュリティ強化を実施。16年間サプライチェーン攻撃の温床となってきた依存ツリー内の任意スクリプト自動実行を遮断し、`npm approve-scripts` による明示承認制に移行。CI/CD で既存スクリプトを利用しているプロジェクトはサイレントな exit code 0 ビルド失敗が発生する可能性があり、npm 11.16.0 の警告を確認の上、早急な移行作業が必要。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog" target="_blank" rel="noopener">Vercel MCP が 2026-07-28 仕様に完全対応 — 8月10日からバックエンド指標をブラウザの Performance API に直接公開</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Vercel の Model Context Protocol (MCP) サポートが 2026-07-28 版仕様に対応完了。ステートレスプロトコルコアと強化された認証を実装し、既存クライアントの変更は不要。8月10日より CDN が該当ヘッダーの除去を停止し、DB クエリ時間などバックエンド指標がブラウザの `window.performance` API から直接取得可能になる。フロントエンドでのパフォーマンス診断とオブザーバビリティが大幅に向上する見込み。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://releasebot.io/updates/github" target="_blank" rel="noopener">GitHub Stacked PRs プレビュー公開 — 複数の積み上げ PR をマージキューへ一括投入するワークフローが登場</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://releasebot.io/updates/github" class="source-link" target="_blank" rel="noopener">🔗 Releasebot — GitHub Release Notes</a>
+      </div>
+      <p>GitHub が Stacked PRs プレビュー機能を公開。スタック構成の複数 PR を一度にマージキューへ直接投入できるようになる。Next.js チームがすでに活用しており、大きな機能を小さな PR に分割して段階的にレビューしつつメインブランチへ安全にマージする手法をプラットフォームとして支援。レビュー負荷の分散とブロッカー削減によるリリースサイクル短縮が期待される。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.techtimes.com/articles/322442/20260731/apple-q3-2026-earnings-record-revenue-worsening-mac-supply-below-consensus-q4-outlook.htm" target="_blank" rel="noopener">Apple Q3 2026 決算 — AI iPhone 好調で売上高 $1,094 億と過去最高も、SoC 供給制約で Q4 見通しが市場予想を下回り時間外で株価下落</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.techtimes.com/articles/322442/20260731/apple-q3-2026-earnings-record-revenue-worsening-mac-supply-below-consensus-q4-outlook.htm" class="source-link" target="_blank" rel="noopener">🔗 TechTimes</a>
+      </div>
+      <p>Apple が Q3 2026 決算を発表。売上高は前年比16%増の $1,094 億と過去最高を記録し、iPhone が $543 億（+22%）、サービスが $307 億（+記録）をけん引。一方、先端ノード SoC の供給制約が iPhone・Mac・iPad すべてに影響し、第4四半期（9月期）の売上高成長率見通しは9〜11%と市場コンセンサスを下回った。為替逆風 2.5 ポイントと急騰するメモリコストも圧迫要因として挙げられ、発表後の時間外取引で株価は下落した。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-08-01 07:00 JST 更新 | 全13件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

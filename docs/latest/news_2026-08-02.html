@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-08-02</title>
+  <meta name="description" content="2026-08-02 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-08-02</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-08-02 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <span class="stat-item stat-shopify">Shopify 4件</span>
+        <span class="stat-item stat-ai">AI 4件</span>
+        <span class="stat-item stat-security">セキュリティ 2件</span>
+        <span class="stat-item stat-dev">開発ツール 3件</span>
+        <span class="stat-item stat-other">その他 1件</span>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-july-30" target="_blank" rel="noopener">Hydrogen 開発者プレビュー更新 (July 30) — Vue バインディング・GraphQL TypeScript 型補完・Shopify Inbox 対応・Suspense カートが追加</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-july-30" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Hydrogen 開発者プレビューの最新更新（7月30日）として、React と同一 API で Vue 製ストアフロントが構築できる Vue バインディング、パッケージに同梱される GraphQL TypeScript 型補完・クエリオートコンプリート、Shopify のプライバシーバナーに対応した Analytics と同意管理、Shopify Inbox によるストア AI エージェントとのチャット機能、ページ描画後にカートをストリームするための Suspense カート読み込みが追加された。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/app-pricing-more-plans-no-charge-plan-testing-and-negative-and-fractional-app-events" target="_blank" rel="noopener">Shopify App Pricing 拡張 — 公開プラン 4→8 個・プライベートプラン 10→15 個、無料テスト購読・App Events API 負値対応が追加</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/app-pricing-more-plans-no-charge-plan-testing-and-negative-and-fractional-app-events" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>7月9日付のアップデートで Shopify App の公開プランが最大 4 個から 8 個に、プライベートプランが 10 個から 15 個に拡大。審査担当者は既存プランを無料でサブスクライブして審査できるようになり、開発ストアでは自社アプリの全プランを無料でテスト購読できる。App Events API が負の値・小数値に対応し、使用量のクレジット処理が可能になった。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/updating-an-orders-shipping-address-returns-accurate-financial-data" target="_blank" rel="noopener">orderUpdate GraphQL mutation が配送先住所変更時に税金を自動再計算 — 2026年8月31日より全 API バージョンで適用</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/updating-an-orders-shipping-address-returns-accurate-financial-data" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>2026年8月31日以降、未フルフィルメントの注文の配送先住所を orderUpdate GraphQL mutation で変更すると、税金が新しい配送先に対して自動的に再計算される。これまでは住所変更後も元の税行が残り、注文の合計と配送先が不一致になる問題があった。変更の採用に向けてコード修正は不要で、全 Admin GraphQL API バージョンに適用される。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">GraphQL Admin API 2026-10: 無効なメタフィールドフィルタ指定時にエラーを返す破壊的変更 — サイレント無視から厳格化へ</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>API バージョン 2026-10 より、サポートされていないメタフィールドフィルタを指定した場合、これまでのサイレント無視からエラーを返す動作に変更される。アップグレード前に非対応クエリを検出しやすくすることが目的であり、2026-10 へ移行する前に既存クエリの検証が必要。フィルタ実装のバグを早期に特定できるようになる。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.axios.com/2026/07/24/anthropic-releases-new-model-opus-5" target="_blank" rel="noopener">Anthropic、Claude Opus 5 を正式リリース — 1M コンテキスト・128K 出力・アダプティブ思考、$5/$25 per million tokens</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.axios.com/2026/07/24/anthropic-releases-new-model-opus-5" class="source-link" target="_blank" rel="noopener">🔗 Axios</a>
+      </div>
+      <p>Anthropic が7月24日に Claude Opus 5 を正式公開した。100万トークンのコンテキストウィンドウと最大 12.8 万トークンの出力に対応し、アダプティブ思考をデフォルト有効化した 5 段階の推論努力設定を備える。価格は入力 $5・出力 $25（100万トークン当たり）と Opus 4.8 と同水準。Claude Max ではデフォルトモデル、Claude Pro では最上位オプションとして選択可能。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank" rel="noopener">Claude Sonnet 5、紹介価格 $2/$10 per million tokens — 8月31日まで、Opus 4.8 に迫る性能を半額以下で提供</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news/claude-sonnet-5" class="source-link" target="_blank" rel="noopener">🔗 Anthropic</a>
+      </div>
+      <p>Anthropic が Claude Sonnet 5 の紹介価格として入力 $2・出力 $10（100万トークン当たり）を8月31日まで提供中。9月1日以降は $3/$15 の標準価格に移行する。OpenAI GPT-5.5 や Google Gemini 3.1 Pro よりも安価で、Opus 4.8 水準の性能が期待でき、エージェントタスクの推論コスト削減に最適。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bloomberg.com/news/articles/2026-07-31/google-rolls-back-earth-ai-tool-over-concern-about-fake-images" target="_blank" rel="noopener">Google Earth の AI 画像生成ツール「Nano Banana 2」、公開翌日に緊急ロールバック — フェイク衛星画像の政策違反を受け</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bloomberg.com/news/articles/2026-07-31/google-rolls-back-earth-ai-tool-over-concern-about-fake-images" class="source-link" target="_blank" rel="noopener">🔗 Bloomberg</a>
+      </div>
+      <p>Google が7月30日に Google Earth（Web 版）へ追加したテキスト指示から衛星画像風 AI 生成画像を作成する「Nano Banana 2」機能が、公開から 24 時間以内に緊急ロールバックされた。存在しない核施設の偽衛星画像など、現実の地点に偽の損害や建造物を重ねた画像が生成されてポリシー違反として拡散。ジャーナリストや研究者から「公衆の衛星画像への信頼を損なう」と批判を受け、より強固なガードレール整備まで機能を停止すると表明した。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://fortune.com/2026/07/02/sam-altman-new-world-order-ai-openai-google-anthropic/" target="_blank" rel="noopener">Anthropic が自己申告売上で OpenAI を上回る — $470 億ペースで 2029 年黒字化、OpenAI より 1 年早い見通し</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://fortune.com/2026/07/02/sam-altman-new-world-order-ai-openai-google-anthropic/" class="source-link" target="_blank" rel="noopener">🔗 Fortune</a>
+      </div>
+      <p>Anthropic が自己申告ベースの年間売上で OpenAI を上回り、$470 億ペース（ARR）で推移していると報じられている。黒字化は 2029 年の見通しで OpenAI より 1 年早い。6〜7月にかけて Fable 5 が輸出規制により約 3 週間停止されるなど政府介入も受けたが、Claude コードエージェント需要の急増が牽引。OpenAI の Sam Altman は新たなパートナーシップ構築で対抗姿勢を示している。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/07/cisco-fmc-zero-day-actively-exploited.html" target="_blank" rel="noopener">【連邦機関は 8/1 対応必須】Cisco FMC ゼロデイ CVE-2026-20316: ハードコード認証情報でリモートログイン可能 — CISA KEV 追加</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/07/cisco-fmc-zero-day-actively-exploited.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>Cisco Secure Firewall Management Center（FMC）に静的なハードコード認証情報が存在し（CVE-2026-20316）、未認証のリモート攻撃者が低権限アカウントでログインして機密データにアクセスできる脆弱性が 7月29日に CISA KEV カタログへ追加された。CVSS は 5.3 だが SIR は High。特に CVSS 10.0 の認証バイパス CVE-2026-20079 と組み合わせた場合は root 権限実行が可能で、連邦文民機関は 2026年8月1日までのパッチ適用が義務付けられた。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/07/16/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">Fortinet FortiSandbox に OS コマンドインジェクション 2 件 (CVE-2026-25089 / CVE-2026-39808) — Microsoft SharePoint 逆シリアル化 CVEも同時 KEV 追加</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/07/16/cisa-adds-three-known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>7月16日に CISA が Known Exploited Vulnerabilities カタログへ 3 件を追加。Fortinet FortiSandbox の OS コマンドインジェクション脆弱性 CVE-2026-25089 と CVE-2026-39808、および Microsoft SharePoint の信頼されないデータの逆シリアル化 CVE-2026-58644 が含まれる。いずれも野生での積極的な悪用が確認されており、FortiSandbox を使用している環境は緊急パッチ適用を推奨。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-07-31-restricting-npm-bypass-2fa-granular-access-tokens/" target="_blank" rel="noopener">npm 2FA バイパス Granular Access Token、7月31日よりアカウント管理操作を制限 — スケルトンキー攻撃面を解消</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-07-31-restricting-npm-bypass-2fa-granular-access-tokens/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>2FA をバイパスするよう設定された npm Granular Access Token（GAT）が、7月31日よりトークン作成・削除、パッケージのメンテナー変更、組織/チームメンバーシップ管理などのアカウント管理操作を実行できなくなった。これらの操作にはインタラクティブな 2FA チャレンジが必要になる。流出したバイパストークンでアカウントを乗っ取り新トークンを発行する攻撃パターンを根本的に遮断する変更。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://elsolitario.org/en/2026/07/30/github-stacked-pull-requests-public-preview/" target="_blank" rel="noopener">GitHub Stacked PRs がパブリックプレビュー開始 (7月30日) — ウェイトリスト廃止、全リポジトリへ展開、マージキュー対応も近日追加</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://elsolitario.org/en/2026/07/30/github-stacked-pull-requests-public-preview/" class="source-link" target="_blank" rel="noopener">🔗 GitHub / El Solitario</a>
+      </div>
+      <p>GitHub の Stacked PRs 機能が 7月30日にパブリックプレビューとして全リポジトリへ順次展開を開始した。スタックされた複数の PR をスタックマップで追跡し、並行レビューを経て一括でマージキューへ投入できる。Vercel・jQuery・TED などが早期テスターとして参加し、jQuery 作者の John Resig は「5つのスタック PR を一度にマージキューへ投入できるのは素晴らしい」とコメント。CLI・モバイル・GitHub Copilot のコーディングエージェントからも利用可能。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/07/npm-12-disables-install-scripts-by.html" target="_blank" rel="noopener">npm 12: インストールスクリプトをデフォルト無効化 — サプライチェーン攻撃リスクを大幅削減、手動許可が必要に</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/07/npm-12-disables-install-scripts-by.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>npm 12 がインストールスクリプト（preinstall / postinstall）をデフォルトで無効化した。パッケージインストール時に任意のコードを実行するサプライチェーン攻撃の主要な侵入経路を閉じる変更で、スクリプトの実行が必要な場合はプロジェクト単位の許可設定が必要になる。2FA バイパストークン制限と合わせ、npm エコシステムのセキュリティ強化が急速に進んでいる。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.notateslaapp.com/news/4528/nhtsa-investigates-12m-tesla-vehicles-over-suspension-failure-risks" target="_blank" rel="noopener">NHTSA、Tesla Model 3/Y 約 120 万台を予備調査 — 前方ロワーラテラルリンクの走行中脱落、ステアリング喪失の恐れ</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.notateslaapp.com/news/4528/nhtsa-investigates-12m-tesla-vehicles-over-suspension-failure-risks" class="source-link" target="_blank" rel="noopener">🔗 Not A Tesla App</a>
+      </div>
+      <p>米 NHTSA（道路交通安全局）が 2018〜2020年式 Tesla Model 3 と 2021〜2023年式 Model Y を対象に約 120 万台の予備調査を開始した。前方ロワーラテラルリンクが走行中に脱落し、ステアリング制御を失う恐れがあるとの 156 件の苦情を受けた措置。ほとんどのケースで事前警告なしに発生するとされ、過去のリコール対象車両とは無関係の広範な問題と NHTSA は認定している。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-08-02 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

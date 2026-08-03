@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-08-03</title>
+  <meta name="description" content="2026-08-03 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-08-03</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-08-03 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <span class="stat-item stat-shopify">Shopify 4件</span>
+        <span class="stat-item stat-ai">AI 3件</span>
+        <span class="stat-item stat-security">セキュリティ 2件</span>
+        <span class="stat-item stat-cloud">クラウド 2件</span>
+        <span class="stat-item stat-dev">開発ツール 2件</span>
+        <span class="stat-item stat-other">その他 1件</span>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/next-generation-events-now-available-in-developer-preview" target="_blank" rel="noopener">Next Generation Events が Developer Preview 公開 — フィールドレベルトリガー・カスタムGraphQLペイロード・クエリベースフィルターで Webhook を完全再設計</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/next-generation-events-now-available-in-developer-preview" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopifyが Webhook を根本から再設計した「Next Generation Events」を Developer Preview として公開（unstable API バージョンで利用可）。Product・Customer トピックが先行対応し、Order・Inventory は2026年中に順次追加予定。フィールドレベルトリガーにより price 変更のみを監視する購読が可能になり、カスタムGraphQLペイロードで自アプリに必要なフィールドだけを受け取れる。購読設定は shopify.app.toml に記述してコード管理できるため、レビューやデプロイフローに自然に組み込める。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/build-app-home-as-a-ui-extension" target="_blank" rel="noopener">App Home を UI Extension として構築可能に — admin.app.home.render ターゲットでバックエンド不要の管理画面ページを実現</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/build-app-home-as-a-ui-extension" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>カスタム配信Appを対象に、Shopify 管理画面の App Home ページを UI Extension（admin.app.home.render ターゲット）として構築できるようになった（API 2026-07 以降）。Preact + Polaris Web Components で開発し、コンパイル後のバンドルサイズ上限は圧縮後 64 KB。自前ホスティングが不要になり、CDN・SSL・可用性管理をShopifyに委任できる。ただしパブリックApp（App Store 掲載）は引き続き iframe 方式を使用すること。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/remove-deprecated-errorcode-and-errormessage-fields-from-subscriptionbillingattempt" target="_blank" rel="noopener">SubscriptionBillingAttempt の廃止フィールド削除 — errorCode・errorMessage を利用中の App は今すぐ移行が必要</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/remove-deprecated-errorcode-and-errormessage-fields-from-subscriptionbillingattempt" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>GraphQL Admin API の SubscriptionBillingAttempt タイプから廃止済みフィールド errorCode および errorMessage が削除された。代替として billingAttemptErrorCode フィールドへの移行が必要。購読課金ロジックでこれらフィールドを参照している App は、対象 API バージョンへのアップグレード前に必ず移行作業を完了すること。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">API 2026-10 Breaking Changes 確認必須 — Customer.lastIncompleteCheckout 削除・不正メタフィールドクエリがエラーに・Storefront API に channelId 引数追加</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>2026年10月リリース予定の API バージョン 2026-10 に複数の破壊的変更が予告されている。Customer Account API では Customer.lastIncompleteCheckout および Checkout タイプが削除。GraphQL Admin API では無効なメタフィールドクエリが 2026-07 以前の「無視」から「エラー」に変更。Storefront API では @inContext ディレクティブに channelId 引数が追加。秋のバージョンアップ前に影響範囲の確認と対応を進めておくこと。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://openai.com/index/ten-advances-in-mathematics/" target="_blank" rel="noopener">OpenAI「Astra」が10個の未解決数学問題を解決 — 非ソフィック群の初証明など Lean 機械検証証明付きで公開、計算コストは約 $2,000</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://openai.com/index/ten-advances-in-mathematics/" class="source-link" target="_blank" rel="noopener">🔗 OpenAI</a>
+      </div>
+      <p>OpenAI の次世代モデル「Astra」の内部バージョンが、群論・高次元幾何・符号理論・量子複雑性・格子暗号・組合せ数学にわたる10問の未解決数学問題を解決し、機械検証済み Lean 証明を公開した（8/1）。目玉はミハイル・グロモフが1999年に提唱したソフィシティ概念以来初の「非ソフィック群」の明示的構成。249ページの論文集に各問の Lean 証明書が添付されており、Fields 賞受賞者 Timothy Gowers が「査読誌に推薦できる」と評価。GPT-5.6 Sol APIの料金換算で全10問のコンピュート費用は約 $2,000。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techcrunch.com/2026/07/24/anthropic-launches-opus-5/" target="_blank" rel="noopener">Anthropic、Claude Opus 5 を正式リリース — Fable 5 に匹敵する性能を半額で提供、労力調整トグルで cost/capability のバランスを制御</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techcrunch.com/2026/07/24/anthropic-launches-opus-5/" class="source-link" target="_blank" rel="noopener">🔗 TechCrunch</a>
+      </div>
+      <p>Anthropic が Claude Opus 5 を7月24日にリリース。Fable 5 級のインテリジェンスに「迫る」と位置づけ、価格は入力 $5 / 出力 $25（100万トークンあたり）と前世代 Opus 4.8 と同水準。複数のベンチマークでは Fable 5 を上回る結果も。ユーザーが low / medium / high の労力レベルをタスクごとに切り替えられる新機能を搭載し、コストとパフォーマンスの最適バランスを選択できる。Claude 5 シリーズとして2か月未満で4モデル目のリリースとなる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cnbc.com/2026/07/30/open-ai-price-cut-gpt.html" target="_blank" rel="noopener">OpenAI、GPT-5.6 API 価格を最大 80% 削減 — Luna は $0.20/$1.20、Terra は $2/$12 に改定（7/30）</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cnbc.com/2026/07/30/open-ai-price-cut-gpt.html" class="source-link" target="_blank" rel="noopener">🔗 CNBC</a>
+      </div>
+      <p>OpenAI が GPT-5.6 の 2 ティアの API 価格を7月30日付で改定。Luna は80%削減（入力 $0.20 / 出力 $1.20 per 1M トークン）、Terra は20%削減（$2 / $12）となり、最上位の Sol（$5/$30）は据え置き。効率化によって Luna・Terra で従来プレミアムモデルが必要だったワークロードをカバーできるようになったと説明。AWS 経由での利用にも適用され、AI コストに敏感な企業顧客を取り込む狙い。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/07/29/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank" rel="noopener">【CISA KEV 登録】CVE-2026-20316: Cisco Secure Firewall Management Center にハードコードパスワード — 未認証リモートアクセスが可能、対応済みか要確認</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/07/29/cisa-adds-one-known-exploited-vulnerability-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA が7月29日、Cisco Secure Firewall Management Center（旧 Firepower Management Center）のハードコードパスワード脆弱性 CVE-2026-20316（CVSS 8.9 / High）を Known Exploited Vulnerabilities カタログに追加。未認証の遠隔攻撃者が低権限アカウントで FMC Web インターフェースに認証可能で、機密情報へのアクセスリスクがある。Cisco は7月に野生での実際の悪用を確認。連邦機関の対応期限は8月1日。FMC 環境はただちにパッチ適用状況を確認すること。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-07-31-restricting-npm-bypass-2fa-granular-access-tokens/" target="_blank" rel="noopener">npm、bypass-2FA グラニュラーアクセストークンの機密操作を7/31より制限 — トークン作成・メンテナー変更・Org 管理が不可に</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-07-31-restricting-npm-bypass-2fa-granular-access-tokens/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>npm が7月31日、2FA バイパス設定のグラニュラーアクセストークン（GAT）から機密操作の実行権限を剥奪。対象はトークンの作成・削除、リカバリーコード生成、アカウントパスワード/メール/プロフィール/2FA 設定変更、パッケージアクセス・メンテナー変更、Org・チームメンバーシップ管理など。漏洩した bypass-2FA トークンでアカウントを乗っ取り新規トークンを発行するサプライチェーン攻撃の根本的な攻撃面を排除。2027年1月頃には直接 publish 権限も制限される予定。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-g7-available-North-Virginia/" target="_blank" rel="noopener">Amazon EC2 G7 インスタンス、US East (N. Virginia) リージョンで利用可能に — NVIDIA RTX PRO 4500 Blackwell 搭載、G6 比 AI 推論 4.6倍</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-g7-available-North-Virginia/" class="source-link" target="_blank" rel="noopener">🔗 AWS</a>
+      </div>
+      <p>AWS 初の NVIDIA RTX PRO 4500 Blackwell Server Edition GPU 搭載インスタンス Amazon EC2 G7 が、US East（N. Virginia）リージョンで利用可能になった。G6 比でAI推論性能 4.6倍・グラフィックス 2.1倍、GPU メモリ容量 1.33倍・帯域 2.45倍を実現（1GPU あたり 32 GB）。EFA 対応ネットワークは 700 Gbps（G6 比 7倍）。AI推論・グラフィックスレンダリング・動画トランスコーディング・VDI・データ解析など幅広い GPU ワークロードに対応する。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-sonnet-5-on-aws-amazon-workspaces-for-ai-agents-aws-service-availability-updates-and-more-july-6-2026/" target="_blank" rel="noopener">Amazon Bedrock Agents Classic、7/30 より新規顧客受付を終了 — AgentCore への移行を推奨。マネージドハーネスで AIエージェント基盤を2 API コールで構築</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-sonnet-5-on-aws-amazon-workspaces-for-ai-agents-aws-service-availability-updates-and-more-july-6-2026/" class="source-link" target="_blank" rel="noopener">🔗 AWS Blog</a>
+      </div>
+      <p>Amazon Bedrock Agents（旧称: Bedrock Agents Classic）が2026年7月30日をもって新規顧客の受付を終了。後継となる Amazon Bedrock AgentCore への移行が推奨されている。AgentCore のマネージドエージェントハーネスは2 API コールでセットアップ完了し、マネージドID・永続メモリ・ツールゲートウェイ・組織ナレッジ統合・Webサーチ・エンドツーエンド可観測性を AWS が管理。A/B テスト機能で本番トラフィックを使ったエージェント改善比較も可能になった。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-07-30-github-copilot-in-visual-studio-july-update/" target="_blank" rel="noopener">GitHub Copilot in Visual Studio 7月アップデート — Copilot SDK 製の新エージェント・.NET/Azure 組み込みスキル・組織レベルのカスタムインストラクション</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-07-30-github-copilot-in-visual-studio-july-update/" target="_blank" rel="noopener" class="source-link">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub Copilot in Visual Studio の7月アップデートがリリース。GitHub Copilot SDK ベースの新 Agent（Preview）がエージェントピッカーに追加され、Copilot CLI と同一基盤で動作する。.NET チームと Azure チームがそれぞれ専門スキルを提供し、アジェンティックワークフローのカスタマイズが容易に。組織レベルのカスタムインストラクション機能で、チーム全体の Copilot 応答を組織標準に合わせて統一設定できる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/07/npm-12-disables-install-scripts-by.html" target="_blank" rel="noopener">npm 12 リリース — インストールスクリプトをデフォルト無効化でサプライチェーンリスクを大幅低減、bypass-2FA トークンの段階的廃止も開始</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/07/npm-12-disables-install-scripts-by.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>npm 12 が正式リリースされ、パッケージインストール時のスクリプト（preinstall / postinstall 等）がデフォルトで無効化された。悪意あるパッケージがインストール直後に任意コードを実行するサプライチェーン攻撃の主要な攻撃ベクターを封じる変更。必要な場合は --allow-scripts フラグまたは設定で明示的に許可する形になる。また bypass-2FA グラニュラーアクセストークンの廃止フローとも連動しており、レジストリ全体のセキュリティ基盤の刷新が着々と進んでいる。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techdg.in/stay-ahead-of-the-curve-with-our-august-2026-ai-news-report-explore-the-latest-ai-model-updates-robotics-and-how-to-adapt-your-business-strategy-today/" target="_blank" rel="noopener">ヒューマノイドロボットが主要物流センターへ本格導入 — VLA モデル普及で「エンボディドAI」が実証から量産運用フェーズへ移行</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techdg.in/stay-ahead-of-the-curve-with-our-august-2026-ai-news-report-explore-the-latest-ai-model-updates-robotics-and-how-to-adapt-your-business-strategy-today/" class="source-link" target="_blank" rel="noopener">🔗 TechDG</a>
+      </div>
+      <p>2026年8月時点で、Vision-Language-Action（VLA）モデルの成熟を背景にヒューマノイドロボットが主要物流センターへの本格導入フェーズに入った。これまでパイロット実証に留まっていたエンボディドAIが量産・スケール運用に移行しており、業界では「エンボディドAIブーム」と呼ばれる潮流となっている。従来の産業用ロボットとは異なり、VLAモデルを搭載したヒューマノイドは自然言語指示への対応・未知環境への汎化が可能で、物流・製造・小売の現場での活用が急速に広がっている。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-08-03 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

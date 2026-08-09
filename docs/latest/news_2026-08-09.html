@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-08-09</title>
+  <meta name="description" content="2026-08-09 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-08-09</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-08-09 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>17件</strong></p>
+      <div class="stats-bar">
+        <span class="stat-item stat-shopify">Shopify 4件</span>
+        <span class="stat-item stat-ai">AI 4件</span>
+        <span class="stat-item stat-security">セキュリティ 3件</span>
+        <span class="stat-item stat-cloud">クラウド 2件</span>
+        <span class="stat-item stat-dev">開発ツール 3件</span>
+        <span class="stat-item stat-other">その他 1件</span>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-july-30" target="_blank" rel="noopener">Hydrogen 開発者プレビュー更新（7/30）— Vue バインディング追加・Suspense カート遅延読み込みで DX 向上</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-july-30" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>ShopifyのHeadlessフレームワーク「Hydrogen」の開発者プレビューが7月30日に更新された。Vue バインディングが追加され、ReactのHydrogen APIと同等の機能をVueで利用できるようになった。また、Suspenseを活用したカートの遅延読み込みが導入され、ページレンダリング後にカートをストリーミングすることでパフォーマンスが向上。フレームワーク選択の自由度が大幅に広がった。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/updating-an-orders-shipping-address-returns-accurate-financial-data" target="_blank" rel="noopener">Admin GraphQL: 配送先住所変更時に税を自動再計算（2026年8月31日より有効）— 既存インテグレーション要確認</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/updating-an-orders-shipping-address-returns-accurate-financial-data" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>2026年8月31日より、未フルフィルメント注文の配送先住所をAdmin GraphQL OrderUpdateミューテーションで変更すると、新しい宛先に基づいて税が自動再計算されるようになる。これまで住所変更時に税が更新されなかった問題が解消され、正確な財務データが返却される。2026-01以前の古いAPIバージョンも対象となるため、既存インテグレーションの動作確認と影響範囲の調査が推奨される。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Shopify Functions API 2026-10: Customer オブジェクトに createdAt フィールド追加 — アカウント年齢ベースのロジックが実装可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify Functions API 2026-10バージョンに`createdAt`フィールドがCustomerオブジェクトへ追加された。これにより、Functions内でお客様アカウントの作成日時にアクセスし、アカウント年齢に基づいた割引・フィルタリング・特典ロジックを実装できるようになった。2026-10は10月に正式リリース予定で、現在は開発者プレビューとして評価可能。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Shopify POS: キャッシュマネジメント新フィールドを GraphQL Admin API に追加 — 現金残高・開閉カウント詳細を取得可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>GraphQL Admin APIにPOS向けのキャッシュマネジメント新フィールドが追加された。現金引き出しの残高、開始・終了カウントの詳細など、現金管理の可視性が向上した。あわせてPOSチャンネルのコンテンツエディタで領収書ヘッダー・フッターをカスタマイズする機能も追加され、VAT/GST/PST ID・SIRET番号・返品ポリシーなどの組み込みフィールドが利用可能になった。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic、Claude Opus 5 を正式リリース — コーディング・知識業務・科学研究で最高性能、Claude Max／Pro のデフォルトモデルに</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news" class="source-link" target="_blank" rel="noopener">🔗 Anthropic Newsroom</a>
+      </div>
+      <p>Anthropicは2026年7月24日、Claude Opus 5を正式リリースした。コーディング・知識業務・科学研究において最高性能を維持しながら、Opus 4より大幅にコスト効率が向上。Claude MaxおよびClaude Proのデフォルトモデルとなった。現在のモデルラインナップはClaude Fable 5・Opus 5・Sonnet 5・Haiku 4.5の4種類で構成される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://releasebot.io/updates/anthropic" target="_blank" rel="noopener">Anthropic: MCP 2026-07-28 仕様サポート追加 ＋ エンタープライズ向け推論フック（Inference Hooks）β版を公開</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://releasebot.io/updates/anthropic" class="source-link" target="_blank" rel="noopener">🔗 Releasebot — Anthropic</a>
+      </div>
+      <p>AnthropicがMCP（Model Context Protocol）2026-07-28仕様のサポートを追加した。新仕様ではステートレスコア・強化OAuth/OIDC認証・バージョン管理拡張機能・組み込みUI・エンタープライズ管理認証・オブザーバビリティが利用可能になった。同時にエンタープライズ向けInference Hooks（推論フック）のベータ版を公開し、チャット・Claude Code・Cowork全体でリアルタイムDLP（データ損失防止）の強制適用が可能になった。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bloomberg.com/news/articles/2026-08-06/google-shifts-ai-power-to-california-in-race-against-anthropic-openai" target="_blank" rel="noopener">Google AI 組織再編: Koray Kavukcuoglu が研究部門トップに就任 — Demis Hassabis は会長・Chief Scientist へ</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bloomberg.com/news/articles/2026-08-06/google-shifts-ai-power-to-california-in-race-against-anthropic-openai" class="source-link" target="_blank" rel="noopener">🔗 Bloomberg</a>
+      </div>
+      <p>Googleが2026年8月6日、AI研究・事業運営の統括責任者にKoray Kavukcuogluを任命したとBloombergが報じた。Demis HassabisはGoogle DeepMindの会長兼AlphabetのChief Scientistへ転身し日常業務から離れる。Anthropic・OpenAIとのAI覇権争いを見据え、AIリーダーシップ機能をカリフォルニア本社に集約する大規模な組織再編が実施された。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bloomberg.com/news/articles/2026-08-03/openai-anthropic-google-to-join-white-house-ai-safety-meeting" target="_blank" rel="noopener">米ホワイトハウス AI 安全会議（8/3）— OpenAI・Anthropic・Google が参加、AIモデルの自主安全テスト枠組みを協議</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bloomberg.com/news/articles/2026-08-03/openai-anthropic-google-to-join-white-house-ai-safety-meeting" class="source-link" target="_blank" rel="noopener">🔗 Bloomberg</a>
+      </div>
+      <p>トランプ政権は2026年8月3日、OpenAI・Anthropic・Googleほか主要AI企業を招いたホワイトハウス会議を開催した。6月大統領令に基づきAIモデルの自主安全テストに関する米国共通フレームワーク策定が議題となった。参加企業はオプトイン方式のAIサイバーセキュリティクリアリングハウスへの自発的参加を検討しており、AI競争力強化とリスク管理の両立に向けた政策の具体化が進んでいる。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html" target="_blank" rel="noopener">CISA KEV 追加: N-able N-central CVE-2026-18577（CVSS 8.2）— 認証バイパスで管理エンドポイントへの横展開リスク</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>CISAがN-able N-centralの高深刻度脆弱性CVE-2026-18577（CVSSスコア8.2）を既知悪用脆弱性（KEV）カタログに追加した。CVE-2026-18556の不完全なパッチに起因する認証バイパスで、リモート攻撃者がN-centralサーバーへの管理者アクセスを取得後、内蔵のTake Control機能を悪用して管理エンドポイントへ横展開・永続化が可能になる。バージョン2026.3 HF1で修正済みであり、FCEB機関には2026年8月6日までの修正適用が勧告されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://sharkstriker.com/blog/august-2026-data-breaches/" target="_blank" rel="noopener">ミネソタ州 30 以上の水道事業者に協調サイバー攻撃 — 産業制御システムに被害、Braham 浄水場が一時停止</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://sharkstriker.com/blog/august-2026-data-breaches/" class="source-link" target="_blank" rel="noopener">🔗 SharkStriker</a>
+      </div>
+      <p>Minnesota IT Servicesが2026年8月、州内30以上のコミュニティ水道事業者に対する協調的なサイバー攻撃を確認した。Braham市の浄水場では処理が一時中断し、複数拠点の産業制御システム（ICS）に影響が出た。飲料水の安全性は維持されたものの、重要インフラへの組織的攻撃が続いており、ICS/OTセキュリティ強化と事業継続計画（BCP）の見直しが急務となっている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.breachsense.com/breaches/2026/august/" target="_blank" rel="noopener">Bank of Baroda メールアカウント侵害 — 700GB 超の顧客データ・ローン書類・監査記録が流出か</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.breachsense.com/breaches/2026/august/" class="source-link" target="_blank" rel="noopener">🔗 BreachSense</a>
+      </div>
+      <p>インド大手銀行Bank of Barodaがメールアカウントの侵害を公表した。脅威アクターが内部通信と添付ファイルにアクセスし、700GB以上の顧客ファイル・融資書類・監査記録が流出したと報告されている。金融機関を狙った標的型メール攻撃が増加しており、メールセキュリティゲートウェイの強化とゼロトラストアーキテクチャの導入の重要性が改めて浮き彫りになった。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.ciodive.com/news/aws-google-link-cloud-products/806705/" target="_blank" rel="noopener">AWS × Google Cloud Interconnect マルチクラウド接続が GA — プライベート専用帯域によるクロスクラウド通信、Azure・OCI も対応予定</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.ciodive.com/news/aws-google-link-cloud-products/806705/" class="source-link" target="_blank" rel="noopener">🔗 CIO Dive</a>
+      </div>
+      <p>AWSがGoogle Cloudをファーストパートナーとして「AWS Interconnect - multicloud」を一般提供（GA）した。企業はAmazon VPCと他クラウド環境間でプライベートかつ高速な専用帯域幅の接続を確立できるようになった。この種としては初の専用製品であり、今後Microsoft AzureとOCIにも対応予定。マルチクラウド戦略の複雑さを軽減し、クラウド間のデータ転送コストとレイテンシ削減が期待される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud" target="_blank" rel="noopener">Google Cloud Datastream × Knowledge Catalog 統合のパブリックプレビュー開始 — リアルタイムレプリケーション資産の一元管理へ</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Blog</a>
+      </div>
+      <p>Google CloudがDatastreamのメタデータをKnowledge Catalogと統合するパブリックプレビューを開始した。Datastreamアセット全体を一元管理する「シングルペイン・オブ・グラス」ビジョンに向けた第一歩となる。データエンジニアはリアルタイムレプリケーション中のデータ資産メタデータを統合カタログで管理・検索・ガバナンス管理できるようになり、データパイプラインの可視性が大幅に向上する。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://releasebot.io/updates/vercel/next-js" target="_blank" rel="noopener">Next.js 16.3 リリース — 開発メモリ削減・高速ビルド・instant() テストヘルパー追加、セキュリティ定例パッチも導入</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://releasebot.io/updates/vercel/next-js" class="source-link" target="_blank" rel="noopener">🔗 Releasebot — Vercel / Next.js</a>
+      </div>
+      <p>VercelがNext.js 16.3をリリースした。開発環境のメモリ使用量が削減され、ビルドとレンダリングが高速化した。新しいinstant()テストヘルパーにより、ナビゲーションがインスタント（即時）かどうかを自動検証するテストが書けるようになった。セキュリティアップデートリリースの定例化と事前通知制度も正式に導入され、セキュリティ対応の予測性が向上している。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog/vercel-plugin-now-available-in-vs-code-and-github-copilot-cli" target="_blank" rel="noopener">Vercel Plugin が VS Code と GitHub Copilot CLI に対応 — Next.js・AI SDK・Vercel Functions の知識を Copilot にオンデマンド提供</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog/vercel-plugin-now-available-in-vs-code-and-github-copilot-cli" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>VercelのプラグインがVS CodeのGitHub Copilot拡張機能とCopilot CLIに対応した。Copilot ChatがNext.js・AI SDK・Vercel Functions・デプロイ設定などVercelプラットフォームの知識をオンデマンドで参照できるようになる。VS Codeの拡張機能パネルで`@agentPlugins vercel`を検索するか、`npx plugins add vercel/vercel-plugin`を実行してインストール可能。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://releasebot.io/updates/github" target="_blank" rel="noopener">GitHub Copilot に Kimi K3 オープンウェイトモデルを追加 — エージェントコーディング向け GA、使用量ベースの低コスト体系</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://releasebot.io/updates/github" class="source-link" target="_blank" rel="noopener">🔗 Releasebot — GitHub</a>
+      </div>
+      <p>GitHubがKimi K3をGitHub Copilotに追加した。エージェントコーディング向けの一般公開（GA）されたオープンウェイトモデルで、使用量ベースのコスト効率の高い価格体系を採用している。開発者はプロジェクト要件に応じてモデルを選択できる選択肢が広がり、特に大規模なコーディングタスクでのコスト最適化に活用が期待される。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/08/05/top-tech-news-today-august-5-2026-anthropic-google-microsoft-openai-samsung-spacex-uber-more/" target="_blank" rel="noopener">SAP クラウドバックログが 26% 増（22.9 兆ユーロ）— 企業の AI 基盤クラウド移行が「実証フェーズ」から「実装フェーズ」へ加速</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/08/05/top-tech-news-today-august-5-2026-anthropic-google-microsoft-openai-samsung-spacex-uber-more/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>SAPが2026年第2四半期の決算を発表し、クラウドバックログが固定通貨ベースで26%増の22.9兆ユーロに達した。財務・サプライチェーン・調達・人事システムのクラウド移行が加速し、これらの基盤上にAI機能を構築する企業が急増している。エンタープライズAIの導入が実証段階から実装段階へと移行していることを示す象徴的な指標となった。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-08-09 07:00 JST 更新 | 全17件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

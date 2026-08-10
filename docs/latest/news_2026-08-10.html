@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-08-10</title>
+  <meta name="description" content="2026-08-10 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-08-10</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-08-10 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-july-30" target="_blank" rel="noopener">Hydrogen Developer Preview 更新（7/30）— Vue バインディング追加・GraphQL TypeScript 型チェック・カート Suspense 読み込み対応</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-july-30" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>7月30日付のHydrogen Developer Preview更新で、ReactのHydrogen APIをそのままVueで使えるVueバインディングが追加された。ShopifyのAPIに対しクエリ補完・型チェックを提供するGraphQL TypeScriptツールも同梱。さらにReactでカートをページレンダリング後にストリームできるSuspense対応を導入し、アプリシェルを高速かつキャッシュ可能に維持できるようになった。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/shopify-catalog" target="_blank" rel="noopener">Shopify Catalog 正式公開 — AI エージェント向けにリアルタイム価格・在庫を提供する API と MCP サーバー</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/shopify-catalog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify Catalogが正式公開され、一部のAppとAIエージェントがShopifyのグローバル商品カタログにリアルタイム価格・オプション・在庫情報を含めてアクセスできるようになった。APIとMCPサーバーの両方の形式で提供され、AIエージェントによるコマース自動化の基盤となる。Agentic Commerceの普及を見据えた重要インフラ。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://weaverse.io/blogs/shopify-storefront-catalog-mcp-ucp-migration-hydrogen-2026" target="_blank" rel="noopener">【期限: 8/31】Cart MCP レガシーエンドポイント廃止 — Hydrogen・AI エージェント・サードパーティ連携は UCP への移行必須</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://weaverse.io/blogs/shopify-storefront-catalog-mcp-ucp-migration-hydrogen-2026" class="source-link" target="_blank" rel="noopener">🔗 Weaverse Blog</a>
+        </div>
+        <p>2026年8月31日をもってCart MCPのレガシーエンドポイント（/api/mcp への直接呼び出し）が廃止される。対象はHydrogenアプリ・カスタムAIエージェント・サードパーティ連携すべて。統一エンドポイント https://{shop-domain}/api/ucp/mcp への移行が必須で、Catalog/Cartツール（search_catalog・create_cart等）を利用するすべての実装で対応が必要。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Admin GraphQL API: キャッシュドロワー残高フィールド追加 / Shopify Functions 2026-10 で Customer.createdAt が利用可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Admin GraphQL APIにキャッシュドロワーの現在残高を直接取得できる新フィールドが追加され、POS現金管理のリアルタイム可視性が向上した。また未履行注文の配送先変更時に税額を再計算するAdmin GraphQL Updateミューテーションがリリース。さらにShopify Functions API 2026-10でCustomerオブジェクトにcreatedAtフィールドが追加され、顧客アカウント作成日を使ったFunctions実装が可能になった。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aitoolsrecap.com/Blog/AINewsAugust2026.aspx" target="_blank" rel="noopener">OpenAI、IPO に向けS-1 開示を8月中旬〜下旬に予定 — 2025年売上$200億・2026年損失$140億、黒字化は2030年代の見通し</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aitoolsrecap.com/Blog/AINewsAugust2026.aspx" class="source-link" target="_blank" rel="noopener">🔗 AIToolsRecap</a>
+      </div>
+      <p>OpenAIが6月に機密ベースで米国IPO申請を行い、S-1目論見書を今月中旬〜下旬に公開する予定。9月IPOを目標としており、初めて全財務状況が公開される。2025年売上$200億を達成した一方、2026年損失$140億・2029年までの累積損失$1,150億が見込まれ、黒字化は2030年代以降となる見通し。時価総額$1兆超のIPOを目指す。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cnbc.com/2026/08/04/palantir-2q-earnings-ai-sovereign-tools.html" target="_blank" rel="noopener">Palantir Q2 2026 決算: 売上高+93%・$19.4億 — 「AIサバレニティ」需要急増でフルイヤーガイダンスを$81.5億に上方修正</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cnbc.com/2026/08/04/palantir-2q-earnings-ai-sovereign-tools.html" class="source-link" target="_blank" rel="noopener">🔗 CNBC</a>
+      </div>
+      <p>Palantirが2026年Q2決算を発表し、売上高は前年同期比93%増の$19.4億を記録。企業・政府がOpenAI・Google・Anthropic・MetaなどのフロンティアAIラボへのデータ露出を避けるため、データをプライベートに保ちながらAIを統合するPalantirのソリューション需要が爆増した。通年ガイダンスを$81.5億に引き上げ、株価は29%以上急騰した。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic、元カリフォルニア州最高裁判事 Tino Cuéllar 氏を初代最高グローバルアフェアーズ責任者（CGAO）に任命</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news" class="source-link" target="_blank" rel="noopener">🔗 Anthropic Newsroom</a>
+      </div>
+      <p>Anthropicはカリフォルニア州最高裁判事を務め、カーネギー国際平和財団の理事長も歴任したTino Cuéllar氏を初代Chief Global Affairs Officer（CGAO）に任命した。AI規制が本格化する中、政府・規制当局・国際機関との関係構築を担う役職を新設。EU AI Actの完全施行を含むグローバルなAIガバナンスの複雑化への対応強化が目的。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bloomberg.com/news/newsletters/2026-08-06/google-s-shakeup-complicates-race-with-openai-anthropic" target="_blank" rel="noopener">Google AI、組織再編でHassabis氏が会長に退き Kavukcuoglu 氏が主導権 — Brain/DeepMind の2拠点体制を解消</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bloomberg.com/news/newsletters/2026-08-06/google-s-shakeup-complicates-race-with-openai-anthropic" class="source-link" target="_blank" rel="noopener">🔗 Bloomberg</a>
+      </div>
+      <p>GoogleがAI部門の大規模再編を実施。DeepMind創業者のDemis Hassabis氏が会長職に退き、Koray Kavukcuoglu氏が実務を引き継いだ。米国のGoogle Brain・英国のDeepMindに分かれていた2拠点体制を解消し、組織統合を加速する。OpenAI・Anthropicとの競争が激化する中で起きた組織改編で、今後の戦略に注目が集まっている。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html" target="_blank" rel="noopener">【緊急】CVE-2026-18577: N-able N-central の認証バイパスがCISA KEVに追加 — 攻撃者が管理エンドポイント全体を掌握</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>CISA が8月3日付でN-able N-centralの認証バイパス脆弱性（CVE-2026-18577、CVSS 8.2）をKEVカタログに追加。CVE-2026-18556のパッチ不完全に起因し、未認証の遠隔攻撃者がN-centralサーバーの管理者権限を奪取後、Take Control機能を悪用して管理下のエンドポイント全体に侵入・Cloudflare Tunnelで永続バックドアを設置することが確認されている。8月2日リリースのバージョン2026.3.1.7への即時アップグレードが必要。FCEBは8月6日が適用期限。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.helpnetsecurity.com/2026/08/03/cve-2026-42897-microsoft-owa-owareaper/" target="_blank" rel="noopener">CVE-2026-42897: Microsoft OWA をゼロクリックで狙うロシア連携キャンペーン — メール開封で OWAReaper ブラウザインプラントが自動インストール</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.helpnetsecurity.com/2026/08/03/cve-2026-42897-microsoft-owa-owareaper/" class="source-link" target="_blank" rel="noopener">🔗 Help Net Security</a>
+      </div>
+      <p>ロシアと連携するAPTがCVE-2026-42897（Microsoft Outlook Web Access）を悪用するキャンペーンが報告された。悪意あるメールを開くだけでOWAReaperというブラウザインプラントが自動インストールされ、認証情報を窃取しパスワード変更・デバイス再イメージ後もメールボックスへのアクセスを維持する。パッチ適用とOWA経由の不審ログイン履歴の確認が急務。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/08/npm-supply-chain-attack-alibaba.html" target="_blank" rel="noopener">npm サプライチェーン攻撃: Alibaba 内部モジュールを装った悪意パッケージが OS 別 RAT を展開</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/08/npm-supply-chain-attack-alibaba.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>npmに Alibaba の内部プライベートモジュールを模倣した悪意あるパッケージ群が発見された。多層の依存関係を通じてGitHubから攻撃者の命令を取得し、OS別のRAT（リモートアクセストロイの木馬）ペイロードをインストールする。コマンド実行・ファイル窃取・認証情報アクセスが可能で、CI/CDパイプラインに組み込まれると広範な被害につながる。問題パッケージの確認と依存関係の精査が必要。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-aws-summit-in-new-york-2026/" target="_blank" rel="noopener">AWS Summit NY 2026: Amazon EC2 G7 インスタンス提供開始 — NVIDIA RTX PRO 4500 Blackwell で AI 推論性能が最大4.6倍に</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-aws-summit-in-new-york-2026/" class="source-link" target="_blank" rel="noopener">🔗 AWS News Blog</a>
+      </div>
+      <p>AWS Summit New York 2026にてAmazon EC2 G7インスタンスが発表された。NVIDIA RTX PRO 4500 Blackwell Server Edition GPUを搭載した主要クラウド初の対応インスタンスで、G6比でAI推論性能が最大4.6倍・グラフィックス性能が最大2.1倍に向上。また Amazon Bedrock AgentCore 向けにウェブ検索ツールや組織ナレッジベース接続機能も追加された。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/" target="_blank" rel="noopener">AWS × OpenAI 連携拡大: GPT-5.5・Codex・Managed Agents が Amazon Bedrock に限定プレビューで追加</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/" class="source-link" target="_blank" rel="noopener">🔗 AWS News Blog</a>
+      </div>
+      <p>AWSとOpenAIのパートナーシップが拡大し、GPT-5.5・Codex・Managed AgentsがAmazon Bedrockに限定プレビューとして追加された。またAmazon Quickというデスクトップアプリ付きのAI業務アシスタントを発表し、Amazon Connectをサプライチェーン・採用・顧客体験・医療向けの4つのAgentic AIソリューションに拡張。AWS Strands Agentsも新たな実行環境Strands Shellとカオステスト機能が加わった。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bloomberg.com/news/articles/2026-08-03/openai-anthropic-google-to-join-white-house-ai-safety-meeting" target="_blank" rel="noopener">ホワイトハウスが AI 安全会議を開催 — OpenAI・Anthropic・Google が参加、自主的モデル安全テストの枠組みを策定へ</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bloomberg.com/news/articles/2026-08-03/openai-anthropic-google-to-join-white-house-ai-safety-meeting" class="source-link" target="_blank" rel="noopener">🔗 Bloomberg</a>
+      </div>
+      <p>トランプ政権がホワイトハウスでAI安全会議を開催し、OpenAI・Anthropic・Googleなど主要AI企業が参加した。6月に署名されたAIサイバーセキュリティ大統領令に基づき、AIモデルの自主的安全テストと重要インフラ保護の枠組みを策定する。企業の自発的参加を前提としたオプトイン方式で、過度な規制を避けつつ安全性を確保するアプローチを採用している。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-08-10 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

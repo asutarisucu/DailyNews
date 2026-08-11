@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-08-11</title>
+  <meta name="description" content="2026-08-11 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-08-11</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-08-11 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>15件</strong></p>
+      <div class="stats-bar">
+        <span class="stat-item stat-shopify">Shopify 4件</span>
+        <span class="stat-item stat-ai">AI 4件</span>
+        <span class="stat-item stat-security">セキュリティ 3件</span>
+        <span class="stat-item stat-cloud">クラウド 1件</span>
+        <span class="stat-item stat-dev">開発ツール 2件</span>
+        <span class="stat-item stat-other">その他 1件</span>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/the-shopify-account-component-for-customer-accounts-is-now-a-theme-store-requirement" target="_blank" rel="noopener">shopify-account コンポーネント、テーマストア申請の必須要件に — パスワードレス・ソーシャル・Sign in with Shop をネイティブサポート</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/the-shopify-account-component-for-customer-accounts-is-now-a-theme-store-requirement" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>テーマストアへの新規申請・既存テーマの更新には、shopify-account コンポーネントをヘッダー（デスクトップ・モバイル両対応）に含めることが必須となった。コンポーネントはパスワードレスログイン・ソーシャルサインイン・Sign in with Shopの自動認識に対応し、あらゆるデバイスで一貫した顧客アカウント体験を提供する。テーマストア申請前に実装状況の確認が必要。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/legacy-customer-accounts-are-deprecated" target="_blank" rel="noopener">レガシーカスタマーアカウントが廃止 — テンプレートファイルの要件も撤廃、新アカウント体験への移行を</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/legacy-customer-accounts-are-deprecated" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopifyがレガシーカスタマーアカウントを正式に廃止した。テーマにレガシーカスタマーアカウントのテンプレートファイルを含めることが不要となり、shopify-account コンポーネントを使用した新しいアカウント体験への移行が促進される。既存のカスタムテーマを保守している開発者は、テンプレートの要件変更を確認した上で新しいシステムへの対応更新を推奨する。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/oxygen-is-now-available-on-development-stores" target="_blank" rel="noopener">Oxygen が Dev Store で利用可能に — 有料プランなしで Hydrogen ストアフロントのデプロイ・テストが可能</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/oxygen-is-now-available-on-development-stores" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>ShopifyのHydrogen向けホスティングサービス「Oxygen」が開発ストア（Dev Store）でも利用できるようになった。これまではOxygenの利用に有料プランが必要だったが、今後は開発中のHeadlessストアフロントを無料でデプロイ・テスト可能。ただし開発ストアにはパブリック環境が含まれないため、デプロイURLへのアクセスには常にストアログインが必要となる点に注意。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Cart アクションにカート属性更新を追加 — 新 shopify:cart:attributes-update イベントでアプリの即時検知・ロールバック対応</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify が standard Cart action にカート属性更新（cart attribute updates）を追加し、新しい <code>shopify:cart:attributes-update</code> イベントを導入した。アプリはカートの属性変更をリアルタイムで検知できるようになり、更新が拒否された場合のロールバックサポートも提供される。カートの状態変化への即応性を高めたいアプリ開発者は、このイベントの活用を検討したい。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic、Claude Opus 5 をリリース — コーディング・知識労働・科学研究に最適化、Claude Max/Pro のデフォルトに</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news" class="source-link" target="_blank" rel="noopener">🔗 Anthropic Newsroom</a>
+      </div>
+      <p>AnthropicがClaude Opus 5を正式リリースした。コーディング・知識労働・科学研究向けに最適化された最新フラッグシップモデルで、Claude MaxおよびClaude Proのデフォルトモデルとなる。従来モデルより高速かつコスト効率が大幅に向上しており、エージェント的なワークフローへの対応も強化されている。Claude Maxサブスクリプションユーザーは即日利用可能。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://memeburn.com/google-deepmind-brain-drain-2026/" target="_blank" rel="noopener">Google DeepMind で歴史的幹部流出 — Hassabis が会長に退き、Jeff Dean ら4名が AI 科学研究スタートアップ「Discovery Loop」を設立</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://memeburn.com/google-deepmind-brain-drain-2026/" class="source-link" target="_blank" rel="noopener">🔗 Memeburn</a>
+      </div>
+      <p>8月5日、Google DeepMindの主要AI人材が一斉離脱した。Demis Hassabis（CEO）が会長兼Alphabet最高科学責任者に退き、Google Brain共同創設者の Jeff Dean・Sanjay Ghemawat と Gemini 共同リードの Oriol Vinyals・Quoc Le の4名がGoogleを離脱し AI 科学研究自動化スタートアップ「Discovery Loop」を設立。DeepMindの士気は低迷しており、OpenAI・Anthropic との人材獲得競争が一段と激化している。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/08/openai-launches-gpt-56-cyber-with.html" target="_blank" rel="noopener">OpenAI、「GPT-5.6-Cyber」をリリース — ゼロデイ脆弱性の自律発見とエクスプロイトチェーン構築に特化した審査制モデル</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/08/openai-launches-gpt-56-cyber-with.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>OpenAIが8月10日、サイバーセキュリティ特化モデル「GPT-5.6-Cyber」をリリースした。申請審査制の「Daybreak Red」アクセス層でのみ提供され、リリース前に Chrome のゼロデイ2件・カーネル権限昇格脆弱性400件超を自律発見済み。内部評価での完了率は95%と、通常の GPT-5.6 Sol（1.5%）を大幅に上回る。防御用途のセキュリティ研究者向けに設計されており、一般公開はされていない。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://qz.com/anthropic-custom-ai-chip-design-team-claude-080526" target="_blank" rel="noopener">Anthropic、Claude 向けカスタム AI チップの社内設計チームを組成 — GPU 依存脱却と大規模処理のコスト削減を目指す</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://qz.com/anthropic-custom-ai-chip-design-team-claude-080526" class="source-link" target="_blank" rel="noopener">🔗 Quartz</a>
+      </div>
+      <p>Anthropicが Claude モデル専用カスタム AI チップを設計する社内チームの組成を進めていることが明らかになった。外部 GPU 調達への依存を減らし、顧客規模でのAI処理速度向上とコスト削減を目指す。Google の TPU・Meta の MTIA・Amazon の Trainium に続き、主要AI企業が自前シリコン開発にシフトする流れがさらに加速している。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-august-2026-patch-tuesday-fixes-400-flaws-3-zero-days/" target="_blank" rel="noopener">Microsoft Patch Tuesday 2026年8月 — 398件のCVEを修正、ゼロデイ3件含む・CVE-2026-68820（WinSock）が実際に悪用中</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-august-2026-patch-tuesday-fixes-400-flaws-3-zero-days/" class="source-link" target="_blank" rel="noopener">🔗 BleepingComputer</a>
+      </div>
+      <p>Microsoftが2026年8月のPatch Tuesdayで398件のCVEを修正した（うち42件がCritical）。ゼロデイ3件のうちCVE-2026-68820（Windows Ancillary Function Driver for WinSock）が実際の攻撃で悪用されている。Windows Deployment Services（CVSS 9.8・RCE）・SharePoint Server（CVSS 8.8・RCE）・Microsoft Officeのヒープバッファオーバーフロー等、重大な脆弱性が多数含まれており早急なパッチ適用が強く推奨される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html" target="_blank" rel="noopener">CISA KEV に N-able N-central CVE-2026-18577 追加 — 認証バイパスで管理者権限奪取・管理エンドポイントへの侵入口に</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>CISAがN-able N-centralの認証バイパス脆弱性CVE-2026-18577（CVSS 8.2）をKnown Exploited Vulnerabilities（KEV）カタログに追加した。CVE-2026-18556の不完全なパッチに起因し、リモート攻撃者が認証なしにN-centralサーバーの管理者権限を奪取・Take Control機能を悪用して管理対象エンドポイントへ侵入可能。実際の野良悪用が確認されており、N-able N-central 利用組織は即刻パッチ適用が必要。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/08/deadlock-ransomware-uses-polygon-smart.html" target="_blank" rel="noopener">DeadLock ランサムウェア — Rust 製、Windows Defender・バックアップを無効化し Polygon スマートコントラクトで C2 解体を防止</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/08/deadlock-ransomware-uses-polygon-smart.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>DeadLockランサムウェアはRustで実装されており、暗号化前にWindows Defender・Volume Shadow Copy・バックアップサービス・イベントログを無効化する。C2設定をPolygonブロックチェーンのスマートコントラクトに格納することでサーバー差し押さえによるインフラ削除を無効化し、二重恐喝（データ窃取＋暗号化）を採用している。2026年7月時点で80社以上が被害を受けており、被害の半数以上がヨーロッパ企業。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.usage.ai/blogs/top-cloud-service-providers-2026/" target="_blank" rel="noopener">Google Cloud 63%増・Azure 40%増 — AI クラウド需要でビッグ3の成長格差が拡大、AWS は19%増に留まる</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.usage.ai/blogs/top-cloud-service-providers-2026/" class="source-link" target="_blank" rel="noopener">🔗 Usage.ai — Cloud Provider Report 2026</a>
+      </div>
+      <p>2026年の最新クラウド市場分析によると、Google Cloudが前年比63%・Azureが40%の増収を記録する一方、AWSは19%増に留まった。AIワークロードへの需要急増がGoogleとAzureの成長を牽引しており、市場シェアはAWS 30%・Azure 25%・Google Cloud 13%の順。AI/ML分野でAzureはOpenAI統合・GCPはTPUとBigQuery ML・AWSはSageMakerエコシステムと各社の強みが明確に分化している。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://blog.arkin-dev.com/vercel-skills-npm-for-agent-capabilities-2026-04-23/" target="_blank" rel="noopener">Vercel、`npx skills` CLI をリリース — AI エージェント向けスキルの「npm」、Claude Code・Cursor・Copilot など 43+ エージェント対応</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://blog.arkin-dev.com/vercel-skills-npm-for-agent-capabilities-2026-04-23/" class="source-link" target="_blank" rel="noopener">🔗 Arkin's Blog</a>
+      </div>
+      <p>Vercel LabsがAIエージェント向けのオープンソースCLI「npx skills」をリリースした。JavaScriptのnpmのように、GitHub上の任意のリポジトリからスキル定義を取得してコーディングエージェントの設定ディレクトリにインストールできる。Claude Code・Cursor・GitHub Copilot・Gemini CLI・Windsurf・Codex・Clineなど43以上のエージェントに対応しており、再利用可能なAIエージェント能力の共有・配布が容易になる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.npmjs.com/" target="_blank" rel="noopener">npm、2FA バイパストークンを段階的廃止 — 2026年8月にアカウント変更制限、2027年1月から直接公開も制限へ</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.npmjs.com/" class="source-link" target="_blank" rel="noopener">🔗 npm</a>
+      </div>
+      <p>npmが二要素認証（2FA）をバイパスするトークンを段階的に廃止するプロセスを開始した。2026年8月にアカウント変更に関する制限が既に適用されており、2027年1月には直接公開（direct publishing）も制限される。パッケージ公開ワークフローを確認し、2FA対応のトークン管理への移行が必要。npm エコシステム全体のサプライチェーンセキュリティ強化が目的。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bloomberg.com/news/articles/2026-08-03/openai-anthropic-google-to-join-white-house-ai-safety-meeting" target="_blank" rel="noopener">OpenAI・Anthropic・Google、ホワイトハウス AI 安全会議に参加 — 自主的 AI モデル安全テストの新フレームワーク策定へ</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bloomberg.com/news/articles/2026-08-03/openai-anthropic-google-to-join-white-house-ai-safety-meeting" class="source-link" target="_blank" rel="noopener">🔗 Bloomberg</a>
+      </div>
+      <p>トランプ政権が8月初旬にOpenAI・Anthropic・Googleを招いてホワイトハウスAI安全会議を開催した。6月の大統領令「AI革新とセキュリティ促進」を受け、AI企業が自主的にモデルの安全テストに参加するためのオプトイン型フレームワークを協議。重要なコンピュータシステムの強化とAI脆弱性スキャンの調整も議題に含まれており、米国のAI規制の枠組み作りが本格化している。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-08-11 07:00 JST 更新 | 全15件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

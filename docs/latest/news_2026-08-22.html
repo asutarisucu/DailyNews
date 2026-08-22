@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-08-22</title>
+  <meta name="description" content="2026-08-22 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-08-22</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-08-22 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>12件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">0</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-august-18-2026" target="_blank" rel="noopener">Hydrogen 開発者プレビュー更新（8月18日）: カートセッション紐付け・カート属性・全ページビューイベント・高速 Shop Pay ボタンを追加</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-august-18-2026" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Hydrogen の開発者プレビューが8月18日に更新され、カートと Customer Account セッションを同期させる「カートセッション属性」が追加。サインイン済みユーザーがゲストフローを経由せず直接チェックアウトに進めるようになった。ギフトメッセージなど注文全体に付与するカート属性と、彫刻テキストなどライン単位で付与する属性が利用可能に。また、Hydrogen ストアフロントは従来初回ページロードのみページビューを発火させていたが、すべてのナビゲーションでイベントを発火するよう改善され Liquid テーマと同等の計測が可能になった。Shop Pay ボタンはホスト側スクリプト読み込みを待たずに即座にスタイル済み状態でレンダリングされるように変更。Customer Account のローカル HTTPS テスト対応やプラガブルロギング対応も含まれる。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/pos-ui-extensions-can-now-print-directly-to-hardware-receipt-printers" target="_blank" rel="noopener">Shopify POS UI Extensions 2026-07: 新 Printing API でハードウェアレシートプリンターへの直接印刷が可能に — getPrinters() / print() を提供</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/pos-ui-extensions-can-now-print-directly-to-hardware-receipt-printers" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>API バージョン 2026-07 を使用する POS UI Extensions が新しい Printing API（shopify.printing）を通じて、ペアリング済みのハードウェアレシートプリンターを直接検出・印刷できるようになった。getPrinters() でプリンターを列挙し print() で HTML またはイメージドキュメントを送信することで、システムの印刷ダイアログを開かずにシームレスな印刷ワークフローが実現する。これまでの shopify.print は非推奨となり、POS バージョン 11.11.0 以上で直接印刷がサポートされる。注文ピックアップや独自レシート・バックオフィス印刷など店頭業務の高速化が期待される。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Shopify 次世代イベント（Next Generation Events）が開発者プレビューに — フィールドレベルトリガー・カスタム GraphQL ペイロード・クエリベースのデリバリーフィルターを Webhook に追加</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify が「次世代イベント（Next Generation Events）」を開発者プレビューとして公開。従来の Webhook を大幅に拡張し、特定フィールドの変更のみをトリガーとするフィールドレベルトリガー制御、受信したいデータをカスタマイズできるカスタム GraphQL ペイロード、条件クエリベースのデリバリーフィルターが追加される。不要なイベント処理を削減してリソース効率を高め、サードパーティアプリとの統合をより精密に制御できるようになる。既存 Webhook との互換性を維持しながら段階的移行が可能で、今後の安定版リリースに向けてフィードバックを受け付けている。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://openai.com/index/chatgpt-for-teens/" target="_blank" rel="noopener">OpenAI、ChatGPT for Teens を正式ローンチ — スタディモード・有害コンテンツ自動ブロック・保護者向け静音時間設定など10代専用の安全機能を搭載</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://openai.com/index/chatgpt-for-teens/" class="source-link" target="_blank" rel="noopener">🔗 OpenAI</a>
+      </div>
+      <p>OpenAI が8月18日、13〜17歳専用の「ChatGPT for Teens」を正式発表。クイズ・ステップバイステップガイドを含む学習特化の「スタディモード」を追加し、自傷コンテンツやロマンチックなロールプレイはデフォルトでブロックされる。保護者は「静音時間」と安全アラートをオプトインで設定でき、同日展開される年齢予測モデルにより13〜17歳のアカウントが自動ルーティングされる。同機能のロールアウトは ChatGPT Ads を欧州展開するうえで必要な年齢確認インフラを兼ねており、OpenAI の広告事業拡大と安全施策が同時進行している。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://truescho.com/en/blog/openai-zero-data-retention-2026" target="_blank" rel="noopener">OpenAI、フロンティアモデル向け「ゼロデータ保持（ZDR）」を発表 — Private Safety Processing でプライバシーと不正利用検知を両立</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://truescho.com/en/blog/openai-zero-data-retention-2026" class="source-link" target="_blank" rel="noopener">🔗 Truescho / OpenAI Security Blog</a>
+      </div>
+      <p>OpenAI が8月19日、対象 API 顧客向けにフロンティアモデルのゼロデータ保持（ZDR）機能を提供すると発表した。「Private Safety Processing」と呼ばれる新機能により、OpenAI スタッフがデフォルトでコンテンツにアクセスしない状態を維持しながら、複数の関連インタラクションをまたいだ不正利用パターンを自動的に検出できる。従来のゼロ保持ポリシーでは不正利用検知ができなかった課題を解決するアーキテクチャ上の改善で、エンタープライズ顧客のコンプライアンス要件充足とセキュリティ強化を両立する。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bloomberg.com/news/articles/2026-08-17/anthropic-revenue-run-rate-surpasses-65-billion-ahead-of-ipo" target="_blank" rel="noopener">Anthropic、年率換算売上が $650億超に到達 — S-1公開申請は8月末を目途に計画、史上最大IPOへ向け加速</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bloomberg.com/news/articles/2026-08-17/anthropic-revenue-run-rate-surpasses-65-billion-ahead-of-ipo" class="source-link" target="_blank" rel="noopener">🔗 Bloomberg</a>
+      </div>
+      <p>Anthropic の年率換算売上が7月末時点で650億ドルを超えた（Bloomberg、8月17日報道）。6月1日に機密扱いで SEC に S-1 ドラフトを提出済みで、8月末にも公開申請に踏み切る見通し。Q2は1,150億ドル超の四半期売上と調整後営業利益の黒字化を達成し、企業向け LLM API 市場シェアは32%に達し OpenAI の25%を上回った。IPO 評価額は2兆ドル以上を目標としており、実現すれば SpaceX 超えとなる史上最大規模の新規公開となる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cnbc.com/2026/08/12/google-deepmind-koray-kavukcuoglu.html" target="_blank" rel="noopener">Google DeepMind トップ交代: Demis Hassabis が会長に退き Koray Kavukcuoglu が SVP として日常運営を掌握 — AGI 実現「間近」と語る</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cnbc.com/2026/08/12/google-deepmind-koray-kavukcuoglu.html" class="source-link" target="_blank" rel="noopener">🔗 CNBC</a>
+      </div>
+      <p>Google DeepMind は8月初旬に大規模なリーダーシップ再編を実施。共同創業者の Demis Hassabis が CEO から会長職に移行し、CTO の Koray Kavukcuoglu が上席副社長として日常業務の指揮を執る。Jeff Dean も27年間の在籍後にGoogleを退社。Hassabis は「AGI が手の届くところまで来た」と語り、後継者の指導と Isomorphic Labs（AI創薬）への専念を通じて「大局的な課題」に集中するとしている。Google は2026年初頭以降フロンティアモデルを発表できておらず、Kavukcuoglu は OpenAI・Anthropic に追い付くプレッシャーを引き継ぐ。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">【緊急】CISA KEV カタログに4件を追加（8/18）: VMware vCenter パストラバーサル CVE-2026-59310 など CVSS 9.8 の脆弱性が積極的に悪用中</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA が8月18日、既知の悪用済み脆弱性カタログ（KEV）に4件を追加し連邦機関に8月21日までの対応を指示した。最も深刻な CVE-2026-59310（CVSS 9.8）は Broadcom VMware vCenter のパストラバーサルで、ネットワークアクセスさえあれば認証不要で任意コードを実行可能。CVE-2026-55040（Microsoft SharePoint、CVSS 9.1）は4つの認証検証不備を連鎖させた認証トークン偽造。加えて macOS と Windows IKE の脆弱性も同時追加された。Broadcom は7月29日に vCenter の修正パッチを公開済み。vCenter 環境を運用中の組織は直ちに適用されたい。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.techtimes.com/articles/325076/20260820/china-hackers-breached-361-networks-5-days-cisa-sets-3-day-patch-window-enterprise-flaws.htm" target="_blank" rel="noopener">中国系ハッカーが5日間で361ネットワークを侵害 — CISA が企業向け重大脆弱性に3日間パッチウィンドウを新設</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.techtimes.com/articles/325076/20260820/china-hackers-breached-361-networks-5-days-cisa-sets-3-day-patch-window-enterprise-flaws.htm" class="source-link" target="_blank" rel="noopener">🔗 TechTimes</a>
+      </div>
+      <p>中国国家支援とみられる脅威アクターが5日間で361のネットワークを侵害したとの報告が8月20日に公表された。CISA はこれを受け、エンタープライズ向け重大脆弱性に対して連邦機関が従来の BOD 26-04 期限よりも短い3日間でパッチ適用を完了すべきとする緊急パッチウィンドウを新設した。急速な横断的移動（ラテラルムーブメント）に対応するため、既知の脆弱性を持つシステムのインターネット露出を最小化すること、多要素認証の徹底、ネットワーク分離の見直しを全組織に強く推奨している。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techcommunity.microsoft.com/blog/microsoftdefendercloudblog/microsoft-defender-for-cloud-expands-multicloud-coverage-across-aws-and-google-c/4532200" target="_blank" rel="noopener">Microsoft Defender for Cloud が AWS・GCP のマルチクラウドカバレッジを大幅拡張 — 90リソース種別・200件超のセキュリティ推奨事項を新たに追加</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techcommunity.microsoft.com/blog/microsoftdefendercloudblog/microsoft-defender-for-cloud-expands-multicloud-coverage-across-aws-and-google-c/4532200" class="source-link" target="_blank" rel="noopener">🔗 Microsoft Tech Community</a>
+      </div>
+      <p>Microsoft Defender for Cloud が AWS と GCP を対象に、約90の新リソース種別と200件超の新セキュリティ推奨事項を追加して GA となった（8月18日）。データ、ID・アクセス管理、ネットワーク、コンピューティング、コンテナの各カテゴリにわたりポスチャー評価が強化される。サーバーレスコンピューティング・サーバーレスコンテナ・モダン Kubernetes 環境にもカバレッジが拡大され、コードからランタイムまでを統合するクラウドネイティブセキュリティモデルが実現。Microsoft Defender ポータルへの統合により、Azure・AWS・GCP・オンプレミスを一元的に可視化・管理できる。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.com/vercel/ai" target="_blank" rel="noopener">Vercel AI SDK・Next.js・Turborepo が8月22日に一斉アップデート — TypeScript 製 AI アプリ基盤ツールキットの開発が加速</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.com/vercel/ai" class="source-link" target="_blank" rel="noopener">🔗 Vercel / GitHub</a>
+      </div>
+      <p>Vercel が管理する AI SDK（TypeScript 向け AI アプリツールキット）、Turborepo（JS/TS 最適化ビルドシステム）、Next.js、Workflow SDK、v0-sdk、Vercel SDK が8月22日に一斉更新された。AI SDK は Next.js の App Router との統合強化や MCP サポートが進んでおり、AI エージェントアプリケーションの構築を加速する。Vercel はこれらを一元管理されたオープンソースエコシステムとして整備しており、今回のアップデートで各ツール間の依存性整合性が改善されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://nextjs.org/blog/upcoming-nextjs-security-release-august-2026" target="_blank" rel="noopener">【予告】Next.js セキュリティリリース 8月26日予定 — クリティカル深刻度の脆弱性を修正、v16.3.3 / v15.5.24 へのアップグレードを推奨</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://nextjs.org/blog/upcoming-nextjs-security-release-august-2026" class="source-link" target="_blank" rel="noopener">🔗 Next.js Blog</a>
+      </div>
+      <p>Next.js チームが8月26日（予定）に Critical 深刻度の脆弱性を修正するセキュリティリリースを実施すると予告した。修正バージョンは Active LTS の 16.3.3 と Maintenance LTS の 15.5.24 で、詳細な CVE アドバイザリは公開と同時に告知される。2026年に入り Next.js と React Server Components では DoS・XSS・SSRF・キャッシュポイズニングなど複数の脆弱性が連続開示されており、これで OSV データベース上の既知脆弱性は64件を超えている。Next.js を本番環境で使用している組織は8月26日の公開に備え、速やかにアップグレード計画を立案することを強く推奨する。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-08-22 07:00 JST 更新 | 全12件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

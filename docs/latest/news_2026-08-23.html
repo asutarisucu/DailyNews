@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-08-23</title>
+  <meta name="description" content="2026-08-23 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-08-23</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-08-23 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>13件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-august-18-2026" target="_blank" rel="noopener">Hydrogen Developer Preview 8/18 更新: カートセッション同期・カート属性・標準ページビューイベント・Shop Pay 即時レンダリングを追加</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-august-18-2026" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>8月18日の Hydrogen Developer Preview アップデートで4つの機能が追加された。①カートと Customer Account セッションを同期する「カートセッション帰属」によりログイン済み購入者がゲストフローを経ずにチェックアウトへ到達できる。②ギフトメッセージなど注文全体のデータをカートに、刻印テキストなど行ごとのデータを対応ラインに付加できる「カート属性」。③クライアントサイドナビゲーションを含む全ページ遷移を analytics に報告する「標準ページビューイベント」（Liquid テーマと同等の動作に）。④ JS ロード前から Shop Pay ボタンをスタイル付きで即時レンダリング。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/subscription-contract-calculation-api-now-available-in-early-access" target="_blank" rel="noopener">SubscriptionContractCalculation API が 2026-10 RC でアーリーアクセス開始 — calculate→poll→commit のステートレス設計でサブスク契約更新を12 mutation から1つに削減</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/subscription-contract-calculation-api-now-available-in-early-access" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify Admin GraphQL API の 2026-10 リリース候補バージョンで新しい SubscriptionContractCalculation API のアーリーアクセスが開始された。従来の Subscription Draft オブジェクトを置き換える後継 API で、stateless な「calculate → poll → commit」ライフサイクルを採用。12以上の draft mutation が1つの calculate mutation に集約され、Shopify 統合チェックアウトエンジンを通じて計算されるため計算結果の一貫性が向上する。2026-10 GA 後に Draft は非推奨となるが、既存アプリは段階的移行が可能。本番連携は 2026-10 が安定してから行うことを推奨。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/the-shopifydev-mcp-server-now-supports-polaris-web-components" target="_blank" rel="noopener">Shopify.dev MCP サーバーが Polaris Web Components に対応 — LLM 支援ワークフローで最新 Polaris API ドキュメントを即参照可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/the-shopifydev-mcp-server-now-supports-polaris-web-components" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify.dev の MCP（Model Context Protocol）サーバーが Polaris Web Components に対応し、アーリーアクセスとして提供開始。Claude Code・Cursor・VS Code などの AI コーディングツールから常に最新の Polaris API ドキュメントを参照できるようになり、LLM 支援のワークフローに統合されたコンポーネントサジェストや検証が利用可能。利用には Node.js 20以上と MCP 対応 LLM 開発環境が必要。チェックアウトや Customer Account 向けエクステンションのコンポーネント移行作業を大幅に効率化する。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/shopify-ai-toolkit-for-upgrading-extensions-to-polaris-web-components" target="_blank" rel="noopener">Shopify AI Toolkit が Polaris Web Components 移行を自動化 — 10月1日までに API 2025-07 以前のエクステンション更新が必須</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/shopify-ai-toolkit-for-upgrading-extensions-to-polaris-web-components" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify AI Toolkit がチェックアウト・Customer Account UI エクステンションの Polaris Web Components への移行を自動化するスキルを追加。AI コーディングエージェントに対して「shopify polaris customer account extensions スキルを使って extensions/$フォルダ を 2026-04 バージョンにアップグレードして」と指示するだけで、レガシーコンポーネントの置き換えと API インポートの更新を自動実行する。<strong>重要期限: 2026年10月1日までに API 2025-07 以前を使用するチェックアウト・Customer Account エクステンションを含むアプリはアップデート不能となる。</strong>Claude Code・Cursor・VS Code などがサポート対象。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/research/Claude-accelerates-protein-design" target="_blank" rel="noopener">Anthropic: Claude が自律的にタンパク質バインダーを設計、15ターゲット中14件で成功 — 業界標準の2倍以上の22〜35%成功率をウェットラボで検証</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/research/Claude-accelerates-protein-design" class="source-link" target="_blank" rel="noopener">🔗 Anthropic Research</a>
+      </div>
+      <p>Anthropic が8月20日に発表した研究で、Claude がタンパク質バインダー設計キャンペーンを人間の科学的指導なしに自律実行し、15ターゲット中14件に対する有効なバインダーを設計したことが外部ウェットラボ（Adaptyv Bio・Twist Bioscience）で独立検証された。1,320デザインから354件の確認済みバインダーを生成し、成功率は22.6〜35.1%（業界標準10〜15%の約2倍）。Claude は約3万トークンの初期プロンプトを受け取った後、ターゲット選定・構造生成・in silico 最適化・スクリーニングを自律的に実施。薬物設計の初期ステップへの寄与として評価される一方、デュアルユースリスクへの配慮から Claude Fable 5 ではこの能力は一般公開されていない。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.itechpost.com/articles/237079/20260819/google-gemini-launches-student-hub-new-google-ai-student-plan.htm" target="_blank" rel="noopener">Google、Gemini に学生向け「Student Hub」を追加 — Deep Research in Live・フラッシュカード・シラバス自動解析を提供、有資格学生は1年間無料</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.itechpost.com/articles/237079/20260819/google-gemini-launches-student-hub-new-google-ai-student-plan.htm" class="source-link" target="_blank" rel="noopener">🔗 iTechPost</a>
+      </div>
+      <p>Google が8月19日に Gemini AI 内に学生専用の「Student Hub」を提供開始。学習ノートブックでの資料収集・フラッシュカード・練習テスト生成、シラバスを分析して試験日や最終課題を Google カレンダーへ自動登録する機能、Gemini Live での Deep Research（複雑なトピックのリサーチレポートを生成しリアルタイム音声で議論）が含まれる。合わせて「Google AI Student Plan」を発表し、米国の適格大学生に Google AI Pro を1年間無料、140以上の国・地域の学生に Google AI Plus を1年間無料で提供（2026年12月31日まで有効）。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-trueconf-server-flaws/" target="_blank" rel="noopener">【緊急】CISA が TrueConf Server の RCE 脆弱性 CVE-2026-72529/72530 を KEV カタログ追加 — Head Mare が悪用、修正期限8月23日</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-trueconf-server-flaws/" class="source-link" target="_blank" rel="noopener">🔗 BleepingComputer</a>
+      </div>
+      <p>CISA が8月20日に TrueConf Server の2件の脆弱性を既知悪用脆弱性（KEV）カタログへ追加し、連邦機関に3日以内のパッチ適用を命令。CVE-2026-72529（CVSS 9.3）は未認証リモート攻撃者が TCP 4307番ポート経由で任意コードを実行できる認証不備の RCE。CVE-2026-72530 と合わせてハクティビストグループ「Head Mare」が少なくとも2026年7月から悪用しており、クライアントインストーラーを悪意あるバージョンに差し替えてバックドアマルウェアを展開する攻撃が確認されている。影響バージョン 5.3.x〜5.3.9・5.4.x〜5.4.9・5.5.x〜5.5.5 を使用中の組織は TrueConf Server 5.3.9・5.4.9・5.5.5 へ直ちにアップグレードすること。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/08/cisco-patches-nine-crosswork-and-secure.html" target="_blank" rel="noopener">Cisco が Crosswork・Secure Workload の深刻な脆弱性9件を修正 — うち5件が CVSS 10.0、SQLインジェクション・認証バイパス・外部ファイル制御を含む</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/08/cisco-patches-nine-crosswork-and-secure.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>Cisco が8月19日のセキュリティアドバイザリで Crosswork Data Gateway・Crosswork Network Controller・Crosswork Planning・Secure Workload に影響する脆弱性9件を修正。CVE-2026-20030（SQLインジェクション）・CVE-2026-20357（認証不備）・CVE-2026-20358（外部ファイルシステム制御）など5件が CVSS スコア10.0の最高深刻度。今回の脆弱性はすべて Cisco 内部のセキュリティレビューで発見されており、現時点で野外悪用は確認されていない。Crosswork 7.2.1 以前を使用中の場合は 7.2.1-SP へのアップグレードで対処可能。回避策はないため早急なパッチ適用を推奨。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/08/microsoft-defenders-own-driver-can-be.html" target="_blank" rel="noopener">Black Hat 2026: Check Point がMicrosoft Defender の正規ドライバー BTR.sys を悪用し EDR/AV を無効化する手法を公開 — Windows 7〜11 25H2 全対象</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/08/microsoft-defenders-own-driver-can-be.html" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>Check Point Research が8月20日の Black Hat USA 2026・DEF CON 34 で、Microsoft Defender の正規ブートタイム修復ドライバー（BTR.sys）を悪用して任意のカーネルレベルのファイル・レジストリ操作を実行できる手法を公開。ソフトウェアの脆弱性を悪用するのではなく、正規署名済みのドライバーを武器化するため標準的なセキュリティ検知を回避できる。Windows 7 から Windows 11 25H2 まで全バージョンが影響対象で、EDR や他のセキュリティソフトウェアを起動前に削除・無効化するために使用可能。Microsoft への報告を経て協調開示されており、Defender の更新での対処が見込まれる。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-bedrock-cross-region-openai-v2/" target="_blank" rel="noopener">Amazon Bedrock が OpenAI GPT-5.6（Sol・Terra・Luna）のクロスリージョン推論に対応 — Responses/Converse/Chat Completions API を横断サポート</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-bedrock-cross-region-openai-v2/" class="source-link" target="_blank" rel="noopener">🔗 AWS What's New</a>
+      </div>
+      <p>Amazon Bedrock が OpenAI GPT-5.6 モデル（Sol・Terra・Luna）のクロスリージョン推論（Cross Region Inferencing）に対応した。bedrock-runtime エンドポイントで Responses API・Converse API・Chat Completions API の3形式をサポートし、グローバルおよびジオリージョン推論によって高いスループットと低推論コストを実現。同時に AWS Cost Anomaly Detection が Amazon Bedrock 上で実行されるサードパーティ製基盤モデル（Anthropic Claude など）の支出を機械学習で監視・異常検知する機能も GA となった。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/monthly-news-august-2026/4544388" target="_blank" rel="noopener">Microsoft Defender for Cloud 8月アップデート: AI エージェントのポスチャリスク評価・SaaS パスワードリスク検出・10月27日から CSPM がオプトイン制へ移行</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/monthly-news-august-2026/4544388" class="source-link" target="_blank" rel="noopener">🔗 Microsoft Tech Community</a>
+      </div>
+      <p>Microsoft Defender for Cloud の8月アップデートで、エンタープライズエージェント・エンドポイント上のローカルエージェントを含む AI エージェントのポスチャリスクを自動評価する機能が追加された（設定・アクセス・ランタイムアクティビティ・エンドポイント/ユーザーコンテキストなどから判定）。Defender for Cloud Apps 経由の SaaS アプリからのパスワードリスク検出も拡充。<strong>重要な変更: 2026年10月27日より Foundational CSPM が新規 Azure サブスクリプションでデフォルト無効化（オプトインモデルへ）</strong>となるため、現在 CSPM を無料で利用中の組織は設定確認が必要。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.com/github/copilot-cli/releases" target="_blank" rel="noopener">GitHub Copilot CLI v1.0.80 リリース — Grok 4.6 に xhigh 推論エフォートを追加、プラグイン・スキル・サインアウト挙動も修正</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.com/github/copilot-cli/releases" class="source-link" target="_blank" rel="noopener">🔗 GitHub copilot-cli Releases</a>
+      </div>
+      <p>8月14日にリリースされた GitHub Copilot CLI v1.0.80 で、xAI の Grok 4.6 モデルに対して xhigh 推論エフォートの設定が追加された。推論エフォートを高めることで、より複雑なコーディングタスクや多段階推論が求められる場面での精度向上が期待できる。またプラグイン動作の不具合修正、スキルの呼び出し不整合の解消、サインアウト後の認証状態リセットの修正も含まれる。Copilot CLI は Pro/Business/Enterprise 全プランで利用可能。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.breachsense.com/breaches/" target="_blank" rel="noopener">Rhysida ランサムウェアが米国公立学校を標的に — Battle Creek Public Schools を含む教育機関へのサイバー攻撃が8月22日に複数確認</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.breachsense.com/breaches/" class="source-link" target="_blank" rel="noopener">🔗 BreachSense</a>
+      </div>
+      <p>8月22日に複数のデータ侵害が確認され、Battle Creek Public Schools（ミシガン州）がランサムウェアグループ Rhysida に起因する侵害を受けた。同日には AGS Entertainment・AllStar Industries など複数企業も TheGentlemen・DireWolf などの脅威アクターによる侵害が報告されている。Rhysida は2025年以降、医療・教育機関を繰り返し標的とするランサムウェアグループで、2重恐喝（データ暗号化＋窃取データ公開脅迫）の手口を用いる。新学期を앞に教育機関のエンドポイントセキュリティとインシデント対応計画の見直しを推奨。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-08-23 07:00 JST 更新 | 全13件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

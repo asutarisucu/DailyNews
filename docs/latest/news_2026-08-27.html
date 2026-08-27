@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-08-27</title>
+  <meta name="description" content="2026-08-27 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-08-27</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-08-27 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/online-store-script-tags-deprecation" target="_blank" rel="noopener">Script Tags 廃止タイムライン確定 — 2026年10月よりミューテーションがエラーを返し、2027年3月1日にストアフロント注入を完全停止</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/online-store-script-tags-deprecation" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify が8月24日に Script Tag の廃止スケジュールを正式発表。2026年10月1日より scriptTagCreate・scriptTagUpdate ミューテーションがユーザーエラーを返すようになり、REST Admin API の POST/PUT も拒否される。全 API バージョンに横断的に適用されるため古いバージョンへのピン留めで回避することはできない。ストアフロントへの注入は 2027年3月1日に完全停止。アプリはアプリ埋め込みブロックまたはウェブピクセルへの移行が必要で、早期対応が推奨される。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://makseong.com/blog/shopify-additional-scripts-sunset" target="_blank" rel="noopener">Additional Scripts 廃止完了（8月26日）— Basic・Shopify・Advanced プランの Thank you / Order status ページ スクリプトボックスが削除</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://makseong.com/blog/shopify-additional-scripts-sunset" class="source-link" target="_blank" rel="noopener">🔗 Makseong</a>
+        </div>
+        <p>2026年8月26日、Shopify の Basic・Shopify・Advanced プラン（非 Plus）で Additional Scripts フィールドと Thank you / Order status ページのスクリプトボックスが削除された。これらのフィールドに入れていたカスタム追跡コードや GTM スニペットはすでに動作を停止している。移行先は Shopify Web Pixels または Checkout UI Extensions で、デフォルトのチェックアウトとサンクスページへの直接スクリプト埋め込みは今後利用不可。Shopify Plus は引き続き Additional Scripts を一定期間利用可能だが段階廃止の方針は変わらない。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Shopify Theme CLI v3.83.x 以前: Password Protected Shop 開発フローを廃止予定 — 新フローへの移行を推奨</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify が8月27日のチェンジログで、Theme CLI v3.83.x 以前のバージョンで使用できるパスワード保護ストア用の開発フロー（Password Protected Shop Dev flows）を廃止すると告知した。現在このフローを利用して theme dev を実行している開発者は、最新の CLI バージョンへのアップグレードと新しい認証フローへの移行が必要。移行しない場合、旧バージョン CLI ではパスワード保護ストアへの接続ができなくなる。Theme CLI の継続的なセキュリティ強化の一環として実施される変更。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-august-18-2026" target="_blank" rel="noopener">Hydrogen developer preview update（8月18日）— カートセッション属性・標準ページビューイベント・Shop Pay ボタン即時レンダリングを追加</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-august-18-2026" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify Hydrogen の8月18日付 developer preview で複数の重要機能が追加された。カートと Customer Account セッションを同期させる「カートセッション属性」により、ログイン済み購入者がゲストフローを経由せず保存済み情報で直接チェックアウトできるようになった。クライアントサイドナビゲーションでも標準ページビューイベントを発火するよう修正され、分析ツールへの計測漏れを解消。さらに Shop Pay ボタンが外部スクリプト読み込み完了を待たずに即時レンダリングされるようになり、表示速度が改善。新スキルとして hydrogen-customer-account と hydrogen-local-https も追加されている。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cnbc.com/2026/08/27/nvidia-hugging-face-acquisition.html" target="_blank" rel="noopener">Nvidia、Hugging Face を約129億ドルで買収合意 — オープンソース AI モデルハブを取得しソフトウェアエコシステム層を強化</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cnbc.com/2026/08/27/nvidia-hugging-face-acquisition.html" class="source-link" target="_blank" rel="noopener">🔗 CNBC</a>
+      </div>
+      <p>Nvidia が8月27日、世界最大のオープンソース AI モデルハブである Hugging Face を約129億ドル（約1兆9,000億円）で買収することで合意に近づいていると CNBC が報道。Hugging Face の直近の年間収益は約1億5,000万ドルで、2023年の評価額45億ドルから約3倍の評価となる。今回の買収により Nvidia は AI チップを超えてモデル配布・開発エコシステム層へ事業を拡大する。The Information の報道によると条件交渉はほぼ合意に達しているが、正式契約にはまだ至っておらず破談の可能性も残る。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://releasebot.io/updates/anthropic/claude-developer-platform" target="_blank" rel="noopener">Anthropic、Claude Sonnet 5 の9月値上げを撤回 — $2/$10 per MTok を恒久標準価格に、入門価格期間終了なし</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://releasebot.io/updates/anthropic/claude-developer-platform" class="source-link" target="_blank" rel="noopener">🔗 Anthropic Developer Platform Changelog</a>
+      </div>
+      <p>Anthropic が、2026年9月1日に予定していた Claude Sonnet 5 の価格改定（入力 $3・出力 $15 per MTok）を取りやめ、現行の入力 $2・出力 $10 per MTok を恒久的な標準価格とすると発表した。当初は入門価格として設定されていたが、競合モデルの価格競争と API 利用拡大を背景に値上げを見送る判断に至ったとされる。Claude Sonnet 5 は Claude ファミリーの中核モデルとして位置付けられており、今回の決定により API コストを見込んでいたサービス事業者にとって予算の安定化が期待できる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://releasebot.io/updates/anthropic/claude-developer-platform" target="_blank" rel="noopener">Anthropic Managed Agent に新制御機能 — セッションバジェット・アドバイザーモデル・推論地域固定・GitHub ホストスキルを GA 提供</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://releasebot.io/updates/anthropic/claude-developer-platform" class="source-link" target="_blank" rel="noopener">🔗 Anthropic Developer Platform Changelog</a>
+      </div>
+      <p>Anthropic の Managed Agent（サーバーホスト型エージェント）に複数の制御機能が正式提供（GA）となった。エージェントセッション単位でトークン消費上限を設定できる「セッションバジェット」、特定ステップで異なるモデルを助言役に使う「アドバイザーモデル」、推論を特定の地理的リージョンに固定する「推論ジオピン」を搭載。加えて GitHub リポジトリにホストされたスキルを直接参照できる「GitHub ホストスキル」もベータ提供開始。これらにより企業向けガバナンス要件（コスト管理・データ主権・専門化）に対応したエージェント構築がしやすくなる。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/08/actively-exploited-oracle-weblogic-flaw.html" target="_blank" rel="noopener">【緊急/CVSS 10.0】CVE-2026-21962 Oracle WebLogic Server Proxy Plug-in 未認証アクセス制御不備 — 中国連携攻撃者が100カ国以上の政府・商業ネットワークで悪用、CISA 対処期限本日</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/08/actively-exploited-oracle-weblogic-flaw.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>CISA が8月24日に CVE-2026-21962 を既知悪用脆弱性（KEV）カタログへ追加し、連邦機関に対して本日（8月27日）までの対処を義務付けた。Oracle HTTP Server および Oracle WebLogic Server Proxy Plug-in for Apache/IIS に存在する不正アクセス制御の欠陥で、CVSS スコアは最大値の 10.0。認証なしにネットワーク越しの HTTP リクエストだけで機密データへの不正アクセス・改ざん・削除が可能。中国政府に紐付く脅威アクターが世界100カ国以上の政府機関・商業ネットワークに対して実際の攻撃で悪用が確認されており、Oracle 1月パッチで修正済みのため即座に適用すること。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/08/11/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA KEV：CVE-2026-72898 Metabase SQL インジェクション — BI ツールを経由したデータベース直接侵害リスクに注意</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/08/11/cisa-adds-three-known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA が8月11日に追加した KEV3件のうち、Metabase の SQL インジェクション脆弱性（CVE-2026-72898）が特に自社 BI 環境を運用するエンジニアへの影響が大きい。攻撃者がクエリを細工することで Metabase が接続するバックエンドデータベースに対して任意の SQL を実行でき、機密データの流出や改ざんが可能。Metabase を社内ツールとして利用している企業では最新版へのアップグレードとアクセス制御の見直しを優先的に実施すること。同時追加の Cisco Secure Firewall ASA/FTD ヒープインスペクション（CVE-2026-20349）も合わせて対応が必要。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://azurecharts.com/updates?monthback=0" target="_blank" rel="noopener">Microsoft Azure Defender for Cloud が AWS・GCP の90以上のリソースタイプを追加サポート — マルチクラウド環境の一元セキュリティ管理が大幅強化</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://azurecharts.com/updates?monthback=0" class="source-link" target="_blank" rel="noopener">🔗 Azure Charts — Azure Updates</a>
+      </div>
+      <p>Microsoft が8月18日に Azure Defender for Cloud のアップデートを展開し、AWS および Google Cloud Platform の90以上の追加リソースタイプをセキュリティ評価の対象として取り込んだ。EC2・RDS・GKE・Cloud Run などを含む広範なリソースに対するコンプライアンスチェックと脆弱性スキャンが Azure ポータル一画面で確認できるようになる。AWS と Google Cloud を並行利用している組織はセキュリティポスチャの可視化に Defender for Cloud を活用することで、複数コンソールを行き来するオペレーションコストを削減できる見通し。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/month/08-2026/" target="_blank" rel="noopener">GitHub Copilot に Customize タブ新設 — MCP サーバー・プラグイン・スキル・キャンバスを一画面で管理・インストール可能に</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/month/08-2026/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub が Copilot アプリに新しい「Customize」タブを追加し、MCP サーバー・エージェントプラグイン・スキル・キャンバスを一元管理できるようにした。従来は設定がそれぞれ異なる場所に散在していたが、Customize タブに集約されたことでディスカバリと管理が大幅に簡素化された。エクスプローラーUIからサードパーティの MCP サーバーやプラグインを直接検索・インストールでき、インストール済みのものはバージョン確認や更新も同タブで完結する。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/month/08-2026/" target="_blank" rel="noopener">GitHub Copilot アプリに Dependabot 自動トリアージが追加 — 日次でリスクグループ化・CI 確認・安全な更新を自動サーフェス</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/month/08-2026/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub Copilot アプリに Dependabot プルリクエストを日次で自動トリアージするオートメーションが追加された。Copilot が依存関係の更新 PR を重大度・互換性スコア・CI ステータスに基づいてリスクグループに自動分類し、安全と判断される更新を優先サーフェスしてレビュー負荷を軽減する。セキュリティ修正を含む更新は別途ハイライト表示され見落としを防ぐ。大量の Dependabot PR を抱えてトリアージが追いつかないチームに特に有効な機能。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/month/08-2026/" target="_blank" rel="noopener">CodeQL 2.26.3 リリース — JavaScript・TypeScript・Vue のソースモデリング追加と GitHub Actions クエリの精度向上</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/month/08-2026/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub が CodeQL 2.26.3 をリリース。JavaScript・TypeScript・Vue 向けにソースモデリング機能が拡充され、外部ライブラリからのデータフロー追跡精度が向上した。GitHub Actions の YAML クエリ群も改善され、ワークフロー設定ミスや安全でない入力参照を検出する精度が上がっている。また GitHub Accessibility Scanner 向けのプラグインも追加され、代替テキスト（alt text）のアクセシビリティ適合チェックが自動化される。Code scanning を有効化しているリポジトリには自動でアップデートが適用される。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model" target="_blank" rel="noopener">Meta、Muse Glimmer（30B）をオープンソースでリリース — ラップトップ上でローカル実行できる本格エージェント AI モデル</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model" target="_blank" rel="noopener" class="source-link">🔗 Meta AI Research Blog</a>
+      </div>
+      <p>Meta が300億パラメータのオープンエージェント AI モデル「Muse Glimmer」を Apache 2.0 ライセンスで公開した。量子化により約17GB に圧縮されており、24〜32GB VRAM を搭載する一般向け GPU（AMD Radeon RX 9070 XT など）で動作する。コード生成・デバッグ・ツール呼び出し・スクリーンショット解釈など長期的なエージェントタスクに最適化されており、インターネット接続不要でオフライン実行が可能。個人の機密データを端末外に送信せずにローカルで AI エージェントを活用できる点がプライバシー面でも注目されており、Hugging Face からダウンロード可能。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-08-27 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-08-30</title>
+  <meta name="description" content="2026-08-30 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-08-30</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-08-30 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://makseong.com/blog/shopify-additional-scripts-sunset" target="_blank" rel="noopener">Shopify Additional Scripts（checkout.liquid）を8月26日に完全廃止 — 非Plusストア向けチェックアウト移行が必須に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://makseong.com/blog/shopify-additional-scripts-sunset" class="source-link" target="_blank" rel="noopener">🔗 Makseong Blog</a>
+        </div>
+        <p>2026年8月26日をもって、Shopifyは非Plusストアに対して checkout.liquid・Additional Scripts フィールド・注文ステータスページのスクリプトタグを廃止した。これにより、Third-Partyトラッキングピクセルやカスタムチェックアウトスクリプトを同フィールドで管理していたストアは即時影響を受ける。移行先はWeb Pixels API（Customer Events）またはネイティブのGoogle・Meta・TikTokチャネルアプリが推奨される。未対応の場合はコンバージョン計測の欠損が発生するため、早急な対応が求められる。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/online-store-script-tags-deprecation" target="_blank" rel="noopener">Shopify ストアフロントの Script Tags 廃止決定 — 2027年3月1日に注入停止、移行はApp Embed Blocksへ</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/online-store-script-tags-deprecation" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopifyは8月24日、ストアフロント向けの Script Tags（ScriptTag API）を段階的に廃止するタイムラインを発表した。2026年10月1日から scriptTagCreate・scriptTagUpdate ミューテーションがユーザーエラーを返すようになり、2027年3月1日にはスクリプトの注入が完全に停止される。開発者はApp Embed Blocks（テーマ拡張）またはWeb Pixels APIへの移行が必要。既存の ScriptTag を持つアプリは今すぐ移行計画を立てることが推奨される。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-august-18-2026" target="_blank" rel="noopener">Hydrogen 開発者プレビュー更新（8月18日）— カートセッションアトリビューション・カート属性・標準ページビューイベントを追加</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-august-18-2026" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Hydrogen の開発者プレビューに、カートセッションアトリビューション・カート属性の読み書き・標準ページビューイベントの3機能が追加された。カートセッションアトリビューションにより、どのマーケティングチャネルからカートが作成されたかを追跡できるようになる。標準ページビューイベントはWeb Pixels APIと統合され、コンバージョン計測の精度が向上する。本機能はプレビュー段階であり、本番環境への適用には安定版リリースを待つ必要がある。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Shopify が PHP・Python 向け公式パッケージをリリース — 新しい言語でのアプリ開発をネイティブサポート</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>8月26日、Shopifyは PHP および Python 向けの公式 SDK パッケージを新たにリリースした。これまでは Ruby・Node.js が主要なサポート言語だったが、今回の追加によりバックエンド言語の選択肢が大幅に広がる。公式パッケージとして提供されるため、認証フロー・Webhook 処理・Admin API クライアントといった基本機能がすぐに利用可能。PHP/Python ベースのシステムとの統合を検討していた開発者にとって重要なアップデートとなる。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://releasebot.io/updates/anthropic" target="_blank" rel="noopener">Anthropic、K-12 教育機関向け「Claude for Teachers」を8月28日に無料リリース — Enterprise 機能をフル提供</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://releasebot.io/updates/anthropic" class="source-link" target="_blank" rel="noopener">🔗 Releasebot / Anthropic</a>
+      </div>
+      <p>Anthropicは8月28日、小中高（K-12）の教育者向けに「Claude for Teachers」を無料の Enterprise サービスとして提供開始した。学校・学区単位で一括管理でき、シングルサインオン・ロールベースのアクセス制御・教科標準に準拠した教育ツールが含まれる。商用 Enterprise プランと同等の機能を無償で提供することで、AI 教育格差の解消を目指す。教師向けのプロンプトライブラリや授業計画支援機能も同時提供される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.buildfastwithai.com/blogs/ai-news-today-august-9-2026" target="_blank" rel="noopener">Google DeepMind 組織再編 — Demis Hassabis が会長・Alphabet チーフサイエンティストへ、Jeff Dean が退社し新会社設立</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.buildfastwithai.com/blogs/ai-news-today-august-9-2026" class="source-link" target="_blank" rel="noopener">🔗 Build Fast with AI</a>
+      </div>
+      <p>8月8日、Google DeepMind の Demis Hassabis が日常業務の指揮を離れて会長兼 Alphabet チーフサイエンティストに就任し、CTO の Koray Kavukcuoglu が運営を引き継いだ。また、27年間 Google に在籍してきたレジェンド・チーフサイエンティストの Jeff Dean が退社し、複数のトップ研究者とともに「Discovery Loop」という新会社を設立した。この組織再編は、OpenAI・Anthropic に対する競争力強化を急ぐ中での大きな転換点とみられる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" rel="noopener">Claude Code アップデート — デフォルトモデル設定・セッション間アイドル通知・macOS サンドボックス強化を追加</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://releasebot.io/updates/anthropic/claude-code" class="source-link" target="_blank" rel="noopener">🔗 Releasebot / Claude Code</a>
+      </div>
+      <p>Anthropic は Claude Code に複数の改善を加えた。デフォルトモデルの設定機能・クロスセッションアイドル通知・macOS サンドボックス保護の強化が追加され、Auto モードの精度改善やリモートコントロールの安定化も図られた。また、使用量とコストの追跡機能・カスタマイズ可能なモデルとキャッシュ設定・コンソールへのキーレスサインイン・タスクやサブエージェント表示の改善も盛り込まれた。VS Code スクリーンリーダー対応も向上している。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bloomberg.com/news/articles/2026-08-03/openai-anthropic-google-to-join-white-house-ai-safety-meeting" target="_blank" rel="noopener">ホワイトハウスAI安全会議 — OpenAI・Anthropic・Googleが参加、自発的安全テスト枠組みを協議</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bloomberg.com/news/articles/2026-08-03/openai-anthropic-google-to-join-white-house-ai-safety-meeting" class="source-link" target="_blank" rel="noopener">🔗 Bloomberg</a>
+      </div>
+      <p>トランプ政権はAI企業をホワイトハウスに招集し、AIモデルの自発的安全テストに関する新たな米国フレームワークについて協議した。OpenAI・Anthropic・Googleが参加を表明しており、6月のトランプ大統領による AI サイバーセキュリティに関する大統領令を受けた取り組みの一環。フレームワークはオプトイン方式での安全レビューを軸とし、重要コンピュータシステムの保護強化も盛り込まれる予定。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/08/26/cisa-adds-six-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA、悪用確認済みの脆弱性を6件追加（8月26日） — 連邦機関は期限内の緊急パッチ適用が必要</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/08/26/cisa-adds-six-known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISAは8月26日、野生での悪用が確認された脆弱性6件を Known Exploited Vulnerabilities（KEV）カタログに追加した。Binding Operational Directive 26-04 に基づき、連邦政府の民間機関（FCEB）はすべての KEV 掲載脆弱性を期限内に修正することが義務付けられている。今月は計13件以上が KEV に追加されており、8月はとくに活発な脆弱性悪用が観測されている。民間組織も同カタログを参考にパッチ優先度を判断することが推奨される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.stepsecurity.io/blog/chaindrop-npm-worm" target="_blank" rel="noopener">ChainDrop npm ワーム — Claude Code・VS Code・Copilot のワークフローを標的にした CI/CD 資格情報窃取マルウェア</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.stepsecurity.io/blog/chaindrop-npm-worm" class="source-link" target="_blank" rel="noopener">🔗 StepSecurity</a>
+      </div>
+      <p>8月4日09:40〜13:20 UTC の間に大量の悪意ある npm パッケージが公開され、ペイロードが Claude Code・VS Code・GitHub Copilot のワークフローを標的としていることが確認された。Bun を活用して CI/CD パイプライン上で資格情報を窃取し、Ethereum ブロックチェーンを C2（コマンド&コントロール）のデッドドロップとして利用する手口が特徴的。依存パッケージのバージョン固定や npm audit の定期実行、CI 環境での最小権限の適用が対策として推奨される。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://tech-insider.org/microsoft-defender-for-cloud-setup-2026/" target="_blank" rel="noopener">Microsoft Defender for Cloud、AWS・GCP リソースタイプを90種追加 — フェデレーション資格情報に完全移行</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://tech-insider.org/microsoft-defender-for-cloud-setup-2026/" class="source-link" target="_blank" rel="noopener">🔗 Tech Insider</a>
+      </div>
+      <p>Microsoftは8月18日、Defender for Cloud に新たに AWS・GCP のリソースタイプを約90種追加し、マルチクラウド環境の可視性をさらに高めた。また8月4日の更新でコネクターフローがフェデレーション・短期資格情報に完全移行し、長期シークレットのセットアップが廃止された。「最小権限」と「デフォルトアクセス」のトグルが新設され、ゼロトラスト原則に沿ったクラウドセキュリティ構成が容易になった。AWS・Azure・GCP をまたぐ統一セキュリティポスチャー管理の強化が進んでいる。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24/" target="_blank" rel="noopener">GitHub Copilot 8月24日週リリース — Customize タブ GA・JetBrains 企業設定管理・Dependabot トリアージ自動化</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub Copilot の最新週次リリースで、MCP サーバー・プラグイン・スキル・キャンバスを一元管理する「Customize」タブが正式 GA となった。Copilot for JetBrains では企業向け管理設定・MCP サーバーアクセス制御・OpenTelemetry 連携・パーミッションモードのガバナンス機能が追加された。さらに Copilot アプリの自動化として、毎日の Dependabot トリアージ（リスク別グループ化・CI ステータス確認・安全更新の表面化・履歴保存）が利用可能になった。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/month/08-2026/" target="_blank" rel="noopener">npm、2FA をバイパスするトークンを段階廃止 — 2026年8月からアカウント変更制限、2027年1月から公開制限</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/month/08-2026/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>npm は 2FA（二要素認証）をバイパスできるレガシートークンの廃止を段階的に進めている。2026年8月より一部のアカウント変更操作にレガシートークンが使用できなくなり、2027年1月にはパッケージの直接公開もブロックされる。サプライチェーン攻撃への対策として、すべての npm トークンを Granular Access Token またはオートメーション用トークンに移行することが強く推奨される。ChainDrop など npm を悪用したマルウェア急増を受けた対策強化の一環でもある。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://releasebot.io/updates/anthropic" target="_blank" rel="noopener">Anthropic、オープンソースセキュリティ支援に3500万ドルの「Defender Advantage Fund」設立</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://releasebot.io/updates/anthropic" class="source-link" target="_blank" rel="noopener">🔗 Releasebot / Anthropic</a>
+      </div>
+      <p>Anthropicは「Defender Advantage Fund」として3500万ドルの基金を設立し、オープンソースソフトウェアのセキュリティ強化を支援すると発表した。Claude Security for Enterprise に新モデル「Claude Mythos 5」を追加し、コードベーススキャン・脆弱性検出・修正パッチ提案などのサイバー防衛機能を拡充。合わせて Cyber Verification Program の対象拡大も進めており、AI を活用したサイバー防衛領域への本格参入を明確にした。セキュリティ重視の姿勢はオープンソースコミュニティからも注目されている。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-08-30 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

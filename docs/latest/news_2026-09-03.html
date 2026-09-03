@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-09-03</title>
+  <meta name="description" content="2026-09-03 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-09-03</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-09-03 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>13件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-august-18-2026" target="_blank" rel="noopener">Hydrogen Developer Preview 最新アップデート: カートセッション属性・Shop Pay 直接レンダリング・標準ページビューイベントを追加</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-august-18-2026" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Hydrogen Developer Preview の最新アップデートでは、ログイン済みショッパーがカートを引き継いで決済に進める「カートセッション属性」と、ギフトメッセージなどのオーダー全体データや刻印テキストなどの行単位データを添付できる「カート属性」が追加された。また Shop Pay ボタンが Shopify ホストスクリプトなしで直接レンダリング可能となり、すべてのナビゲーション（初回ページ読み込みだけでなく）で標準ページビューイベントが報告されるようになった。フレームワーク非依存・ランタイム非依存設計が強調されており、エージェント対応の Hydrogen を既存のホスティングプラットフォームに導入しやすくなっている。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Shopify 2026-10 API リリース候補公開: Cart API がサブスクリプションをファーストクラスでサポート・DraftOrder破壊的変更あり</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify API バージョン 2026-10 のリリース候補が公開された。Cart API でサブスクリプション販売プランや一度限りの購入とサブスクリプションのハイブリッドカートがサポートされ、定期購入はファーストクラスの機能となった。破壊的変更として DraftOrderDiscountNotAppliedWarning.priceRule が削除され、2026-10 以降の未フルフィルメント注文の配送先変更では税金が自動再計算される仕様に変更。対象フィールドを利用しているアプリは 2026-10 への移行前に動作確認と修正が必要。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://tenten.co/shopify/shopify-developer-changelog-api-changes-2026/" target="_blank" rel="noopener">Shopify API 新レート制限モデル詳解: APIキー単位で毎秒40リクエスト・バースト50、IPベース除外は廃止</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://tenten.co/shopify/shopify-developer-changelog-api-changes-2026/" class="source-link" target="_blank" rel="noopener">🔗 Tenten.co / Shopify Developer Changelog</a>
+        </div>
+        <p>2026年の重要な Shopify API 変更として、新しいレート制限モデルが導入されている。APIキーごとに毎秒40リクエスト（バースト50、持続時間20ms毎1リクエスト）が上限となり、従来のIPベースの除外は廃止された。APIキーが個別にスロットリングされるため、複数テナントで同一キーを共有しているアプリは特に影響を受ける可能性がある。各アプリの API 呼び出しパターンを見直し、指数バックオフの実装やリクエストのバッチ化が推奨される。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bloomberg.com/news/articles/2026-09-03/openai-rolls-out-gpt-6-astra-model-with-added-cyber-guardrails" target="_blank" rel="noopener">OpenAI、GPT-6 Astra をリリース — AGI 水準と宣言・コンピューター操作機能搭載・初の「クリティカル」サイバーセキュリティ閾値達成モデル</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bloomberg.com/news/articles/2026-09-03/openai-rolls-out-gpt-6-astra-model-with-added-cyber-guardrails" class="source-link" target="_blank" rel="noopener">🔗 Bloomberg</a>
+      </div>
+      <p>OpenAI は9月3日に GPT-6 Astra をリリースし、同社社長の Greg Brockman は「AGI 時代の幕開け」と宣言した。最大の特徴はユーザーの代わりにコンピューターを操作する「computer use」機能で、スプレッドシート入力やゼロからのウェブサイト作成など高度なタスクを自律実行する。本モデルは OpenAI の Preparedness Framework においてサイバーセキュリティの「クリティカル」閾値に達した初のモデルとして位置づけられており、セキュリティガードレールが強化されている。まず Daybreak プログラムの法人向けに先行提供し、数日以内に Plus・Pro・Business・Enterprise ユーザーへも順次展開予定。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/" target="_blank" rel="noopener">NVIDIA、AIハブ Hugging Face を約130億ドルで買収合意 — 史上最大規模の買収、オープンソース維持を確約</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/" class="source-link" target="_blank" rel="noopener">🔗 NVIDIA Blog</a>
+      </div>
+      <p>NVIDIA は9月2日、AIモデル・データセット・アプリケーションの共有プラットフォームである Hugging Face を約129億ドルで買収する最終合意を締結した。株主への支払い119億ドルに加え、Hugging Face 従業員の引き留めを目的とした株式10億ドルが含まれる。取引完了は2027年前半を見込む。NVIDIA はプラットフォームをオープンソースのまま維持し、他社シリコンベンダーへのサポートも継続することを明言した。Hugging Face は1,800万人超の開発者・研究者と200,000社超の企業が利用する世界最大のオープンソース AI ハブ。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.aroged.com/2026/09/03/alibaba-significantly-improves-qwen3-8-max-ai-model-through-additional-training/" target="_blank" rel="noopener">Alibaba、Qwen3.8-Max を追加学習で大幅改善 — Qwen3.8-Max-0902 が Code Arena で Claude Opus 5 を超えるコーディング性能を記録</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.aroged.com/2026/09/03/alibaba-significantly-improves-qwen3-8-max-ai-model-through-additional-training/" class="source-link" target="_blank" rel="noopener">🔗 Aroged</a>
+      </div>
+      <p>Alibaba が9月3日、2.4兆パラメーターの Mixture-of-Experts モデル Qwen3.8-Max の更新チェックポイント「Qwen3.8-Max-0902」を公開した。プログラミングおよびエージェント間の協調タスクに特化したポストトレーニングにより、Code Arena: WebDev テストで 1691 ポイントを記録し Claude Opus 5 (Max) を2ポイント上回った。モデルサイズ・コンテキストウィンドウ（最大100万トークン）・API価格は変更なし。Alibaba Cloud Model Studio API および QwenWork を通じてグローバルの開発者が利用できる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog/claude-fable-5-1-now-available-on-ai-gateway" target="_blank" rel="noopener">Vercel AI Gateway に Claude Fable 5.1 が追加 — 1つの API キーで複数プロバイダーを管理、フォールバック・スペンド追跡・トレースに対応</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog/claude-fable-5-1-now-available-on-ai-gateway" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Vercel AI Gateway が9月1日に Anthropic の Claude Fable 5.1 をサポートした。1つの API キーで複数プロバイダーを統合管理でき、プロバイダーアカウントのセットアップ不要でフォールバック設定・支出トレースおよびリクエスト追跡が利用可能となる。Claude Fable 5.1 はアジェンティックなコーディング・調査・長期の多段階作業において改善が集中しており、Vercel 経由でアクセスすることで既存の AI SDK ワークフローに容易に統合できる。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/09/02/cisa-adds-seven-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">【緊急】CISA、7件の既知悪用脆弱性を KEV カタログに追加 — SonicWall (CVSS 10.0)・JFrog Artifactory・Kestra OSS など、9月5日が対応期限</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/09/02/cisa-adds-seven-known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA が9月2日、7件の新規悪用済み脆弱性を Known Exploited Vulnerabilities (KEV) カタログへ追加した。最高危険度は CVE-2026-83548（SonicWall SMA1000 SSRF、CVSS 10.0）で未認証リモート攻撃者が機密機能へアクセス可能。CVE-2026-82329（JFrog Artifactory 認証不備）と CVE-2026-9586（Sangoma Switchvox SQL インジェクション）は既にリバースシェル展開と管理トークン奪取に悪用されている。Kestra・Artifactory・Switchvox・SonicWall は9月5日、LiteLLM・Starlette は9月16日が連邦機関の修正期限。AI インフラ関連製品の脆弱性が含まれるため、社内でこれらを利用している組織は早急なパッチ適用を推奨。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://finance.yahoo.com/technology/ai/articles/jetstream-announces-clearance-ai-zero-170000815.html" target="_blank" rel="noopener">JetStream、AIエージェント向けゼロトラスト推論エンジン「Clearance」を発表 — 実行前にエージェントの各アクションを承認・危険なシーケンスをブロック</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://finance.yahoo.com/technology/ai/articles/jetstream-announces-clearance-ai-zero-170000815.html" class="source-link" target="_blank" rel="noopener">🔗 Yahoo Finance / JetStream</a>
+      </div>
+      <p>JetStream Security が9月2日、AIエージェントの各アクションを実行前に評価・認可するゼロトラスト推論エンジン「Clearance」を発表した。Clearance は AI ゲートウェイ上でリクエストを検査し、承認済み設計・ツール・実行内容にマッピングして危険なシーケンス（データ流出パターンなど）を事後ログではなく事前ブロックで封じる。規制業界で大量のエージェントを運用する組織に向け、ライブデータ流出や内部コンプライアンスリスクを大幅に低減することを目指す。CrowdStrike Fal.Con 2026 で実演予定で、CrowdStrike の新 AI パートナー特化プログラムにも参加している。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog" target="_blank" rel="noopener">Vercel、AWS PrivateLink が GA に — デプロイメントから AWS ホスト DB・サービスへプライベートネットワーク接続が可能に</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Vercel が AWS PrivateLink の一般提供（GA）を開始した。これにより Vercel 上のデプロイメントから AWS でホストされているデータベースやサービスへ、パブリックインターネットを経由せずプライベートなネットワーク経路で接続できるようになった。金融・医療など厳格なネットワーク分離要件を持つ規制業界のエンタープライズ顧客に特に有益で、セキュリティポスチャの向上とレイテンシの低減が期待できる。Vercel の Workflow Development Kit でも信頼性・パフォーマンス改善が同時公開されており、デュラブルフック再開やトレース・データインスペクター UX の強化が含まれる。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noopener">GitHub Copilot、9月28日に統合 UI をローンチ予定 — Copilot Chat・モバイル・クラウドエージェントが1つの体験に統合、Sandbox 採用で高速化</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/month/09-2026/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub は Copilot Chat（github.com）・GitHub Mobile の Copilot Chat・GitHub Copilot クラウドエージェントの3つを単一の統合 Copilot 体験として9月28日以降に再ローンチすると発表した。クラウドエージェントは Sandbox を採用してより高速なクラウド実行を実現する。また、エンタープライズ管理設定でデフォルトの Copilot モデルを指定できる機能や、Copilot レビューでの承認評価表示（パブリックプレビュー）、コンテンツ除外ポリシーの CLI・アプリへの適用なども同時期に展開される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/" target="_blank" rel="noopener">GitHub Copilot Business・Enterprise、9月1日よりクレジットカード・PayPal での新規申込を再開 — アカウント審査強化と新請求フロー導入</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub が9月1日より Copilot Business・Copilot Enterprise のクレジットカードおよび PayPal 払いでの新規申込受付を再開した。アカウント審査の強化と請求体験の刷新が同時に実施されており、不正利用防止策が強化されている。合わせてコンテンツ除外ポリシーが Copilot アプリおよび Copilot CLI にも適用され、企業・組織・リポジトリ管理者が設定した除外ファイルが Copilot のコンテキストとして使用されなくなった。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/09/03/top-tech-news-today-september-3-2026-google-hugging-face-meta-moonshot-ai-nvidia-more/" target="_blank" rel="noopener">G20、米国主導の AI 政策原則を承認 — 利用実態に基づいたターゲット型規制を支持、チャペルヒル会合でノンバインディング宣言に合意</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/09/03/top-tech-news-today-september-3-2026-google-hugging-face-meta-moonshot-ai-nvidia-more/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>G20 諸国がノースカロライナ州チャペルヒルで開催されたテクノロジー会合で、米国主導の AI 政策原則（ノンバインディング）を承認した。AI の実際の利用実態に基づいたターゲット型規制アプローチを支持する内容で、EU AI 法のような包括的な事前義務化とは一線を画すアプローチ。国際的な AI ガバナンスの方向性に影響を与える可能性があり、グローバル展開するサービス事業者や規制環境を注視する開発者にとって重要な動向となっている。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-09-03 07:00 JST 更新 | 全13件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

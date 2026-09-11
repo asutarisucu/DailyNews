@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-09-11</title>
+  <meta name="description" content="2026-09-11 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-09-11</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-09-11 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/customer-address-apis-now-support-countrycode" target="_blank" rel="noopener">Customer Address APIs が countryCode フィールドをサポート — ISO 3166-1 alpha-2 コードで住所管理が簡素化</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/customer-address-apis-now-support-countrycode" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify の Customer Address API が countryCode フィールドをサポートするようになった。これまで country フィールドには国名の文字列が入り、言語設定によって表記が異なる問題があったが、countryCode による ISO 3166-1 alpha-2 コード（例: JP, US, GB）での指定が可能になったことで、住所データの一貫性と多言語対応が向上する。Admin API・Storefront API・Customer Account API のいずれでも利用でき、新規住所作成・既存住所の更新どちらにも対応している。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/remove-deprecated-errorcode-and-errormessage-fields-from-subscriptionbillingattempt" target="_blank" rel="noopener">SubscriptionBillingAttempt の非推奨フィールド（errorCode / errorMessage）が GraphQL Admin API 2026-07 で削除 — 移行が必要</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/remove-deprecated-errorcode-and-errormessage-fields-from-subscriptionbillingattempt" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify GraphQL Admin API 2026-07 において、SubscriptionBillingAttempt オブジェクトの非推奨フィールドである errorCode と errorMessage が削除された。代替として errorDetails フィールドが提供されており、複数のエラー詳細を構造化した形式で受け取ることができる。サブスクリプション管理アプリを開発・運用しているパートナーは、2026-07 以降の API バージョンへ移行する前に errorDetails フィールドへの切り替えが必要。既存アプリの動作確認を早期に行うことが推奨される。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/tracking-cookie-deprecation-hydrogen" target="_blank" rel="noopener">Hydrogen の shopify_y・shopify_s トラッキングクッキーが廃止予定 — Storefront API セッション管理への移行を推奨</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/tracking-cookie-deprecation-hydrogen" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Hydrogen ストアフロントで使用されてきた shopify_y（ユーザー識別）と shopify_s（セッション管理）の2つのトラッキングクッキーが廃止されることになった。ブラウザのサードパーティクッキー制限強化に対応するための変更で、代替として Storefront API が提供するセッション管理機能への移行が推奨される。廃止後は shopify_y・shopify_s クッキーに依存したカスタムアナリティクスや A/B テストのセグメンテーションが動作しなくなるため、Hydrogen を利用するストアは実装の見直しが必要になる。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://gizmodo.com/anthropic-claims-it-stopped-suspected-bioweapons-research-conducted-with-claude-2000810609" target="_blank" rel="noopener">Anthropic 脅威インテリジェンスレポート: Claude がバイオウェポン研究・サイバー攻撃・産業スパイへの悪用を阻止 — 最新モデルは初めて「バイオウェポン支援のしきい値」に到達</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://gizmodo.com/anthropic-claims-it-stopped-suspected-bioweapons-research-conducted-with-claude-2000810609" class="source-link" target="_blank" rel="noopener">🔗 Gizmodo</a>
+      </div>
+      <p>Anthropic が 2025年12月〜2026年8月の期間に検出・阻止した Claude の悪用事例をまとめた脅威インテリジェンスレポートを公開した。生物兵器研究への支援試みが5件（チクングニアウイルスのゲノム変異・ワクチン開発阻害を目的とした研究助成書の作成など）、AI エージェントによるサイバー攻撃（395組織への侵害）、ドローン向けキルソフトウェア開発など多岐にわたる悪用が確認された。特筆すべきは、最新モデルが初めてバイオウェポン支援の「しきい値」に達したとAnthropicが公式に認めた点で、関連アカウントはすべて閉鎖済みとしている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/" target="_blank" rel="noopener">Google DeepMind が Gemini 3.8 Flash と 3.8 Flash Cyber をリリース — 1M コンテキスト・エージェンティックビデオ理解・防衛者限定のサイバーバリアント</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/" class="source-link" target="_blank" rel="noopener">🔗 Google DeepMind Blog</a>
+      </div>
+      <p>Google DeepMind が9月2日に Gemini 3.8 Flash と Gemini 3.8 Flash Cyber の2モデルをリリースした。3.8 Flash は 1M トークンコンテキスト・64K 出力上限を持ち、テキスト・画像・音声・動画・PDF に対応。エージェンティックビデオ理解では長尺コンテンツのトークン使用量を最大88%削減できる。API 価格は入力 $0.75・出力 $3.75 per 100万トークン（2027年1月から倍額予定）。3.8 Flash Cyber は Anthropic の Mythos 5.1 と同様に審査済みのセキュリティ研究者・防衛チーム限定で提供され、敵対的なサイバー操作への転用を防ぐ設計となっている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://improvado.io/blog/gpt-6-astra-vs-claude-fable-5-1" target="_blank" rel="noopener">GPT-6 Astra vs Claude Fable 5.1 詳細比較 — 数学・エージェント系は Astra、文書分析・長文読解は Fable 5.1 が優位との評価</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://improvado.io/blog/gpt-6-astra-vs-claude-fable-5-1" class="source-link" target="_blank" rel="noopener">🔗 Improvado</a>
+      </div>
+      <p>9月3日にリリースされた GPT-6 Astra と Claude Fable 5.1 の詳細比較分析が複数メディアで公開された。API 価格は両モデルとも入力 $10・出力 $50 per 100万トークンで同水準。数学・フォーム入力・短タスク高スループットでは GPT-6 Astra が優位で、長文ドキュメントの読解・説明責任が求められる分析・文章生成では Claude Fable 5.1 が優位と評価されている。GPT-6 Astra は Preparedness Framework で初めてサイバー脅威評価「Critical」レベルに達し、リリース前に追加安全対策が施された点も注目される。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://senserva.com/exploited-this-week.html" target="_blank" rel="noopener">CISA KEV 週次更新（9月11日週）: 11件の悪用確認 CVE を追加 — SonicWall SSRF CVE-2026-83548（CVSS 10.0）・Citrix・Adobe Commerce が対象</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://senserva.com/exploited-this-week.html" class="source-link" target="_blank" rel="noopener">🔗 Senserva</a>
+      </div>
+      <p>CISA が9月11日週に11件の悪用確認済み脆弱性を Known Exploited Vulnerabilities（KEV）カタログへ追加した。最も深刻なのは SonicWall SMA 1000 Appliances に存在するサーバーサイドリクエストフォージェリー（SSRF）CVE-2026-83548（CVSS 10.0）で、未認証のリモート攻撃者が機密機能へアクセス可能。Citrix NetScaler ADC・Cisco Secure Firewall Management Center・Adobe Commerce・N-able N-central も対象となっており、57件の重大優先度 CVE と93件の高優先度 CVE も同時に報告されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://securityboulevard.com/2026/09/daily-ot-security-news-september-11-2026/" target="_blank" rel="noopener">CISA が OT・産業制御システム向け4件の勧告を発表（9月11日）— NextGen Mirth Connect・Orthanc DICOM・AVEVA Pipeline に影響</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://securityboulevard.com/2026/09/daily-ot-security-news-september-11-2026/" class="source-link" target="_blank" rel="noopener">🔗 Security Boulevard</a>
+      </div>
+      <p>CISA が9月11日に医療・産業制御システム向けの4件のセキュリティ勧告を発表した。対象は医療情報統合プラットフォーム NextGen Mirth Connect、医療用 DICOM サーバー Orthanc、パイプライン管理システム AVEVA Pipeline Integrity Monitor、および通信衛星端末 ST Engineering iDirect iQ-Series（更新版勧告）。医療インフラと重要産業インフラの双方を狙った攻撃が増加しており、これらシステムの管理者は直ちにベンダーの推奨する緩和策または更新プログラムを適用することが求められる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.helpnetsecurity.com/2026/09/11/new-infosec-products-of-the-week-september-11-2026/" target="_blank" rel="noopener">新セキュリティプロダクト週次まとめ（9月11日）: Akeyless の AI エージェント向けランタイムセキュリティ・Securin の AI ネイティブ露出管理プラットフォームが GA</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.helpnetsecurity.com/2026/09/11/new-infosec-products-of-the-week-september-11-2026/" class="source-link" target="_blank" rel="noopener">🔗 Help Net Security</a>
+      </div>
+      <p>9月11日週に注目のセキュリティプロダクトが2件正式リリースされた。Akeyless の「Agentic Runtime Authority」は AI エージェントのアクションに対してリアルタイムの ID 制御レイヤーを提供するサービスで、エージェントによる過剰なアクセスや不正操作をランタイムで検知・制限できる。Securin の「Securin Platform」は AI ネイティブの先制型露出管理（Preemptive Exposure Management）プラットフォームで、脆弱性の優先順位付けと攻撃面の継続的可視化を自動化。AI エージェントの普及に伴い、エージェントセキュリティへの需要が急増していることを示す動きといえる。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/09/11/top-tech-news-today-september-11-2026-anthropic-deepseek-google-pentagon-oracle-spacex-more/" target="_blank" rel="noopener">Microsoft が 38ギガワットの AI データセンター拡張計画を公表 — Pentagon も $50億のデータセンターサプライチェーン融資交渉を開始</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/09/11/top-tech-news-today-september-11-2026-anthropic-deepseek-google-pentagon-oracle-spacex-more/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>Microsoft が AI 推論需要に対応するための38ギガワット規模のデータセンター拡張計画を公表した。これは現在の全世界のデータセンター総電力容量に匹敵する規模であり、AI インフラへの投資競争が新たな局面に入ったことを示している。また米国 Pentagon（国防総省）が AI・クラウドインフラのサプライチェーン強化を目的とした50億ドルの融資交渉を開始したことも明らかになっており、米国内でのデータセンターキャパシティ確保を巡る官民連携が加速している。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/09/10/top-tech-news-today-september-10-2026-apple-anthropic-ibm-meta-openai-spacex-more/" target="_blank" rel="noopener">Oracle が $6,640億のクラウドバックログを記録 — AI インフラ需要の爆発的増加でクラウド大手の受注残が史上最大規模に</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/09/10/top-tech-news-today-september-10-2026-apple-anthropic-ibm-meta-openai-spacex-more/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>Oracle が直近の決算発表で $6,640億（約93兆円）のクラウドサービス受注残（バックログ）を公表した。AI 推論・大規模モデル学習向けのクラウドインフラ需要が急増しており、Oracle Cloud Infrastructure（OCI）の GPU クラスター提供能力が評価されていることが背景にある。Microsoft・AWS・Google Cloud に続くクラウド大手としてのポジションを確固たるものにしつつあり、特に Nvidia と連携した高密度 GPU クラスタ提供でエンタープライズ AI 市場でのシェア拡大が続いている。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog" target="_blank" rel="noopener">Vercel AI SDK: WorkflowAgent の安定版コールバック追加・AI Gateway で Claude Fable 5.1 対応・AWS PrivateLink が GA に</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Vercel が9月に複数の重要アップデートを実施した。Vercel AI SDK では WorkflowAgent の onStart・onStepStart コールバックが安定版（stable）に昇格し、ワークフローのライフサイクル管理が強化された。AI Gateway では Claude Fable 5.1 が追加サポートされ、Anthropic アカウントなしで1つの API キーからフォールバック設定・支出追跡・リクエストトレースを利用しながら Fable 5.1 へアクセスできるようになった。また Vercel Deployment から AWS 上のデータベースやサービスへプライベートネットワーク経由で接続できる AWS PrivateLink も GA となった。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noopener">GitHub Copilot 9月アップデート: JetBrains Copilot Harness が GA・PR 承認準備通知・Gemini 3.8 Flash の段階的ロールアウト開始</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+        <a href="https://dmarketertayeeb.com/blog/github-copilot-september-2026-model-budget-review-changes/" class="source-link" target="_blank" rel="noopener">🔗 解説記事</a>
+      </div>
+      <p>GitHub Copilot の9月アップデートで複数の機能が追加・変更された。JetBrains 向けの Copilot Harness が正式 GA となり、より安定した機能デリバリーと高品質なコード補完が提供される。Gemini 3.8 Flash が Pro・Pro+・Max・Business・Enterprise の全プランで段階的にロールアウト開始。また Copilot がプルリクエストの承認準備が整ったことを通知し、エンタープライズ設定でその承認に署名する権限も付与できるようになった。コンテンツ除外設定も Copilot アプリ・CLI 全体のエージェンティックワークフローで尊重されるよう強化された。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/09/11/top-tech-news-today-september-11-2026-anthropic-deepseek-google-pentagon-oracle-spacex-more/" target="_blank" rel="noopener">米議会が AI 規制法案を推進 — 壊滅的リスクへの規則と子供の安全制限を AI 業界に義務付けへ</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/09/11/top-tech-news-today-september-11-2026-anthropic-deepseek-google-pentagon-oracle-spacex-more/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>米国議会が AI 業界に対する包括的な規制法案の審議を加速させていることが明らかになった。今回の法案では大規模 AI モデルに起因する「壊滅的リスク」を管理するためのフレームワーク義務付けと、AI サービスにおける未成年者の安全を強化するコンテンツ制限が盛り込まれる見通し。Anthropic が公開した脅威インテリジェンスレポートでバイオウェポン支援のしきい値到達が示されたことも、議会の規制強化の議論を後押ししているとみられる。OpenAI・Anthropic・Google をはじめとした AI 各社は業界団体を通じた自主規制提案を提出している。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-09-11 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-09-14</title>
+  <meta name="description" content="2026-09-14 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-09-14</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-09-14 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed" target="_blank" rel="noopener">Customer Account API: <code>lastIncompleteCheckout</code> と <code>Checkout</code> 型が 2026-10 で完全削除 — Storefront API Cart フローへの移行が必須に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify の Customer Account API バージョン 2026-10 では、非推奨の <code>Customer.lastIncompleteCheckout</code> フィールドと <code>Checkout</code> 型サブツリーが完全に削除される。これらフィールドはすでに null を返しているため動作への影響はないが、2026-10 にアップグレードする前にクエリの更新が必要だ。アクティブなカート・チェックアウト状態が必要な場合は Storefront API のカートフロー、購入履歴には <code>Customer.orders</code> への移行が推奨される。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-september-2-2026" target="_blank" rel="noopener">Shopify Hydrogen 開発者プレビュー 9/2 アップデート — バリアント直接リンク・カートリフレッシュ・ローカル HTTPS 証明書の1コマンド生成を追加</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-september-2-2026" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Hydrogen のデベロッパープレビューが更新され、バリアントリンクがデフォルトページではなく指定バリアントを直接開くよう改善された。カートリフレッシュ API により、サーバー側でカートを変更した後の再読み込みがコードから制御可能になった。Customer Account テスト用のローカル HTTPS 証明書は1コマンドで自動生成できるようになり、ローカル開発のセットアップが大幅に簡略化された。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.salesforce.com/news/stories/agentforce-job-ready-ai-agents/" target="_blank" rel="noopener">Salesforce Agentforce: 7種の「job-ready」AI エージェントが GA — Casey・Hunter・Fin など各業務機能に特化、Dreamforce 2026 直前に発表</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.salesforce.com/news/stories/agentforce-job-ready-ai-agents/" class="source-link" target="_blank" rel="noopener">🔗 Salesforce News</a>
+      </div>
+      <p>Salesforce が Dreamforce 2026（9/15〜）直前に、Casey（カスタマーサービス）、Hunter（B2Bセールス）、Fin（カスタマーエクスペリエンス）など7種の専門特化型 AI エージェントを発表した。各エージェントは既存の Customer 360 データプラットフォームと企業のセキュリティルール・権限体制の上で動作する。Hunter は11月までパイロット提供だが、その他はすでに一般提供されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://gptfy.ai/dreamforce-2026" target="_blank" rel="noopener">Salesforce × Anthropic 協業深化 — Dreamforce 2026 で Benioff と Amodei が共同登壇、「Salesforce in Claude」がパイロット提供開始・9月中に open beta へ</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://gptfy.ai/dreamforce-2026" class="source-link" target="_blank" rel="noopener">🔗 GPTfy — Dreamforce 2026 Guide</a>
+      </div>
+      <p>Dreamforce 2026 では Salesforce CEO の Marc Benioff と Anthropic CEO の Dario Amodei が共同でキーノートに登壇する。Salesforce in Claude はパイロット顧客向けに提供が始まっており、9月中に open beta に移行予定だ。企業が自社 Salesforce データを Claude に持ち込んで AI 活用できるようになる協業で、エンタープライズ向け AI 連携の先行事例として注目される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-09-10-github-copilot-weekly-releases-september-7/" target="_blank" rel="noopener">GitHub Copilot：10/2 に複数 AI モデルを廃止 — MAI-Code-1-Flash → 1.1-Flash 移行、Gemini 3.5/3.6 Flash・Kimi K2.7・Claude Opus 4.7 も終了</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-09-10-github-copilot-weekly-releases-september-7/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub Copilot は 2026年10月2日に MAI-Code-1-Flash を MAI-Code-1.1-Flash に置き換えるとともに、Gemini 3.5/3.6 Flash、Kimi K2.7 Code、Claude Opus 4.7 を全 Copilot 体験から廃止する。これらモデルを <code>.github/copilot-instructions.md</code> 等で明示指定している場合は設定の見直しが必要だ。MAI-Code-1-Flash は9月10日をもって先行廃止されており、すでに MAI-Code-1.1-Flash に置き換えられている。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-september-2026-patch-tuesday-fixes-966-flaws-2-zero-days/" target="_blank" rel="noopener">【過去最大規模】Microsoft 9月 Patch Tuesday — 973件修正・ゼロデイ2件（CVE-2026-85880 / CVE-2026-81963）、CISA が9/22 期限で即時パッチ適用を要求</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-september-2026-patch-tuesday-fixes-966-flaws-2-zero-days/" class="source-link" target="_blank" rel="noopener">🔗 BleepingComputer</a>
+      </div>
+      <p>9月9日の Patch Tuesday では記録を更新する 973件の脆弱性を修正。CVE-2026-85880（Windows ALPC ヒープバッファオーバーフロー：SYSTEM権限昇格）と CVE-2026-81963（Windows Update Stack EoP：SYSTEM権限昇格）の2件がゼロデイとして実悪用中。CISA は両 CVE を KEV カタログに追加し、連邦機関に9月22日までのパッチ適用を義務付けた。Critical 分類は 105件で、そのうち81件が RCE。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html" target="_blank" rel="noopener">CISA KEV に5件を新規追加 — JFrog Artifactory・ConnectWise ScreenConnect（CVSS 9.9）・MikroTik RouterOS の実悪用を確認、即時対応必須</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>CISA が JFrog Artifactory（CVE-2026-42016：認可バイパスによる権限昇格、CVE-2026-42018：匿名トークン漏洩）、ConnectWise ScreenConnect（CVE-2026-84869, CVSS 9.9：未認証でのリモートファイル転送・コード実行）、MikroTik RouterOS（CVE-2026-67277：カーネルメモリ漏洩・DoS、CVE-2026-86060：ポリシーマスク改竄による権限昇格）の5件を KEV カタログに追加した。RouterOS は9月13日、ScreenConnect は9月14日が連邦機関の対応期限。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.securityweek.com/check-point-patches-critical-vpn-vulnerabilities/" target="_blank" rel="noopener">Check Point VPN に CVSS 9.8 の重大 RCE 脆弱性2件（CVE-2026-85102/85103）— 未認証リモートコード実行が可能、9/9 に緊急パッチを配布済み</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.securityweek.com/check-point-patches-critical-vpn-vulnerabilities/" class="source-link" target="_blank" rel="noopener">🔗 SecurityWeek</a>
+      </div>
+      <p>Check Point が Security Gateway および Spark Firewall の VPN 機能に影響する CVE-2026-85102（VPN ネゴシエーション時の不正証明書検証）と CVE-2026-85103 の2件を公開した。いずれも CVSS 9.8 で、未認証の攻撃者がリモートから任意のコードを実行できる深刻度の高い脆弱性だ。9月9日に緊急パッチを配布済みで、Jumbo Hotfix Accumulator（R82.10 Take 44 以降等）の即時適用が推奨される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://securityboulevard.com/2026/09/daily-ot-security-news-september-13-2026/" target="_blank" rel="noopener">Cisco FMC/SCC CVE-2026-20079 — ランサムウェア・国家支援グループ含む3組織が積極悪用、OT/ICS環境にも波及リスク</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://securityboulevard.com/2026/09/daily-ot-security-news-september-13-2026/" class="source-link" target="_blank" rel="noopener">🔗 Security Boulevard</a>
+      </div>
+      <p>Cisco の Secure Firewall Management Center (FMC) および Security Cloud Control (SCC) の CVE-2026-20079 を、ランサムウェアグループと国家支援攻撃組織を含む3つの脅威クラスタが積極的に悪用していることが確認された。OT/ICS 環境を管理するネットワークにも波及リスクがあり、CISA は即時の修正適用を推奨している。未パッチのシステムはファイアウォール管理面での重大な侵害リスクにさらされている。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://docs.cloud.google.com/release-notes" target="_blank" rel="noopener">Google Cloud: VPC Service Controls が Agent Gateway 展開（9/8以降）でサポート開始 — AI エージェント基盤にも企業のネットワーク分離ポリシーを適用可能に</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://docs.cloud.google.com/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Release Notes</a>
+      </div>
+      <p>Google Cloud の VPC Service Controls が、2026年9月8日以降に作成された Agent Gateway デプロイメントのサポートを開始した。これにより、エンタープライズのネットワーク境界ポリシーを AI エージェントインフラに適用できるようになり、機密データへのアクセス制御がより細粒度で実施できる。既存の VPC-SC 設定をそのまま AI エージェント基盤に適用できるため、コンプライアンス対応コストの削減が期待される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.ciodive.com/news/aws-google-link-cloud-products/806705/" target="_blank" rel="noopener">AWS × Google Cloud: クロスクラウド・インターコネクトが 5リージョンペアで GA — 最大 100 Gbps の専用リンクでマルチクラウド連携を簡素化</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.ciodive.com/news/aws-google-link-cloud-products/806705/" class="source-link" target="_blank" rel="noopener">🔗 CIO Dive</a>
+      </div>
+      <p>AWS と Google Cloud が共同でクロスクラウド専用接続サービスを GA に移行し、5つのリージョンペアで最大 100 Gbps のプライベートリンクを提供する。従来の公開インターネット経由では困難だったマルチクラウド構成での低レイテンシ連携が実現し、その後 Oracle Cloud Infrastructure にも拡張された。マルチクラウド採用率が89%に達する中、実運用レベルでのクラウド間直結インフラが整備される。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/" target="_blank" rel="noopener">GitHub Actions 9月前半アップデート — <code>vulnerability-alerts</code> パーミッションで Dependabot アラートへの最小権限アクセスが可能に</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub Actions に新しい <code>vulnerability-alerts</code> 権限スコープが追加され、<code>GITHUB_TOKEN</code> を使用して Dependabot アラートへの読み取り専用アクセスを最小権限でワークフローに付与できるようになった。また、ランナーバージョンのサポート終了日を返す REST API エンドポイントも新設された。セキュリティスキャンの自動化ワークフローで過剰な権限を持たせる必要がなくなり、最小権限原則の実践が容易になる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://dev.to/devsignal/deno-29-stabilizes-node-compat-major-tooling-updates-5f9" target="_blank" rel="noopener">Deno 2.9.6 安定版 — Node-API v10・npm/yarn/Bun ロックファイル移行ツール・デスクトップアプリ配布機能を追加、Node.js 互換性が大幅向上</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://dev.to/devsignal/deno-29-stabilizes-node-compat-major-tooling-updates-5f9" class="source-link" target="_blank" rel="noopener">🔗 DEV Community</a>
+      </div>
+      <p>Deno 2.9（最新安定版 2.9.6、8/27リリース）では Node-API v10 対応と <code>process.version</code> を Node v26.3.0 としてシムすることで、バージョンチェックに失敗していた npm パッケージとの互換性が大幅に向上した。npm/pnpm/yarn/Bun のロックファイルから <code>deno.lock</code> に変換する移行ツールも追加され、既存 Node.js プロジェクトへの段階的 Deno 導入が容易になった。また Deno Desktop により Web UI と Deno ランタイムを組み合わせたデスクトップアプリの配布も可能になった。</p>
+    </div>
+
+    <!-- Otherセクション -->
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.salesforce.com/dreamforce/" target="_blank" rel="noopener">Dreamforce 2026（9/15-17、サンフランシスコ）いよいよ開幕 — 「エージェント型エンタープライズ」テーマに 1,600+ セッション、Salesforce+ で無料バーチャル配信</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.salesforce.com/dreamforce/" class="source-link" target="_blank" rel="noopener">🔗 Salesforce Dreamforce</a>
+      </div>
+      <p>Salesforce の年次最大カンファレンス Dreamforce 2026 が9月15日から17日にかけて Moscone Center で開催される。今年のテーマは AI エージェントを核とする「エージェント型エンタープライズ」で、50以上の製品・ビジョナリー基調講演と 1,600以上のブレイクアウトセッションが予定されている。Anthropic CEO の Dario Amodei も登壇予定で、9月18日まで Salesforce+ での無料バーチャル視聴も提供される。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-09-14 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

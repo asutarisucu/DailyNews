@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-09-16</title>
+  <meta name="description" content="2026-09-16 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-09-16</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-09-16 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>13件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">0</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-september-2-2026" target="_blank" rel="noopener">Hydrogen Developer Preview 更新（9月2日）— バリアントリンク・カートリフレッシュ・ローカル HTTPS 証明書自動生成を追加</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/hydrogen-developer-preview-update-september-2-2026" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Hydrogen の 2026年9月2日デベロッパープレビューでは3つの改善が追加された。バリアントリンク対応により Google Shopping フィードなどの特定バリアントへのリンクが商品デフォルト表示ではなく該当バリアントを直接開くようになった。カートリフレッシュは、サーバー側で作成したカートなど Hydrogen 外でのカート変更を useCartActions() または CartStore.refresh() で再同期できる機能。ローカル HTTPS 証明書は Customer Account テスト用に自動生成され、ローカル開発環境のセットアップが大幅に簡略化された。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/create-and-delete-dev-stores-in-shopify-cli" target="_blank" rel="noopener">Shopify CLI 4.8 リリース — ターミナルや AI コーディングエージェントから dev ストアの作成・一覧・削除が可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/create-and-delete-dev-stores-in-shopify-cli" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify CLI 4.8 で shopify store サブコマンドが追加され、ターミナルや AI コーディングエージェントから dev ストアをプログラム的に管理できるようになった。shopify store create dev でテスト用 dev ストアを作成、shopify store list で組織内のストア一覧を取得、shopify store info で詳細情報を確認、shopify store delete で削除が可能。Shopify AI Toolkit との連携により、コーディングエージェントが直接 dev ストアの CRUD 操作を行えるため、テスト自動化ワークフローが強化される。組織あたりの dev ストア上限は 250 件。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/claude-fable-and-mythos-5-1" target="_blank" rel="noopener">Anthropic が Claude Fable 5.1 と Mythos 5.1 を正式リリース — キャッシュ読み取りコスト 75% 削減で典型ワークロードのコストを 25% 以上圧縮</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/claude-fable-and-mythos-5-1" class="source-link" target="_blank" rel="noopener">🔗 Anthropic</a>
+      </div>
+      <p>Anthropic が9月1日に Claude Fable 5.1 と Claude Mythos 5.1 を正式リリースした。両者は同一の基盤モデルで、Fable 5.1 は一般提供（API・Claude Code・Cursor 等で利用可能）、Mythos 5.1 はサイバーセキュリティ・ライフサイエンス組織向けの信頼アクセスプログラム経由のみ。価格は Fable 5 と同水準の入力 $10/百万トークン・出力 $50/百万トークンを維持しつつ、キャッシュ読み取りレートが 75% 削減の $0.25/百万トークンに。高度にエージェンティックなワークロードでは最大 45% のコスト削減が期待できる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://help.openai.com/en/articles/9624314-model-release-notes" target="_blank" rel="noopener">OpenAI が ChatGPT Images 2.5 をリリース — 手書きスケッチを AI 画像に変換する Sketch 機能、生成レイテンシを 50% 短縮</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://help.openai.com/en/articles/9624314-model-release-notes" class="source-link" target="_blank" rel="noopener">🔗 OpenAI Help Center</a>
+      </div>
+      <p>OpenAI が9月8日に ChatGPT Images 2.5（GPT Image 2.5 とも呼称）を ChatGPT 上でリリース。ユーザーが手書きしたスケッチや図を高品質な AI 生成画像へ変換する Sketch 機能が目玉で、クリエイティブワークフローの入力手段を大幅に拡張する。また画像生成のレイテンシが従来比 50% 短縮され、インタラクティブな制作体験が向上。GPT-6 Astra の約1週間後にリリースされ、OpenAI の画像生成ラインナップが強化された。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">Sam Altman「OpenAI は 2026 年に IPO しない」— AI 安全性の現状から今は時期尚早と Fortune 誌に語る</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aiweekly.co/ai-news-today" class="source-link" target="_blank" rel="noopener">🔗 AI Weekly</a>
+      </div>
+      <p>OpenAI CEO Sam Altman が Fortune 誌のインタビューで、2026 年中の IPO 計画はないと明言した。「AI の安全性に関してこれだけ多くのことが起きている状況では、今はIPOに踏み切るのは賢明ではない」とコメント。OpenAI は今年7月の Hugging Face インシデントを受けて次モデルのリリースを遅延させたこともあり、安全性への姿勢を重視する姿勢を強調している。非営利構造から営利構造への転換を完了した直後の発言として注目される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">Microsoft が AI ペーシングフレームワークに署名した初の大手クラウドベンダーに — Nadella「AI は人間の管理下に」と宣言</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aiweekly.co/ai-news-today" class="source-link" target="_blank" rel="noopener">🔗 AI Weekly</a>
+      </div>
+      <p>Microsoft CEO Satya Nadella がフロンティア AI 開発の「ペーシングフレームワーク」に正式署名し、AWS・Google Cloud を含む主要クラウドベンダーの中で初の署名者となった。フレームワークは AI システムが社会的影響を評価できるペースで開発・展開されるべきという原則を定めており、独立した安全性評価や段階的な機能公開を義務付ける内容。Nadella は記者会見で「超知性研究の目標は AI を人類の助けとして、かつ人間の管理下に置くこと」と強調し、業界のガバナンス議論を主導する姿勢を示した。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.sysnative.com/forums/threads/microsoft-september-2026-security-updates.46433/" target="_blank" rel="noopener">Microsoft 9月月例パッチリリース — 997 件のアップデートのうち Critical 114 件、うち 7 件は現在も実環境で攻撃に悪用中</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.sysnative.com/forums/threads/microsoft-september-2026-security-updates.46433/" target="_blank" rel="noopener" class="source-link">🔗 Sysnative Forums</a>
+      </div>
+      <p>Microsoft が9月の月例セキュリティ更新プログラムを公開し、Microsoft・Chromium・非 Microsoft 製品を含む計 997 件のアップデートをリリースした。Microsoft CVE のうち Critical 評価は 114 件、Important が大部分を占め、リリース時点で 7 件が実環境での攻撃に悪用されていることが確認されている。9月15日の更新プログラム（KB5124008/KB5124012）でリモートデスクトップや USB オーディオに問題が発生することは既報だが、全体的なパッチ規模としても今月は例年比で大きく、早急な適用計画の策定が必要。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/09/10/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA が MikroTik RouterOS の 2 件の脆弱性を KEV に追加 — CVE-2026-67277（認証欠如）と CVE-2026-86060（コマンドインジェクション）が実悪用を確認</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/09/10/cisa-adds-two-known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA が9月10日、MikroTik RouterOS の 2 件の脆弱性を既知悪用脆弱性（KEV）カタログに追加した。CVE-2026-67277 は重要な機能への認証欠如（Missing Authentication for Critical Function）、CVE-2026-86060 はコマンド引数デリミタの不適切な無効化によるコマンドインジェクションで、両脆弱性とも実際の攻撃への悪用が確認されている。MikroTik ルーターは中小企業から ISP まで広く利用されており、ファームウェアの最新化が急務。連邦機関は特定期限までのパッチ適用が義務付けられている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/09/08/cisa-adds-four-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA が Adobe Commerce/Magento の CVE-2026-75650 ほか 4 件を KEV に追加 — Windows の 2 件も含む Critical 脆弱性</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/09/08/cisa-adds-four-known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA が9月8日に 4 件の脆弱性を KEV カタログに追加した。CVE-2026-75650（Adobe Commerce / Magento テンプレートエンジン脆弱性）はオンラインストア環境に影響する深刻な問題で、EC サイト運営者は即時パッチ適用が必要。あわせて CVE-2026-81963（Microsoft Windows リンクフォロー脆弱性）・CVE-2026-85880（Windows ヒープバッファオーバーフロー）・CVE-2026-86218（N-able N-central 静的コードインジェクション）も追加された。Adobe Commerce を利用する EC サイトは9月の月例パッチと合わせて対応を急ぐこと。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://azurecharts.com/updates?monthback=0" target="_blank" rel="noopener">Azure 9月アップデートまとめ — AKS 強化・VM Image Builder GA 拡大・Defender スコア算出改善・MySQL リーダーエンドポイント追加</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://azurecharts.com/updates?monthback=0" class="source-link" target="_blank" rel="noopener">🔗 Azure Charts</a>
+      </div>
+      <p>Azure の9月アップデートとして複数の機能強化が展開された。AKS（Azure Kubernetes Service）の改善のほか、VM Image Builder のより広範な提供開始、ディスク単位のレジリエンシー設定、ASR（Azure Site Recovery）での Linux NVMe レプリケーションサポートが追加された。Azure Database for MySQL にはリードスケーリング用のリーダーエンドポイントが追加され、読み取り負荷の分散が可能に。Defender for Cloud のクラウドセキュアスコアは、日中の平均値ではなく日末のスナップショット値を使う算出方式へ変更され、より正確なポスチャ評価が可能になった。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new" target="_blank" rel="noopener">Azure Virtual Desktop がハイブリッド参加に VPN 不要になった — Azure Arc + Entra ID でオンプレミス・エッジ環境から直接 Azure 認証</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new" class="source-link" target="_blank" rel="noopener">🔗 Microsoft Learn</a>
+      </div>
+      <p>Azure Virtual Desktop がハイブリッド参加環境において VPN を必要とせずにセッションホストを構成できる新機能を提供した。Azure Arc と Entra ID を活用することで、オンプレミスやエッジ環境のセッションホストが Azure に直接認証できるようになる。従来はサイト間 VPN や ExpressRoute が必要だったハイブリッド AVD 構成が大幅に簡略化され、リモートワークやブランチオフィスへの仮想デスクトップ展開コストの削減に繋がる。エッジコンピューティング環境での AVD 活用が現実的な選択肢となった。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog" target="_blank" rel="noopener">Vercel AI SDK が GitHub Copilot ハーネスとネイティブ認証に対応、Sandbox ストレージも 64GB に倍増</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Vercel は AI SDK および関連プロダクトの複数のアップデートを今週公開した。9月10日には @ai-sdk/harness-github-copilot パッケージ経由で GitHub Copilot をハーネス層として使用可能に、9月14日にはハーネスがネイティブのサブスクリプション認証に対応しクレデンシャルをホスト境界に置いたまま認証できるようになった。9月11日には Vercel Sandbox の標準ストレージが 32GB から 64GB に倍増。AI 開発ツールのエコシステムを強化する連続したアップデートで、特に GitHub Copilot 連携はエンタープライズ環境での AI SDK 採用を促進するとみられる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-07-31-restricting-npm-bypass-2fa-granular-access-tokens/" target="_blank" rel="noopener">npm の bypass-2FA 粒度アクセストークンがアカウント管理操作を制限 — 639 件の悪意あるパッケージ公開攻撃を受けたセキュリティ強化</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-07-31-restricting-npm-bypass-2fa-granular-access-tokens/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>7月31日より、npm の 2FA バイパス設定の粒度アクセストークン（GAT）ではトークン作成・削除、パッケージアクセス変更、メンテナー管理、組織/チームのメンバーシップ管理などの重要操作が不可になり、インタラクティブな 2FA 検証が必須となった。これは単一の盗まれたトークンで 22 分間に 323 パッケージ・639 バージョンの悪意あるコードが配布された「Mini Shai-Hulud 攻撃」を受けた対応。2027年1月からは直接 publish も OIDC トラステッドパブリッシング方式に移行し、standing token が不要になる予定。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-09-16 07:00 JST 更新 | 全13件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

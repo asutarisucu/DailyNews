@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-09-17</title>
+  <meta name="description" content="2026-09-17 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-09-17</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-09-17 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">5</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">0</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopifyセクション -->
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Shopify 2026-10 API リリース候補が公開 — Customer Account API で countryCode サポート追加・territoryCode 非推奨化、注文・税金・Storefront API に破壊的変更も</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify の 2026-10 API バージョンがリリース候補として公開され、10月1日の安定版リリースまで開発テストが可能になった。Customer Account API では顧客住所の countryCode フィールドが追加され、ISO 3166-1 alpha-2 に準拠した形式で住所の作成・更新・参照ができるようになる一方、既存の territoryCode は非推奨となる（互換性は維持）。また注文税金・下書き注文割引・メタフィールドフィルタ・税 ID ペイロード・カスタマーアカウントチェックアウトなど複数の破壊的変更が含まれており、早期テストと移行計画の策定が推奨される。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">paymentInstrumentSendAddEmail ミューテーション新規追加 — サブスクリプション・注文・下書き注文で顧客への支払い方法追加リンクメールを API 経由で送信可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify の Admin API に新たな paymentInstrumentSendAddEmail ミューテーションが追加された。このミューテーションを使うと、サブスクリプション・注文・下書き注文に紐付いた支払い方法を追加するためのリンクをメールで顧客に送信できる。これまではカスタマーポータル経由でのみ対応可能だった支払い方法の更新フローを、アプリやバックエンドから直接トリガーできるようになり、サブスクリプションや BtoB 受注フローの自動化が強化される。</p>
+      </div>
+    </div>
+
+    <!-- AIセクション -->
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">OpenAI が GPT-Live を正式リリース — ChatGPT Voice のバックエンドを刷新、300ms 未満のレイテンシでテキスト変換パイプラインを完全排除</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aiweekly.co/ai-news-today" class="source-link" target="_blank" rel="noopener">🔗 AI Weekly</a>
+      </div>
+      <p>OpenAI が 9月16日に GPT-Live を正式リリースし、ChatGPT Voice のコアモデルをネイティブ音声 AI に刷新した。従来の ChatGPT Voice は音声認識→テキスト→LLM→音声合成という3段階のパイプラインを経ていたが、GPT-Live はこのパイプラインを排除し音声をエンドツーエンドで処理することで 300ms 未満のレイテンシを実現。感情的なニュアンスや自然な割り込みにも対応し、実際の会話に近いインタラクティブ性を提供する。ChatGPT Plus・Pro ユーザー向けから順次展開される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techcrunch.com/2026/09/16/your-ai-agents-can-now-control-your-google-home-devices/" target="_blank" rel="noopener">Google Home MCP 早期アクセス開始 — Claude・ChatGPT など MCP 対応エージェントが Nest デバイスや Matter スマートホーム機器を自然言語で制御可能に</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techcrunch.com/2026/09/16/your-ai-agents-can-now-control-your-google-home-devices/" class="source-link" target="_blank" rel="noopener">🔗 TechCrunch</a>
+      </div>
+      <p>Google が 9月16日に Home MCP（Model Context Protocol）の早期アクセスを開始した。MCP ツールの呼び出しに対応したあらゆる AI エージェント（Claude・ChatGPT・Hermes・Antigravity など）が、ユーザーの Google Home エコシステム内の Nest カメラ・サーモスタット・Matter 電球などを監視・操作できるようになる。カメラの行動要約の閲覧やスマートホームのカスタムダッシュボード作成なども自然言語で実行可能。現時点では英語・米国の Google Home Premium Advanced（月額 $20）契約者への限定提供で、利用には Google Cloud プロジェクトのセットアップが必要。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://blog.buildfastwithai.com/ai-news-today-september-16-2026" target="_blank" rel="noopener">Salesforce が Dreamforce で Koa を発表 — Nvidia Nemotron ベースの CRM 特化推論モデル、汎用モデル比でエラー率を 3 分の 1 に削減し冬 2026 に GA 予定</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://blog.buildfastwithai.com/ai-news-today-september-16-2026" class="source-link" target="_blank" rel="noopener">🔗 Build Fast With AI</a>
+      </div>
+      <p>Salesforce が年次カンファレンス Dreamforce で、Agentforce ワークフロー向けの特化型推論モデル「Koa」を発表した。Nvidia Nemotron アーキテクチャ上に構築され、14 業界・27 年分の内部 CRM デプロイデータから生成した合成データで学習させた結果、多段階エージェント型タスクにおいて主要汎用モデルの 3 分の 1 のエラー率を達成したとしている。Agentforce プラットフォームと深く統合されており、営業・カスタマーサービス・マーケティングの自動化を強化する見込み。一般提供は 2026 年冬を予定。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://blog.buildfastwithai.com/ai-news-today-september-16-2026" target="_blank" rel="noopener">AI コーディングエージェント Factory が $200M を調達、評価額 $5B に急上昇 — Droid エージェントがコーディング支援市場をリード</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://blog.buildfastwithai.com/ai-news-today-september-16-2026" class="source-link" target="_blank" rel="noopener">🔗 Build Fast With AI</a>
+      </div>
+      <p>AI コーディングエージェント「Droid」を開発する Factory が 2 億ドルの資金調達を完了し、評価額が 4月時点の 15 億ドルから 50 億ドルへ急上昇した。Droid は Issue の自動処理から PR 作成・レビュー対応までをエンドツーエンドで担うコーディングエージェントで、エンタープライズ顧客に広く採用されている。Claude Code・GitHub Copilot といった競合ツールとの差別化として自律的なマルチステップ実装能力を前面に出しており、今回の調達資金はエージェント実行インフラの拡張とセキュリティ機能強化に充てるとしている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">Grok 4.8 が今週リリース見込み — 2.5 兆パラメータ・新 C++ スタックで開発、Elon Musk がトレーニング完了を示唆</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aiweekly.co/ai-news-today" class="source-link" target="_blank" rel="noopener">🔗 AI Weekly</a>
+      </div>
+      <p>xAI の Elon Musk が X（旧 Twitter）への投稿で、Grok 4.8 のトレーニングが今週中に完了する見込みであることを示した。Grok 4.8 は 2.5 兆パラメータ規模のモデルで、既存の Python ベースの推論スタックを新たに C++ で書き直したエンジンを採用している。Grok 4 系列は数学・コーディング・科学分野でのベンチマーク最高性能を主要な売りにしており、4.8 ではさらなる速度向上と精度改善が見込まれる。xAI スーパーコンピュータ「Colossus」のフル稼働を背景に、近日中のリリースがアナウンスされる見通し。</p>
+    </div>
+
+    <!-- Securityセクション -->
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/09/16/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank" rel="noopener">CISA KEV に CVE-2026-58704（Google Pixel モデムゼロデイ）を追加 — CVSS 8.0・認証不要・無インタラクションで特権昇格、限定的な標的型攻撃を確認</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/09/16/cisa-adds-one-known-exploited-vulnerability-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA が 9月16日に CVE-2026-58704（Google Pixel デバイスのモデムサブコンポーネントにおける不正認可）を既知悪用脆弱性（KEV）カタログに追加した。CVSS スコアは 8.0 で、セルラーモデムのコードに存在するロジックエラーによってパーミッションをバイパスできる。低複雑度かつユーザーの操作なしに悪用でき、標的がリンクをタップしたりアプリをインストールしたりしなくても侵害が成立するため特に危険。Google はセキュリティパッチレベル 2026-09-05 以降で修正済みであり、Pixel 6 以降の全機種が対象。端末の早急なアップデートを推奨する。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/09/active-exploitation-attempts-target.html" target="_blank" rel="noopener">WSO2 API Manager の CVE-2026-5430（CVSS 9.8）が実環境で積極的に悪用中 — JWT アルゴリズム不正検証でアドミン権限取得、API Control Plane 等の利用組織に緊急対応を促す</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/09/active-exploitation-attempts-target.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>WSO2 API Manager および関連製品（API Control Plane・Traffic Manager・Universal Gateway）に存在する CVE-2026-5430 が、4月のパッチ公開後もなお実環境で積極的に悪用されていることが確認された。脆弱性は JWT トークンで未対応アルゴリズムを使用した場合の署名検証の不備であり、攻撃者が細工したトークンを送ることで API バックエンド・認証情報・登録済みアプリケーションシークレットに無断アクセスできる。CVSS スコアは 9.8（マルチテナント構成では 10.0 と評価）で、9月13日以降ハニーポットにアドミン権限埋め込みの JWT トークンが到達し始めているという。WSO2 製品を利用する組織は直ちにパッチを適用すること。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html" target="_blank" rel="noopener">CISA が 7 件の悪用脆弱性を追加 — 攻撃者はリバースシェルと暗号通貨マイナーを展開、Starlette・LiteLLM の修正期限は 9月16日</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>CISA が直近の KEV 更新で 7 件の脆弱性を追加し、攻撃者がリバースシェルや暗号通貨マイナーを展開していることを警告した。注目は Python Web フレームワーク Starlette と LLM ゲートウェイツール LiteLLM の脆弱性で、連邦機関向けの修正期限は 9月16日に設定されていた。AI・LLM インフラに使用されるライブラリが積極的な悪用ターゲットになっている点は注目で、Binding Operational Directive (BOD) 26-04 の下、利用組織は優先的なパッチ適用と侵害調査が求められる。</p>
+    </div>
+
+    <!-- Cloudセクション -->
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/" target="_blank" rel="noopener">AWS が Amazon Quick を発表 — デスクトップアプリ搭載の AI ワークアシスタント、Amazon Connect が供給網・採用・医療・CX の 4 領域でエージェント型 AI ソリューションへ拡張</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/" class="source-link" target="_blank" rel="noopener">🔗 AWS Blog</a>
+      </div>
+      <p>AWS の「What's Next with AWS 2026」イベントにおいて、デスクトップアプリと拡張統合機能を備えた AI ワークアシスタント「Amazon Quick」が発表された。Amazon Quick はレポート取得・コード作成・ナレッジ検索などを担い、エンタープライズの生産性向上を目的とする。また Amazon Connect がサプライチェーン・採用・カスタマーエクスペリエンス・医療という 4 つのエージェント型 AI ソリューションへと拡張されたことも発表された。あわせて Amazon Bedrock への GPT-5.5・Codex・Managed Agents の限定プレビュー提供開始も公開されており、AWS の AI ラインナップが大幅に強化された。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/" target="_blank" rel="noopener">Amazon EBS ボリュームクローンがクロスアカウントコピーに対応 — KMS で再暗号化しながら別 AWS アカウントへ EBS ボリュームをコピー可能に</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/" class="source-link" target="_blank" rel="noopener">🔗 AWS Blog</a>
+      </div>
+      <p>AWS が Amazon EBS ボリュームクローン機能に、別 AWS アカウントへのクロスアカウントコピー機能を追加した。ボリュームを別アカウントにコピーする際、コピー先の AWS KMS キーで再暗号化しながら転送できるため、マルチアカウント環境での安全なボリューム共有が可能になる。これまで EBS スナップショットを経由した間接的な手順が必要だった運用が大幅に簡略化され、アカウント分離された環境でのデータ移行・バックアップ戦略の選択肢が広がる。災害復旧・テスト環境への本番ボリューム複製などのユースケースで恩恵が大きい。</p>
+    </div>
+
+    <!-- Devセクション -->
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noopener">GitHub Copilot 9月アップデート — PR 承認インジケーターと管理者による自動承認・Vim モード GA・Copilot App にレビュー/実行/プレビュー並列表示を搭載</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/month/09-2026/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub Copilot の 9月アップデートで複数の機能が追加・一般提供となった。Copilot が PR の承認準備完了を示すインジケーターを表示できるようになり、Enterprise 管理者が設定すると自動承認（デフォルトはオフ）も可能になった。また Vim モードがすべてのユーザーに一般提供され、/vim コマンドや設定で有効化できる。GitHub Copilot App では差分・ターミナル・ブラウザテストをひとつの画面にまとめてレビュー・実行・プレビューを並列で確認できる新インターフェースが導入された。カスタムリポジトリプロパティ作成時に許可値を Copilot が提案する機能もパブリックプレビュー入りした。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/month/09-2026/" target="_blank" rel="noopener">GitHub Copilot CLI・Copilot App でエンタープライズコンテンツ除外ポリシーが有効化 — 管理者が設定したコードの除外ルールがエージェントにも適用されセキュリティを強化</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/month/09-2026/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub Copilot が、エンタープライズ・組織・リポジトリ管理者によって構成されたコンテンツ除外ポリシーを Copilot CLI および Copilot App でも尊重するようになった。これまでコンテンツ除外はエディタ統合の IDE プラグインに限定されていたが、今回の更新でエージェントとして動作する Copilot CLI でも同じルールが適用される。機密コードや特定のファイルパスを AI に参照させないコンプライアンス要件を持つ組織にとって重要な変更で、エンタープライズ向けの AI コーディングツール採用の障壁が下がる。9月1日より Copilot Business・Enterprise の新規クレジットカード・PayPal 払い受付も再開している。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-09-17 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

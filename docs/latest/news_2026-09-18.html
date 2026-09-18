@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-09-18</title>
+  <meta name="description" content="2026-09-18 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-09-18</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-09-18 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">5</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/removed-session-currentsession-staffmemberid-from-pos-ui-extensions-2026-10" target="_blank" rel="noopener">Shopify POS UI Extensions、API 2026-10 で staffMemberId フィールドを削除 — session.staffMember シグナルへ移行が必要</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/removed-session-currentsession-staffmemberid-from-pos-ui-extensions-2026-10" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>API バージョン 2026-10 より、POS UI Extensions の Session API から静的フィールド `session.currentSession.staffMemberId` が削除された。代替として 2026-07 から提供されているリアクティブシグナル `session.staffMember` を使用する必要があり、スタッフ切り替え時の動的更新にも対応できる。2026-10 をターゲットにするアプリは `session.staffMember.value?.id` で ID を取得するよう更新が必要。なお、レシートターゲット向け `BaseData.session.staffMemberId` は別 API であり今回の変更の影響を受けない。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed" target="_blank" rel="noopener">Shopify Customer Account API: lastIncompleteCheckout と Checkout タイプが 2026-10 で削除 — カート API への移行を推奨</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>API バージョン 2026-10 において、Customer Account API の `Customer.lastIncompleteCheckout` フィールドおよび `Checkout` タイプが削除される。バイヤーのストアフロント体験でアクティブなカートやチェックアウト状態を取得する必要がある場合は、Storefront API のカートフローへの移行が推奨される。あわせて GraphQL Admin API 2026-10 では `DraftOrderDiscountNotAppliedWarning.priceRule` も削除されるため、これらのフィールドを使用しているアプリは早急に対応が必要。</p>
+      </div>
+    </div>
+
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.artificiallawyer.com/2026/09/18/openai-launches-astra-for-law/" target="_blank" rel="noopener">OpenAI、法律専門 AI「Astra for Law」を発表 — 2.3 億 URL の法律検索インデックス搭載、Legal Research Bench で 54.0% 達成</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.artificiallawyer.com/2026/09/18/openai-launches-astra-for-law/" class="source-link" target="_blank" rel="noopener">🔗 Artificial Lawyer</a>
+      </div>
+      <p>OpenAI が 9 月 17〜18 日、法律業界向け特化型 AI「Astra for Law」を発表した。GPT-6 Astra をベースに米国判例・法令・規制・行政判断など 2.3 億 URL 以上の法律検索インデックスを組み合わせたもので、Free Law Project の CourtListener データベースが米国の全公開先例判例の 99.9% をカバーしている。Vals AI の Legal Research Bench では最高推論努力で 54.0% の正解率を達成し、Web 検索のみの GPT-6 Astra（38.7%）を大幅に上回る。法律業界での Harvey などの競合に正面から対抗する製品となる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cnbc.com/2026/09/18/anthropic-quietly-sets-up-biology-lab-as-it-ramps-ai-drug-program-report.html" target="_blank" rel="noopener">Anthropic、AI 主導のウェット生物ラボをベイエリアに極秘開設 — Claude がロボット実験助手を指揮し創薬を加速</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cnbc.com/2026/09/18/anthropic-quietly-sets-up-biology-lab-as-it-ramps-ai-drug-program-report.html" class="source-link" target="_blank" rel="noopener">🔗 CNBC</a>
+      </div>
+      <p>Anthropic がサンフランシスコ・ベイエリアにウェットラボ（実験施設）を開設し、Claude AI がロボット実験助手を指揮して生物実験を最小限の人間介入で実施できる体制を構築していることが明らかになった。創薬の候補化合物特定と最適化を加速することを目的としており、臨床試験の直前まで担う方針とされる。8 月に発表した Model Hardware Standard を活用して AI が実験装置を操作する。バイオウェポン開発を警告するレポートを直前に公表した同社が極秘でラボを運営していた事実は注目を集めている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techcrunch.com/2026/09/18/googles-new-cc-is-an-ai-agent-that-helps-families-run-their-households/" target="_blank" rel="noopener">Google「CC」が家族向け共有 AI エージェントに進化 — 最大 6 名が Gmail・カレンダーを共有して毎朝ブリーフィング</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techcrunch.com/2026/09/18/googles-new-cc-is-an-ai-agent-that-helps-families-run-their-households/" class="source-link" target="_blank" rel="noopener">🔗 TechCrunch</a>
+      </div>
+      <p>Google Labs が AI エージェント「CC」を家族・世帯向けに拡張し、最大 6 名が同一エージェントを共有できるようになった。各メンバーが開示する情報の範囲を個別に設定でき、CC はそれらを統合して毎朝「Your Day Ahead」として共有デイリーブリーフィング・カレンダー・タスクリストを提供する。買い物リスト作成・週次献立立案・同意書への署名といった家族特有のタスクにも対応。米国在住の 18 歳以上を対象にした Google Labs 実験として提供される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cnbc.com/2026/09/17/nvidia-huang-ai-chip-guidance.html" target="_blank" rel="noopener">Nvidia CEO Jensen Huang、2027 年に AI チップ販売を倍増・売上 $6,800 億規模と予測 — 「全ての国が AI に投資したい」</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cnbc.com/2026/09/17/nvidia-huang-ai-chip-guidance.html" class="source-link" target="_blank" rel="noopener">🔗 CNBC</a>
+      </div>
+      <p>Nvidia CEO の Jensen Huang が 9 月 17 日、2027 年に AI チップ販売が今年比で 2 倍になると予測した。現在年間約 $4,000 億の売上が $6,800 億規模になる見通しで、AI 需要の鈍化懸念を否定した。Blackwell・Rubin チップ、光ネットワーク向けチップ、ロボット・車向け Jetson チップを含む多彩な製品ラインを背景に、あらゆる国や業種での AI 投資加速が成長を牽引するとしている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://9to5mac.com/2026/09/17/webkit-blog-breaks-down-whats-new-with-safari-27-for-developers-including-mcp-support/" target="_blank" rel="noopener">Apple Safari 27 に MCP サーバーを統合 — Claude Code・Codex が実ブラウザのタブ・DOM・コンソールを直接操作可能に</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://9to5mac.com/2026/09/17/webkit-blog-breaks-down-whats-new-with-safari-27-for-developers-including-mcp-support/" class="source-link" target="_blank" rel="noopener">🔗 9to5Mac</a>
+      </div>
+      <p>9 月 17 日リリースの Safari 27.0 に MCP サーバーが統合され、Claude Code や Codex などの AI コーディングエージェントが開発者の実ブラウザウィンドウを直接制御できるようになった。タブの開閉・ボタンクリック・JavaScript 実行・コンソール読み取り・DOM 参照・ネットワークリクエスト確認・スクリーンショット取得が可能。有効化には Safari の設定で「リモート自動化と外部エージェントを許可」を有効にする必要がある。Xcode 26.3 で導入されたエージェント型コーディングとの連携が一層深まる。</p>
+    </div>
+
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank" rel="noopener">CISA、CVE-2025-39682（Linux カーネル kTLS 脆弱性、CVSS 9.8）を KEV カタログに追加 — 修正期限は 9/21</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-one-known-exploited-vulnerability-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>9 月 18 日、CISA が Linux カーネルの kTLS（Kernel TLS）受信処理に存在する脆弱性 CVE-2025-39682（CVSS 9.8 CRITICAL）を Known Exploited Vulnerabilities カタログに追加した。`net/tls/tls_sw.c` において長さゼロのレコード処理が不適切で、リモートピアが特殊なパケットを送信するだけでカーネルクラッシュを引き起こす DoS 攻撃が可能。Linux 6.1.149・6.6.103・6.12.44・6.16.4・6.17 で修正済みであり、Debian・Amazon Linux 2023 向けディストリビューション修正も提供されている。連邦機関の対応期限は 9 月 21 日。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html" target="_blank" rel="noopener">AI コーディングエージェントの「ピン留め」プラグインにゼロクリックバックドア判明 — 4 つの主要エージェントに影響、リポジトリ差し替え攻撃が可能</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>広く使われる 4 つの AI コーディングエージェントで、プラグインのコードリポジトリを制御できる攻撃者がエージェントにインストールさせるプラグインを悪意あるものにすり替えられる脆弱性が研究者によって判明した。エージェントがリポジトリをロックしていても差し替え可能なため「ゼロクリックバックドア」と位置づけられる。さらに別の調査では、小規模スタートアップが Claude を悪用して OpenAI 社員のアカウントに到達したケースも確認されており、AI エージェントのサプライチェーンリスクへの対策が急務となっている。</p>
+    </div>
+
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes" target="_blank" rel="noopener">Microsoft Defender for Cloud、AWS・GCP の 90 以上のリソースタイプをサポート追加 — マルチクラウドセキュリティ体制管理を強化</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Microsoft Learn</a>
+      </div>
+      <p>Microsoft Azure の Defender for Cloud が AWS および GCP の 90 以上のリソースタイプを新たにサポートし、マルチクラウド環境のセキュリティ体制管理（CSPM）をより網羅的に評価できるようになった。また 10 月 27 日以降、新規 Azure サブスクリプションでは Foundational CSPM がデフォルトで有効化されなくなり、オプトインモデルへ移行する。既存のサブスクリプションは引き続き Foundational CSPM が有効のまま維持される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud" target="_blank" rel="noopener">Google Cloud BigQuery パイプラインにユニットテストが GA — モックデータで SQL 変換ロジックをパイプライン内で直接検証</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Blog</a>
+      </div>
+      <p>Google Cloud が BigQuery パイプラインのユニットテスト機能を一般提供（GA）に移行した。SQL 変換ロジックをモックデータセットに対してパイプライン内で直接検証できるため、実際のデータを用いずにパイプラインの正確性をテストできるようになる。また GKE on AWS でフィルタバージョン v3 が 9 月 25 日に Stable バージョンに昇格予定。BigQuery CLI では `bq mk --connection` に `--service_directory_service` フラグが追加され、Azure 接続の設定が強化された。</p>
+    </div>
+
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-09-17-copilot-impact-dashboard-now-shows-feature-engagement/" target="_blank" rel="noopener">GitHub Copilot インパクトダッシュボードがフィーチャーエンゲージメント表示に対応 — 28 日間の機能別アクティブユーザー数を可視化</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-09-17-copilot-impact-dashboard-now-shows-feature-engagement/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub Copilot のインパクトダッシュボードが更新され、主要機能（コード補完・Chat・コードレビューなど）を定期的に使用しているアクティブユーザー数を 28 日間のローリングウィンドウで表示できるようになった。Enterprise および Organization 向けレポート API にも同じ機能別エンゲージメント内訳が追加され、AI 導入フェーズのレポートも各フェーズの 28 日間人口をレポート日時点で記録するよう改善された。組織全体での Copilot 活用状況の把握が容易になる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://dmarketertayeeb.com/blog/github-copilot-september-2026-model-budget-review-changes/" target="_blank" rel="noopener">GitHub Copilot に「efficiency / balance / intelligence」3 ティアの自動モデル選択をロールアウト — VS Code・CLI・Copilot アプリに順次展開</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://dmarketertayeeb.com/blog/github-copilot-september-2026-model-budget-review-changes/" class="source-link" target="_blank" rel="noopener">🔗 DMarketer Blog</a>
+      </div>
+      <p>GitHub Copilot の自動モデル選択（auto mode）に「efficiency（コスト重視）」「balance（バランス）」「intelligence（品質重視）」の 3 段階ティアが追加され、Visual Studio Code・Copilot CLI・GitHub Copilot アプリへ順次展開中。プロンプトごとのコスト・品質・レイテンシの重み付けをユーザーが制御できる。また 9 月 28 日以降、GitHub.com の Copilot Chat・モバイルアプリの Chat・Copilot クラウドエージェントが単一の統合 Copilot エクスペリエンスに統合される予定も発表された。</p>
+    </div>
+
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/09/18/top-tech-news-today-september-18-2026-anthropic-google-meta-nvidia-openai-more/" target="_blank" rel="noopener">EU、子ども向け AI コンパニオンをデフォルトオフに規制 — Spain で自律エージェントによる初のデータ侵害も記録</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/09/18/top-tech-news-today-september-18-2026-anthropic-google-meta-nvidia-openai-more/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>欧州が未成年者保護の観点から AI コンパニオンアプリを子どもに対してデフォルトで無効化する規制措置に乗り出した。スペインでは自律 AI エージェントが引き起こした国内初のデータ侵害事例が記録された。また Q3 2026 の開発者調査（705 名対象）では 42% が「コードの半数以上を AI が書いている」と回答し、昨年同期の 12% から急上昇しており、AI が開発ワークフローに深く浸透していることが改めて示された。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-09-18 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-09-20</title>
+  <meta name="description" content="2026-09-20 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-09-20</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-09-20 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/customer-address-apis-now-support-countrycode" target="_blank" rel="noopener">Customer Account API に countryCode サポート追加 — 2026-10 で territoryCode は非推奨、ISO 3166-1 alpha-2 形式に移行</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/customer-address-apis-now-support-countrycode" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Customer Account API バージョン 2026-10 から顧客住所の入力・参照で countryCode フィールドがサポートされ、US や CA などの ISO 3166-1 alpha-2 形式で国コードを指定できるようになった。既存の territoryCode フィールドは非推奨となるが後方互換性は維持されるため既存インテグレーションへの即時影響はない。2026-10 採用時には countryCode への移行が推奨されており、alpha-3 形式（USA など）は受け付けられなくなる点に注意が必要。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">バリアント単位で最大 20 バーコードを保存可能に — GTIN / UPC / EAN など複数コードを種別付きで一元管理</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify がバリアント 1 つに対して最大 20 個のバーコードを保存できる新機能を追加した。GTIN・UPC・EAN などのタイプ情報とともに登録できるため、異なるサプライヤーやマーケットプレイスが個別のコードを使用する商品でも同一バリアントで一元管理が可能になる。複数バーコードへの対応は在庫管理の精度向上とマルチチャンネル販売の効率化に直結する。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://changelog.shopify.com/" target="_blank" rel="noopener">Agentic Storefronts に Meta チャンネルが追加 — Shopify Catalog 経由で商品がデフォルト共有</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://changelog.shopify.com/" class="source-link" target="_blank" rel="noopener">🔗 Shopify Changelog</a>
+        </div>
+        <p>Shopify の Agentic Storefronts に Meta がチャンネルとして追加され、Shopify Catalog を通じて商品がデフォルトで Meta に共有されるようになった。管理画面の AI チャンネル一覧に Meta が追加されており、設定は最小限の操作で完了する。AI エージェント経由のショッピング体験に Meta の販売チャンネルが統合されることで、オムニチャンネル戦略の選択肢が広がる。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Discounts Allocator Function API 廃止・開発者プレビュー終了 — Discount Function API への移行が必要</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify が Discounts Allocator Function API の開発者プレビューを終了し、同 API を廃止した。割引配分の処理は Shopify プラットフォームのロジックに移行されるため、この拡張ターゲットを使用しているアプリは廃止予定の拡張を削除し、代わりに Discount Function API を使用するよう移行作業が必要となる。影響を受けるアプリを運用している開発者は早急に対応を確認することが推奨される。</p>
+      </div>
+    </div>
+
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads" target="_blank" rel="noopener">Claude Fable 5.1 正式リリース — キャッシュ読み取り料金 75% 削減、Mythos 5.1 は信頼組織向け限定提供</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads" class="source-link" target="_blank" rel="noopener">🔗 VentureBeat</a>
+      </div>
+      <p>Anthropic が Claude Fable 5.1 と Claude Mythos 5.1 をリリースした。Fable 5.1 はキャッシュ読み取り料金を $1 から $0.25/M トークンへ 75% 削減し、AutomationBench では 31.4%（Fable 5 の 17.1% から大幅向上）を記録。コンテキストウィンドウは 1M トークンで最大出力 128K トークン。Mythos 5.1 はサイバーセキュリティ・ライフサイエンス向け信頼アクセスプログラムを通じてのみ提供される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/09/gpt-6-astra-scores-100-on-exploitbench.html" target="_blank" rel="noopener">GPT-6 Astra が ExploitBench で 100% スコアを達成 — OpenAI はPoC生成リクエストをブロック、制限付きアクセス提供</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/09/gpt-6-astra-scores-100-on-exploitbench.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>OpenAI の GPT-6 Astra が脆弱性エクスプロイトのベンチマーク ExploitBench で満点の 100% を達成した。前世代モデル GPT-5.6 Sol の 78.5% を大幅に上回る結果で、「年単位の研究と大きな賭け」の成果と説明されている。OpenAI は悪用防止のため PoC エクスプロイト生成リクエストはブロックしており、認定されたサイバーセキュリティ専門家向けの制限付きアクセスプログラムを通じて提供する。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html" target="_blank" rel="noopener">Google・Anthropic・OpenAI が一斉にサイバー AI モデルを発表 — Gemini 3.8 Flash Cyber が自律的脆弱性発見でトップ性能</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>Google の Gemini 3.8 Flash Cyber・Anthropic の Claude Mythos 5.1・OpenAI の GPT-6 Astra が 72 時間以内に相次いでリリースされる「サイバー AI モデル競争」が展開された。Gemini 3.8 Flash Cyber は自律的な脆弱性発見で他社フロンティアモデルを上回り、Google は攻撃ではなく防御側の支援を優先すると表明。3 社はそれぞれ信頼アクセスプログラムと保護プログラムも発表している。</p>
+    </div>
+
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/09/claude-used-to-automate-exploitation.html" target="_blank" rel="noopener">Claude が複数被害者へのエクスプロイト自動化・データ窃取に悪用 — Anthropic が事例を開示</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/09/claude-used-to-automate-exploitation.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>Anthropic は Claude モデルが悪意ある行為者によって複数被害者へのエクスプロイト自動化とデータ窃取に悪用されたと公式に開示した。2025 年 12 月〜2026 年 8 月の間、国家支援ハッカーを含む攻撃者がサイバー攻撃・兵器設計・プロパガンダ・大規模監視などに Claude を活用していた事例が確認されている。Anthropic は悪用検知と安全性強化の取り組みを継続しており、検出事例の定期開示も実施する方針。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://senserva.com/exploited-this-week.html" target="_blank" rel="noopener">CISA KEV カタログ 今週 15 件の新規悪用 CVE を追加 — Microsoft・Adobe・Oracle 製品が多数含まれる</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://senserva.com/exploited-this-week.html" class="source-link" target="_blank" rel="noopener">🔗 Senserva</a>
+      </div>
+      <p>CISA の Known Exploited Vulnerabilities（KEV）カタログに今週 15 件の新規エントリが追加された。Microsoft・Adobe・Oracle 製品を含む幅広いベンダーの脆弱性が対象で、連邦機関は BOD 26-04 に基づき優先的なパッチ適用が義務付けられる。セキュリティチームは自社環境への影響調査と修正対応を早急に実施することが推奨される。</p>
+    </div>
+
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://azurecharts.com/updates?monthback=0" target="_blank" rel="noopener">Azure September 2026 月次サービス更新まとめ — 物理サーバー評価サポートが GA、多数の機能強化</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://azurecharts.com/updates?monthback=0" class="source-link" target="_blank" rel="noopener">🔗 AzureCharts</a>
+      </div>
+      <p>Microsoft Azure が September 2026 の月次サービス更新を公開した。一般提供（GA）・パブリックプレビュー・プライベートプレビューの各フェーズで多数の機能追加と強化が行われており、物理 AWS・GCP サーバーの評価サポートの GA が含まれる。クラウドアーキテクトは変更ログを参照して自社環境への影響を確認し、プレビュー機能の採用計画を検討することが推奨される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.ciodive.com/news/aws-google-link-cloud-products/806705/" target="_blank" rel="noopener">AWS と Google Cloud がクロスクラウド接続を強化 — 100Gbps 対応の専用相互接続で マルチクラウド運用を簡略化</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.ciodive.com/news/aws-google-link-cloud-products/806705/" class="source-link" target="_blank" rel="noopener">🔗 CIO Dive</a>
+      </div>
+      <p>AWS と Google Cloud が共同でマルチクラウドネットワーキング製品の展開を進めており、AWS VPC から Google Cloud VPC への専用低レイテンシリンクをプロビジョニングできる AWS Interconnect が GA となった。プレビュー時の最大 1Gbps から GA 時点で 100Gbps に引き上げられており、将来的には Microsoft Azure も統合が予定される。エンタープライズのマルチクラウド戦略において帯域幅とレイテンシが大幅に改善される。</p>
+    </div>
+
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog" target="_blank" rel="noopener">Vercel v0 が npm プライベートパッケージのインストールに対応 — 共有環境変数から認証情報を自動取得</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Vercel v0 が共有環境変数から npm 認証情報を読み取り、プライベート npm パッケージやカスタムレジストリからのパッケージインストールに対応した（2026 年 9 月 18 日）。これにより社内専用パッケージを使用するプロジェクトでも v0 を活用できるようになり、エンタープライズ開発環境での利用シナリオが大幅に拡大した。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog" target="_blank" rel="noopener">Vercel Spend Management が Enterprise Flexible Commitment プランに拡大 — 予算アラート・Webhook・デプロイ一時停止に対応</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Vercel の Spend Management 機能が Enterprise Flexible Commitment プランに拡張された（2026 年 9 月 18 日）。対象プランのエンタープライズチームが支出予算を設定し、メールアラート・Webhook 通知・本番デプロイの任意一時停止オプションを利用できるようになった。大規模なチームでのコスト管理自動化と予算超過防止に活用できる。</p>
+    </div>
+
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.ghacks.net/" target="_blank" rel="noopener">Firefox 156 正式リリース、Samsung Galaxy S26 に One UI 9（Android 17）安定版ロールアウト開始</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.ghacks.net/" class="source-link" target="_blank" rel="noopener">🔗 gHacks</a>
+      </div>
+      <p>Mozilla が Firefox 156 を正式リリースした。同時期に Samsung は Galaxy S26 シリーズへの One UI 9 安定版ロールアウトを正式開始。One UI 9 は Android 17 ベースで AI 機能の強化とセキュリティ改善が含まれており、順次グローバル展開される予定。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-09-20 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

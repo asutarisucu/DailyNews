@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-10-02</title>
+  <meta name="description" content="2026-10-02 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-10-02</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-10-02 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/release-notes/2026-10" target="_blank" rel="noopener">Shopify API バージョン 2026-10 が安定版に — SubscriptionContractCalculation 導入、税計算・メタフィールド・注文フルフィルメント仕様を更新</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/release-notes/2026-10" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>2026-10-01 に Shopify API バージョン 2026-10 が安定版としてリリースされた。最大の変更点は SubscriptionContractCalculation の導入で、サブスクリプション契約の作成・更新をステートレスな「calculate → poll → commit」ライフサイクルで行えるようになり、従来の SubscriptionDraft を置き換える。また Order.displayFulfillmentStatus が FULFILLMENT_NOT_REQUIRED を返せるようになり、draftOrderCalculate/Create/Update のフィールド変更、メタフィールドフィルタのエラー修正なども含まれる。アップグレード前に各自のアプリへの影響確認が推奨される。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/posts/market-driven-shipping-now-available-in-feature-preview" target="_blank" rel="noopener">マーケット別配送レート（Market-Driven Shipping）が 10 月 1 日よりマーチャントへの段階的ロールアウト開始 — 全マーチャントへの展開は 2027 年 7 月まで</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/posts/market-driven-shipping-now-available-in-feature-preview" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify の Market-Driven Shipping（マーケット別配送）が 2026-10-01 より一般マーチャントへの段階的ロールアウトを開始した。配送設定をデリバリープロファイルから Markets に移行し、マーチャントがマーケットごとに配送オプションを直接設定できるようになる。2027-07-01 までに全マーチャントへの展開が予定されており、Carrier Service API・Rate Calculation 拡張・デリバリープロファイル統合を持つアプリは既存インテグレーションの検証が必要。API 2026-07 以降で GraphQL Admin API 経由の設定が可能。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/next-generation-events-now-available-in-developer-preview" target="_blank" rel="noopener">Next Generation Events が開発者プレビューに — フィールドレベルのトリガー制御・カスタム GraphQL ペイロード・クエリベース配信フィルタを Webhook に追加</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/next-generation-events-now-available-in-developer-preview" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify の「Next Generation Events」が不安定版 API で開発者プレビューとして公開された。従来の Webhook が抱えていた過剰配信・固定ペイロード・変更フィールド特定不能の 3 つの課題を解決する設計で、フィールドレベルのトリガー制御・カスタム GraphQL クエリによるペイロード指定・配信フィルタ機能を備える。現在は Product と Customer トピックに対応しており、2026 年中に追加トピックが順次拡充される予定。unstable API バージョンで今すぐ試用可能。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.engineering/upgrading-checkout-blocks-app-to-polaris-web-components" target="_blank" rel="noopener">Shopify の Checkout Blocks アプリが Polaris Web Components へ移行完了 — React から Custom Elements へ段階的に移行する方法を解説</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.engineering/upgrading-checkout-blocks-app-to-polaris-web-components" class="source-link" target="_blank" rel="noopener">🔗 Shopify Engineering Blog</a>
+        </div>
+        <p>Shopify Engineering ブログが Checkout Blocks アプリを Polaris の React コンポーネントから Polaris Web Components（Custom Elements）へ移行した事例を公開した。フレームワーク非依存・バンドルサイズ削減・パフォーマンス向上を目的とした移行で、既存コードを段階的に置き換える手法と実際に遭遇した課題が詳しく解説されている。Checkout UI 拡張機能を React に依存して構築している開発者にとって将来の移行判断材料となる参考記事。</p>
+      </div>
+    </div>
+
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/" target="_blank" rel="noopener">Anthropic が Claude Opus 5.5 をリリース — Fable 5.1 と同等性能で約 40% コスト削減、30% 高速化を実現</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/" class="source-link" target="_blank" rel="noopener">🔗 TechCrunch</a>
+      </div>
+      <p>Anthropic が 9 月 22 日に Claude Opus 5.5 をリリースした。コンテキストウィンドウは 1M トークンで、多くのベンチマークで Fable 5.1 と同等以上の性能を示しつつ、Opus 5 比でコストが約 40% 削減・出力速度が 30% 向上している。API 価格は入力 $4/M トークン・出力 $20/M トークン・キャッシュ読み取り $0.20/M トークン。AWS・Google Cloud・Microsoft Azure でも利用可能。より少ないトークンとステップで同じタスクを完了する効率化が低コストの主な要因とされている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/" target="_blank" rel="noopener">OpenAI が GPT-6 Sol と Luna を同日リリース — Luna は入力 $0.10/M トークンの低コスト高速モデル、Sol は Astra 改良の中間ティア</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/" class="source-link" target="_blank" rel="noopener">🔗 TechCrunch</a>
+      </div>
+      <p>OpenAI が 9 月 22 日に GPT-6 Sol と GPT-6 Luna を同時リリースした。Luna は文書要約・情報抽出・定型 Q&amp;A など高ボリュームタスク向けの高速・低コストモデルで、入力 $0.10/M・出力 $0.50/M トークンと GPT-6 Astra の大幅低価格版。Sol は複数ステップのエージェント的コーディングや端末ワークフローに強く、GitHub Copilot にも追加された。GPT-6 ファミリーが Astra（9 月 4 日）→ Sol・Luna（9 月 22 日）と揃い、より幅広い用途への展開が進む。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cnbc.com/2026/09/15/open-ai-google-anthropic-safety.html" target="_blank" rel="noopener">OpenAI・Google・Anthropic が AI 安全標準化団体の設立に向け協議 — Dario Amodei のエッセイを契機にフロンティア AI の協調規制を模索</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cnbc.com/2026/09/15/open-ai-google-anthropic-safety.html" class="source-link" target="_blank" rel="noopener">🔗 CNBC</a>
+      </div>
+      <p>OpenAI・Google DeepMind・Anthropic の 3 社がフロンティア AI の安全標準を策定する業界団体の設立に向けた協議を数週間にわたり続けていることが明らかになった。Anthropic CEO Dario Amodei によるフロンティア AI 開発ペースの抑制を呼びかけるエッセイが契機となり、Sam Altman も第三者評価機関の社内組み込みで協調する意向を示した。Google DeepMind Demis Hassabis が 7 月に提唱した米国主導の「Standards Body」構想が具体化しつつある。</p>
+    </div>
+
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/" target="_blank" rel="noopener">Citrix NetScaler ADC/Gateway に RCE ゼロデイ 2 件（CVE-2026-88771・CVE-2026-88772）— 国家支援グループを含む攻撃者が世界規模で悪用、CISA が KEV 登録</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/" class="source-link" target="_blank" rel="noopener">🔗 BleepingComputer</a>
+      </div>
+      <p>Citrix が 9 月 27 日に NetScaler ADC および NetScaler Gateway の深刻な RCE ゼロデイ脆弱性 2 件を公開した。CVE-2026-88771（CVSS 9.5）は不正入力検証による未認証 RCE、CVE-2026-88772（同 9.5）は DTLS 有効時のメモリオーバーフロー RCE で、いずれもデフォルト設定環境に影響する。攻撃者は Web シェルを展開して侵入・永続化しており、パッチ適用後もバックドアが残存する可能性がある。CISA が即日 KEV カタログへ追加し、連邦機関に 3 日以内の対応を義務付けた。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/bulletins" target="_blank" rel="noopener">CISA が週次脆弱性ブレティンを廃止 — FY26 末（9 月 28 日）で終了、重大度ベースから「リスクベース」の脆弱性管理へ移行</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/bulletins" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA は長年発行してきた週次 Vulnerability Bulletin を 2026 年 9 月 28 日（FY26 末）をもって廃止した。重大度スコア（CVSS）に基づく一律アラートから、実際の悪用状況を重視したリスクベースの優先順位付けへ方針を転換するための措置。今後のユーザーは KEV カタログ・CISA サイバーセキュリティアラート・ベンダーセキュリティ情報を参照することが推奨され、CVE.org では新規脆弱性の記録が継続される。セキュリティチームは情報収集フローの見直しが必要。</p>
+    </div>
+
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/" target="_blank" rel="noopener">Amazon CloudWatch Omni が GA — AI 駆動のオブザーバビリティ体験でマルチアカウント・マルチクラウドのテレメトリを統合管理</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/" class="source-link" target="_blank" rel="noopener">🔗 AWS News Blog</a>
+      </div>
+      <p>AWS が Amazon CloudWatch を AI パワードのオブザーバビリティ体験「CloudWatch Omni」として一般提供（GA）開始した。複数 AWS アカウント・リージョンおよび他社クラウドにまたがるテレメトリを一元管理する「Space」機能を持ち、サービスを自動検出してデペンデンシーマップを生成、ゴールデンシグナルを自動的にサーフェスする。チームとアプリケーション中心に再設計されており、複雑なマルチアカウント環境での障害検知・根本原因分析を効率化する。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/" target="_blank" rel="noopener">AWS「What's Next」イベントで Amazon Quick・Amazon Connect AI エージェント群を発表 — サプライチェーン・採用・CX・ヘルスケア向けエージェント型 AI ソリューションを展開</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/" class="source-link" target="_blank" rel="noopener">🔗 AWS News Blog</a>
+      </div>
+      <p>AWS の「What's Next with AWS 2026」イベントで、業務向け AI アシスタント「Amazon Quick」（デスクトップアプリ＋拡張統合）と、Amazon Connect の 4 つのエージェント型 AI ソリューション（サプライチェーン・採用・カスタマーエクスペリエンス・ヘルスケア）が発表された。また近日提供予定の「AWS Context」は既存データ間のリレーションを自動的にナレッジグラフへマッピングし、AI エージェントが実行時にガバナンスされたデータ関係・ビジネスルールへアクセスできるようにする。</p>
+    </div>
+
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog/node-js-20-is-being-deprecated" target="_blank" rel="noopener">Vercel が Node.js 20 のサポートを 10 月 1 日に終了 — プロジェクト設定から選択不可に、Node.js 22 への移行を推奨</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog/node-js-20-is-being-deprecated" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Vercel が 2026 年 4 月 30 日に EOL（サポート終了）を迎えた Node.js 20 の Builds および Functions 向けサポートを 2026-10-01 に廃止した。この日以降、プロジェクト設定から Node.js 20 を選択できなくなる。現在 Node.js 20 を使用しているプロジェクトは Node.js 22 への移行が必要で、依存パッケージの互換性確認と設定変更を行うことが推奨される。Next.js・Turborepo・Vercel AI SDK も同日に更新されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise/" target="_blank" rel="noopener">GitHub Copilot に HydraFusion と GPT-6.1 Sol を追加 — マルチモデルオーケストレーションと高性能エージェント型コーディングモデルが利用可能に</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub Copilot に複数モデルを単一・カスケード・クリティークワークフローでオーケストレーションする「HydraFusion」が VS Code 1.140 以降および GitHub Copilot アプリで利用可能になった。OpenAI の GPT-6.1 Sol もエージェント型コーディングおよびターミナルワークフロー向けモデルとして GA 追加された。また 10 月 22 日より Copilot Business・Enterprise 向けに一般提供済み機能のデフォルト有効化ポリシーが適用されるため、企業管理者は事前のポリシー確認が必要。</p>
+    </div>
+
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-09-18-upcoming-deprecation-of-selected-github-copilot-models-in-mid-october/" target="_blank" rel="noopener">GitHub Copilot の一部モデルが 10 月 19 日に廃止予定 — Copilot Business・Enterprise は 10 月 1 日より先払い課金方式へ移行</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-09-18-upcoming-deprecation-of-selected-github-copilot-models-in-mid-october/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub が 10 月 19 日に Copilot の一部モデルを全 Copilot 体験から廃止することを予告した。対象モデルを利用しているユーザーは代替モデルへの切り替えが必要。また Copilot Business・Enterprise ではクレジットカードまたは PayPal 決済の既存顧客に対し、2026-10-01 よりシート料金の先払い課金方式が導入される。課金・ポリシー変更が重なるため、Copilot を利用する開発組織は管理者による設定確認と予算計画の見直しが推奨される。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-10-02 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

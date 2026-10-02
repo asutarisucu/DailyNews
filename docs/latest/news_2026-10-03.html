@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-10-03</title>
+  <meta name="description" content="2026-10-03 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-10-03</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-10-03 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>13件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/blog/next-generation-events-are-now-generally-available" target="_blank" rel="noopener">Next Generation Events が 2026-10 API で正式 GA — Classic Webhook の後継、18 トピック対応でフォローアップ API コール不要</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/blog/next-generation-events-are-now-generally-available" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Blog</a>
+        </div>
+        <p>2026-10 API バージョンで Next Generation Events が一般提供（GA）となった。Classic Webhook の後継として、Product・Customer・Order・Collection・Inventory など 18 トピックに対応する。開発者は受け取りたい変更を宣言し、GraphQL クエリでペイロードをカスタマイズでき、Classic Webhook で必要だったフォローアップ API コールが不要になる。Shopify CLI v4.83 以上を使って既存 Webhook ワークフローを段階的に移行可能。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/online-store-script-tags-deprecation" target="_blank" rel="noopener">scriptTagCreate / scriptTagUpdate ミューテーションが 10 月 1 日から廃止 — 2027 年 3 月 1 日にストアフロント注入も完全停止</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/online-store-script-tags-deprecation" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>2026 年 10 月 1 日から scriptTagCreate・scriptTagUpdate ミューテーションと ScriptTag REST Admin API への POST/PUT がユーザーエラーを返すようになった。2027 年 3 月 1 日には Shopify がストアフロントへの Script Tags の注入を完全に停止する。代替手段として App Blocks・Custom Pixel・Web Pixel へ移行することが推奨されており、既存アプリの対応状況を早急に確認する必要がある。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/posts/discounts-can-now-be-included-in-rollouts" target="_blank" rel="noopener">Discounts が Rollouts に含められるように — Admin GraphQL API 2026-10 で read-only の rollouts connection 追加</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/posts/discounts-can-now-be-included-in-rollouts" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Admin GraphQL API バージョン 2026-10 で、Discount タイプ全体に read-only の rollouts connection が追加された。ディスカウントを読み取るアプリは Discount.rollouts フィールドを使って Rollout 主導のスケジュールとバイヤーリーチを既存のディスカウントフィールドと合わせて参照できるようになる。Rollout ベースのプロモーション戦略との統合精度が向上する。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/posts/market-driven-shipping-now-available-in-feature-preview" target="_blank" rel="noopener">Market-driven shipping が機能プレビューで提供開始 — マーケットごとに独立した配送設定が可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/posts/market-driven-shipping-now-available-in-feature-preview" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify が Market-driven shipping を機能プレビューとして提供開始した。各マーケットで独立した配送ゾーン・料金・キャリア設定を構成できるようになり、グローバル展開するストアの配送戦略を地域ごとに最適化できる。現在は機能プレビュー段階であり、正式 GA までの間は設定変更が生じる可能性がある。</p>
+      </div>
+    </div>
+
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/10/google-rolls-out-gemini-4-argon-to.html" target="_blank" rel="noopener">Google Gemini 4 Argon リリース — サイバーセキュリティ企業向けに限定展開、入力 $2/M トークンの導入価格</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/10/google-rolls-out-gemini-4-argon-to.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>Google が最新フロンティアモデル Gemini 4 Argon を 2026 年 10 月 1 日にリリースした。ソフトウェアエンジニアリング・法務・財務・サイバーセキュリティ防御などの高度なタスクを想定した設計で、まず Google の Fairwind プログラムを通じた信頼された防衛者向けに先行展開される。導入価格は入力 $2/M トークン・出力 $10/M トークン（キャッシュ入力は 95% 割引）。一般向け開発者・エンタープライズ・コンシューマーへの展開は今後順次予定されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise/" target="_blank" rel="noopener">GitHub Copilot に GPT-6.1 Sol と Claude Sonnet 5.5 が GA — HydraFusion が VS Code 1.140+ に拡大</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GPT-6.1 Sol がアジェンティックコーディングとターミナルワークフロー向けに GitHub Copilot で正式 GA となり、Pro+・Max・Business・Enterprise ユーザーが VS Code・Visual Studio・Copilot CLI などで利用できるようになった。Claude Sonnet 5.5 も Pro 以上の全プランで GA。複数モデルを単一・カスケード・批評ワークフローで統合する HydraFusion が VS Code 1.140+ と GitHub Copilot アプリに拡大し、各ステップへの可視性が強化された。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.unite.ai/meta-open-sources-muse-gadget-sdks-for-diy-ai-hardware-devices/" target="_blank" rel="noopener">Meta、Muse AI エージェント向けガジェット SDK を Apache 2.0 でオープンソース公開 — Muse Home Link USB-C デバイスも無償配布</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.unite.ai/meta-open-sources-muse-gadget-sdks-for-diy-ai-hardware-devices/" class="source-link" target="_blank" rel="noopener">🔗 Unite.AI</a>
+      </div>
+      <p>Meta が 2026 年 10 月 2 日に Muse AI エージェントを DIY ハードウェアデバイスに組み込むための ESP32 ファームウェアと Linux SDK を Apache 2.0 ライセンスで公開した。リポジトリは facebookincubator/muse-gadget-sdk に esp32・linux・skills ディレクトリで構成される。スマートホームデバイス（TV・スピーカーなど）を Muse に接続する USB-C デバイス「Muse Home Link」は米国限定で Muse サブスクリプション有効ユーザーに無償提供される。</p>
+    </div>
+
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-citrix-netscaler-zero-day-to-deploy-web-shells/" target="_blank" rel="noopener">Citrix NetScaler ゼロデイ CVE-2026-88771/88772（CVSS 9.5）が世界規模で悪用 — Web シェル展開・認証情報窃取を国家支援アクターが実施</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-citrix-netscaler-zero-day-to-deploy-web-shells/" class="source-link" target="_blank" rel="noopener">🔗 BleepingComputer</a>
+      </div>
+      <p>CVE-2026-88771（認証なしのリモートコマンド実行、デフォルト設定で影響）と CVE-2026-88772（DTLS 有効環境でのメモリオーバーフロー、VPN サーバーのデフォルト設定で影響）がゼロデイとして世界的に悪用されている。攻撃者は WHIPSHOT・SLAPSHOT ツールを使用して Web シェルとトンネリングマルウェアを展開し、内部ネットワークへ横展開していることが Mandiant と Google Threat Intelligence Group によって確認された。CISA は 9 月 30 日までの連邦機関への緊急パッチ適用を命令した。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/10/01/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank" rel="noopener">CISA KEV に Fortinet FortiMail パストラバーサル CVE-2026-104286 を追加 — 10 月 1 日付、実際の悪用証拠に基づく</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/10/01/cisa-adds-one-known-exploited-vulnerability-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA が 2026 年 10 月 1 日に Fortinet FortiMail のパストラバーサル脆弱性 CVE-2026-104286 を Known Exploited Vulnerabilities（KEV）カタログに追加した。実際の悪用証拠に基づく追加であり、連邦機関は BOD 22-01 の定めに従って優先的なパッチ適用が義務付けられる。Fortinet FortiMail を運用している組織は公式アドバイザリを確認し速やかな修正対応を実施することが推奨される。</p>
+    </div>
+
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://docs.cloud.google.com/release-notes" target="_blank" rel="noopener">Google Cloud Network Insights が AWS・Azure モニタリングバンドルを CLI 経由でダウンロード可能に — マルチクラウド監視を一元化</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://docs.cloud.google.com/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Release Notes</a>
+      </div>
+      <p>2026 年 10 月 1 日から Cloud Network Insights が Google Cloud CLI コマンドを使って Amazon Web Services および Microsoft Azure のモニタリングポイントインストールバンドルをダウンロードできるようになった。これによりマルチクラウド環境のネットワーク監視を Google Cloud コンソールから一元的に構成・管理しやすくなる。既存の Cloud Network Insights ユーザーは CLI の最新バージョンへのアップデートで新機能を利用可能。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes" target="_blank" rel="noopener">Azure Defender for Cloud — Foundational CSPM が 10 月 27 日からオプトインモデルに移行、新規サブスクリプションはデフォルト無効化</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Microsoft Docs</a>
+      </div>
+      <p>2026 年 10 月 27 日から Foundational CSPM が新規 Azure サブスクリプションではデフォルトで有効にならなくなる。既存の Azure サブスクリプションと AWS・GCP 環境は変更の影響を受けない。継続的なクラウドセキュリティ体制管理に Foundational CSPM を利用しているチームは、新規サブスクリプションを作成する前に手動でオプトイン設定を行うプロセスを組み込む必要がある。</p>
+    </div>
+
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog/node-js-20-is-being-deprecated" target="_blank" rel="noopener">Vercel が Node.js 20 を 10 月 1 日から廃止 — Project Settings でエラー表示、Node.js 22 以上への移行が必須</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog/node-js-20-is-being-deprecated" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Node.js 20 が 2026 年 4 月 30 日に End of Life を迎えたことを受け、Vercel は 2026 年 10 月 1 日から Builds および Functions での Node.js 20 を Project Settings で無効化した。Node.js 20 を使用している既存プロジェクトは新規デプロイ時にエラーが表示される。Node.js 22 以上への移行作業を完了していないプロジェクトは早急に対応が必要で、Vercel のドキュメントに移行ガイドが提供されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-09-18-upcoming-deprecation-of-selected-github-copilot-models-in-mid-october/" target="_blank" rel="noopener">GitHub Copilot が 10 月 19 日に旧世代 Gemini・Claude モデルを廃止 — GPT-6.1 Sol / Claude Sonnet 5.5 への移行を推奨</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-09-18-upcoming-deprecation-of-selected-github-copilot-models-in-mid-october/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>2026 年 10 月 19 日に旧世代の Gemini および Claude モデルが GitHub Copilot の全エクスペリエンスで廃止される。現在利用可能な GPT-6.1 Sol と Claude Sonnet 5.5 が後継モデルとして提供されており、機能同等以上のパフォーマンスが確認されている。廃止前にプロジェクトやワークフローでのモデル設定を確認し、必要に応じて新モデルへの切り替えを実施することが推奨される。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-10-03 07:00 JST 更新 | 全13件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-10-03</title>
+  <meta name="description" content="2026-10-03 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-10-03</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-10-03 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>16件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/blog/next-generation-events-are-now-generally-available" target="_blank" rel="noopener">Next Generation Events が 2026-10 API で GA — カスタムペイロード付きの細粒度 Webhook が正式提供開始</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/blog/next-generation-events-are-now-generally-available" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Blog</a>
+        </div>
+        <p>2026-10 API バージョンから Next Generation Events が一般提供（GA）となった。従来の Webhook に比べ、受信するイベントの種類とペイロードに含まれるフィールドを開発者が細かく選択できるため、不要なデータ受信を減らしリアルタイム性を向上させられる。すでに開発者プレビューで利用していた場合は引き続きそのまま使用可能で、移行作業は不要。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/release-notes/2026-10" target="_blank" rel="noopener">SubscriptionContractCalculation が SubscriptionDraft を置き換え — calculate → poll → commit のステートレスな新フローへ移行</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/release-notes/2026-10" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog 2026-10</a>
+        </div>
+        <p>GraphQL Admin API 2026-10 に SubscriptionContractCalculation が追加され、複数ステップの Draft ワークフローに代わる後継として位置づけられた。新フローは「計算（calculate）→ ポーリング（poll）→ コミット（commit）」の3段階で構成され、サーバーに中間状態を保存しないステートレスな設計となっている。SubscriptionDraft は依然使用可能だが将来的な廃止が予告されているため、新規実装では SubscriptionContractCalculation を採用することが推奨される。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/release-notes/2026-10" target="_blank" rel="noopener">ProductVariant に barcodes 接続が追加 — 最大20件のタイプ付きバーコードに対応し ProductVariant.barcode は非推奨へ</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/release-notes/2026-10" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog 2026-10</a>
+        </div>
+        <p>2026-10 API から ProductVariant に barcodes 接続フィールドが追加され、GTIN・UPC・EAN などタイプ付きのバーコードをバリアント1件につき最大20件登録・取得できるようになった。従来の ProductVariant.barcode フィールドは非推奨となり、barcodes 接続の先頭エントリを返すだけになるため、複数バーコードを管理しているインテグレーションは早めの移行が必要。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/release-notes/2026-10" target="_blank" rel="noopener">2026-10 の破壊的変更まとめ — メタフィールドフィルターのエラー化・OrderDisplayFulfillmentStatus 新値追加など</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/release-notes/2026-10" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog 2026-10</a>
+        </div>
+        <p>2026-10 には複数の破壊的変更が含まれる。フィルタリング非対応のメタフィールドを絞り込み条件に使用するとエラーが返されるようになったため、事前に対象クエリの確認が必要。またフルフィルメント不要な注文で OrderDisplayFulfillmentStatus に FULFILLMENT_NOT_REQUIRED が返されるようになり、ステータスを網羅的に処理しているコードは対応が必須。PriceRule 関連型の完全削除や POS UI Extensions の staffMemberId 削除も含まれる。</p>
+      </div>
+    </div>
+
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://futurumgroup.com/insights/google-returns-to-the-frontier-with-gemini-4-argon/" target="_blank" rel="noopener">Google Gemini 4 Argon 発表 — AutomationBench で 51.3% を達成しフロンティアモデルに返り咲き</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://futurumgroup.com/insights/google-returns-to-the-frontier-with-gemini-4-argon/" class="source-link" target="_blank" rel="noopener">🔗 Futurum Group</a>
+      </div>
+      <p>Google が新たなフロンティアモデル Gemini 4 Argon を発表した。ソフトウェアエンジニアリング・法務・財務・サイバーセキュリティなど複雑タスクを対象とし、AutomationBench では 51.3% を記録して1位となった。DeepSWE v1.1 では 77.9%、LVBench では 91.7% と複数ベンチマークで最高水準を達成。入力 $2/百万トークン・出力 $10/百万トークンで、まず信頼済みサイバー防衛者とpaid APIユーザー向けに順次展開される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.thurrott.com/a-i/anthropic/342139/anthropic-releases-claude-sonnet-5-5" target="_blank" rel="noopener">Anthropic が Claude Sonnet 5.5 をリリース — 前世代比30%高速化・最大30%コスト削減でAPIとBedrock対応</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.thurrott.com/a-i/anthropic/342139/anthropic-releases-claude-sonnet-5-5" class="source-link" target="_blank" rel="noopener">🔗 Thurrott.com</a>
+      </div>
+      <p>Anthropic は 2026年9月28日に Claude Sonnet 5.5（claude-sonnet-5-5）をリリースした。前世代の Sonnet 5 と比べ処理速度が30%以上向上し、多くのワークロードでコストも最大30%削減できる。料金は入力 $2・出力 $10/百万トークンで据え置き。Claude API・Amazon Bedrock・Google Cloud・Microsoft Foundry の各プラットフォームで利用可能。次のリリースとして Haiku 5.5 が予告されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cellcog.ai/blog/claude-sonnet-5-5-release-date/" target="_blank" rel="noopener">Anthropic が Claude Opus 5.5 を正式提供開始 — Fable 5.1 水準の性能を Opus 5 比で約40%低コストで実現</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cellcog.ai/blog/claude-sonnet-5-5-release-date/" class="source-link" target="_blank" rel="noopener">🔗 CellCog AI</a>
+      </div>
+      <p>Anthropic は 2026年9月22日に Claude Opus 5.5 をリリースした。Fable 5.1 に匹敵するパフォーマンスを持ちながら、典型的なワークロードでは Opus 5 比で約40%安く運用できるとされる。料金は入力 $4・出力 $20/百万トークン。重量タスクにおける費用対効果が向上し、エンタープライズでの採用拡大が見込まれる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://news.filehippo.com/2026/10/october-3rd-tech-news-roundup-windows-11-26h2-update-released-microsoft-denies-rumors-about-selling-the-xbox-brand-openai-launches-dots-ai-agents/" target="_blank" rel="noopener">OpenAI DevDay 2026 — Dots AI エージェント・GPT-6.1 Sol・クラウド版 Codex・エージェント API が一斉発表</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://news.filehippo.com/2026/10/october-3rd-tech-news-roundup-windows-11-26h2-update-released-microsoft-denies-rumors-about-selling-the-xbox-brand-openai-launches-dots-ai-agents/" class="source-link" target="_blank" rel="noopener">🔗 FileHippo News</a>
+      </div>
+      <p>OpenAI DevDay 2026 にて複数の新製品と機能が発表された。Dots AI エージェントはビジネスワークフローの自動化を担う新ツール群で、GPT-6.1 Sol は Astra に近い性能をより低コストで提供する。クラウドベースの Codex はコーディング補助として強化されており、新しいエージェント API・ChatGPT Spaces など開発者向けの機能も充実した。</p>
+    </div>
+
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway" target="_blank" rel="noopener">Citrix NetScaler ADC/Gateway に RCE ゼロデイ8件 — CVE-2026-88771/88772 が KEV 登録・世界規模で悪用中</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA は Citrix NetScaler ADC および NetScaler Gateway に影響する8件の新規脆弱性を公開した。このうち CVE-2026-88771 と CVE-2026-88772 は単独でリモートコード実行（RCE）を可能にするクリティカルなゼロデイ脆弱性で、CISA の Known Exploited Vulnerabilities カタログに追加された。脅威アクターが世界規模で悪用していることが確認されており、影響を受ける製品を運用する組織は直ちにパッチ適用を行う必要がある。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/10/01/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank" rel="noopener">CISA が Fortinet FortiMail の CVE-2026-104286 を KEV に追加 — パス・トラバーサル脆弱性が活発に悪用</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/10/01/cisa-adds-one-known-exploited-vulnerability-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA は 2026年10月1日、Fortinet FortiMail のパス・トラバーサル脆弱性 CVE-2026-104286 を Known Exploited Vulnerabilities（KEV）カタログに追加した。活発な悪用が証拠に基づいて確認されており、連邦機関は BOD 26-04 に従い規定期限内のパッチ適用が義務付けられる。FortiMail を運用している組織は直ちにベンダーアドバイザリを確認し、修正バージョンへのアップグレードを優先することが強く推奨される。</p>
+    </div>
+
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://docs.cloud.google.com/release-notes" target="_blank" rel="noopener">Google Cloud Network Insights が Azure・AWS のモニタリングポイントに対応 — 10月1日リリース</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://docs.cloud.google.com/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Release Notes</a>
+      </div>
+      <p>2026年10月1日のアップデートで Google Cloud Network Insights が Azure および AWS のモニタリングポイントインストールバンドルを gcloud CLI からダウンロードできるようになった。これによりマルチクラウド環境でのネットワーク監視が統合的に行えるようになり、異なるクラウドプロバイダー間のパフォーマンス分析と障害調査が効率化される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://tech-insider.org/microsoft-defender-for-cloud-setup-2026/" target="_blank" rel="noopener">Microsoft Defender for Cloud の Foundational CSPM が10月27日からオプトインモデルへ移行</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://tech-insider.org/microsoft-defender-for-cloud-setup-2026/" class="source-link" target="_blank" rel="noopener">🔗 Tech Insider</a>
+      </div>
+      <p>Microsoft は 2026年10月27日から、新規作成の Azure サブスクリプションにおける Foundational CSPM をオプトインモデルに切り替えると発表した。有効化方法に関わらず料金は引き続き $0 のまま据え置かれる。既存サブスクリプションへの影響はないが、新規環境を構成する際は明示的に有効化が必要になるため、デプロイスクリプトや IaC テンプレートの見直しが推奨される。</p>
+    </div>
+
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog/node-js-20-is-being-deprecated" target="_blank" rel="noopener">Vercel が Node.js 20 を10月1日から廃止、GitHub Actions も9月23日にランナーから削除 — Node.js 24 への移行が必須</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog/node-js-20-is-being-deprecated" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Vercel は 2026年4月30日に EOL となった Node.js 20 のサポートを10月1日をもって終了し、プロジェクト設定から選択不可となった。GitHub Actions も9月23日のランナー更新で Node.js 20 を削除し、JavaScript アクションの実行環境が Node.js 24 に移行された。現在も Node.js 20 を指定しているプロジェクトは新規デプロイ時にエラーが発生するため、速やかに Node.js 22 または 24 へ移行する必要がある。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.npmjs.com/package/@vercel/node" target="_blank" rel="noopener">@vercel/node 13.0.1 リリース — Next.js・v0-sdk・Workflow SDK など複数パッケージが10月3日に一斉更新</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.npmjs.com/package/@vercel/node" class="source-link" target="_blank" rel="noopener">🔗 npm</a>
+      </div>
+      <p>2026年10月3日に Vercel のエコシステムが一斉更新された。@vercel/node 13.0.1 が npm に公開されたほか、Next.js・v0-sdk・Workflow SDK を含む複数のリポジトリでコミットが入っている。Node.js 20 廃止に合わせたランタイム整合性の確保が主な背景と見られ、プロジェクトの依存関係を最新版に保つことが推奨される。</p>
+    </div>
+
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://news.filehippo.com/2026/10/october-3rd-tech-news-roundup-windows-11-26h2-update-released-microsoft-denies-rumors-about-selling-the-xbox-brand-openai-launches-dots-ai-agents/" target="_blank" rel="noopener">Windows 11 26H2 リリース — スクロール対応の新スタートメニューとタスクバーの位置変更に対応</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://news.filehippo.com/2026/10/october-3rd-tech-news-roundup-windows-11-26h2-update-released-microsoft-denies-rumors-about-selling-the-xbox-brand-openai-launches-dots-ai-agents/" class="source-link" target="_blank" rel="noopener">🔗 FileHippo News</a>
+      </div>
+      <p>Microsoft が Windows 11 26H2 を正式リリースした。以前のバージョンより迅速にインストールできる軽量な Enablement Package として提供され、すべてのアプリが一覧できるスクロール対応の新しいスタートメニューと、画面の任意の辺に移動できるカスタマイズ可能なタスクバーが新機能の目玉。Microsoft は Xbox ブランド売却の噂を公式に否定した。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://tech.yahoo.com/" target="_blank" rel="noopener">Apple が AI エージェントからの Mac データアクセスを制限強化 — Full Disk Access に明示的な許可操作が必要に</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://tech.yahoo.com/" class="source-link" target="_blank" rel="noopener">🔗 Yahoo Tech</a>
+      </div>
+      <p>Apple が AI エージェントやサードパーティアプリによる Mac データへのアクセス管理を強化した。Full Disk Access を取得するにはユーザーがより明示的な操作を行う必要があり、広範な権限を求める AI エージェントに対するプライバシーリスクへの対応が背景にある。増加する AI エージェントの普及を踏まえ、プライバシー保護の観点からデータアクセス制御の強化が進んでいる。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-10-03 07:00 JST 更新 | 全16件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

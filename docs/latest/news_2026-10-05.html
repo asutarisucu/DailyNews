@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-10-05</title>
+  <meta name="description" content="2026-10-05 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-10-05</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-10-05 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>16件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/blog/next-generation-events-are-now-generally-available" target="_blank" rel="noopener">Next Gen Events が 2026-10 で正式 GA — 18 トピック対応、宣言的フィールド指定でフォローアップ API 呼び出し不要に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/blog/next-generation-events-are-now-generally-available" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Blog</a>
+        </div>
+        <p>Shopify は 2026-10 API バージョンとともに Next Gen Events を正式一般提供（GA）とした。Product・Customer・Order・Collection・Inventory・Content など 18 トピックにわたって、アプリが受け取りたい変更内容と必要なデータを GraphQL クエリで宣言し、単一ペイロードに収められるようになった。クラシック Webhook では必要だった後続の API 呼び出しが不要となり、開発・運用コストの大幅削減が期待される。Shopify CLI 4.83 以降でイベント API バージョンを 2026-10 に設定することで利用開始できる。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/release-notes/2026-10" target="_blank" rel="noopener">2026-10 API リリースノート — 注文税再計算・メタフィールドフィルターエラー修正・Customer Account API の checkout フィールド削除</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/release-notes/2026-10" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify の 2026-10 API リリースノートが公開された。注文の配送先住所を更新すると税額が自動再計算されるようになり、メタフィールドフィルターのエラーが修正された。また Customer Account API から非推奨だった Customer.lastIncompleteCheckout フィールドおよびアクセス不能だった Checkout 型のサブツリーが削除されており、既存アプリは影響確認が必要。2026-10 は 10 月 1 日に安定版となった。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/release-notes/2026-10" target="_blank" rel="noopener">SubscriptionContractCalculation が SubscriptionDraft の後継として GA — ステートレスな calculate→poll→commit ライフサイクルへ移行</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/release-notes/2026-10" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Admin GraphQL API の 2026-10 版で SubscriptionContractCalculation が GA となり、従来の SubscriptionDraft を置き換える。旧来のマルチステップドラフトワークフローからステートレスな calculate → poll → commit ライフサイクルに変わり、Shopify チェックアウトエンジン経由でサブスクリプションの変更を処理できるようになった。サブスクリプション管理アプリを運用している開発者は早期移行計画を立てることが推奨される。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Admin GraphQL API に Rollouts クエリ・Webhook 追加 — ロールアウトへのディスカウント適用もサポート</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify の Admin GraphQL API に Rollouts クエリと Rollouts 向け Webhook が追加された。さらに Discounts を Rollouts に紐付けられるようになり、段階的なロールアウト中でも割引の適用制御が可能になった。新旧ストアバージョン間での価格・プロモーション戦略のテストや展開をプログラム的に管理したいデベロッパーにとって有用な拡張となる。</p>
+      </div>
+    </div>
+
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cnbc.com/2026/10/02/tech-download-google-argon-frontier-openai-anthropic.html" target="_blank" rel="noopener">Google DeepMind が Gemini 4 Argon を発表 — 長期コーディング・法務・金融・サイバー防衛に特化したフロンティアモデル</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cnbc.com/2026/10/02/tech-download-google-argon-frontier-openai-anthropic.html" class="source-link" target="_blank" rel="noopener">🔗 CNBC</a>
+      </div>
+      <p>Google DeepMind が新フロンティアモデル Gemini 4 Argon を発表した。長期コーディング・法務・金融業務・サイバー防衛を主要ユースケースとして設計されており、まず信頼できる防御担当者と政府の事前リリースプログラムに展開される。OpenAI や Anthropic との競争がフロンティアモデル領域で激化する中、Google がコーディングと専門業務向けで優位性を主張する形となった。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-1-2026/" target="_blank" rel="noopener">OpenAI の Dots エージェントが「連続監視＋承認フロー」モデルに進化 — 重要なアクションには確認が必要</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-1-2026/" class="source-link" target="_blank" rel="noopener">🔗 The Neuron</a>
+      </div>
+      <p>OpenAI の Dots エージェントが業務の継続的監視を行いつつ、重要なアクションを実行する前にユーザーの確認を求めるモデルへと進化した。自律性を高めながらも人間のオーバーサイトを維持するアーキテクチャで、エンタープライズ向けエージェント AI の信頼性確保に向けた設計上のアプローチとして注目されている。同時に OpenAI は安全基準を満たさないとして近日公開予定だったモデル 1 件のリリースを取りやめた。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/news" target="_blank" rel="noopener">Anthropic が IPO に向け始動 — 10 月 14 日に機関投資家向け説明会、11 月中旬上場を目指す</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/news" class="source-link" target="_blank" rel="noopener">🔗 Anthropic</a>
+      </div>
+      <p>Anthropic が早ければ 11 月中旬の IPO（新規上場）を目指し、10 月 14 日に選定された機関投資家をサンフランシスコ本社に招いた説明会を開催する予定であることが明らかになった。また同社はエンタープライズ AI の人材不足に対処するため 1 億ドルを投じてエンジニア 1 万人の育成プログラムを開始することも発表した。AI スタートアップとしては異例の規模での上場準備が業界の注目を集めている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">OpenAI と Google がフロンティアモデル監査フレームワークを共同提出 — AI 安全性の標準化に向け異例のタッグ</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aiweekly.co/ai-news-today" class="source-link" target="_blank" rel="noopener">🔗 AI Weekly</a>
+      </div>
+      <p>OpenAI と Google が「Frontier Model Auditing Framework」を標準化団体に共同提出した。次世代モデルのリスクを評価するサードパーティ監査の標準的な方法論を定めるもので、AI 大手 2 社が安全基準の共通化で異例の協調を示した。Anthropic は今回の共同提出には参加していないが、フロンティアモデルの監査実績を持つ組織として連携が期待されている。</p>
+    </div>
+
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway" target="_blank" rel="noopener">Citrix NetScaler ADC / Gateway にクリティカルなゼロデイ 8 件 — CVE-2026-88771/72 が KEV 登録、リモートコード実行が可能</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA は Citrix NetScaler ADC および NetScaler Gateway に影響する 8 件の新脆弱性（CVE-2026-88771〜88778）を公表した。このうち CVE-2026-88771 と CVE-2026-88772 は単独でリモートコード実行を可能にするクリティカルなゼロデイであり、CISA の Known Exploited Vulnerabilities カタログへ登録された。連邦機関は期限内のパッチ適用が義務付けられており、民間組織にも早急な対処が推奨されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/10/01/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank" rel="noopener">Fortinet FortiMail にパストラバーサル脆弱性 CVE-2026-104286 が CISA KEV に追加 — 積極的悪用を確認</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/10/01/cisa-adds-one-known-exploited-vulnerability-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA が Fortinet FortiMail のパストラバーサル脆弱性 CVE-2026-104286 を Known Exploited Vulnerabilities カタログへ追加した（2026 年 10 月 1 日）。野生での積極的な悪用が確認されており、FortiMail を運用している組織は至急パッチ適用状況を確認する必要がある。Fortinet 製品を狙った攻撃は継続的に増加しており、アップグレードロードマップの見直しも推奨される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/10/02/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">Zammad の 2 件の脆弱性が CISA KEV 登録 — セッション固定と不適切な権限管理が悪用済み</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/10/02/cisa-adds-two-known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA が Zammad のセッション固定脆弱性 CVE-2026-102489 と不適切な権限管理脆弱性 CVE-2026-102490 の 2 件を Known Exploited Vulnerabilities カタログへ登録した（2026 年 10 月 2 日）。オープンソースのカスタマーサポートプラットフォームである Zammad を使用している組織は、最新バージョンへのアップグレードを最優先で実施することが推奨される。</p>
+    </div>
+
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.ciodive.com/news/aws-google-link-cloud-products/806705/" target="_blank" rel="noopener">AWS と Google Cloud がマルチクラウド相互接続を正式発表 — 100Gbps 専用リンク GA、Azure も 2026 年中に参加予定</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.ciodive.com/news/aws-google-link-cloud-products/806705/" class="source-link" target="_blank" rel="noopener">🔗 CIO Dive</a>
+      </div>
+      <p>AWS と Google Cloud が共同マルチクラウドネットワーキングソリューションを正式発表した。AWS VPC から Google Cloud VPC への専用低レイテンシリンクを最大 100Gbps でプロビジョニングできる AWS Interconnect が GA となり、エンタープライズのマルチクラウド環境における帯域幅とレイテンシが大幅に改善される。Microsoft Azure も 2026 年中のサービス参加を予定しており、クラウド 3 強によるシームレスな相互接続エコシステムの形成が進んでいる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes" target="_blank" rel="noopener">Azure Defender for Cloud の Foundational CSPM が 10 月 27 日からオプトインモデルへ移行 — 新規サブスクリプションでのデフォルト有効化が廃止</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Microsoft Learn</a>
+      </div>
+      <p>Microsoft は 2026 年 10 月 27 日以降、Azure Defender for Cloud の Foundational CSPM（クラウドセキュリティポスチャ管理）を新規 Azure サブスクリプションでデフォルト有効にしないオプトインモデルへ移行すると発表した。既存のサブスクリプションへの影響はないが、新規環境でセキュリティポスチャ管理を継続利用する場合は明示的に有効化が必要となる。クラウドセキュリティ担当者はプロビジョニング手順の見直しが必要となる。</p>
+    </div>
+
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://nodesource.com/blog/vercel-github-actions-ending-nodejs-20-support" target="_blank" rel="noopener">Vercel が Node.js 20 サポートを 10 月 1 日に終了 — 新規デプロイでエラーが発生、Node.js 24 がデフォルトに</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://nodesource.com/blog/vercel-github-actions-ending-nodejs-20-support" class="source-link" target="_blank" rel="noopener">🔗 NodeSource</a>
+      </div>
+      <p>Vercel は 2026 年 10 月 1 日付けで Node.js 20 を Builds と Functions の対象から外した。Node.js 20 を指定しているプロジェクトは新規デプロイ時にエラーが発生するため、Node.js 22（LTS）もしくはデフォルトとなった Node.js 24 への移行が必要。GitHub Actions も 9 月 23 日に Node.js 20 ランナーを削除しており、JavaScript アクションは Node.js 24 へ移行済み。プロジェクトの package.json や engines フィールドの確認が推奨される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.com/denoland" target="_blank" rel="noopener">Deno ツールチェーン更新 — deno_doc・dnt ともに 10 月 1 日付けでアップデート、本体も 9 月 30 日に更新</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.com/denoland" class="source-link" target="_blank" rel="noopener">🔗 Deno GitHub</a>
+      </div>
+      <p>Deno のエコシステムが 9 月末〜10 月初旬に集中更新された。ドキュメント生成ツール deno_doc と npm パッケージビルドツール dnt が 10 月 1 日にアップデートされ、Deno 本体も 9 月 30 日に更新された。また Vercel CLI v62.2.0 が公開されており、vercel-deno 連携ユーザーへの恩恵も含まれる。Deno プロジェクトを運用している開発者はリリースノートを確認して最新版への移行を検討することが推奨される。</p>
+    </div>
+
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://en.wikipedia.org/wiki/Googlebook" target="_blank" rel="noopener">Google が Chromebook の後継「Googlebook」を米国・カナダ・欧州で正式発売 — Android ベースの新ラップトップ標準</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://en.wikipedia.org/wiki/Googlebook" class="source-link" target="_blank" rel="noopener">🔗 Wikipedia</a>
+      </div>
+      <p>Google は Chromebook の後継プラットフォームとなる「Googlebook」を 2026 年 10 月 4 日（米国）・10 月 5 日（カナダ・英国・アイルランド・フランス・ドイツ・オーストラリア）に正式発売した。Googlebook OS は Android ベースで設計されており、2026 年 5 月 12 日の発表から約 5 か月での製品化となる。Chrome OS から Android エコシステムへの移行を進める Google の戦略的転換を示す製品リリースとなった。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-10-05 07:00 JST 更新 | 全16件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

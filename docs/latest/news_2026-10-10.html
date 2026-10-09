@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-10-10</title>
+  <meta name="description" content="2026-10-10 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-10-10</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-10-10 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>15件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/next-generation-events-are-now-generally-available" target="_blank" rel="noopener">次世代 Events API が GA — 2026-10 バージョンで 18 トピックをカバー、従来 Webhook の後継として本格採用可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/next-generation-events-are-now-generally-available" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify の次世代イベントシステム「Events」が 2026-10 API バージョンで正式 GA となった。フィールドレベルトリガーによって事前にデリバリー対象を絞り込めるため、不要な Webhook 受信を削減できる。18 トピックをカバーしており、既存の Classic Webhooks と並行利用が可能なため段階的な移行が行える。本番アプリへの採用が推奨される。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/release-notes" target="_blank" rel="noopener">Shopify 2026-10 API バージョンが安定版に — Script Tags 新規作成が永続ブロック開始、既存は 2027-03 まで動作</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Shopify API Release Notes</a>
+        </div>
+        <p>2026-10 API バージョンが 10 月 1 日に安定版となり、旧バージョン 2025-10 は 10 月 16 日に廃止となる。同時に Script Tags の新規作成が 2026-10-01 から永続的にブロックされ、既存の Script Tags は 2027-03-01 の最終廃止まで動作継続する。Script Tags を使用しているアプリは App Bridge や Theme App Extension への移行を優先すること。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">POS UI Extension がカート変更の未確認書き込みを拒否 — Customer Account API に顧客ごとのレート制限を追加 (Oct 7)</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>10 月 7 日付のチェンジログで 2 件のアップデートが公開された。POS UI Extension のカートミューテーションが未確認の書き込みを拒否するようになり、POS 操作の安定性が向上した。また Customer Account API に顧客単位のレート制限が追加され、高頻度リクエストによる意図しないブロックを回避するための適切な実装が求められるようになった。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog" target="_blank" rel="noopener">Admin GraphQL API でアプリアクセススコープを write から read にダウングレード可能に — 最小権限原則の徹底を支援</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Admin GraphQL API に新しいスコープダウングレード機能が追加され、アプリが write 権限を read 権限に降格させることができるようになった（Oct 7）。これにより読み取り専用で十分な機能モジュールから過剰な write 権限を除去でき、最小権限原則に沿った設計が実現しやすくなる。アプリレビューやセキュリティ監査においても有利に働く変更となる。</p>
+      </div>
+    </div>
+
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://letsdatascience.com/news/google-integrates-ai-agents-across-product-portfolio-ad1f2107" target="_blank" rel="noopener">Google「Gemini at Work」イベントで Gemini Agent を発表 — 計画から実行まで一貫して担うエンタープライズ AI に進化</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://letsdatascience.com/news/google-integrates-ai-agents-across-product-portfolio-ad1f2107" class="source-link" target="_blank" rel="noopener">🔗 Let's Data Science</a>
+      </div>
+      <p>Google が 10 月 8 日の「Gemini at Work」イベントで Gemini をタスクの計画から実行までを担う AI エージェントとして位置付けると発表した。Workspace・Android・Google Cloud に横断的に統合され、Gemini Enterprise では 24/7 のパーソナルエージェント「Spark」として提供される。Managed Agents API によって顧客独自のエージェントを Google ホスト環境で実行する仕組みも整備が進んでいる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aidapted.ro/en/articles/ai-news-october-9-2026" target="_blank" rel="noopener">Anthropic が IPO を加速、Claude 利用ポリシーを大幅更新 — 選挙干渉・兵器開発・大規模監視の禁止を明文化</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aidapted.ro/en/articles/ai-news-october-9-2026" class="source-link" target="_blank" rel="noopener">🔗 AI Dapted</a>
+      </div>
+      <p>Anthropic が大型 IPO に向けて動き出したと複数のメディアが報じた。同社は合わせて Claude の利用ポリシーを改訂し、選挙干渉・兵器開発・大規模監視・金融・医療分野での特定用途に関するより詳細な制限を追加した。また AI の超知能に関する安全保証について、Anthropic を含む主要各社の経営陣がニューヨーク市議会公聴会で一定の限界を認める発言を行った。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/10/08/top-tech-news-today-october-8-2026-globalfoundries-google-manus-microsoft-nvidia-openai-tencent-more/" target="_blank" rel="noopener">OpenAI が GPT-6 Intelligent UI を発表 — プロンプトからインタラクティブツールを自動生成する新インターフェース</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/10/08/top-tech-news-today-october-8-2026-globalfoundries-google-manus-microsoft-nvidia-openai-tencent-more/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>OpenAI が GPT-6 に Intelligent UI 機能を追加し、ユーザーのプロンプトに応じてインタラクティブなツールやフォームを自動生成するインターフェースを公開した。同時に月額 500 ドルの新プランも発表され、高度な業務用途向けの API クォータ拡張と専用サポートが含まれると報じられている。ただし詳細は未確認のため公式ページでの確認を推奨する。</p>
+    </div>
+
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.thehackerwire.com/vulnerability/CVE-2026-76465/" target="_blank" rel="noopener">Cisco NX-OS に CVSS 9.8 の RCE 脆弱性 CVE-2026-76465 — Nexus 3000/9000 の MPLS OAM 機能に認証不要の任意コード実行</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.thehackerwire.com/vulnerability/CVE-2026-76465/" class="source-link" target="_blank" rel="noopener">🔗 The Hacker Wire</a>
+      </div>
+      <p>Cisco が 10 月 7 日にセキュリティアドバイザリを公開し、NX-OS の MPLS OAM 機能に CVSS スコア 9.8 の深刻な脆弱性（CVE-2026-76465）が存在することを明らかにした。Nexus 3000/9000 シリーズに影響し、細工された MPLS echo-request パケットを送り付けることで認証なしにルート権限でコードを実行またはサービス停止（DoS）を引き起こせる。公開 PoC は確認されていないが、同バッチには CVE-2026-76471 ほか複数の Critical 級脆弱性が含まれており、早急なパッチ適用が推奨される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway" target="_blank" rel="noopener">Citrix NetScaler ADC/Gateway にゼロデイ CVE-2026-88771/88772 — CISA KEV カタログ追加、独立して RCE を引き起こす Critical 欠陥</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA が Citrix NetScaler ADC および Gateway に影響する 2 件のゼロデイ脆弱性（CVE-2026-88771・CVE-2026-88772）を Known Exploited Vulnerabilities カタログに追加した。いずれも独立してリモートコード実行を可能にする Critical 評価で、実際の悪用が確認されているため連邦機関は優先的なパッチ対応が義務付けられる。Citrix 製品を利用している組織は直ちにベンダーのセキュリティ情報を確認し修正版を適用すること。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/cybersecurity-advisories" target="_blank" rel="noopener">CISA AA26-281A — 中国政府関連脅威グループが自動・手動ハッキングを組み合わせデータ窃取を実施中と警告</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/cybersecurity-advisories" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA が 10 月 8 日に共同アドバイザリ AA26-281A を発行し、中国政府に紐付く脅威アクターが自動スキャンと人手によるハッキングを組み合わせて標的組織のデータを窃取していると警告した。政府機関・通信・重要インフラが主な対象とされており、ネットワーク監視の強化・パッチ管理の徹底・アクセスログの保全が推奨されている。詳細な侵害指標（IOC）は CISA 公式サイトで公開されている。</p>
+    </div>
+
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://daily.dev/posts/azure-weekly-update---9th-october-2026-hib0vmnoy" target="_blank" rel="noopener">Azure Weekly Update (Oct 9) — AKS Any Scale が GA、Ubuntu 上のベアメタルノードがプレビュー、NAT Gateway Standard v2 がデフォルトに</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://daily.dev/posts/azure-weekly-update---9th-october-2026-hib0vmnoy" class="source-link" target="_blank" rel="noopener">🔗 daily.dev</a>
+      </div>
+      <p>10 月 9 日付の Azure Weekly Update では主要なアップデートが複数発表された。AKS Any Scale が Ray 統合とともに GA となりトレーニング・推論ワークロードのスケールを強化。Ubuntu 上の AKS ベアメタルノードがプレビュー公開され、NAT Gateway Standard v2 が新規作成時のデフォルトになった。PostgreSQL フレキシブルサーバーのメジャーバージョンインプレースアップグレードもプレビュー提供が開始されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://docs.cloud.google.com/release-notes" target="_blank" rel="noopener">Google Cloud Compute Engine — マルチライター Hyperdisk が C3/C4 ベアメタルインスタンスで GA、GKE デフォルトバージョンも更新</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://docs.cloud.google.com/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Release Notes</a>
+      </div>
+      <p>Google Cloud が 10 月 1 日付のリリースノートで、Compute Engine の一部 C3 ベアメタルおよび C4 インスタンス向けにマルチライター Hyperdisk サポートが一般提供（GA）になったと発表した。複数のインスタンスから同一ブロックストレージを同時書き込みできる構成が本番利用可能となり、高可用性クラスタやデータベースの共有ストレージ構成が容易になる。GKE のリリースチャンネルデフォルトバージョンも合わせて更新された。</p>
+    </div>
+
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/changelog/node-js-20-is-being-deprecated" target="_blank" rel="noopener">Vercel が Node.js 20 を Build/Functions で非推奨化 (Oct 1) — 新規デプロイ失敗、Node.js 22 以降への移行が必要</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/changelog/node-js-20-is-being-deprecated" class="source-link" target="_blank" rel="noopener">🔗 Vercel Changelog</a>
+      </div>
+      <p>Vercel が Node.js 20 の EOL（2026-04-30）を受け、10 月 1 日より Build および Functions での Node.js 20 を非推奨とした。既存デプロイは引き続き動作するが、新規デプロイは失敗するようになる。GitHub Actions も 9 月 23 日に Node.js 20 ランナーを廃止しており、プロジェクトの Node.js バージョンを 22 以降に引き上げる対応が急がれる。加えて 10 月 8 日には Routing Middleware のリクエストボディスキップと Sandbox 即時 Ready 化の 2 件の改善が加わった。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://nodesource.com/blog/vercel-github-actions-ending-nodejs-20-support" target="_blank" rel="noopener">npm が 2FA バイパストークンの制限を段階強化 — 2026-08 にアカウント操作、2027-01 に直接パブリッシュを制限</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://nodesource.com/blog/vercel-github-actions-ending-nodejs-20-support" class="source-link" target="_blank" rel="noopener">🔗 NodeSource</a>
+      </div>
+      <p>npm が二段階認証（2FA）をバイパス可能なレガシートークンの制限を段階的に強化している。2026 年 8 月の第 1 フェーズではアカウント設定変更への利用を禁止し、2027 年 1 月の第 2 フェーズでは直接パブリッシュにも制限が適用される予定。CI/CD パイプラインで npm publish を行っている場合は Granular Access Token または OIDC ベースの認証への移行計画を今から準備することが推奨される。</p>
+    </div>
+
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/10/08/top-tech-news-today-october-8-2026-globalfoundries-google-manus-microsoft-nvidia-openai-tencent-more/" target="_blank" rel="noopener">Manus AI が Meta 買収提案崩壊後に 5 億ドル超を調達 — AI エージェント市場への独立路線を確定</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/10/08/top-tech-news-today-october-8-2026-globalfoundries-google-manus-microsoft-nvidia-openai-tencent-more/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>自律型 AI エージェントスタートアップの Manus が Meta による買収提案が交渉決裂した後、5 億ドルを超える独立資金調達を実施したと報じられた。AI エージェント市場は OpenAI・Google・Anthropic など大手がエージェント機能を強化する中、独立系スタートアップとして存在感を示す動きとなる。調達資金はエージェントのマルチステップ推論能力向上と企業向け製品の拡充に充てられる見通しとのこと。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-10-10 07:00 JST 更新 | 全15件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

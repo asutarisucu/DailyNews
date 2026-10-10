@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-10-11</title>
+  <meta name="description" content="2026-10-11 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-10-11</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-10-11 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>15件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/online-store-script-tags-deprecation" target="_blank" rel="noopener">Script Tags が正式廃止フェーズへ — 10月1日より scriptTagCreate・scriptTagUpdate がエラー、2027年3月1日に注入停止</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/online-store-script-tags-deprecation" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>2026年10月1日から scriptTagCreate および scriptTagUpdate ミューテーションはユーザーエラーを返すようになり、REST リソースの POST・PUT も拒否される。既存のスクリプトタグは引き続き動作するが、2027年3月1日にストアフロントへの注入が完全停止する。移行先はテーマアプリエクステンションの app embed block、または計測用途には Web Pixel の利用が推奨されている。影響を受けるアプリは早急に代替実装のリリースが必要だ。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/blog/next-generation-events-are-now-generally-available" target="_blank" rel="noopener">Next Gen Events が 2026-10 API で GA — 従来 Webhook の宣言的後継、18 トピックに対応し段階的移行が可能</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/blog/next-generation-events-are-now-generally-available" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Blog</a>
+        </div>
+        <p>Shopify の Events（旧来 Webhook の次世代後継）が 2026-10 API バージョンで一般提供（GA）となった。18 トピックをカバーし、受け取る変更の種類やペイロードに含めるデータをきめ細かく選択できる宣言的なモデルを採用している。既存の Webhook と同一アプリ内で共存でき、ワークフローを一件ずつ移行できるため段階的な対応が可能。利用には Shopify CLI 4.83 以上が必要だ。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/posts/catalog-api-now-returns-compare-at-prices-as-list_price" target="_blank" rel="noopener">Catalog API が比較価格を list_price で返却するよう変更 — Global Catalog REST API は 11 月 2 日に廃止</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/posts/catalog-api-now-returns-compare-at-prices-as-list_price" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Catalog API において、商品バリアントごとのマーチャント設定比較価格が list_price フィールドとして返されるようになった。price フィールドの値に変更はなく後方互換性は維持される。また Global Catalog REST API は 2026 年 11 月 2 日にトラフィック提供を停止するため、同 API を利用しているインテグレーションは GraphQL Catalog API への移行が必要となる。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/posts/market-driven-shipping-now-available-in-feature-preview" target="_blank" rel="noopener">Market-driven Shipping が 10 月 1 日から段階ロールアウト開始 — 2027 年 7 月までに全マーチャントへ適用</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/posts/market-driven-shipping-now-available-in-feature-preview" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>マーケットごとに配送設定を分けられる Market-driven Shipping が 2026 年 10 月 1 日から全マーチャントへの段階的ロールアウトを開始し、2027 年 7 月 1 日までに全店舗へ適用される。地域ごとに異なる配送ルール・料金・キャリアを設定できるようになり、グローバルコマース対応が大幅に簡略化される。機能プレビューとして先行確認していた開発者は本番への移行を進める良いタイミングだ。</p>
+      </div>
+    </div>
+
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://venturebeat.com/technology/anthropic-launches-claude-haiku-5-5-with-90-api-price-reduction-matching-gpt-6-luna" target="_blank" rel="noopener">Anthropic、Claude Haiku 5.5 をリリース — 入力 $0.10/M トークンで 5.5 ファミリー最速・最安、前世代比コスト 75% 削減</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://venturebeat.com/technology/anthropic-launches-claude-haiku-5-5-with-90-api-price-reduction-matching-gpt-6-luna" class="source-link" target="_blank" rel="noopener">🔗 VentureBeat</a>
+      </div>
+      <p>Anthropic が 2026 年 10 月 7 日に Claude Haiku 5.5 を正式リリースした。入力 $0.10/M・出力 $0.50/M トークンという低価格で、前世代 Haiku 4.5 と比較して平均 75% のコスト削減を実現。コンテキストウィンドウは 1M トークン・最大出力 128K トークンで、要約・分類・サブエージェントなどの高スループット用途に特化している。Claude Platform、AWS、Google Cloud、Azure 全プラットフォームで即日提供開始となった。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/10/google-rolls-out-gemini-4-argon-to.html" target="_blank" rel="noopener">Google、Gemini 4 Argon をサイバーセキュリティパートナーに限定公開 — 自律的な脆弱性発見・検証・修正が可能、ガードレールなし版も計画</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/10/google-rolls-out-gemini-4-argon-to.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>Google が 9 月 30 日に発表した最新フラッグシップモデル Gemini 4 Argon を、Fairwind Program を通じて選定されたサイバーセキュリティパートナーへの限定公開を開始した。重大な脆弱性の自律的発見・検証・パッチ適用が可能で、世界中の病院が使用するヘルスケアソフトウェアに未知の重大脆弱性を発見した実績も報告されている。今後、信頼できるディフェンダーにはサイバーガードレールなしのバージョン提供も計画されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://openai.com/news/" target="_blank" rel="noopener">OpenAI、GPT-6 Sol と Intelligent UI を全ユーザーに公開 — ChatGPT の UI がダイナミックかつインタラクティブに進化</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://openai.com/news/" class="source-link" target="_blank" rel="noopener">🔗 OpenAI News</a>
+      </div>
+      <p>OpenAI が 10 月 7 日に GPT-6 Sol と Intelligent UI を全 ChatGPT ユーザー向けに公開した。GPT-6 Sol はフラッグシップの GPT-6 Astra に近い性能をより低コストで提供するモデルで、Intelligent UI は ChatGPT のインターフェース自体を動的かつインタラクティブにする機能だ。さらに OpenAI は内部フロンティア AI モデルが新たな数学的成果を多数生成したと 10 月 6 日に発表しており、基礎研究での進展も続いている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-10-02-github-copilot-weekly-releases-september-28/" target="_blank" rel="noopener">GitHub Copilot に Claude Haiku 5.5 追加・ローカルサンドボックスが GA — HydraFusion でマルチモデル協調の研究プレビューも開始</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-10-02-github-copilot-weekly-releases-september-28/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub Copilot が Claude Haiku 5.5 を GA の軽量モデルとして追加し、高速コーディングタスクやサブエージェント用途に活用できるようになった。Copilot CLI・アプリ・VS Code での Local Sandboxing も GA となり追加費用なしで利用可能。タスクに応じて最適なモデルを選択・協調させる HydraFusion が VS Code とアプリで研究プレビューとして開始、文脈認識型の Secret Detection 専用 AI モデルも導入された。</p>
+    </div>
+
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bleepingcomputer.com/news/security/cisco-warns-of-critical-flaws-allowing-nexus-switch-takeover/" target="_blank" rel="noopener">Cisco NX-OS に CVSS 10.0 を含む重大脆弱性 5 件 — Nexus 3000/9000 スイッチへの root 権限での任意コード実行が可能</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bleepingcomputer.com/news/security/cisco-warns-of-critical-flaws-allowing-nexus-switch-takeover/" class="source-link" target="_blank" rel="noopener">🔗 BleepingComputer</a>
+      </div>
+      <p>Cisco が 10 月 7 日に NX-OS データセンター OS に存在する重大脆弱性 5 件のアドバイザリを公開した。NX-API・NGOAM・MPLS OAM 機能を悪用して root 権限での任意コード実行が可能で、CVSS スコアは 8.8〜10.0 の範囲。Nexus 3000/9000 シリーズが対象で、バージョン 10-202609 へのアップグレードが唯一の修正手段でありワークアラウンドは存在しない。公開時点での悪用は確認されていないが、早急なパッチ適用が推奨される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/10/04/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank" rel="noopener">CISA KEV に Citrix NetScaler CVE-2026-88779 を追加 — メモリバッファ欠陥が積極的に悪用、CVE-2026-107406 も追記</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/10/04/cisa-adds-one-known-exploited-vulnerability-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA が 10 月 4 日に Citrix NetScaler ADC/Gateway のメモリバッファ脆弱性 CVE-2026-88779 を KEV カタログに追加し、積極的な悪用が確認されたことを公表した。10 月 9 日には Citrix NetScaler アドバイザリを更新し CVE-2026-107406 を追加、CVE-2026-88771〜88779 への迅速なパッチ適用を強く要請している。連邦民間機関は BOD 26-04 に基づき優先的な対応が義務付けられており、民間企業も速やかなパッチ適用が推奨される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/10/02/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA KEV に Zammad 2 件の脆弱性を追加 — CVE-2026-102489（セッション固定）と CVE-2026-102490（権限昇格）が悪用中</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/10/02/cisa-adds-two-known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>10 月 2 日、CISA がオープンソースのヘルプデスクシステム Zammad における 2 件の脆弱性を KEV カタログへ追加した。CVE-2026-102489 はセッション固定攻撃を可能にする欠陥、CVE-2026-102490 は不適切な権限管理による権限昇格の脆弱性。Zammad を内部システムやカスタマーサポートに利用している組織は至急パッチ適用版へのアップグレードを確認されたい。</p>
+    </div>
+
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://docs.cloud.google.com/release-notes" target="_blank" rel="noopener">Google Cloud Looker 26.18 が全リージョンへのデプロイ完了 — Cloud Network Insights が AWS・Azure 監視ポイントの CLI ダウンロードに対応</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://docs.cloud.google.com/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Release Notes</a>
+      </div>
+      <p>Google Cloud の Looker 26.18 が 10 月 4 日に最終デプロイを完了し、全リージョンへの展開が終了した。あわせて Cloud Network Insights が Google Cloud CLI コマンドによる Microsoft Azure および AWS 監視ポイントインストールバンドルのダウンロードに対応し、マルチクラウド環境のネットワーク可視化がより容易になった。マルチクラウド運用を行う組織にとって監視ツールの一元管理に向けた改善が続いている。</p>
+    </div>
+
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://nodesource.com/blog/vercel-github-actions-ending-nodejs-20-support" target="_blank" rel="noopener">Node.js 20 サポート終了 — GitHub Actions が 9 月 23 日、Vercel が 10 月 1 日に廃止完了、Node.js 24 がデフォルトに</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://nodesource.com/blog/vercel-github-actions-ending-nodejs-20-support" class="source-link" target="_blank" rel="noopener">🔗 NodeSource</a>
+      </div>
+      <p>GitHub Actions が 9 月 23 日にランナーから Node.js 20 を削除し、JavaScript アクションは Node.js 24 へ移行した。Vercel は 10 月 1 日から Node.js 20 を指定した新規デプロイでエラーが発生するようになり、Node.js 24 が新規プロジェクトのデフォルトランタイムとなった。既存デプロイへの影響はないが、Node.js 20 をランタイムとして指定している Functions を持つプロジェクトは速やかに設定変更が必要だ。Node.js 22 は引き続きサポート対象の LTS として残る。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thenewstack.io/tns-daily/october-8-2026/" target="_blank" rel="noopener">GitHub Copilot がローカル・クラウドの自動ルーティングを月末に導入予定 — Copilot CLI v1.0.94 がローカル Ollama モデルの検出に対応</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thenewstack.io/tns-daily/october-8-2026/" class="source-link" target="_blank" rel="noopener">🔗 The New Stack</a>
+      </div>
+      <p>GitHub Copilot が 10 月末までにコーディングタスクのローカル実行とクラウドモデル送信を自動で判断するルーティング機能を導入する予定だと発表した。プライバシーやコスト管理の観点から注目される機能で、ローカル処理が優先される場面ではクラウドへのデータ送信を抑制できる。また Copilot CLI v1.0.94（10 月 8 日）では /model コマンドによるローカル Ollama モデルの自動検出に対応し、ローカル LLM との統合が一段と容易になった。</p>
+    </div>
+
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.foxnews.com/live-news/ai-super-intelligence-safety-10-06" target="_blank" rel="noopener">OpenAI・Anthropic・Google・Meta が AI エージェントの安全保証を拒否 — NYC 議会公聴会で 4 社が安全ガードレールの完全保証を回避</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.foxnews.com/live-news/ai-super-intelligence-safety-10-06" class="source-link" target="_blank" rel="noopener">🔗 Fox News</a>
+      </div>
+      <p>10 月 6 日にニューヨーク市議会で開催された AI 安全性に関する公聴会で、OpenAI・Anthropic・Meta・Google の各代表が AI エージェントが常に安全ガードレールに従うことを保証しないと発言した。超知能 AI の安全管理に対する規制当局の圧力が強まる中、各社は技術的な限界を認めつつも現行の取り組みを強調した。公聴会はニューヨーク市の AI 監督強化に向けた立法プロセスの一環で、各社の発言は AI ガバナンス議論に新たな焦点をもたらしている。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-10-11 07:00 JST 更新 | 全15件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

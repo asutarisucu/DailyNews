@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-10-16</title>
+  <meta name="description" content="2026-10-16 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-10-16</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-10-16 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/blog/hydrogen-2026-10-is-now-available" target="_blank" rel="noopener">Hydrogen 2026-10 が正式 GA — フレームワーク非依存のヘッドレスコマースライブラリとしてリリース</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/blog/hydrogen-2026-10-is-now-available" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Blog</a>
+        </div>
+        <p>Shopify の Hydrogen 2026-10 が 2026 年 10 月 14 日に正式リリースとなった。今回のバージョンからフレームワーク非依存（React Router・Next.js・Vue など）に生まれ変わり、既存のJavaScriptスタックに組み込むだけでヘッドレスコマース機能を追加できるようになった。カート、バリアント選択、通貨換算、Shop Pay、顧客ログインが標準搭載され、AIコーディングエージェント向けのスキルも同梱されている。Oxygen へのデプロイは引き続き無料で、他のプラットフォームへの自己ホスティングも可能。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/posts/add-shopping-and-shop-pay-checkout-to-any-agent-with-shop-mcp" target="_blank" rel="noopener">Shop MCP 公開 — 任意のAIエージェントにShopifyカタログ検索・カート・Shop Payチェックアウトを追加</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/posts/add-shopping-and-shop-pay-checkout-to-any-agent-with-shop-mcp" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify が Shop MCP（Model Context Protocol サーバー）を公開し、任意の AI エージェントがカタログ検索・カート操作・Shop Pay チェックアウトを処理できるようになった。開発者は MCP 対応の任意のエージェントフレームワークから Shop MCP を呼び出すだけで Shopify のコマース機能を統合できる。ローンチ時点ではウェブフックが存在しないため、チェックアウト状態の取得は get_checkout のポーリングで行う必要がある点に注意。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/posts/new-apis-for-buyer-requested-order-edits" target="_blank" rel="noopener">購入者リクエストによる注文編集の新しい API — Admin・Customer Account API が未履行ラインアイテムの削除をサポート</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/posts/new-apis-for-buyer-requested-order-edits" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify が GraphQL Admin API および Customer Account API に購入者主導の注文編集を処理する新しいエンドポイントを追加した。マーチャントは購入者からの未履行ラインアイテム削除リクエストを API で受け取り承認・拒否できるようになる。あわせて 3 種類の新しい Webhook トピックも追加されており、注文編集フローをアプリに組み込む際に活用できる。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/posts/discounts-can-now-be-included-in-rollouts" target="_blank" rel="noopener">ディスカウントをロールアウトに含める機能追加 — Admin GraphQL API 2026-10 で rollouts コネクションを追加</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/posts/discounts-can-now-be-included-in-rollouts" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>API バージョン 2026-10 から、Admin GraphQL API のディスカウントオブジェクトに読み取り専用の rollouts コネクションが追加され、ディスカウントをロールアウトに含められるようになった。この機能を利用するアプリには新たに read_rollouts スコープが必要となる。段階的な機能展開と割引施策を連動させたいアプリ開発者にとって有用な変更となる。</p>
+      </div>
+    </div>
+
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/10/15/top-tech-news-today-october-15-2026-anthropic-cisco-gartner-google-openai-ramp-tsmc-more/" target="_blank" rel="noopener">FTC が OpenAI と Anthropic にサブポエナ発行 — 消費者保護違反・安全性記録の提出を命令</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/10/15/top-tech-news-today-october-15-2026-anthropic-cisco-gartner-google-openai-ramp-tsmc-more/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>米連邦取引委員会（FTC）が 2026 年 10 月 15 日、OpenAI と Anthropic に対してサブポエナ（民事調査要求）を発行したと報じられた。両社はモデルのセキュリティインシデントと安全対策に関する内部記録の提出を求められており、消費者保護法違反の可能性を調査する。AI 大手への連邦規制当局による本格的な情報収集は初めてのケースとされ、業界全体に与える影響が注目される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/10/15/top-tech-news-today-october-15-2026-anthropic-cisco-gartner-google-openai-ramp-tsmc-more/" target="_blank" rel="noopener">Anthropic、四半期売上 168 億ドルを達成し IPO 計画を検討中と報道</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/10/15/top-tech-news-today-october-15-2026-anthropic-cisco-gartner-google-openai-ramp-tsmc-more/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>Anthropic の直近四半期売上が 168 億ドルに達したと複数メディアが報じ、同社が IPO（株式公開）の検討段階に入ったとされる。Claude シリーズの急速な企業導入が収益を押し上げており、FTC の調査と並行した動きとして業界の注目を集めている。上場時期や規模については公式コメントはなく、引き続き動向が注目される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/10/14/top-tech-news-today-october-14-2026-apple-asml-google-openai-microsoft-nvidia-more/" target="_blank" rel="noopener">Apple × Meta が Muse AI モデルを Mac でネイティブ動作可能に — オンデバイス推論への異例の協業</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/10/14/top-tech-news-today-october-14-2026-apple-asml-google-openai-microsoft-nvidia-more/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>Apple と Meta が協力して Meta の Muse AI モデルを Mac コンピュータ上でネイティブ動作させると発表した。通常は競合関係にある両社の協業は異例で、Apple Silicon の Neural Engine を活用したオンデバイス推論でクラウドを介さずに Muse を利用できるようになる見込み。プライバシー保護とレイテンシ削減を両立できる点が訴求されており、ユーザーへの提供時期は未定。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/10/15/top-tech-news-today-october-15-2026-anthropic-cisco-gartner-google-openai-ramp-tsmc-more/" target="_blank" rel="noopener">米 8 州が OpenAI を集団提訴 — ChatGPT が子供に与える危害を主張</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/10/15/top-tech-news-today-october-15-2026-anthropic-cisco-gartner-google-openai-ramp-tsmc-more/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>アメリカの 8 つの州が 2026 年 10 月 15 日、OpenAI を相手取った集団訴訟を提起した。ChatGPT が未成年のユーザーに心理的・精神的な危害を与えているとして、同社が適切な安全対策を怠ったと主張している。FTC によるサブポエナと時期が重なったことで、AI 大手への法的・規制上の圧力が一気に高まる局面となっている。</p>
+    </div>
+
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-urges-patching-critical-vulnerability-beyondtrust-remote-support" target="_blank" rel="noopener">CISA 緊急警告: BeyondTrust Remote Support に認証バイパス CVE-2026-102764 — バージョン 26.2.3 以下に影響</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-urges-patching-critical-vulnerability-beyondtrust-remote-support" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA が 2026 年 10 月 16 日、BeyondTrust Remote Support の認証バイパス脆弱性 CVE-2026-102764 を KEV（既知悪用脆弱性カタログ）に追加し、緊急パッチ適用を勧告した。バージョン 26.2.3 以前が影響対象で、未認証の攻撃者がリモートから認証を回避できる可能性がある。連邦政府機関（FCEB）は BOD に基づく期限内の対応が義務付けられており、すべての組織に速やかなアップグレードが推奨される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cybersecuritynews.com/pan-os-vulnerability-exploited-cisa-warns" target="_blank" rel="noopener">Palo Alto PAN-OS 管理インターフェースにコードインジェクション CVE-2026-0322 — CVSS 8.6、野生での悪用を確認</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cybersecuritynews.com/pan-os-vulnerability-exploited-cisa-warns" target="_blank" rel="noopener">🔗 Cybersecurity News</a>
+      </div>
+      <p>Palo Alto Networks の PAN-OS 管理インターフェースにコードインジェクション脆弱性 CVE-2026-0322（CVSS 8.6）が発見され、ネットワークアクセス権を持つ認証済み攻撃者が root 権限で任意コードを実行できることが判明した。CISA が KEV カタログに追加し、Palo Alto 自身も限定的な悪用事例を確認している。管理インターフェースへのアクセスを信頼済みIPに制限することが緊急緩和策として推奨されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://helpnetsecurity.com/2026/10/15/cve-2026-0322-cve-2026-76519-cve-2026-105133-cve-2026-105134-exploted" target="_blank" rel="noopener">Cisco Secure Email Gateway にクリティカルゼロデイ CVE-2026-76519 — 攻撃者に root 権限、CISA KEV 追加</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://helpnetsecurity.com/2026/10/15/cve-2026-0322-cve-2026-76519-cve-2026-105133-cve-2026-105134-exploted" class="source-link" target="_blank" rel="noopener">🔗 Help Net Security</a>
+      </div>
+      <p>Cisco が Secure Email Gateway（旧 IronPort）のゼロデイ脆弱性 CVE-2026-76519（パストラバーサル）を緊急パッチで修正した。悪用に成功した攻撃者が対象システムで root 権限を取得できる深刻な欠陥で、CISA の KEV カタログへの追加とともに連邦機関に 10 月 17 日までの修正が命じられた。Cisco のメール フィルタリング製品を使用している組織は即時バージョン確認と更新が求められる。</p>
+    </div>
+
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/about-aws/whats-new/2026/08/aws-announces-AWS-interconnect-multicloud-microsoft-azure-preview/" target="_blank" rel="noopener">AWS Interconnect マルチクラウド — Microsoft Azure との接続がパブリックプレビュー開始</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/about-aws/whats-new/2026/08/aws-announces-AWS-interconnect-multicloud-microsoft-azure-preview/" class="source-link" target="_blank" rel="noopener">🔗 AWS What's New</a>
+      </div>
+      <p>AWS がマルチクラウド専用接続サービス「AWS Interconnect」に Microsoft Azure との接続を追加し、パブリックプレビューを開始した。米国東部（バージニア北部）・米国西部（カリフォルニア北部）・アジア太平洋（シドニー）・ヨーロッパ（フランクフルト）の 4 リージョンで利用可能で、Google Cloud（GA済）・OCI（GA済）に続く 3 番目のパートナーとなる。帯域幅ティアごとの固定時間課金で、500 Mbps の無料枠も提供されている。</p>
+    </div>
+
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thenewstack.io/cloudflare-acquires-deno-ryan-dahl/" target="_blank" rel="noopener">Cloudflare が Deno を買収 — Ryan Dahl チームが workerd に統合、Deno Deploy は 6 ヶ月以内に終了</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thenewstack.io/cloudflare-acquires-deno-ryan-dahl/" class="source-link" target="_blank" rel="noopener">🔗 The New Stack</a>
+      </div>
+      <p>Cloudflare が 2026 年 10 月 9 日、JavaScript ランタイム「Deno」の開発元を買収したと発表した。Node.js 作者の Ryan Dahl を含む Deno チーム全員が Cloudflare に移籍し、Deno のセルフホスティングプロジェクト「celld」を Cloudflare の workerd ランタイムに統合することが主目的とされる。Deno ランタイム本体はオープンソースのまま 1 年間セキュリティ修正が続けられるが、Deno Deploy ホスティングサービスは 6 ヶ月以内にシャットダウンされ、有料ユーザーは Cloudflare Workers に移行される。</p>
+    </div>
+
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techstartups.com/2026/10/15/top-tech-news-today-october-15-2026-anthropic-cisco-gartner-google-openai-ramp-tsmc-more/" target="_blank" rel="noopener">Cohere、AIセキュリティスタートアップ AISLE の買収に向けた覚書を締結 — ソフトウェア脆弱性検出 AI を取得へ</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techstartups.com/2026/10/15/top-tech-news-today-october-15-2026-anthropic-cisco-gartner-google-openai-ramp-tsmc-more/" class="source-link" target="_blank" rel="noopener">🔗 Tech Startups</a>
+      </div>
+      <p>エンタープライズ向け LLM プロバイダーの Cohere が、ソフトウェア脆弱性の自動検出に特化した AI スタートアップ AISLE の買収に向けた基本合意書（LOI）を締結した。AISLE の技術を組み込むことで Cohere はセキュリティ特化の AI ソリューションを強化し、企業の開発パイプラインへの統合を深めることを目指す。取引の財務条件は非公開で、クロージングには規制当局の承認が必要となる。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-10-16 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

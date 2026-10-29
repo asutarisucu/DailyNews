@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-10-30</title>
+  <meta name="description" content="2026-10-30 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-10-30</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-10-30 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>17件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/blog/app-security-updates-october-2026" target="_blank" rel="noopener">【要対応】Shopify アプリセキュリティ更新（2026年10月）— オフライントークン期限と新セキュリティ機能・アプリセキュリティハブを公開</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/blog/app-security-updates-october-2026" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Blog</a>
+        </div>
+        <p>Shopifyは10月27日、アクション必須の「Security update: Offline token dates, new security features」を公開した。オフライントークンの強制適用日程に加え、client credentials アクセス、IP制限、ネットワークアクセス宣言、本人確認（identity verification）などの新機能と、新たなアプリセキュリティハブ（shopify.dev/docs/apps/build/security）が案内された。各アプリに適用されるプラクティスをハブで確認し、リリースごとに shopify app security check を実行することが推奨されている。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/global-catalog-rest-api-stops-serving-traffic-on-november-2-2026" target="_blank" rel="noopener">【期限間近】Global Catalog REST API が11月2日に停止 — Global Catalog MCP（UCP）への移行が必須</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/global-catalog-rest-api-stops-serving-traffic-on-november-2-2026" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>2026年4月に非推奨化された Global Catalog REST API（discover.shopifyapps.com/global）が11月2日でトラフィックの受付を停止し、保存済みカタログへのリクエストも失敗するようになる。移行先は Universal Commerce Protocol を実装した Global Catalog MCP で、検索は search_catalog、単体・バリアント取得は get_product、一括取得は lookup_catalog に対応する。リクエストは catalog.shopify.com/api/ucp/mcp に送り、meta.ucp-agent.profile にエージェントプロファイルURLを含める必要がある。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/build-more-secure-apps-with-shopify-s-ai-toolkit-security-check" target="_blank" rel="noopener">AI Toolkit と Shopify CLI に「shopify app security check」が登場 — 審査提出前に脆弱性を自動スキャン</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/build-more-secure-apps-with-shopify-s-ai-toolkit-security-check" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify AI Toolkit と Shopify CLI に、アプリの一般的な脆弱性をスキャンする新コマンド shopify app security check が追加された。各指摘には問題箇所・想定される影響・修正手順が含まれ、エージェントがコードを読み取る方式のため特定フレームワークに依存しない。ツールはオープンソースで、App Store 提出前および毎リリース時の実行が推奨されている。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/downgrade-app-access-scopes-from-write-to-read" target="_blank" rel="noopener">Admin API 2027-01 RC に appDowngradeAccessScopes ミューテーション — write スコープを read に格下げ可能に</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/downgrade-app-access-scopes-from-write-to-read" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>GraphQL Admin API 2027-01 リリース候補に、付与済みのオプショナルな write スコープを対応する read スコープへ格下げする appDowngradeAccessScopes が追加された。例えば write_products を格下げすると read_products は維持されるため、マーチャントに再承認を求めずに権限を最小化できる。appRevokeAccessScopes で write を取り消すと read も失われる場合があるため、読み取りを継続したいアプリはこちらを使う。Shopify管理インストールを利用するアプリが対象。</p>
+      </div>
+    </div>
+
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" target="_blank" rel="noopener">Google が次世代フロンティアモデル「Gemini 4 Carbon」を発表 — サイバーセキュリティと長時間コーディングに強み、提供は限定的</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" class="source-link" target="_blank" rel="noopener">🔗 Google Blog</a>
+      </div>
+      <p>Googleは10月28日、Gemini 4 Argon から約2週間でさらに上位のフロンティアモデル Gemini 4 Carbon を発表した。コーディング、エージェントタスク、脆弱性発見で大きな向上を示し、Artificial Analysis Intelligence Index v5.0 で首位と報じられている。当面は Fairwind プログラムを通じ審査済みのサイバー防御組織に限定提供され、開発者・企業・一般向けの提供時期は未定。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://mistral.ai/news/mistral-large-4-oss/" target="_blank" rel="noopener">Mistral が1兆パラメータの「Mistral Large 4」のオープンウェイトを Hugging Face で公開</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://mistral.ai/news/mistral-large-4-oss/" class="source-link" target="_blank" rel="noopener">🔗 Mistral AI</a>
+      </div>
+      <p>Mistral AIは10月6日にAPI限定でプレビューしていた Mistral Large 4（約1兆パラメータ、トークンあたり約520億アクティブのMoE）のウェイトを10月29日に公開した。公開版には追加の強化学習が施され、Terminal-Bench 4.0 のスコアが28%から41%に向上したとされる。フル精度版に加え Blackwell 向け NVFP4、llama.cpp 向け GGUF も用意され、vLLM や SGLang でセルフホストできる。ライセンスは修正MITで、サービスとして提供する場合は別途商用ライセンスが必要と報じられている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers" target="_blank" rel="noopener">Google Cloud が Vertex AI Model Garden で OpenAI モデルの提供を開始 — GPT-6 Astra / 6.1 Sol / 6 Luna をプライベートプレビュー</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Blog</a>
+      </div>
+      <p>Google Cloudは、OpenAIの GPT-6 Astra、GPT-6.1 Sol、GPT-6 Luna を Model Garden でプライベートプレビューとして提供すると発表した。これにより Google Cloud 上で Gemini、Claude、OpenAI モデルを並べて利用できるようになる。現時点では一部の企業顧客向けのプレビューで、一般提供の時期は明らかにされていない。</p>
+    </div>
+
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA が KEV に2件追加 — VMware ESX（CVE-2026-41709）と Linux カーネル「Fragnesia」（CVE-2026-46300）</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA Alert</a>
+      </div>
+      <p>CISAは10月28日、悪用が確認された Broadcom VMware ESX のログ不備 CVE-2026-41709（CVSS 7.6、中国系グループ Warp Panda がゼロデイとして悪用）と、Linux カーネルの変数未初期化 CVE-2026-46300 を KEV カタログに追加した。CVE-2026-46300 は PHP2Shell と連鎖させて Webshell 設置や root 権限でのコマンド実行に使われているとされ、BOD 26-04 に基づくフォレンジック調査が求められる。連邦機関の対応期限は CVE-2026-46300 が10月31日、CVE-2026-41709 が11月11日。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://gbhackers.com/cisco-patches-actively-exploited-ssl-vpn-vulnerability/" target="_blank" rel="noopener">Cisco ASA/FTD の SSL VPN 脆弱性 CVE-2026-76418 が悪用中 — DoS を引き起こす欠陥に修正版</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://gbhackers.com/cisco-patches-actively-exploited-ssl-vpn-vulnerability/" class="source-link" target="_blank" rel="noopener">🔗 GBHackers</a>
+      </div>
+      <p>Ciscoは10月28日、ASA および FTD ファイアウォールの SSL VPN 機能に存在する脆弱性 CVE-2026-76418（CVSS 8.6）のアドバイザリを公開した。同社 PSIRT が10月上旬に実際の悪用を確認しており、攻撃を受けるとサービス拒否（DoS）状態に陥る。リモートアクセスVPNを公開している組織は修正版への更新が推奨される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cybersecuritynews.com/veeam-patches-authorization-bypass-vulnerability/" target="_blank" rel="noopener">Veeam Backup &amp; Replication に認可バイパスの重大脆弱性 CVE-2026-108142（CVSS 9.1）</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cybersecuritynews.com/veeam-patches-authorization-bypass-vulnerability/" class="source-link" target="_blank" rel="noopener">🔗 Cybersecurity News</a>
+      </div>
+      <p>Veeamは Backup &amp; Replication の CDP Coordinator Service に存在し、未認証の攻撃者がアクセスチェックを回避できる脆弱性 CVE-2026-108142（CVSS 9.1）を修正した。現時点で悪用は報告されていないが、バックアップ基盤はランサムウェア攻撃の主要な標的であるため早急な対応が望ましい。修正版は 13.1.2 および 13.0.3。</p>
+    </div>
+
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws-news.com/article/2026-10-28-introducing-time-series-collections-for-the-next-generation-of-amazon-opensearch-serverless" target="_blank" rel="noopener">Amazon OpenSearch Serverless に時系列コレクションが登場 — ゼロスケール対応と S3 ウォーム層で長期保存を低コスト化</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws-news.com/article/2026-10-28-introducing-time-series-collections-for-the-next-generation-of-amazon-opensearch-serverless" class="source-link" target="_blank" rel="noopener">🔗 AWS News</a>
+      </div>
+      <p>AWSは10月28日、次世代 Amazon OpenSearch Serverless 向けに時系列コレクションを発表した。自動スケーリング、階層型ストレージ、組み込みアラートを備え、アイドル時にはコンピュートをゼロまで縮小できる。S3 上のウォーム層により長期間のログやメトリクスを検索可能なまま低コストで保持できる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/awscapabilities-enhancements/" target="_blank" rel="noopener">AWS Capabilities by Region が機能単位の提供開始通知と高度なフィルタに対応</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/awscapabilities-enhancements/" class="source-link" target="_blank" rel="noopener">🔗 AWS What's New</a>
+      </div>
+      <p>AWS Capabilities by Region で、個別の機能やAPIが特定リージョンで利用可能になった際に通知を受け取れるようになり、高度なフィルタも追加された。マルチリージョン展開やデータ主権要件のある環境で、必要な機能のリージョン対応状況を追跡しやすくなる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://docs.cloud.google.com/release-notes" target="_blank" rel="noopener">Google Cloud Database Migration Service が SQL Server の分散可用性グループ（DAG）移行を GA</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://docs.cloud.google.com/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Release Notes</a>
+      </div>
+      <p>Google Cloudは10月28日付のリリースノートで、Database Migration Service の SQL Server 同種移行において Distributed Availability Group（DAG）を使った移行を一般提供（GA）とした。オンプレミスや他クラウドの SQL Server から Cloud SQL への移行で、ダウンタイムを抑えた切り替えが可能になる。同ページでは Gemini 3 モデルの教師ありファインチューニングの GA も案内されている。</p>
+    </div>
+
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot/" target="_blank" rel="noopener">GitHub Enterprise に GitHub Copilot へのアクセスが標準で付属へ</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHubは10月28日、GitHub Enterprise に GitHub Copilot へのアクセスを含めると発表した。セルフサービスで契約している顧客は現時点で対象外で、今後数週間のうちに段階的に開放し日程を案内するとしている。既存のサブスクリプションには影響がなく、Copilot Business と Copilot Enterprise は引き続き新規・既存企業向けに購入可能。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview/" target="_blank" rel="noopener">GitHub パッケージファイアウォールがパブリックプレビュー — インストール時にマルウェアパッケージをブロック</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHubは Enterprise Cloud（データ所在地インスタンス含む）向けにパッケージファイアウォールをパブリックプレビューとして公開した。エンドポイントや社内レジストリと上流のパッケージリポジトリの間に入り、インストール時にパッケージを検査してマルウェアを遮断する。サプライチェーン攻撃のリスクが高い AI エージェントや CI ランナーでの利用が特に想定されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://wellstsai.com/en/post/deno-joins-cloudflare/" target="_blank" rel="noopener">Deno チームが Cloudflare に合流 — ランタイムの公式開発は約1年で終了、Deno Deploy は6か月後に停止</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://wellstsai.com/en/post/deno-joins-cloudflare/" class="source-link" target="_blank" rel="noopener">🔗 WellWells</a>
+      </div>
+      <p>Deno 作者の Ryan Dahl 氏は Deno チーム全員が Cloudflare に加わると発表した。Deno ランタイムのサポートは約1年継続され、Deno Deploy は6か月間稼働した後に終了する。JSR は Cloudflare のインフラ上で引き続き運用される。なお10月21日には各種セキュリティ修正を含む Deno 2.9.8 がリリースされており、Deno Deploy 利用者は移行計画の検討が必要になる。</p>
+    </div>
+
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://killtheai.com/news/top-10-ai-news-today-october-29-2026/" target="_blank" rel="noopener">ビッグテック決算で明暗 — Alphabet 株が7%下落、Microsoft・Oracle は上昇、SK Hynix はメモリが2029年まで完売</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://killtheai.com/news/top-10-ai-news-today-october-29-2026/" class="source-link" target="_blank" rel="noopener">🔗 Kill The AI</a>
+      </div>
+      <p>10月29日の市場では、第3四半期の売上高と設備投資が予想を外した Alphabet 株が約7%下落した一方、Microsoft と Oracle は評価され、Oracle は2030年度売上高2,250億ドルの見通しで約11%上昇した。SK Hynix は長期契約によりメモリが2029年まで完売していると明らかにし、Micron・Lam Research・Applied Materials も5%超上昇。AI インフラ投資の回収可能性に対する投資家の目が一段と厳しくなっている。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-10-30 07:00 JST 更新 | 全17件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-11-07</title>
+  <meta name="description" content="2026-11-07 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-11-07</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-11-07 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>15件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">5</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/posts/ip-allowlists-are-now-required-for-public-apps" target="_blank" rel="noopener">【要対応】公開アプリの Admin API 呼び出しに IP 許可リストが必須に — 一括操作は11月12日、その他は11月20日が期限</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/posts/ip-allowlists-are-now-required-for-public-apps" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify は11月5日、Admin API を呼び出すすべての公開アプリに IP 許可リスト（IP allowlist）の設定を義務付けると発表した。バルク操作を使うアプリは11月12日までに設定しないとバルクのクエリ・ミューテーションがブロックされ、それ以外の公開アプリも11月20日までに未設定だと App Store からの掲載停止と新規インストール停止の対象になる。既存インストールについては2027年1月15日からマーチャント向けの警告が始まり、4月1日以降は許可リスト外からの Admin API リクエストが 403 で失敗する。固定 IP のアプリはアドレスや CIDR を、サーバーレスなど動的なインフラでは ASN 単位で登録でき、Dev Dashboard で直近のトラフィックに対する事前テストも可能。カスタムアプリやマーチャント作成アプリは対象外。</p>
+      </div>
+    </div>
+
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://openai.com/index/a-thousand-fewer-paths-to-root/" target="_blank" rel="noopener">OpenAI のエージェント群が Linux カーネルで948件の root 権限昇格バグを発見 — 未公開のサイバー特化モデルで検証、修正パッチも提案</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://openai.com/index/a-thousand-fewer-paths-to-root/" class="source-link" target="_blank" rel="noopener">🔗 OpenAI</a>
+      </div>
+      <p>OpenAI は11月4日、開発中のサイバーセキュリティ向けモデルを使ったエージェントパイプラインが、Linux カーネルで一般ユーザーから root を奪える局所権限昇格（LPE）の脆弱性を948件見つけ、検証したと公表した。偵察役のエージェントが一般ユーザーから到達できるコードを洗い出し、分析役のエージェントが欠陥を探す構成で、対象はカーネル全体の約7%にあたる約280万行。10月中旬の実行で API コストは約120万ドル、少なくとも10種類の新しい攻撃手法も見つかったという。すでに数百件の報告と修正パッチ案をメンテナーに送っているが、Help Net Security はエージェントの自己申告結果が常に正しかったわけではない点も指摘している。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.sec.gov/Archives/edgar/data/0001083301/000162828026069810/wulf-20261104.htm" target="_blank" rel="noopener">Google が Anthropic のデータセンター賃借契約を信用補完 — TeraWulf のケンタッキー拠点、約190億ドルの賃料契約の資金調達を後押し</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.sec.gov/Archives/edgar/data/0001083301/000162828026069810/wulf-20261104.htm" class="source-link" target="_blank" rel="noopener">🔗 TeraWulf Form 8-K（SEC）</a>
+      </div>
+      <p>TeraWulf は11月4日、ケンタッキー州ホーズビルの「Justified Data Campus」で Anthropic が負う賃借義務の一部を Google が保証（バックストップ）する契約を結んだと開示した。約190億ドルの契約済み賃料を裏付けにした今後の借入を支えるもので、保証額や期間は開示されていない。CoinDesk によると、Anthropic が賃料不払いや破綻に陥った場合は Google がテナントを引き継ぐことができ、条件次第で運営子会社の持ち分を取得することもできる。Unite.AI は、施設内のアクセラレーターに Google 承認の TPU のみを使う条件が含まれると報じている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.techbuzz.ai/articles/perplexity-launches-teammates-ai-agents-to-battle-openai" target="_blank" rel="noopener">Perplexity が常駐型 AI エージェント「Teammates」を公開 — Slack や GitHub と連携して継続タスクを担当、まずは Max 会員向け</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.techbuzz.ai/articles/perplexity-launches-teammates-ai-agents-to-battle-openai" class="source-link" target="_blank" rel="noopener">🔗 TechBuzz</a>
+      </div>
+      <p>Perplexity は11月5日、職場向けの常駐型 AI エージェント「Teammates」を発表した。Perplexity Computer 上で動き、既存のプロジェクト・スキル・メモリを引き継ぎながら、新たな指示がなくても進捗を監視して結果をレビューに回す。エージェント同士の連携や Slack チャンネルへの参加、GitHub・Gmail などとの接続にも対応する。まず Web 版で Max プラン加入者に提供され、iOS 対応は後日。Enterprise Pro / Max では既定で無効となっている。</p>
+    </div>
+
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.helpnetsecurity.com/2026/11/06/openssh-sshole-cve-2026-123158-exploitation/" target="_blank" rel="noopener">OpenSSH の「SSHole」（CVE-2026-123158）が公開から9時間以内に攻撃に — ハニーポットで root 奪取を確認、10.6p2 で修正</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.helpnetsecurity.com/2026/11/06/openssh-sshole-cve-2026-123158-exploitation/" class="source-link" target="_blank" rel="noopener">🔗 Help Net Security</a>
+      </div>
+      <p>musl 系 Linux（PAM なし）の OpenSSH で、パスワード無効化済みアカウントにログインできる認証バイパス「SSHole」に、CVE 番号と悪用状況の続報が出た。脆弱性は CVE-2026-123158（CVSS 8.1）で、OpenSSH 10.6p2 で修正され、Alpine Linux は 3.16 から edge までの全ブランチに同日中に修正パッケージを配布した。Previdian は公開から9時間足らずで最初の攻撃を観測し、本物の Alpine Linux を使ったハニーポットで root 取得まで確認したという（日本に位置する単一 IP から8回の試行）。Alpine の既定構成が条件に当てはまるため、早急な更新と sshd の再起動が推奨される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bitdefender.com/en-gb/blog/labs/ghostmap-android" target="_blank" rel="noopener">Android の「GhostMap」— 権限もコードもないアプリのインストールだけで端末が再起動ループに、Google は修正対象外と判断</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bitdefender.com/en-gb/blog/labs/ghostmap-android" class="source-link" target="_blank" rel="noopener">🔗 Bitdefender Labs</a>
+      </div>
+      <p>Bitdefender は、細工した APK を端末にインストールするだけで Android のシステムが繰り返しクラッシュし、再起動やセーフモードでも抜け出せなくなる不具合「GhostMap」を公表した。Android 内の2つのコンポーネントが同じ ZIP ファイルを異なる方法で解釈することが原因で、Android 10 以降が影響を受けるという。8月に報告したものの、Google はセキュリティ修正の対象外と判断し、将来のバージョンで検討するとした。復旧には初期化（データ消去）しかなく、現時点で実際の悪用は確認されていない。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cyberinsider.com/nikke-pc-launcher-malware-remote-access-tool/" target="_blank" rel="noopener">ゲーム「NIKKE」の PC ランチャーがマルウェア配布に悪用 — 公式 CDN 上の JavaScript が改ざんされ遠隔操作ツールと情報窃取型を配布</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cyberinsider.com/nikke-pc-launcher-malware-remote-access-tool/" class="source-link" target="_blank" rel="noopener">🔗 CyberInsider</a>
+      </div>
+      <p>Level Infinite が配信する「勝利の女神：NIKKE」の PC ランチャーで、公式 CDN 上の JavaScript ファイル4つが改ざんされ、外部ドメインから追加スクリプトを読み込む状態になっていたことが分かった。配布されたのは遠隔操作ツール兼インフォスティーラーで、コマンド実行、ファイルの持ち出し、画面キャプチャ、ゲームの認証情報やブラウザ保存データの窃取が可能だったとされる。運営チームは11月4日にクライアント修正を配布したが、一部 CDN で古いファイルが残っていたため、ランチャーのキャッシュ削除や認証情報の変更が呼びかけられている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.scworld.com/brief/password-manager-msecure-alerts-users-to-suspicious-activity" target="_blank" rel="noopener">パスワード管理アプリ mSecure で不正アクセス — 暗号化済みデータベースが窃取、マスターパスワードや2FA・パスキーのリセットを要請</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.scworld.com/brief/password-manager-msecure-alerts-users-to-suspicious-activity" class="source-link" target="_blank" rel="noopener">🔗 SC Media</a>
+      </div>
+      <p>パスワード管理アプリ mSecure を開発する mSeven Software は11月3日、不審な活動を検知したとして、現在および過去の利用者にマスターパスワードの変更、二要素認証のリセット、パスキーの削除を求めた。同社によると、利用者情報を含むデータベースの暗号化コピーが第三者に取得された。利用者が共有したサポートの回答では、影響はクラウド同期を使っていたアカウントに限られるという。侵入経路や影響人数は明らかにされておらず、同社は保存している重要なパスワードの変更も推奨している。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.sentinelone.com/vulnerability-database/cve-2026-81648/" target="_blank" rel="noopener">WordPress 決済プラグイン「CryptoPayment Gateway」に CVSS 10.0 の未修正脆弱性 CVE-2026-81648 — 悪用の試みを観測</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.sentinelone.com/vulnerability-database/cve-2026-81648/" class="source-link" target="_blank" rel="noopener">🔗 SentinelOne 脆弱性データベース</a>
+      </div>
+      <p>暗号資産決済用の WordPress プラグイン「CryptoPayment Gateway」（1.2.1〜1.2.2）に、AJAX 処理の認可漏れによる最大深刻度の脆弱性 CVE-2026-81648 が見つかった。未認証の攻撃者が管理者向け操作を呼び出せ、任意ファイルの削除や決済設定の上書き、保存されたウォレット認証情報の平文での取得が可能になる。修正版はなく、Defused Cyber が実際の悪用の試みを観測している。プラグインの削除、ウォレット鍵・シークレットのローテーション、決済設定とサーバーファイルの監査が推奨されている。</p>
+    </div>
+
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techcommunity.microsoft.com/blog/post-quantum-crypto-tech-blog/azure-front-door-now-supports-post-quantum-resilient-hybrid-tls-1-3/4571081" target="_blank" rel="noopener">Azure Front Door の耐量子 TLS 鍵交換ポリシーが GA — ML-KEM を組み合わせたハイブリッド TLS 1.3 に対応</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techcommunity.microsoft.com/blog/post-quantum-crypto-tech-blog/azure-front-door-now-supports-post-quantum-resilient-hybrid-tls-1-3/4571081" class="source-link" target="_blank" rel="noopener">🔗 Microsoft Tech Community</a>
+      </div>
+      <p>Microsoft は11月5日、Azure Front Door の TLS 鍵交換ポリシーで耐量子暗号（PQC）のサポートを一般提供（GA）とした。従来の楕円曲線と NIST 標準の ML-KEM を組み合わせたハイブリッド鍵交換を使え、カスタムドメインごとに Standard / Enhanced / Custom のポリシーを選べる。対象はクライアントとエッジ間の接続のみで、Front Door からオリジンへの接続は含まれない。ハイブリッド方式には TLS 1.3 と対応クライアントが必要で、TLS 1.2 を許可する場合は従来の鍵交換グループも含める必要がある。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.techzine.eu/news/analytics/145556/google-agentic-data-cloud-gets-cross-cloud-lakehouse/" target="_blank" rel="noopener">Google の Agentic Data Cloud がクロスクラウド Lakehouse を強化 — AWS / Azure 上のデータを可変エグレス費なしでクエリ、相互接続とキャッシュが GA</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.techzine.eu/news/analytics/145556/google-agentic-data-cloud-gets-cross-cloud-lakehouse/" class="source-link" target="_blank" rel="noopener">🔗 Techzine</a>
+      </div>
+      <p>Google Cloud は、Agentic Data Cloud の拡張として、AWS や Azure に置いたデータを可変のエグレス費用なしでクエリできるクロスクラウド Lakehouse を打ち出した。AWS・Azure とのクロスクラウド相互接続とキャッシュが GA となり、取得したデータブロックは Google Cloud 側にキャッシュされる。基盤は Apache Iceberg で、AlloyDB からはクラウドストレージ上の Iceberg テーブルを稼働中の業務データと1本の PostgreSQL クエリで結合できる。自己学習型の Knowledge Catalog や AlloyDB Express も併せて発表された。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://finopsweekly.com/news/aws-updates-2026-11-05/" target="_blank" rel="noopener">AWS 11月5日のアップデート — RDS のスナップショット単位課金、Lambda Managed Instances の SOCI 遅延読み込みなど</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://finopsweekly.com/news/aws-updates-2026-11-05/" class="source-link" target="_blank" rel="noopener">🔗 FinOps Weekly</a>
+      </div>
+      <p>AWS の11月5日前後の更新では、RDS のスナップショット料金が DB インスタンス単位の集計ではなくスナップショットごとに表示されるようになり、バックアップコストの配賦やタグ付けがしやすくなった。Lambda Managed Instances では SOCI による遅延読み込みが使えるようになり、起動時間を最大70%短縮できるという。ほかに ECS Managed Instances のインスタンス統合（Spot 含む）によるアイドル容量の回収、AWS Config の対応リソースタイプ10種追加、RDS for Oracle の M8i / R8i インスタンスの対応リージョン拡大が含まれる。</p>
+    </div>
+
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/" target="_blank" rel="noopener">GitHub のプルリクエストに新しい「Overview」ページ — マージ可否や次にやるべき操作を上部に集約、パブリックプレビュー開始</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub は11月5日、プルリクエストの新しい Overview ページをオプトイン方式のパブリックプレビューとして公開した。ページ上部にマージの準備状況、チェック、承認、次に取るべき操作をまとめて表示し、ブランチ更新などのブロッカー解消からマージまでを1画面で進められる。コメントを「すべて / 未解決 / 自分」で絞り込むフィルターや、ヘッダーからのドラフト解除・クローズ操作も追加された。PR ヘッダーの「Try the Overview page」ボタンで切り替えられ、展開は週末にかけて順次行われる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://socket.dev/blog/github-to-block-pull-request-target" target="_blank" rel="noopener">【要確認】GitHub Actions が12月2日から公開リポジトリの pull_request_target を既定でブロック — 11月9日・16日に試験ブラウンアウト</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://socket.dev/blog/github-to-block-pull-request-target" class="source-link" target="_blank" rel="noopener">🔗 Socket</a>
+      </div>
+      <p>GitHub は、公開リポジトリで pull_request_target トリガーを使うワークフローを、Actions のイベントポリシーで明示的に許可しない限り12月2日から既定でブロックすると告知した。対象は GitHub Free / Team / Enterprise Cloud の公開リポジトリで、GitHub Enterprise Server は含まれない。本番適用に先立ち、11月9日と16日に2時間のブラウンアウトが予定され、その間は該当ワークフローがエラー注釈付きで失敗する。フォークからの PR に対するラベル付けや自動コメントなどで同トリガーを使っている場合は、ポリシーでの許可や別トリガーへの移行を検討したい。</p>
+    </div>
+
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.engadget.com/2309257/doj-just-launched-something-called-the-super-intelligence-task-force/" target="_blank" rel="noopener">米司法省が「スーパーインテリジェンス・タスクフォース」を設置 — 高度な AI の悪用を訴追、全米の検察に事前通知を義務付け</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.engadget.com/2309257/doj-just-launched-something-called-the-super-intelligence-task-force/" class="source-link" target="_blank" rel="noopener">🔗 Engadget</a>
+      </div>
+      <p>米司法省は11月5日、外国政府や犯罪組織、詐欺を働く企業・個人による高度な AI の悪用を取り締まる「Super Intelligence Task Force（DOJ-SITF）」を立ち上げた。全米の連邦検察は、超知能に関わる捜査を始める前に同タスクフォースへ通知する必要がある。1月に設置され州の AI 規制法に異議を唱えてきた「AI Litigation Task Force」も吸収する。一方で、新たな犯罪類型や独自の執行権限はなく、どの AI 犯罪から手を付けるかや他機関との連携方法は示されていない。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-11-07 07:00 JST 更新 | 全15件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

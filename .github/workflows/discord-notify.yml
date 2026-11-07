@@ -17,9 +17,15 @@ jobs:
       - name: Extract news metadata
         id: meta
         run: |
-          DATE=$(git diff --name-only HEAD~1 HEAD \
+          # 削除された古いファイル（7日以上前）を拾わないよう、追加・変更されたファイルのみ対象にし、
+          # 最新の日付を選ぶ
+          DATE=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD \
             | grep -oP '(?<=docs/latest/news_)\d{4}-\d{2}-\d{2}(?=\.html)' \
-            | head -1)
+            | sort -r | head -1)
+          if [ -z "$DATE" ]; then
+            echo "通知対象の news_*.html が見つかりませんでした" >&2
+            exit 1
+          fi
           echo "date=$DATE" >> $GITHUB_OUTPUT
 
           STATS="docs/latest/stats_${DATE}.json"

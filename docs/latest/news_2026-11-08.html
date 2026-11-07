@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-11-08</title>
+  <meta name="description" content="2026-11-08 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-11-08</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-11-08 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>14件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/posts/partner-apps-must-enable-bulk-operations-before-use" target="_blank" rel="noopener">【要確認】パートナーアプリは一括操作（バルクオペレーション）の利用前に有効化が必須に — 31日間未使用だとアクセス失効</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/posts/partner-apps-must-enable-bulk-operations-before-use" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>Shopify は11月6日、公開アプリおよびパートナーとして構築したカスタムアプリが GraphQL Admin API のバルクオペレーションを実行するには、事前にアクセスの有効化が必要になったと告知した。Partner Dashboard の「Run bulk operations」で、バルククエリとバルクミューテーションを個別に許可する。すでにバルク操作を実行しているアプリは有効化済みだが、直近31日間に実行していない操作種別はアクセスが失われ、未許可のまま実行すると access denied エラーになる。全 API バージョンが対象で、管理画面や Dev Dashboard でマーチャントが作成したアプリは今のところ対象外。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/posts/merchant-notes-on-store-credit-transactions" target="_blank" rel="noopener">ストアクレジット取引にマーチャント向けメモを付与可能に — GraphQL Admin API 2027-01</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/posts/merchant-notes-on-store-credit-transactions" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>GraphQL Admin API 2027-01 で、StoreCreditAccountCreditInput / StoreCreditAccountDebitInput に任意の note を指定できるようになり、取引の note フィールドで参照できる。メモは最大5,000文字で、超えると NOTE_TOO_LONG エラーとなり取引は作成されない。メモはマーチャントのみが閲覧でき顧客には表示されず、作成後の編集はできない。任意項目のため既存の連携はそのまま動作し、2026-10 以前のバージョンでは公開されない。</p>
+      </div>
+    </div>
+
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html" target="_blank" rel="noopener">OpenAI が「GPT-6 Cyber」を承認済みのセキュリティチーム向けに提供開始 — Firefox で高深刻度の脆弱性81件を発見</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>OpenAI は11月5日、GPT-6 Astra をベースに脆弱性調査向けに調整した「GPT-6 Cyber」を、エクスプロイト開発や認可済みテストを行う顧客向けプログラム「Daybreak Red」の承認済み利用者に限定して公開した。同モデルは Firefox で Mozilla が高深刻度と評価した未知の脆弱性81件を見つけ、修正パッチ案も添えて報告しており、多くはすでに修正済み。前日に報じた Linux カーネルの権限昇格948件の調査もこのモデルによるもの。OpenAI は自社の Preparedness Framework でサイバー能力を最上位の「Critical」と評価し、安全用プロンプトなしでも対象外のサービスを攻撃しない割合が99.93%（GPT-5.6 Cyber は94.49%）に上がったとしている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://support.claude.com/en/articles/12138966-release-notes" target="_blank" rel="noopener">Claude Enterprise に管理・セキュリティ機能を追加 — セキュリティセンターや Console の IP 許可リスト、プロジェクトタグでの支出管理など</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://support.claude.com/en/articles/12138966-release-notes" class="source-link" target="_blank" rel="noopener">🔗 Claude リリースノート</a>
+      </div>
+      <p>Anthropic は11月5日、Claude Enterprise 向けにセキュリティセンター、推論前のプロンプトを検査できる Inference hooks、一元管理、追加のアクセス制御などを発表した（一部はベータ）。開発者プラットフォームでは Console 組織向けの IP 許可リストがベータとなり、Admin API でメンバーを組織に残したまま全端末からサインアウトさせられるようになった。11月6日には、課金コードや案件番号などのタグをプロジェクトに付けて、タグごとの支出を確認できる「プロジェクトタグ」もベータで追加された。</p>
+    </div>
+
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/" target="_blank" rel="noopener">SonicWall が SonicOS の脆弱性7件を修正 — SAML 認証の SSL-VPN で MFA を回避できる CVE-2026-19868 は悪用中、CISA も KEV に追加</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/" class="source-link" target="_blank" rel="noopener">🔗 BleepingComputer</a>
+      </div>
+      <p>SonicWall は11月6日、SonicOS の脆弱性7件を修正し、そのうち CVE-2026-19868（CVSS 7.1）が実際の攻撃に悪用されていると警告した。SAML 認証を使う SSL-VPN が対象で、別の認証方式の有効な資格情報を持つ攻撃者が SAML による制御（SAML で強制した MFA を含む）をすり抜けられる。修正版は Gen7 が 7.3.4-7013、Gen8 が 8.2.3-8015 で、回避策はない。CISA は同日 KEV カタログに追加し、連邦機関に11月20日までの対応を求めている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/" target="_blank" rel="noopener">Barracuda Email Security Gateway の脆弱性2件を連鎖させ未認証で root 権限 — パッチ公開済み、現時点で悪用は未確認</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/" class="source-link" target="_blank" rel="noopener">🔗 SecurityWeek</a>
+      </div>
+      <p>Barracuda は11月2日、Email Security Gateway（ESG）などに影響する脆弱性2件の修正を公開した。CVE-2026-116606（CVSS 9.3）は ESG の設定インポート API を未認証で呼び出せる認可バイパスで、CVE-2026-111560（CVSS 8.6）は管理者権限で root としてコマンドを実行できる OS コマンドインジェクション。後者は Web Security Gateway、WAF、Load Balancer ADC にも影響する。両者を組み合わせると未認証で root を奪えるため、古いファームウェアでは段階的なアップグレードが必要な点に注意して早めに適用したい。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.welivesecurity.com/en/eset-research/slippynunchucks-hijacks-sogou-input-methods-brand-promotion-mechanism-to-distribute-malware/" target="_blank" rel="noopener">中国系攻撃グループ「SlippyNunchucks」が Sogou 入力法の HTTP 通信を DNS 乗っ取りで悪用 — 日本を含むアジアでバックドア DarkVigil を配布</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.welivesecurity.com/en/eset-research/slippynunchucks-hijacks-sogou-input-methods-brand-promotion-mechanism-to-distribute-malware/" class="source-link" target="_blank" rel="noopener">🔗 ESET WeLiveSecurity</a>
+      </div>
+      <p>ESET は11月4日、中国系とみられる攻撃グループ SlippyNunchucks が、Sogou 入力法のコンポーネント SGTool.exe が暗号化されていない HTTP で取得するプロモーション用設定を DNS 乗っ取りで差し替え、モジュール型バックドア DarkVigil（FDMTP）を感染させていたと報告した。2026年7月以降、香港、タイ、日本、ベトナム、スリランカ、オマーンの利用者で被害を確認している。Tencent は報告を受けて10月下旬のバージョン16.10で該当通信を HTTPS 化し、証明書ピンニングも導入した。利用している場合は最新版への更新を確認したい。</p>
+    </div>
+
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-sbom-inventory/" target="_blank" rel="noopener">AWS 11月6日のアップデート — Security Hub が SBOM インベントリを提供、Glue Data Catalog が Iceberg REST カタログ連携の認証情報委譲に対応など</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-sbom-inventory/" class="source-link" target="_blank" rel="noopener">🔗 AWS What&#x27;s New</a>
+      </div>
+      <p>AWS は11月6日、Security Hub で Amazon Inspector のデータを基にしたコンピューティングリソースのソフトウェア部品表（SBOM）インベントリを追加料金なしで提供開始した。AWS Glue Data Catalog は外部の Iceberg REST カタログが発行する認証情報（catalog-vended credentials）に対応し、IAM ロールだけに頼らず外部の Iceberg テーブルを読めるようになった。このほか Amazon Bedrock で Moonshot AI の Kimi K3.1 Pro（Highspeed）の提供開始、Bedrock AgentCore の Agent Registry の GovCloud（US-West）での GA、MediaConvert と AI 字幕生成機能の統合も発表された。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://pupuweb.com/az579280-generally-available-waf-insights-for-azure-application-gateway/" target="_blank" rel="noopener">Azure Application Gateway の「WAF Insights」が GA — Azure Database for PostgreSQL の安定版 REST API 2026-10-01 も一般提供</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://pupuweb.com/az579280-generally-available-waf-insights-for-azure-application-gateway/" class="source-link" target="_blank" rel="noopener">🔗 Azure Updates（AZ579280）</a>
+      </div>
+      <p>Microsoft は Application Gateway 向け WAF の分析ダッシュボード「WAF Insights」を一般提供した。Azure Diagnostics とリソース固有ログの両方に対応し、「Triage」タブは「Investigate」に改称、各リクエストを最終的な WAF 判定で1回だけ集計するようになった。Azure Database for PostgreSQL では安定版 REST API 2026-10-01 が GA となり、メンテナンス管理、変更不可のバックアップ、テナントをまたぐカスタマーマネージドキー、FIPS 設定などを API から扱える。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cloud.google.com/release-notes" target="_blank" rel="noopener">Gemini Enterprise Agent Platform のコンソールに「Memory Bank」専用ページ — エージェントの記憶を閲覧・編集、COS や containerd の CVE 修正も</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cloud.google.com/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud Release Notes</a>
+      </div>
+      <p>Google Cloud の11月6日付リリースノートによると、Gemini Enterprise Agent Platform の Google Cloud コンソールに Memory Bank 専用ページが追加され、インスタンスの管理、記憶の確認・編集、スキーマや設定の構成、エージェントとの接続を画面上で行えるようになった。同日には Container-Optimized OS の node-problem-detector（CVE-2026-63209）、google-osconfig-agent、containerd（CVE-2026-84304）の脆弱性修正も公開されている。GKE などでこれらのイメージを使う場合は更新状況を確認したい。</p>
+    </div>
+
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.netlify.com/changelog/2026-11-03-nextjs-security-vulnerabilities/" target="_blank" rel="noopener">【要更新】Next.js 11月のセキュリティリリース — 16.4.5 / 15.5.29 で7件修正、「use cache」経由のユーザー間データ漏えいや Edge での HttpOnly Cookie 露出など</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.netlify.com/changelog/2026-11-03-nextjs-security-vulnerabilities/" class="source-link" target="_blank" rel="noopener">🔗 Netlify Changelog</a>
+      </div>
+      <p>Next.js チームは11月3日、7件の脆弱性を修正した 16.4.5 と 15.5.29 を公開した。use cache にバイナリ引数を渡した際のユーザー間キャッシュ漏えい・汚染、unstable_cache と use cache の併用によるテナント間の情報漏えい（高深刻度）、Cache Components の共有フォールバックシェル汚染などが含まれる。Edge の Route Handler で設定した HttpOnly Cookie が同一オリジンの JavaScript から読める問題（CVE-2026-119346）や、画像最適化での SVG 制限回避、セルフホスト環境でのレスポンス混入も修正された。該当バージョンへの更新に加え、Edge ルートの Cookie 利用とキャッシュ API の併用箇所を点検したい。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates/" target="_blank" rel="noopener">Copilot code review の設定を REST / GraphQL API で管理可能に — レビュー概要コメントもコンパクトに</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub は11月6日、管理者が Copilot code review の設定を REST API と GraphQL API から管理できるようにした。複数の組織やリポジトリに同じ設定をまとめて適用しやすくなる。あわせてレビュー時に投稿される概要コメントがよりコンパクトになった。対象は Copilot Pro / Pro+ / Max / Business / Enterprise で、エンタープライズ・組織単位の設定エンドポイントは GitHub Apps と fine-grained PAT には対応していない。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-11-06-github-copilot-weekly-releases-november-2/" target="_blank" rel="noopener">GitHub Copilot が JetBrains Air と Xcode のコーディングアシスタントに対応 — Copilot アプリの Agent Merge は必須チェック待ちの間も維持</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-11-06-github-copilot-weekly-releases-november-2/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub は11月6日の Copilot 週次リリースで、JetBrains のエージェント型 IDE「JetBrains Air」と Xcode のコーディングアシスタントから Copilot を利用できるようにした。Copilot アプリではエージェントが PR をマージする「Agent Merge」が必須チェックの実行中もオンのまま維持されるようになり、PR や設定、エージェントセッションの管理機能も改善された。同日には Copilot の利用状況ダッシュボードが Copilot Chat と VS Code の Agents ウィンドウの利用も集計するよう拡張されている。</p>
+    </div>
+
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.calcalistech.com/ctechnews/article/selqjgkso" target="_blank" rel="noopener">コンタクトセンター大手の NICE が約500人を削減 — AI への移行に苦戦、Actimize 部門の売却も模索</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.calcalistech.com/ctechnews/article/selqjgkso" class="source-link" target="_blank" rel="noopener">🔗 Calcalist Tech</a>
+      </div>
+      <p>イスラエルのコンタクトセンター・ソフトウェア大手 NICE が、全世界の従業員約1万人の5%にあたる約500人の人員削減に踏み切ると Calcalist が報じた。生成 AI によってコンタクトセンター市場が変わるなかで事業の転換に苦戦しており、金融犯罪対策の Actimize 部門の売却を模索する一方、ドイツの AI エージェント系スタートアップを約10億ドルで買収して AI 機能の強化を進めている。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-11-08 07:00 JST 更新 | 全14件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

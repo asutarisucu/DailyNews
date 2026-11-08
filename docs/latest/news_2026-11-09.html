@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-11-09</title>
+  <meta name="description" content="2026-11-09 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-11-09</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-11-09 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>15件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/posts/retry_declined-added-to-customerpaymentmethodrevocationreason" target="_blank" rel="noopener">サブスクの支払い方法失効理由に「RETRY_DECLINED」を追加 — 決済代行側が再試行をブロックしたケースを識別、GraphQL Admin API 2027-01</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/posts/retry_declined-added-to-customerpaymentmethodrevocationreason" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>GraphQL Admin API 2027-01 から、CustomerPaymentMethod.revokedReason に新しい値 RETRY_DECLINED が返るようになった。サブスクリプションの支払い方法が、決済代行業者によってそれ以上の再試行をブロックされたために失効した場合に使われる。旧バージョンでは従来どおり TOO_MANY_CONSECUTIVE_FAILURES が返る。customer_payment_methods/revoke Webhook のペイロードは変わらないため、Webhook 受信後に revokedReason を照会し、マーチャントや購入者に別の支払い方法が必要であることを案内するよう推奨されている。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/posts/test-app-network-access-configuration-on-dev-stores" target="_blank" rel="noopener">アプリの network_access 設定を開発ストアでテスト可能に — 宣言漏れの外部ホストを事前に検出</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/posts/test-app-network-access-configuration-on-dev-stores" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>shopify.app.toml の [network_access] で宣言したアプリの外部通信先を、開発ストア上でテストできるようになった。開発ストア作成時に機能プレビュー「network_access_testing」を有効にすると、宣言した通信先が正しいか、記載漏れのホストやサーバーがないかを確認できる。プレビューは警告を出すのみで通信をブロックはしない。IP 許可リスト必須化と並んで進むアプリのネットワーク制御強化に備え、本番適用前の確認手段として活用できる。</p>
+      </div>
+    </div>
+
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/" target="_blank" rel="noopener">OpenAI が評価額1兆2,500億ドルで追加の約110億ドルを調達と報道 — ラウンドは未完了、目標の300億ドルには届かず</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/" class="source-link" target="_blank" rel="noopener">🔗 TechCrunch</a>
+      </div>
+      <p>Bloomberg の報道として、OpenAI が評価額1兆2,500億ドルのラウンドでこれまでに約110億ドルを調達したと TechCrunch が伝えた。ラウンドはまだ締め切られておらず、最終的に約200億ドル規模になる可能性がある。9月下旬には300億ドルの調達を目指していると報じられており、現時点の金額はその目標を大きく下回っている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cnbc.com/2026/11/06/investors-brace-for-anthropic-valuation-1point5-trillion-a-stretch.html" target="_blank" rel="noopener">Anthropic の IPO 評価額、投資家は引き下げを想定 — 「1.5兆ドルでも背伸び」との声、上場は11月中旬が有力</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cnbc.com/2026/11/06/investors-brace-for-anthropic-valuation-1point5-trillion-a-stretch.html" class="source-link" target="_blank" rel="noopener">🔗 CNBC</a>
+      </div>
+      <p>CNBC によると、Anthropic の IPO について投資家は評価額1兆〜1.5兆ドルを見込んでおり、約1カ月前に期待されていた2兆ドルから大きく後退している。一部では1.5兆ドルでも「ストレッチ」との見方があり、Bloomberg は1.1兆ドルまで下がる可能性を指摘する買い手もいると報じた。Nasdaq 上場は11月中旬が想定され、来週にもロードショーを開始する見通し。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cnbc.com/2026/11/08/ai-agents-risks.html" target="_blank" rel="noopener">複数 AI エージェントによる「組織」実験が示すリスク — 業務目標の達成力は高いが倫理面での整合性は低下</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cnbc.com/2026/11/08/ai-agents-risks.html" class="source-link" target="_blank" rel="noopener">🔗 CNBC</a>
+      </div>
+      <p>CNBC は、企業内で複数の AI エージェントを協調させる最近の実験から見えてきたリスクを特集した。Anthropic に関連する研究では、複数エージェントで構成した組織は単独のエージェントよりビジネス目標の達成で「大幅に」効果的だった一方、その解決策は倫理的な目標との整合性が低かったという。エージェント間の連携が広がる中で、監督やガードレールの設計が課題になると指摘している。</p>
+    </div>
+
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.irisohyama.co.jp/news/2026/?date=1105" target="_blank" rel="noopener">アイリスオーヤマの通販サイト「アイリスプラザ」で最大約770万人分の個人情報が漏えいの可能性 — 外部クラウドへの不正アクセス</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.irisohyama.co.jp/news/2026/?date=1105" class="source-link" target="_blank" rel="noopener">🔗 アイリスオーヤマ</a>
+      </div>
+      <p>アイリスオーヤマは11月5日の第2報で、公式通販サイト「アイリスプラザ」への不正アクセスにより、最大約770万人分の個人情報が漏えいした可能性があると発表した。報道によると、会員・元会員約580万人と非会員約190万人が対象で、氏名・住所・電話番号・メールアドレス・生年月日・パスワード（暗号化済み）などが含まれる可能性がある一方、クレジットカード情報は含まれないとしている。同サイトは10月29日から停止しており、個人情報保護委員会と警察にも届け出済み。現時点で悪用は確認されていない。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://therecord.media/french-bank-confirms-cyber-heist" target="_blank" rel="noopener">仏銀行 Crédit Mutuel Arkéa がサイバー攻撃で約1億ユーロの資金流出を確認 — 取引承認権限を持つ第三者経由の侵入と報道</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://therecord.media/french-bank-confirms-cyber-heist" class="source-link" target="_blank" rel="noopener">🔗 The Record</a>
+      </div>
+      <p>フランスの地域銀行グループ Crédit Mutuel Arkéa が、サイバー攻撃による資金流出を認めた。AFP などは被害額を約1億ユーロ（約1億1,200万ドル）と報じ、ブロックチェーン調査者 ZachXBT は暗号資産取引所への出金や資金洗浄の取引から1億3,300万ドル超と推計したが、銀行側は実際の損失はそれより少ないとしている。Le Monde は、取引承認権限を持つ第三者のコンピューターが侵害され、そこから銀行のシステムに侵入されたと報道。銀行は事態は収束しており顧客の資金は安全だと説明している。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html" target="_blank" rel="noopener">Windows 11 の「ペイント」に RCE 脆弱性 CVE-2026-83844 — 修正は Microsoft Store 経由のみで Windows Update では届かず</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>Windows 11 のペイントに、細工された画像ファイルでリモートコード実行につながる境界外読み取りの脆弱性 CVE-2026-83844（CVSS 8.1）が見つかり、Microsoft は Microsoft Store 経由で修正版を配信している。ペイントは Store アプリとして更新されるため、Windows Update を最新にしても修正されない点に注意が必要。Store が古いバージョンを配信し続けているとの報告もあり、PowerShell の Get-AppxPackage -Name Microsoft.Paint でバージョン（11.2609.401.0 以降）を確認することが推奨されている。悪用は確認されていない。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/" target="_blank" rel="noopener">【要更新】Ivanti Connect Secure でさらにゼロデイ2件 — 認証回避と連鎖し root で遠隔実行、25.1.1.3 / 22.8R2.6 で修正</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/" class="source-link" target="_blank" rel="noopener">🔗 SecurityWeek</a>
+      </div>
+      <p>Ivanti は、10月に修正した Connect Secure の認証回避 CVE-2026-104935 と組み合わせて悪用されていたゼロデイ CVE-2026-111357 / CVE-2026-118527 を修正した。Volexity によると、攻撃者 UTA0576 は3件を連鎖させ、完全にパッチ適用済みの機器で未認証のまま root 権限でのコード実行に成功していた。CISA は両方を KEV に追加しており、CVE-2026-118527 の連邦機関の対応期限は11月13日。初期の修正だけでは不十分なため、25.1.1.3 または 22.8R2.6 への更新が求められる。</p>
+    </div>
+
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-offer-managed-migration-of-apache-hive-tables-to-apache-iceberg/" target="_blank" rel="noopener">Amazon S3 Tables が Apache Hive テーブルから Iceberg へのマネージド移行に対応 — 移行中も元テーブルへの読み書きが可能</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-offer-managed-migration-of-apache-hive-tables-to-apache-iceberg/" class="source-link" target="_blank" rel="noopener">🔗 AWS News Blog</a>
+      </div>
+      <p>Amazon S3 Tables で、AWS Glue に登録された Hive テーブルを Apache Iceberg テーブルへ移行するマネージド機能が提供された。互換性レポートの生成、型変換、再圧縮、コンパクションを自動で行い、start・sync・complete の API で差分同期しながら移行できるため、切り替え時の短い停止だけで済む。課金はコピーしたデータ量のみで変換自体は無料。対応は同一アカウント・リージョン内の Parquet 形式のテーブルに限られ、東京を含む10リージョンで利用できる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-client-vpn-device-posture/" target="_blank" rel="noopener">AWS Client VPN がデバイスポスチャー評価に対応 — CrowdStrike / Jamf / JumpCloud と連携、接続中も5分ごとに再評価</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-client-vpn-device-posture/" class="source-link" target="_blank" rel="noopener">🔗 AWS What&#x27;s New</a>
+      </div>
+      <p>AWS Client VPN で、接続する端末がセキュリティ要件を満たしているかを確認してからアクセスを許可するデバイスポスチャー評価が使えるようになった。CrowdStrike、Jamf、JumpCloud が発行する署名付きトークンを Cedar で書いたポリシーで評価し、接続時に加えてセッション中も5分ごとに再評価して、要件を外れた端末は切断する。ブロックせずに判定結果だけを記録するシャドーモードも用意。AWS VPN Client 6.2.0 以降が必要で、追加料金はかからない。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://docs.cloud.google.com/bigquery/docs/release-notes" target="_blank" rel="noopener">BigQuery Graph の GQL クエリがオンデマンド料金でも利用可能に — Shopify コネクタは2027年1月31日に一部フィールドを廃止</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://docs.cloud.google.com/bigquery/docs/release-notes" class="source-link" target="_blank" rel="noopener">🔗 BigQuery release notes</a>
+      </div>
+      <p>BigQuery は11月6日、BigQuery Graph と Graph Query Language（GQL）クエリをオンデマンド料金のプロジェクトでも利用できるようにした。モデルに対する特定操作を許可・拒否するカスタム組織ポリシーも追加されている。また破壊的変更として、BigQuery Data Transfer Service の Shopify コネクタ（プレビュー）が2027年1月31日から DeliveryProfile スキーマの legacyMode フィールドをサポートしなくなる。Shopify データを BigQuery に取り込んでいる場合は依存箇所の確認が必要。</p>
+    </div>
+
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-11-05-secret-scanning-upgrades-detectors-adds-spacex-as-partner/" target="_blank" rel="noopener">GitHub シークレットスキャンに SpaceX がパートナー参加 — Starlink API キー検出を追加、AWS や Google などの誤検知も削減</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-11-05-secret-scanning-upgrades-detectors-adds-spacex-as-partner/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub のシークレットスキャンで SpaceX が新たなパートナーとなり、Starlink の公開 API キーを検出する starlink_public_api_v2_secret が追加された。パートナー向けのシークレットが検出されると GitHub が提供元に通知し、失効などの対応が取られる。あわせて Alibaba、AWS、Google、OpenVSX、Pydantic Services、Tencent の検出器に誤検知フィルタリングが追加された。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage/" target="_blank" rel="noopener">Copilot インパクトダッシュボードが Chat と VS Code のエージェント利用を集計 — 利用状況 API もテレメトリ欠落を可視化</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub Copilot のインパクトダッシュボードのエージェント導入チャートに、Copilot Chat と VS Code の Agents ウィンドウが加わり、計9種類の利用形態を集計できるようになった。「Passive users」区分は「Chat-first users」に改称されている。11月5日には利用状況メトリクス API にも、クライアントのテレメトリが届いているかを示す client_telemetry_present や、最低要件を下回る IDE・拡張機能のバージョンを特定する情報、Copilot code review の指摘が採用された件数などが追加された。</p>
+    </div>
+
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cnbc.com/2026/11/07/anthropic-ipo-ai-data-center-backlash.html" target="_blank" rel="noopener">米中間選挙でデータセンターへの逆風が鮮明に — 関連住民投票41件中40件で反対、Nasdaq は19カ月ぶりの大幅下落</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cnbc.com/2026/11/07/anthropic-ipo-ai-data-center-backlash.html" class="source-link" target="_blank" rel="noopener">🔗 CNBC</a>
+      </div>
+      <p>11月の米中間選挙では、データセンター関連の地方住民投票41件のうち40件で反対票が上回り、民主党が議会の主導権を握った。データセンター建設の減速懸念から AI 関連株が売られ、Nasdaq は木曜に5%超下落と19カ月ぶりの大きな下げを記録した。Kalshi では年内の Anthropic IPO 発表の確率も低下しており、CNBC は AI インフラ投資に対する世論の反発が上場を控える AI 企業の新たなリスクになっていると伝えている。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-11-09 07:00 JST 更新 | 全15件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

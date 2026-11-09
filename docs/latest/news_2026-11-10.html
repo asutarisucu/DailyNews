@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-11-10</title>
+  <meta name="description" content="2026-11-10 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-11-10</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-11-10 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>15件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.engineering/reflex" target="_blank" rel="noopener">Shopify Engineering がモバイルアプリ設計「Reflex」を公開 — エージェントが大半のコードを書く前提で React Native からネイティブへ</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.engineering/reflex" class="source-link" target="_blank" rel="noopener">🔗 Shopify Engineering</a>
+        </div>
+        <p>Shopify Engineering ブログが、AI エージェントがコードの大半を書くことを前提にしたモバイルアプリのアーキテクチャ「Reflex」を解説した。プラットフォームに依存しない共有モジュール「Core」が必要な機能をプロトコルとして宣言し、モバイルアプリと CLI がそれぞれ実装を注入するホストとなるため、CLI から画面なしでアプリを操作して素早く検証できる。最大のボトルネックはフィードバックループだったとしており、300画面超の Shop アプリを React Native からネイティブ（Swift / Kotlin）へ移行する取り組みの中核になっている。</p>
+      </div>
+
+      <div class="card shopify-card">
+        <div class="card-header">
+          <h2><a href="https://shopify.dev/changelog/posts/ui-extensions-now-support-a-larger-number-of-locales" target="_blank" rel="noopener">UI 拡張機能のロケールファイル合計 256KB 上限を撤廃 — 多言語対応アプリのデプロイ失敗を解消</a></h2>
+          <span class="badge badge-shopify">shopify</span>
+        </div>
+        <div class="card-meta">
+          <a href="https://shopify.dev/changelog/posts/ui-extensions-now-support-a-larger-number-of-locales" class="source-link" target="_blank" rel="noopener">🔗 Shopify Developer Changelog</a>
+        </div>
+        <p>UI 拡張機能に含めるロケールファイルの合計サイズに課されていた 256KB の上限が撤廃された。全 API バージョンの UI 拡張機能が対象で、言語数の多いアプリがデプロイに失敗する問題が解消される。ただし個々のロケールファイルに対する 30KB の上限は引き続き適用される。上限に合わせて翻訳を削っていた開発者は、翻訳を戻して shopify app deploy で再デプロイできる。</p>
+      </div>
+    </div>
+
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank" rel="noopener">Anthropic が「Claude Fable 5.2」と「Claude Mythos 5.2」を発表 — Fable は約20%値下げ、出力速度も約30%向上</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.anthropic.com/claude-fable-and-mythos-5-2" class="source-link" target="_blank" rel="noopener">🔗 Anthropic</a>
+      </div>
+      <p>Anthropic は11月9日、同じ基盤モデルから成る Claude Fable 5.2 と Claude Mythos 5.2 を公開した。一般向けの Fable 5.2 はサイバー・生物分野の安全策を強化したうえで、料金を入力100万トークンあたり8ドル、出力40ドル（5.1 は10ドル／50ドル）に引き下げ、出力速度は前世代比で約30%高速化したとしている。安全策を緩めた Mythos 5.2 は Cyber / Life Sciences の認証プログラム参加組織に限定され、社内の CVE 再発見テストで 89.6% を記録したという。Amazon Bedrock でも提供が始まった。同社は11月16日の週の IPO を目指していると報じられている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.niemanlab.org/2026/11/meta-pulls-down-controversial-terms-of-service/" target="_blank" rel="noopener">Meta が11月20日施行予定の新商用規約を無期限停止 — 事業者サイトのクロールと AI 学習への利用に反発</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.niemanlab.org/2026/11/meta-pulls-down-controversial-terms-of-service/" class="source-link" target="_blank" rel="noopener">🔗 Nieman Lab</a>
+      </div>
+      <p>Meta は、11月20日に施行予定だった Commercial Terms など4種類の事業者向け規約の改定を無期限で停止し、当面は既存の規約を適用すると発表した。新規約はビジネスアカウントにひも付くウェブサイトを Meta がクロールできる内容で、取得したコンテンツが AI の学習に使われるおそれがあるとして報道機関や法律家から批判が相次いでいた。ノルウェーとブラジルの裁判所でも規約に不利な判断が出ており、Meta は関係者との協議を続けるとしている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://mlq.ai/news/anthropic-pays-34-billion-for-17-gw-of-caterpillar-gas-generators-that-onepwr-had-on-order-ft-reports/" target="_blank" rel="noopener">Anthropic が約34億ドルで 1.7GW 分のガス発電機を確保と FT 報道 — データセンター電力の自前調達へ</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://mlq.ai/news/anthropic-pays-34-billion-for-17-gw-of-caterpillar-gas-generators-that-onepwr-had-on-order-ft-reports/" class="source-link" target="_blank" rel="noopener">🔗 MLQ.ai（Financial Times 報道）</a>
+      </div>
+      <p>Financial Times によると、Anthropic は9月下旬、OnePWR Solutions が Caterpillar に発注していた計 1.7GW 分の大型ガス発電機を約34億ドルで引き継いだ。OnePWR の会社自体や従業員は含まず、Caterpillar の生産待ち行列の枠を譲り受ける形だという。Anthropic と OnePWR はコメントしておらず、Reuters は報道内容を確認できていない。電力網への接続待ちが AI データセンター建設の制約となるなか、自前の発電設備確保に動く例として注目される。</p>
+    </div>
+
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/" target="_blank" rel="noopener">【要対応】N-able が N-central のクラウド版を停止 — 30件超の「ゼロデイ」と PoC が公開、オンプレ版も停止を要請</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/" class="source-link" target="_blank" rel="noopener">🔗 BleepingComputer</a>
+      </div>
+      <p>研究者が11月8日夜、MSP 向け RMM 製品 N-able N-central に関する30件超（報道によっては33件）の脆弱性と概念実証コードを「Able2Shell」として GitHub で公開した。N-able は予防措置として米州・欧州・アジア太平洋のホスト型環境をオフラインにし、オンプレミス版の顧客にもサーバーを停止するよう求めている。現時点で悪用は確認していないとし、ホットフィックスを準備中。N-central では今年すでに KEV 入りした事前認証 RCE も見つかっており、利用する MSP は公式の復旧手順を確認する必要がある。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/" target="_blank" rel="noopener">D-Link が DGS-3130 シリーズのスイッチに未修正のゼロデイ複数件と警告 — ファームウェア修正はなく暫定緩和策のみ</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/" class="source-link" target="_blank" rel="noopener">🔗 BleepingComputer</a>
+      </div>
+      <p>D-Link は、DGS-3130 シリーズのマネージドスタッカブルスイッチに未修正の脆弱性が複数あるとして、暫定的な緩和策を公開した。報道によると問題は D-Link Discovery Protocol（DDP）周辺の認証・アクセス制御・入力処理にあり、DGS-3130-30TS の複数のファームウェアバージョンが影響を受ける。他の機種への影響は調査中で、修正版ファームウェアはまだない。機器の棚卸しとバージョン確認、管理サービスをインターネットに公開しないことが推奨されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://mlq.ai/news/anthropic-emails-enterprise-customers-that-an-outside-security-firm-may-have-viewed-their-contact-plan-and-spend-data/" target="_blank" rel="noopener">Anthropic が法人顧客に通知 — 外部セキュリティ企業が社内システムに侵入し、アカウント ID や利用額データを閲覧した可能性</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://mlq.ai/news/anthropic-emails-enterprise-customers-that-an-outside-security-firm-may-have-viewed-their-contact-plan-and-spend-data/" class="source-link" target="_blank" rel="noopener">🔗 MLQ.ai</a>
+      </div>
+      <p>Anthropic は11月7日、外部のセキュリティ企業による不正アクセスでエンタープライズ顧客のアカウント情報が閲覧された可能性があるとメールで通知した。対象はアカウント ID、組織 ID、プラン種別、利用量・支出額などで、会話内容やパスワード、決済情報は含まれないという。相手企業はデータの削除を書面で証明したとされ、一部報道は第三者製オフィスソフトの脆弱性を突いたセキュリティ新興企業 Cathedral だと伝えている。韓国では100社超の情報が対象とされ、個人情報保護委員会が予備調査を始めた。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems/" target="_blank" rel="noopener">FBI と CISA が冷蔵・コールドチェーン設備への攻撃に警告 — インターネットに露出した制御装置が標的</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems/" class="source-link" target="_blank" rel="noopener">🔗 BleepingComputer</a>
+      </div>
+      <p>FBI と CISA は、インターネットからアクセスできる冷蔵設備やコールドチェーンの制御装置を狙ったサイバー攻撃が起きているとして注意を呼びかけた。温度設定の改ざんは医薬品や食品、血液製剤などの品質に直結するため、制御装置をインターネットに直接公開しないこと、既定の認証情報を変更すること、リモートアクセス経路を見直すことなどが推奨されている。保守を担うサプライヤー経由の侵入にも注意が必要だ。</p>
+    </div>
+
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://securitybrief.asia/story/google-cloud-launches-new-security-tools-for-ai-agents" target="_blank" rel="noopener">Google Cloud が AI エージェント向けセキュリティ機能を拡充 — Auth Manager の GA、Agent Identity の JWT 発行はプレビュー</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://securitybrief.asia/story/google-cloud-launches-new-security-tools-for-ai-agents" class="source-link" target="_blank" rel="noopener">🔗 SecurityBrief Asia</a>
+      </div>
+      <p>Google Cloud は自律型 AI エージェントを運用する組織向けのセキュリティ機能を発表した。エージェントが使う認証情報を Google 管理の保管庫で IAM ポリシーにより一元管理する Auth Manager が一般提供となり、Agent Identity から標準的な OIDC トークン（JWT）を発行して AWS や Azure、オンプレミスのバックエンド、MCP サーバーへ長期 API キーなしで認証できる機能がプレビューで始まった。Wiz Defend と Google Security Operations の連携強化も含まれる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.datacenterdynamics.com/en/news/nvidia-vera-rubin-infrastructure-now-generally-available-on-google-cloud" target="_blank" rel="noopener">Google Cloud の NVIDIA Vera Rubin NVL72 搭載「A5X」が一般提供へ — 最大96万 GPU まで拡張する計画</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.datacenterdynamics.com/en/news/nvidia-vera-rubin-infrastructure-now-generally-available-on-google-cloud" class="source-link" target="_blank" rel="noopener">🔗 DatacenterDynamics</a>
+      </div>
+      <p>Google Cloud と NVIDIA は、NVIDIA Vera Rubin NVL72 を搭載した A5X インスタンスの一般提供を発表した（一部報道では11月中の提供開始予定とされる）。1ラックに Rubin GPU 72基と Vera CPU 36基を NVLink 6 で接続し、ConnectX-9 SuperNIC や Google の Virgo ネットワーク、第4世代液冷を組み合わせる。複数拠点で最大96万基の Rubin GPU まで拡張する計画で、EMEA の追加リージョンにも展開する。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://docs.cloud.google.com/gemini/enterprise/docs/release-notes" target="_blank" rel="noopener">【要確認】Gemini Enterprise にバンドルされた Gemini Code Assist の利用権が2027年3月31日で終了</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://docs.cloud.google.com/gemini/enterprise/docs/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Gemini Enterprise リリースノート</a>
+      </div>
+      <p>Gemini Enterprise のリリースノートで、既存の Gemini Enterprise Standard / Plus サブスクリプションにバンドルされている Gemini Code Assist の利用権を2027年3月31日で終了すると告知された。コード補完やエージェント機能を Gemini Enterprise 経由で使っている組織は、期限までに単体の Gemini Code Assist ライセンスなどへの移行を検討する必要がある。同ノートでは、セルフサービスの Cloud Billing でプリペイドクレジットが一般提供になったことも案内されている。</p>
+    </div>
+
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://nodejs.org/en/blog/vulnerability/november-2026-security-releases" target="_blank" rel="noopener">【予告】Node.js が11月11日にセキュリティリリース — 26.x / 24.x / 22.x が対象、最高深刻度は High</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://nodejs.org/en/blog/vulnerability/november-2026-security-releases" class="source-link" target="_blank" rel="noopener">🔗 Node.js</a>
+      </div>
+      <p>Node.js プロジェクトは、26.x・24.x・22.x の各リリースラインに対するセキュリティアップデートを11月11日（米国時間）以降に公開すると予告した。修正される問題の最高深刻度は High。詳細やバージョン番号はリリース時に公開される。サポート終了済みのバージョンはセキュリティリリースのたびに影響を受けるものとして扱われるため、EOL 版を使っている環境はサポート中のラインへの移行が推奨される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://docs.github.com/en/enterprise-cloud@latest/code-security/concepts/secret-security/secret-scanning" target="_blank" rel="noopener">GitHub シークレットスキャンが Actions のワークフローログを検査可能に — パブリックプレビュー、既定は無効</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://docs.github.com/en/enterprise-cloud@latest/code-security/concepts/secret-security/secret-scanning" class="source-link" target="_blank" rel="noopener">🔗 GitHub Docs</a>
+      </div>
+      <p>GitHub のシークレットスキャンが、GitHub Actions のワークフローログに出力されたシークレットを検出できるようになった（パブリックプレビュー）。有効化すると、シークレットスキャンが有効なリポジトリで新しいワークフロー実行の完了後にログを検査する。過去の実行は対象外で、検出はプロバイダーパターンのみ（汎用・カスタムパターンや AI 検出、Actions がマスクした値は対象外）。プレビュー中はアラート通知が送られないため、リポジトリのアラート一覧を確認する必要がある。</p>
+    </div>
+
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html" target="_blank" rel="noopener">Microsoft がネオクラウドとの提携を絞り込みへと報道 — CoreWeave や Nebius など、AI インフラ投資に変調の兆し</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html" class="source-link" target="_blank" rel="noopener">🔗 CNBC</a>
+      </div>
+      <p>CNBC によると、Microsoft は GPU クラウドを提供する「ネオクラウド」各社との提携数を減らす方針で、CoreWeave、Nebius、IREN、Lambda、Nscale などが対象になり得る。どの企業との関係を見直すかはまだ決まっていないという。Oracle からの AI 計算資源の借り入れを縮小し、Nscale のテキサス拡張も見送ったとの報道もある。借入コストの上昇や債務負担が重荷となるなか、自社データセンターを持つ方が割安になるとの分析も出ており、AI インフラ投資の行方に注目が集まる。</p>
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-11-10 07:00 JST 更新 | 全15件</p>
+    <p style="margin-top:8px;"><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

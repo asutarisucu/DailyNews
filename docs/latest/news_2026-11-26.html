@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-11-26</title>
+  <meta name="description" content="2026-11-26 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-11-26</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-11-26 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>13件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">0</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.unite.ai/anthropic-details-claude-assisted-rust-migration-of-messages-api/" target="_blank" rel="noopener">Anthropic、Messages API を Claude エージェントの手で Python から Rust に移行 — リクエストあたり CPU 約70%減・メモリ80%超減</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.unite.ai/anthropic-details-claude-assisted-rust-migration-of-messages-api/" class="source-link" target="_blank" rel="noopener">🔗 Unite.AI</a>
+      </div>
+      <p>Anthropic は11月25日、Claude API の中核である Messages API を Python から Rust へ書き換えた経緯を公開した。コードの大半は Claude エージェントが書き、既存の Python 実装を基準に挙動の差分を突き合わせながら移行を進めたという。リクエストあたりの CPU 使用量は約70%、メモリは80%以上削減され、最初のトークンまでの時間の中央値も約20%短縮された。テストに通るだけでは不十分で、本番トラフィックとの一致を検証する仕組みづくりが作業の要だったとしている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://claude.com/resources/articles/skills-over-mcp-tasks-and-more" target="_blank" rel="noopener">Claude が「Skills over MCP」をパブリックベータで提供 — MCP の Tasks と Elicitation は一般提供に</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://claude.com/resources/articles/skills-over-mcp-tasks-and-more" class="source-link" target="_blank" rel="noopener">🔗 Claude</a>
+      </div>
+      <p>Anthropic は11月24日、MCP サーバーがスキルを配布できる「Skills over MCP」を Claude と Claude Code でパブリックベータとして公開した。Pro・Max・Ultra では既定で有効、Team は管理者による有効化が必要で、Enterprise は今後対応する。あわせて、長時間処理を MCP サーバーに任せて後から結果を受け取る「Tasks」と、処理の途中でフォームやリンクを通じてユーザーに入力を求める「Elicitation」が一般提供になった。いずれもオープンな MCP 仕様の一部で、ファイルアップロードへの対応も近く始まる予定。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://openai.com/index/introducing-shirudo/" target="_blank" rel="noopener">OpenAI と Cisco がオープンソースの「Shirudo」を公開 — パッチ適用前の Linux を eBPF の「シールド」で一時防御</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://openai.com/index/introducing-shirudo/" class="source-link" target="_blank" rel="noopener">🔗 OpenAI</a>
+      </div>
+      <p>OpenAI と Cisco は、稼働中の Linux システムに一時的な防御を適用するランタイム「Shirudo」をオープンソースで公開した。eBPF を使い、再起動なしで脆弱性の悪用をブロックする「シールド」を読み込み、管理者が正式なパッチを準備・展開するまでの時間を稼ぐ。Codex にシールドを生成させる使い方を想定し、シールドは暗号署名され、読み込み前の検証と運用者の承認が必要。Isovalent の Tetragon を書き直したもので、現時点では実験的なプレリリースとされている。</p>
+    </div>
+
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/" target="_blank" rel="noopener">【要更新】Drupal コアのインストーラーの RCE 脆弱性 CVE-2026-132165 が悪用中 — 未認証でサイト乗っ取りが可能</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/" class="source-link" target="_blank" rel="noopener">🔗 BleepingComputer</a>
+      </div>
+      <p>Drupal コアのインストーラーに、匿名ユーザーが Drupal の再インストールを試みてサイトを乗っ取ったりリモートコード実行したりできる重大な脆弱性 CVE-2026-132165 が見つかった。Anthropic の OSS スキャナーが発見したもので、Drupal は修正版公開の翌日にあたる11月19日から実際に悪用されていると勧告を更新した。修正版は 10.6.22、11.3.22、11.4.13 で、サポートが終了した 11.2.x、10.5.x 以前には修正が提供されない。CISA は KEV に追加し、連邦機関に11月27日までの対応を求めている。更新に加えて /core/install.php へのアクセス遮断とログの確認が推奨されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.csoonline.com/article/4253068/check-point-security-management-servers-hit-in-global-cyberattack-campaign.html" target="_blank" rel="noopener">Check Point のセキュリティ管理サーバー24台が侵害 — 17カ国22組織を狙ったスパイ活動と GreyNoise が報告</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.csoonline.com/article/4253068/check-point-security-management-servers-hit-in-global-cyberattack-campaign.html" class="source-link" target="_blank" rel="noopener">🔗 CSO Online</a>
+      </div>
+      <p>GreyNoise は、17カ国22組織の Check Point セキュリティ管理サーバー計24台が侵害された攻撃キャンペーン「GT13」を報告した。攻撃者は10月17日から11月2日にかけて活動し、100件を超える管理タスクを実行してファイアウォールのデータベースや内部 CA を持ち出し、セキュリティポリシーのアンロードも試みたという。初期侵入の手口は不明だが、侵入後の段階で CVE-2026-16232 の悪用が確認された。GreyNoise は AI エージェントの関与を疑っている。Check Point は管理サーバーへのアクセスを信頼できるネットワークと IP に限定するよう呼びかけている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA が KEV に10件を一括追加 — Danfoss AK-SM 800A、HPE Juniper Session Smart Router、Mitel MiCollab など</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog" class="source-link" target="_blank" rel="noopener">🔗 CISA</a>
+      </div>
+      <p>CISA は11月25日、悪用が確認された脆弱性10件を KEV カタログに追加した。Danfoss の冷凍設備向けコントローラー AK-SM 800A シリーズの3件（CVE-2023-25914、CVE-2023-25915、CVE-2025-41450）、HPE Juniper Session Smart Conductor / Router の OS コマンドインジェクション（CVE-2026-103406）、Mitel MiCollab のファイルアップロードの欠陥（CVE-2026-133275）などが含まれる。該当製品を使っている組織は、更新の適用や露出状況の確認を急ぎたい。</p>
+    </div>
+
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://docs.cloud.google.com/bigquery/docs/release-notes" target="_blank" rel="noopener">BigQuery で時系列分析の ML 関数4種が一般提供に — 埋め込みモデル embeddinggemma-300m も GA</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://docs.cloud.google.com/bigquery/docs/release-notes" class="source-link" target="_blank" rel="noopener">🔗 Google Cloud</a>
+      </div>
+      <p>Google Cloud は11月24日付の BigQuery リリースノートで、テーブル値の ML 関数 ML.TREND、ML.SEASONALITY、ML.DETECT_CHANGE_POINTS、ML.CORRELATION の一般提供（GA）を案内した。クエリエディタのほか、会話型分析でも利用できる。また AI.EMBED と AI.SIMILARITY 関数で使える組み込み埋め込みモデル embeddinggemma-300m も GA になった。Databricks の SQL を GoogleSQL に変換する機能はプレビューで提供される。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://techcommunity.microsoft.com/blog/AzureNetworkingBlog/connecting-clouds-and-the-last-mile-with-azure/4573283" target="_blank" rel="noopener">Azure と Google Cloud を直結する「Azure Multicloud Interconnect」がパブリックプレビューに — 両社が共同サポート</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://techcommunity.microsoft.com/blog/AzureNetworkingBlog/connecting-clouds-and-the-last-mile-with-azure/4573283" class="source-link" target="_blank" rel="noopener">🔗 Microsoft Tech Community</a>
+      </div>
+      <p>Microsoft と Google は、Azure と Google Cloud の間をプライベートで高帯域に数分で接続できる相互接続サービスをプレビューで提供開始した。Microsoft 側は「Azure Multicloud Interconnect with Google Cloud」、Google 側は「Partner Cross-Cloud Interconnect for Azure」と呼び、両社が共同でサポートする。初期のプレビュー提供は Google Cloud の us-east4（北バージニア）などから始まる。AWS も Interconnect - multicloud を一般提供しており、大手クラウド間の直接接続が相次いで整いつつある。</p>
+    </div>
+
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.infoq.com/news/2026/11/vercel-board-agents/" target="_blank" rel="noopener">Vercel が人とコーディングエージェントのための掲示板「Vercel Board」を実験提供 — Claude Code や Codex がタスクを分担</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.infoq.com/news/2026/11/vercel-board-agents/" class="source-link" target="_blank" rel="noopener">🔗 InfoQ</a>
+      </div>
+      <p>Vercel は、人とコーディングエージェントがタスクを調整するためのヘッドレスな掲示板「Vercel Board」を実験的機能として全プランで公開した。エージェントは CLI や SDK からリース付きでタスクを確保し、進捗や結果を書き込める。タスク間の依存関係や、返信・ラベル変更時にエージェントを起こすウォッチャー、予約フォローアップにも対応する。Claude Code、Codex、OpenCode、Mastra、LangChain などが同じボードで協働でき、Slack・GitHub・Linear と双方向で同期する。データの保存先は米国のみで、リージョンは選べない。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://vercel.com/blog/eve-is-now-generally-available" target="_blank" rel="noopener">Vercel のオープンソース・エージェントフレームワーク「eve」が1.0で一般提供に</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://vercel.com/blog/eve-is-now-generally-available" class="source-link" target="_blank" rel="noopener">🔗 Vercel</a>
+      </div>
+      <p>Vercel は、本番運用向けの AI エージェントを構築するオープンソースフレームワーク「eve」のバージョン1.0を一般提供した。セッションをまたいだ組み込みメモリや、リポジトリの AGENTS.md に従って動くコーディング拡張などを備える。@eve/board パッケージを使えば、eve で作ったエージェントを Vercel Board の参加者としてタスク処理やフォローアップの予約に使える。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://workspaceupdates.googleblog.com/" target="_blank" rel="noopener">Google Workspace の MCP サーバーと公式 Workspace CLI が一般提供に</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://workspaceupdates.googleblog.com/" class="source-link" target="_blank" rel="noopener">🔗 Google Workspace Updates</a>
+      </div>
+      <p>Google は11月24日、Google Workspace 向けの Model Context Protocol（MCP）サーバーと公式の Workspace CLI を一般提供（GA）にしたと Workspace Updates ブログで発表した。AI エージェントや開発者のツールから、Gmail、ドライブ、カレンダーなどの Workspace データや操作に標準的な方法でアクセスしやすくなる。管理者は組織での利用ポリシーを確認しておきたい。</p>
+    </div>
+
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.theblock.co/news/regulation/2026-11-25-nvidia-290-million-settlement-crypto-mining-class-action-446709" target="_blank" rel="noopener">Nvidia が暗号資産マイニング需要の開示をめぐる集団訴訟で2億9,000万ドルの和解に合意</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.theblock.co/news/regulation/2026-11-25-nvidia-290-million-settlement-crypto-mining-class-action-446709" class="source-link" target="_blank" rel="noopener">🔗 The Block</a>
+      </div>
+      <p>Nvidia は、2017〜2018年にゲーミング GPU の売上のうち暗号資産マイニング需要が占める割合を過小に説明したとして投資家が起こした証券集団訴訟で、2億9,000万ドルを支払う和解に合意した。11月24日にカリフォルニア州北部地区連邦地裁に提出され、裁判所の承認が必要。Nvidia は不正を否定しており、和解金の大半は保険で賄うという。予備承認の審理は2027年2月に予定されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://cnbc.com/2026/11/25/nvidia-ai-stock-tech-selloff.html" target="_blank" rel="noopener">Nvidia 株が急反落しハイテク株安を主導 — フアン氏の CEO 復帰で31%急騰した上昇分の大半を失う</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://cnbc.com/2026/11/25/nvidia-ai-stock-tech-selloff.html" class="source-link" target="_blank" rel="noopener">🔗 CNBC</a>
+      </div>
+      <p>Nvidia 株は11月25日に大きく値を下げ、ジェンスン・フアン氏の CEO 復帰を受けた急騰分の大半を失った。AI 投資の規模と収益性への懸念が再燃し、ナスダックをはじめハイテク株全体が売られた。フアン氏の復帰をめぐっては、司法省と SEC によるチップ密輸疑惑の調査が続いており、共和党の上院議員からも批判が出ている。</p>
+    </div>
+
+    <div>
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-11-26 07:00 JST 更新 | 全13件</p>
+    <p><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>

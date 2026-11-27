@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT News — 2026-11-28</title>
+  <meta name="description" content="2026-11-28 のITニュースダイジェスト">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📰</div>
+        <span class="logo-text">Daily IT News</span>
+      </a>
+      <span class="header-meta">2026-11-28</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>2026-11-28 のIT ニュース</h1>
+      <p class="date-label">直近24時間の注目記事 <strong>13件</strong></p>
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Shopify</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">AI</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Security</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Dev</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Other</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shopify-section">
+      <div class="section-label">🛒 Shopify 開発者情報</div>
+
+    <div class="card shopify-card">
+      <div class="card-header">
+        <h2><a href="https://shopify.dev/changelog/posts/updated-b2b-location-access-in-the-customer-account-api" target="_blank" rel="noopener">【要確認】Customer Account API の B2B アクセスを制限 — 顧客は所属する会社のデータと注文のみ参照可能に</a></h2>
+        <span class="badge badge-shopify">shopify</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://shopify.dev/changelog/posts/updated-b2b-location-access-in-the-customer-account-api" class="source-link" target="_blank" rel="noopener">🔗 Shopify 開発者 changelog</a>
+      </div>
+      <p>Shopify は Customer Account API の全バージョンで、B2B 顧客が読み取れる会社データと注文を、自分が所属する会社のものに限定した。スキーマ自体は変わらないが、一部フィールドが null や空リスト、少ない件数を返すようになり、連絡先の locations は本人以外だと空になる。税識別子や連絡先・ロール割り当てなども制限対象。マーチャントが会社から顧客を外すと、その会社の注文や下書き注文は参照できなくなる（個人の注文は引き続き表示）ため、注文履歴を表示するアプリは挙動の確認が必要。</p>
+    </div>
+    </div>
+
+    <div class="section-label">🤖 AI・機械学習</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://gigazine.net/gsc_news/en/20261126-cogentic-6-research-papers" target="_blank" rel="noopener">Google の数学 AI「Cogentic」が人手を介さず論文6本を公開 — L[1/3] 時間の無条件素因数分解などを主張</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://gigazine.net/gsc_news/en/20261126-cogentic-6-research-papers" class="source-link" target="_blank" rel="noopener">🔗 GIGAZINE</a>
+      </div>
+      <p>Google Research は11月25日、Gemini 4 上で動くマルチエージェントシステム「Cogentic」が生成した数学論文6本を GitHub で公開した。各論文には「最初のプロンプト以外に人間の関与はない」と注記され、数体ふるい法と同じ L[1/3] 時間クラスでの無条件の素因数分解、双行列ゲームの近似ナッシュ均衡、log-rank 予想の改善、Harary の辺再構成予想（密グラフ）などを扱う。オーケストレーターが証明方針を割り振り、検証エージェントが各ステップを攻撃する設計。査読前で、全証明の Lean 4 形式化は後日公開予定とされている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://emergent.sh/news/deepmind-ai-agents-now-control-gemini" target="_blank" rel="noopener">Google DeepMind、Gemini の実験用計算資源の一部を AI エージェントが管理していると明かす</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://emergent.sh/news/deepmind-ai-agents-now-control-gemini" class="source-link" target="_blank" rel="noopener">🔗 Emergent</a>
+      </div>
+      <p>Gemini 開発を率いる Google DeepMind のコーライ・カヴクチュオール氏はポッドキャストで、Gemini の実験を実行するための計算資源の一部を AI エージェントが制御していると述べた。一方で、完全な再帰的自己改善にはまだ程遠いとも説明している。エージェントが管理する計算資源の割合や対象となる実験の種類は明らかにされていない。エージェントの思考過程（chain of thought）を人が自然言語で読めるようにする学習上の安全策を採っているという。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/" target="_blank" rel="noopener">OpenAI が GPT-6.2 の課金バグを修正 — ChatGPT の利用上限に Astra は40%、Sol は25%早く到達</a></h2>
+        <span class="badge badge-ai">ai</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/" class="source-link" target="_blank" rel="noopener">🔗 BleepingComputer</a>
+      </div>
+      <p>OpenAI は、GPT-6.2 Astra と Sol の提供開始時から課金処理の誤りで多くの有料ユーザーの利用量が過少にカウントされていたと明らかにした。修正により、先週と比べて Astra は40%、Sol は25%早く利用上限に達するようになる。他のモデルの計算方法は変わらず、過去の差分は請求しない。補償として購読者には1回限りの利用量リセット（1カ月で失効）が付与される。</p>
+    </div>
+
+    <div class="section-label">🔒 セキュリティ</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html" target="_blank" rel="noopener">【要確認】1Password が侵害を公表 — 社員の GitHub アカウント経由で一部顧客のアカウント情報とソースコードが流出</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html" class="source-link" target="_blank" rel="noopener">🔗 The Hacker News</a>
+      </div>
+      <p>1Password は、社員1人の企業用 GitHub アカウントが乗っ取られ、一部ユーザーのアカウント記録と非公開リポジトリのソースコードがコピーされたと公表した。調査開始は11月19日。流出した記録には氏名やメールアドレスのほか、アカウント ID、サインイン時刻、一部の招待・リカバリーリンクに含まれるトークンが含まれるとの報道もある。保管庫（Vault）の内容や暗号鍵、リカバリーキー、アプリには影響がないとしているが、CI/CD のインフラ用シークレットが露出した可能性があるため全面的な認証情報のローテーションを実施している。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/" target="_blank" rel="noopener">SAP がサイバー攻撃を確認 — 社員のトークンを使い GitHub 上のソースコードが改ざんされたと Der Spiegel 報道</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/" class="source-link" target="_blank" rel="noopener">🔗 SecurityWeek</a>
+      </div>
+      <p>SAP は不審な活動を検知し、顧客とサービスを保護する措置を取ったと認めた。Der Spiegel は関係者の話として、攻撃者が SAP 社員の認証トークンを入手し、GitHub に保存されたソースコードをコピー・改ざんしたと報じている。SAP は顧客データへの不正アクセスの証拠はないとしており、改ざんされたコードが顧客向けソフトに組み込まれたとの報道もない。対策として GitHub へのアクセス制限、自動開発プロセスの一時停止、コード署名鍵の交換が行われたという。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.securityweek.com/drupal-installer-patch-left-a-gap-attackers-are-already-exploiting/" target="_blank" rel="noopener">【続報・要更新】Drupal のインストーラー修正に抜け穴、新たな CVE-2026-136716 が悪用中 — 11.4.14 / 11.3.23 / 10.6.23 で修正</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.securityweek.com/drupal-installer-patch-left-a-gap-attackers-are-already-exploiting/" class="source-link" target="_blank" rel="noopener">🔗 SecurityWeek</a>
+      </div>
+      <p>Drupal は11月25日に SA-CORE-2026-019 を公開し、コアのインストーラーのアクセスバイパス CVE-2026-136716 が悪用されていると警告した。先に修正された CVE-2026-132165（Fail2Install）の対策で塞ぎ切れなかった問題で、インストールが不完全な状態のサイトでは未認証で再インストールを強制され、乗っ取りや RCE につながる。SA-CORE-2026-017 の後もインストーラーを外部公開していたサイトは侵害されている可能性がある。修正版への更新に加え、update.php の実行、install.php のブロック、ユーザー1の点検が推奨されている。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-168/" target="_blank" rel="noopener">【要更新】NGINX の HTTP/2 RCE 脆弱性 CVE-2026-123007 に悪用報告 — シンガポール CSA が警告、F5 は「未確認」</a></h2>
+        <span class="badge badge-security">security</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-168/" class="source-link" target="_blank" rel="noopener">🔗 シンガポール CSA</a>
+      </div>
+      <p>シンガポールのサイバーセキュリティ庁（CSA）は11月26日、NGINX の ngx_http_v2_module にある整数アンダーフロー CVE-2026-123007 が悪用されているとの報告があり、PoC も公開済みだと警告した。2015年の 1.9.5 から存在する欠陥で、未認証のリモートクライアントがキュー済みの応答データをキャンセルすることでメモリ破壊を起こし、条件次第でコード実行に至る。F5 は悪用報告を「技術的に未確認」としているが、HTTP/2 を有効にしたインターネット公開サーバーは NGINX 1.30.7 / 1.31.9、NGINX Plus 37.0.8.1 / 37.3.0.1 などへの更新が急務。</p>
+    </div>
+
+    <div class="section-label">☁️ クラウド</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/systems-manager-multicloud-automation/" target="_blank" rel="noopener">AWS Systems Manager Automation が Azure と Google Cloud の運用タスクに対応 — ランブックでマルチクラウドを自動化</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/systems-manager-multicloud-automation/" class="source-link" target="_blank" rel="noopener">🔗 AWS What&#x27;s New</a>
+      </div>
+      <p>AWS Systems Manager Automation のランブックで、AWS に加えて Microsoft Azure と Google Cloud のリソースを操作できるようになった。営業時間外にタグ付きの開発用 VM を停止したり、セキュリティポリシーに違反するストレージバケットを修正したりといった用途を想定。Azure はサブスクリプションやリソースグループ、タグ、Google Cloud はプロジェクトやゾーン、ラベルで対象を指定できる。aws:executeScript には Azure / Google Cloud の Python SDK が含まれ、Systems Manager Cloud Connector から短期認証情報を取得する。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-omni-microsoft-azure/" target="_blank" rel="noopener">Amazon CloudWatch Omni が Microsoft Azure のログ・メトリクス・トレースの収集に対応</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-omni-microsoft-azure/" class="source-link" target="_blank" rel="noopener">🔗 AWS What&#x27;s New</a>
+      </div>
+      <p>CloudWatch Omni で、Azure のリソースログ、Azure Monitor のプラットフォームメトリクス、VNet フローログ、Application Insights のトレースを収集できるようになった。Microsoft Entra ID テナントを AWS アカウントとリージョンに接続し、収集するテレメトリの種類、サブスクリプション、リージョン、リソースタイプ、タグを選んで設定する。Azure の全パブリックリージョンが対象で、Omni コンソールまたは AWS CLI から構成できる。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://learn.microsoft.com/en-us/azure/firewall/fqdn-filtering-network-rules" target="_blank" rel="noopener">Azure Firewall のネットワークルールでワイルドカード FQDN が一般提供に — 3リージョンから、DNS プロキシが必須</a></h2>
+        <span class="badge badge-cloud">cloud</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://learn.microsoft.com/en-us/azure/firewall/fqdn-filtering-network-rules" class="source-link" target="_blank" rel="noopener">🔗 Microsoft Learn</a>
+      </div>
+      <p>Azure Firewall のネットワークルールで「*.contoso.com」のようなワイルドカードドメインを指定できる機能が11月23日付で一般提供となった。サブドメインが頻繁に変わる宛先への TCP / UDP 通信を、個別に列挙せずにフィルタリングできる。利用には DNS プロキシの有効化と、クライアントがファイアウォールを DNS サーバーとして使う構成が必要。現時点の対応リージョンは West Central US、East Asia、UK South に限られ、HTTP/S と MSSQL には引き続きアプリケーションルールが推奨されている。</p>
+    </div>
+
+    <div class="section-label">🛠️ 開発ツール・OSS</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization/" target="_blank" rel="noopener">【要確認】Copilot コードレビューの課金先が12月30日から既定で「組織」に — 現行どおりにするには事前に Member を選択</a></h2>
+        <span class="badge badge-dev">dev</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization/" class="source-link" target="_blank" rel="noopener">🔗 GitHub Changelog</a>
+      </div>
+      <p>GitHub は、Copilot Business / Enterprise で課金先を一度も保存していない組織・エンタープライズについて、12月30日からライセンスを持つメンバーによるコードレビューの課金先を、リポジトリを所有する組織に切り替えると発表した。組織課金には AI Credits の従量課金が必要で、支出が増える可能性がある。現在の挙動を維持したい管理者は期限前に Copilot ポリシー設定で Member を選択する必要がある。従量課金が無効な場合などは Member にフォールバックし、すでに保存済みの選択は維持される。</p>
+    </div>
+
+    <div class="section-label">📌 その他</div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2><a href="https://www.digitaltrends.com/wearables/meta-smart-glasses-dutch-privacy-lawsuit/" target="_blank" rel="noopener">オランダの消費者団体が Meta の Ray-Ban スマートグラスの販売差し止めを提訴 — 「隠しカメラ」でプライバシー法違反と主張</a></h2>
+        <span class="badge badge-other">other</span>
+      </div>
+      <div class="card-meta">
+        <a href="https://www.digitaltrends.com/wearables/meta-smart-glasses-dutch-privacy-lawsuit/" class="source-link" target="_blank" rel="noopener">🔗 Digital Trends</a>
+      </div>
+      <p>オランダの消費者団体 Consumentenbond や Offlimits などは11月26日、アムステルダム地方裁判所に Meta の Ray-Ban スマートグラスの販売停止を求めた。同意のない撮影の防止、映像の AI 学習への利用停止、条件を満たすまでの販売停止を Meta と EssilorLuxottica に求めている。Meta は録画インジケーターがあることなどを理由に主張を否定し、禁止の判断は裁判所でなく規制当局が下すべきだとした。判決は12月中に出る見通し。</p>
+    </div>
+
+    <div>
+      <a href="../index.html" class="archive-link">← バックナンバー一覧</a>
+    </div>
+  </main>
+  <footer>
+    <p>Daily IT News — 2026-11-28 07:00 JST 更新 | 全13件</p>
+    <p><a href="https://github.com/asutarisucu/DailyNews">GitHub</a></p>
+  </footer>
+</body>
+</html>
